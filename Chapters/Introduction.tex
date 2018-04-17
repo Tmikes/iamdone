@@ -1,0 +1,19 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+
+\label{Introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+
+Volumetric data sets are present in many fields such as medical imaging, physics, natural science, security, engineering etc. They are composed of voxels which represents the shape of these data. In fact, a volume is a scalar function of three spatial variables $(x,y,z) \in \mathbb{R}^3$. Voxel volumes can be produced by 3 main ways. The first one is to directly acquire from the real world thanks to some specific devices. As an example, X-ray scanners allow to collect data from baggage in airports. The second method is to generate the voxels through the volume by using mathematical models. For instance, a fluid flow in a basin can be represented in a volume of voxels thanks to the adequate mathematical model. The third way to produce volumetric data sets is to  rasterize vector data model using algorithms. This can be carried out for many purposes such as retrieve new insights thanks to new visualization techniques.
