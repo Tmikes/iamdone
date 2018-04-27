@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  18 APR 2018 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  26 APR 2018 17:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1683,8 +1683,8 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (main.aux (Chapters/Introduction.aux) (Chapters/Chapter1.aux)
-(Appendices/AppendixA.aux))
+ (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
+(Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -1975,27 +1975,27 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 210.
  (main.toc
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 20.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 20.
-)
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 27.
+
+1: section
+[11])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-1: section
-[11] [12
-
-] (main.lof)
+ [12] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 1: section
-[13] [14
+[13
+
+] [14
 
 ] (main.lot)
 \tf@lot=\write8
@@ -2042,48 +2042,147 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 ]
-\openout2 = `Chapters/Chapter1.aux'.
+\openout2 = `Chapters/StateOfTheArt.aux'.
 
- (Chapters/Chapter1.tex [2
+ (Chapters/StateOfTheArt.tex [2
 
 
 
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 8.
+
+LaTeX Warning: Citation 'ljung_full_2006' on page 3 undefined on input line 17.
+
+
+
+LaTeX Warning: Citation 'carr_computing_2000' on page 3 undefined on input line
+ 20.
+
+
+LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 3 undefined on
+ input line 20.
+
+
+LaTeX Warning: Citation 'guo_local_2013' on page 3 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'chen_3-d_2000' on page 3 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 3 undefined on in
+put line 21.
+
+
+LaTeX Warning: Citation 'correa_size-based_2008' on page 3 undefined on input l
+ine 21.
+
+
+LaTeX Warning: Citation 'sereda_visualization_2006' on page 3 undefined on inpu
+t line 21.
+
+
+LaTeX Warning: Citation 'patel_moment_2009' on page 3 undefined on input line 2
+1.
+
+
+LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 3 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'tversky_animation:_2002' on page 3 undefined on input 
+line 21.
+
+
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 3 undefined on input 
+line 22.
+
+
+LaTeX Warning: Citation 'sainz_point-based_2004' on page 3 undefined on input l
+ine 22.
+
+
+LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 3 undefined on inp
+ut line 22.
+
+
+LaTeX Warning: Citation 'elmqvist_color_2011' on page 3 undefined on input line
+ 22.
+
+
+LaTeX Warning: Citation 'hurter_moleview:_2011' on page 3 undefined on input li
+ne 22.
+
+
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 3 undefined on input 
+line 22.
+
+)
+Overfull \hbox (51.04758pt too wide) in paragraph at lines 19--274
+\T1/ppl/m/n/10.95 a set of poly-gons rep-re-sent-ing an iso-surface. The con-to
+ur tree al-go-rithm  []
+ []
+
+
+Overfull \hbox (8.0259pt too wide) in paragraph at lines 19--274
+\T1/ppl/m/n/10.95 and other al-ter-na-tives such as branch de-com-po-si-tion  [
+]
+ []
+
+
+Overfull \hbox (27.22226pt too wide) in paragraph at lines 19--274
+[]  [] \T1/ppl/m/n/10.95 or user in-ter-ac-tions  [].
+ []
+
+
+Overfull \hbox (6.63371pt too wide) in paragraph at lines 19--274
+\T1/ppl/m/n/10.95 in-ter-ac-tion tech-niques with suf-fi-cient ab-strac-tion le
+vel re-gard-ing tech-ni-cal con-straints.
+ []
+
+1: section
+[3] [4]
+\openout2 = `Chapters/Chapter1.aux'.
+
+ (Chapters/Chapter1.tex
+Chapter 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 1: section
-[3]
+[5
+
+
+
+]
 Overfull \hbox (12.15245pt too wide) in paragraph at lines 72--74
 \T1/ppl/m/n/10.95 site, here: [][]$\T1/cmtt/m/n/10.95 http : / / www . ecs . so
 ton . ac . uk / ~srg / softwaretools / document / templates/$[][] 
  []
 
-[4] [5]
+[6] [7]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 136.
- [6] [7]
+ [8] [9]
 Overfull \hbox (8.37132pt too wide) in paragraph at lines 180--181
 \T1/ppl/m/n/10.95 sided print-ing is as sim-ple as un-com-ment-ing the \T1/cmtt
 /m/it/10.95 oneside \T1/ppl/m/n/10.95 op-tion of the \T1/cmtt/m/n/10.95 documen
 tclass
  []
 
-[8] [9]
-<Figures/Electron.pdf, id=358, pagebox=cropbox, 398.3386pt x 284.52756pt>
+[10] [11]
+<Figures/Electron.pdf, id=401, pagebox=cropbox, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf  used on input line 262. on input
  line 262.
 Package pdftex.def Info: Requested size: 398.33762pt x 284.52686pt on input lin
 e 262.
- [10 <./Figures/Electron.pdf>]
+ [12 <./Figures/Electron.pdf>]
 Overfull \hbox (0.90797pt too wide) in paragraph at lines 308--309
 \T1/ppl/m/n/10.95 au-to-mat-i-cally builds a ta-ble of Con-tents by look-ing at
  all the [][]\T1/cmtt/m/n/10.95 \chapter{}[]\T1/ppl/m/n/10.95 , [][]\T1/cmtt/m/
@@ -2096,44 +2195,53 @@ Overfull \hbox (0.45015pt too wide) in paragraph at lines 310--311
 hree (3) lev-els. A [][]\T1/cmtt/m/n/10.95 chapter{}
  []
 
-[11]) [12]
+[13]) [14]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (Appendices/AppendixA.tex
 Appendix A.
 )
 1: section
-[13
+[15
 
 
 
-] [14
+] [16
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
 
 1: section
-[15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
- (main.aux (Chapters/Introduction.aux) (Chapters/Chapter1.aux)
-(Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+[17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
+ (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
+(Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 84FFFE674EBAB8DF6D98057C16B0707B;5046.
+(rerunfilecheck)             Checksum: BD3B4AE3FF644974D823E92C3AE9A6BB;6342.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34316 strings out of 493312
- 696107 string characters out of 3138893
- 914114 words of memory out of 3000000
- 37406 multiletter control sequences out of 15000+200000
+ 34344 strings out of 493312
+ 696677 string characters out of 3138893
+ 916114 words of memory out of 3000000
+ 37418 multiletter control sequences out of 15000+200000
  603222 words of font info for 163 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,21n,82p,10379b,1977s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,21n,82p,10379b,2421s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ectt1000.pk> <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecit1095.pk> <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\
@@ -2148,9 +2256,9 @@ type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (39 pages, 261911 bytes).
+Output written on main.pdf (41 pages, 272602 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

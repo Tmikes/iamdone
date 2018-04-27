@@ -1,8 +1,26 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Introduction.aux
+A level-1 auxiliary file: Chapters/StateOfTheArt.aux
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Database file #1: main-blx.bib
 Database file #2: example.bib
+Warning--I didn't find a database entry for "ljung_full_2006"
+Warning--I didn't find a database entry for "carr_computing_2000"
+Warning--I didn't find a database entry for "pascucci_multi-resolution_2004"
+Warning--I didn't find a database entry for "guo_local_2013"
+Warning--I didn't find a database entry for "chen_3-d_2000"
+Warning--I didn't find a database entry for "kniss_multidimensional_2002"
+Warning--I didn't find a database entry for "correa_size-based_2008"
+Warning--I didn't find a database entry for "sereda_visualization_2006"
+Warning--I didn't find a database entry for "patel_moment_2009"
+Warning--I didn't find a database entry for "guo_wysiwyg_2011"
+Warning--I didn't find a database entry for "tversky_animation:_2002"
+Warning--I didn't find a database entry for "hurter_interactive_2014"
+Warning--I didn't find a database entry for "sainz_point-based_2004"
+Warning--I didn't find a database entry for "chevalier_histomages:_2012"
+Warning--I didn't find a database entry for "elmqvist_color_2011"
+Warning--I didn't find a database entry for "hurter_moleview:_2011"
 Biblatex version: 3.8
+(There were 16 warnings)
