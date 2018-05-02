@@ -7,35 +7,41 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.14}
 \contentsline {chapter}{\numberline {2}State of the art}{3}{chapter.15}
 \contentsline {section}{\numberline {2.1}Volume rendering algorithms}{3}{section.16}
-\contentsline {section}{\numberline {2.2}Occlusion management strategies}{3}{section.17}
-\contentsline {subsection}{\numberline {2.2.1}Transfer Function}{3}{subsection.18}
-\contentsline {subsection}{\numberline {2.2.2}Segmentation}{3}{subsection.19}
-\contentsline {subsection}{\numberline {2.2.3}Deformations}{3}{subsection.20}
-\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{3}{section.21}
-\contentsline {chapter}{\numberline {3}Chapter Title Here}{5}{chapter.22}
-\contentsline {section}{\numberline {3.1}Welcome and Thank You}{5}{section.23}
-\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{5}{section.24}
-\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{5}{subsection.25}
-\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{6}{subsection.26}
-\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{6}{subsection.27}
-\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{6}{subsection.28}
-\contentsline {section}{\numberline {3.3}Getting Started with this Template}{6}{section.29}
-\contentsline {subsection}{\numberline {3.3.1}About this Template}{6}{subsection.30}
-\contentsline {section}{\numberline {3.4}What this Template Includes}{7}{section.31}
-\contentsline {subsection}{\numberline {3.4.1}Folders}{7}{subsection.32}
-\contentsline {subsection}{\numberline {3.4.2}Files}{7}{subsection.33}
-\contentsline {section}{\numberline {3.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{8}{section.34}
-\contentsline {section}{\numberline {3.6}The \texttt {main.tex} File Explained}{9}{section.35}
-\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{10}{section.36}
-\contentsline {subsection}{\numberline {3.7.1}Printing Format}{10}{subsection.37}
-\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{10}{subsection.38}
-\contentsline {subsection}{\numberline {3.7.3}References}{10}{subsection.39}
-\contentsline {subsubsection}{A Note on bibtex}{11}{section*.41}
-\contentsline {subsection}{\numberline {3.7.4}Tables}{11}{subsection.42}
-\contentsline {subsection}{\numberline {3.7.5}Figures}{12}{subsection.44}
-\contentsline {subsection}{\numberline {3.7.6}Typesetting mathematics}{13}{subsection.46}
-\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{13}{section.48}
-\contentsline {section}{\numberline {3.9}In Closing}{14}{section.49}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{15}{appendix.50}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{15}{section.51}
-\contentsline {chapter}{Bibliography}{17}{appendix*.52}
+\contentsline {subsection}{\numberline {2.1.1}Direct Volume Rendering}{4}{subsection.17}
+\contentsline {subsubsection}{Texture mapping}{4}{section*.18}
+\contentsline {paragraph}{2D Texture mapping}{4}{section*.19}
+\contentsline {subsubsection}{Raycasting}{4}{section*.21}
+\contentsline {subsection}{\numberline {2.1.2}Surface-fitting}{4}{subsection.22}
+\contentsline {section}{\numberline {2.2}Occlusion management strategies}{4}{section.23}
+\contentsline {subsection}{\numberline {2.2.1}Transfer Function}{4}{subsection.24}
+\contentsline {subsection}{\numberline {2.2.2}Segmentation}{4}{subsection.25}
+\contentsline {subsection}{\numberline {2.2.3}Deformations}{4}{subsection.26}
+\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{4}{section.27}
+\contentsline {subsection}{\numberline {2.3.1} Remote volume rendering}{4}{subsection.28}
+\contentsline {chapter}{\numberline {3}Chapter Title Here}{7}{chapter.29}
+\contentsline {section}{\numberline {3.1}Welcome and Thank You}{7}{section.30}
+\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{7}{section.31}
+\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{7}{subsection.32}
+\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{8}{subsection.33}
+\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{8}{subsection.34}
+\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{8}{subsection.35}
+\contentsline {section}{\numberline {3.3}Getting Started with this Template}{8}{section.36}
+\contentsline {subsection}{\numberline {3.3.1}About this Template}{8}{subsection.37}
+\contentsline {section}{\numberline {3.4}What this Template Includes}{9}{section.38}
+\contentsline {subsection}{\numberline {3.4.1}Folders}{9}{subsection.39}
+\contentsline {subsection}{\numberline {3.4.2}Files}{9}{subsection.40}
+\contentsline {section}{\numberline {3.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{10}{section.41}
+\contentsline {section}{\numberline {3.6}The \texttt {main.tex} File Explained}{11}{section.42}
+\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{12}{section.43}
+\contentsline {subsection}{\numberline {3.7.1}Printing Format}{12}{subsection.44}
+\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{12}{subsection.45}
+\contentsline {subsection}{\numberline {3.7.3}References}{12}{subsection.46}
+\contentsline {subsubsection}{A Note on bibtex}{13}{section*.48}
+\contentsline {subsection}{\numberline {3.7.4}Tables}{13}{subsection.49}
+\contentsline {subsection}{\numberline {3.7.5}Figures}{14}{subsection.51}
+\contentsline {subsection}{\numberline {3.7.6}Typesetting mathematics}{15}{subsection.53}
+\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{15}{section.55}
+\contentsline {section}{\numberline {3.9}In Closing}{16}{section.56}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{17}{appendix.57}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{17}{section.58}
+\contentsline {chapter}{Bibliography}{19}{appendix*.59}
