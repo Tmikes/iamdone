@@ -70,7 +70,9 @@ and shading can be done in one of eleven ways as explained in
 \subsubsection{Texture mapping}
 
 \paragraph{2D Texture mapping}
-2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. 
+2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. To create images of the slices, one can use the standard texture mapping capabilities provided by graphics libraries like OpenGL. \ref{fig:2dslices} shows how pixel colors and opacities are calculated when rendering a texture-mapped polygon. In texture mapping, texture coordinates (s, t) are stored along with each vertex. These coordinates are interpolated across the polygon during scan conversion, and are used as coordinates for color look-up inside a texture image \ref{fig:2dtexture}. Color and opacity values from the texture image are reconstructed using bi-linear interpolation.
+
+
 \begin{figure}[th]
 \centering
 \includegraphics{Figures/2D_slices}
@@ -78,9 +80,87 @@ and shading can be done in one of eleven ways as explained in
 \caption[2D Sclices]{2D slices of the volume.}
 \label{fig:2dslices}
 \end{figure}
+On modern graphics workstations, the complete process of interpolating texture coordinates and reconstructing texture values is incorporated into the scan-conversion process and done completely in hardware. Because texture mapping is such a common application, these routines are well-optimized and highly efficient.
+To simulate ray casting using texture mapping, we have to slice the volumetric data set into parallel slices, and the use these slices as texture images to texture-map the projections of the sliced onto the image plane. To composite the slices, we can use the blending operations provided by the OpenGL graphics library. As it happens, one of the standard operators provided is exactly the compositing operator used in ray casting. Since compositing is also fully hardware-assisted, it is also very fast.
+\begin{figure}[th]
+\centering
+\includegraphics{Figures/2dtexmapping}
+\decoRule
+\caption[2D texture mapping]{Calculating color and opacity of a pixel inside a texture-mapped polygon.}
+\label{fig:2dtexture}
+\end{figure}
+
+There are two ways to deal with varying viewpoints.
+
+The first one is to create slice images for the given data set in a pre-processing step and uses different projection matrices to create arbitrary-viewpoint images of these slices. This is fast, since the (expensive) step of slice creation has to be done only once. On the other hand, image quality suffers because the views of all slices will be distorted due to the projection onto the image plane. In the extreme case of the view direction being parallel to the slices, there will be no image at all.
+
+The second way is to create slices which are always orthogonal to the viewing direction. This results in optimal image quality, but it means that the slice stack has to be re-generated for each new image. Furthermore, arbitrary ("oblique") slices through a cuboid are generally not square or rectangular, and can be anything from triangles to hexagons.
+
+\begin{algorithm} \caption{Volume Rendering using 2D Texture Mapping Algorithm} 
+\label{alg:tex2dmapping}
+\begin{algorithmic}[1]
+\Require $N$ the number of slices, $\vec{v} $ the view direction
+\State Load the data $\mathcal V(x,y,z) \gets data$ 
+\State create the slices $s_i \in \mathcal V$ with each normal $\vec{n_i} \parallel \vec{v}$
+\State Turn off the Depth test 
+\State Enable the Blending 
+
+\ForEach {$s_i \in \mathcal V $ form back to front}
+\State $Texture \gets s_i$
+\State create a polygon $p$ corresponding to the slice $s_i$
+\State Assign texture coordinates to four corners of the polygon
+\State Render and blend the polygon (alpha blending) 
+\EndFor
+
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{3D Texture mapping}
+To allow interactive generation of view-orthogonal slices, a special hardware technique has been developed. This is a generalization of texture-mapping to three-dimensional textures, appropriately called "3D texturing."
+As seen in Figure \ref{fig:2dtexture}, 2D texture-mapping interpolates two additional coordinates (s, t) across a polygon's interior. In 3D texture-mapping, three additional coordinates (s, t, r) are interpolated. To determine a pixel's color and opacity, these three coordinates are used as indices into a three-dimensional image, the 3D texture, see Figure \ref{fig:3dtexture}. To reconstruct texture values, tri-linear interpolation is used.
+
+3D textures allow direct treatment of volumetric data. Instead of generating a set of two-dimensional slices in a pre-processing step, the volumetric data is directly downloaded into the graphics hardware, and is directly used to calculate color and opacity values for each pixel covered by a rendered primitive.
+
+\begin{figure}[th]
+\centering
+\includegraphics{Figures/3dtexmapping}
+\decoRule
+\caption[3D texture mapping]{Calculating color and opacity of a pixel inside a texture-mapped polygon using 3D texture.}
+\label{fig:3dtexture}
+\end{figure}
+
+
+To generate oblique slices using 3D texturing, one only has to calculate the vertices of the slice, and then to generate the correct 3D texture coordinates for those vertices, see Figure \ref{fig:cubeSlice}. Then these coordinates are passed to the graphics library, and the graphics library will render the projection of the slice onto the image plane, using tri-linear interpolation to reconstruct each pixel's color and opacity values.
+
+\begin{figure}[th]
+\centering
+\includegraphics{Figures/cubeSlice}
+\decoRule
+\caption[3D Cube slice]{Calculating vertex coordinates and texture coordinates for an oblique slice. In this figure, the vertex and texture coordinates are identical.}
+\label{fig:cubeSlice}
+\end{figure}
 
 \subsubsection{Raycasting}
+Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps:
+\begin{itemize}
 
+\item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
+
+\item \textbf{Sampling}. Along the part of the ray of sight that lies within the volume, equidistant sampling points or samples are selected. In general, the volume is not aligned with the ray of sight, and sampling points will usually be located in between voxels. Because of that, it is necessary to interpolate the values of the samples from its surrounding voxels (commonly using trilinear interpolation).
+
+\item \textbf{Shading}. For each sampling point, a transfer function retrieves an RGBA material colour and a gradient of illumination values is computed. The gradient represents the orientation of local surfaces within the volume. The samples are then shaded (i.e. coloured and lit) according to their surface orientation and the location of the light source in the scene.
+
+\item \textbf{Compositing}. After all sampling points have been shaded, they are composited along the ray of sight, resulting in the final colour value for the pixel that is currently being processed. The composition is derived directly from the rendering equation and is similar to blending acetate sheets on an overhead projector. It may work back-to-front, i.e. computation starts with the sample farthest from the viewer and ends with the one nearest to the viewer. This work flow direction ensures that masked parts of the volume do not affect the resulting pixel. The front-to-back order could be more computationally efficient since, the residual ray energy is getting down while ray travels away from camera; so, the contribution to the rendering integral is diminishing therefore more aggressive speed/quality compromise may be applied (increasing of distances between samples along ray is one of such speed/quality trade-offs).
+
+\end{itemize}
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/raycasting}
+\decoRule
+\caption[Volume raycasting]{ The four steps of the volume raycasting algorithm  }
+\label{fig:rayasting}
+\end{figure}
 
 \subsection{Surface-fitting}
 
