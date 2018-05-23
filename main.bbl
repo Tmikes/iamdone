@@ -73,6 +73,220 @@
     \field{year}{1998}
   \endentry
 
+  \entry{paraview}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AU}{%
+         family={Ayachit},
+         familyi={A\bibinitperiod},
+         given={Utkarsh},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Kitware, Inc.}%
+    }
+    \strng{namehash}{AU1}
+    \strng{fullhash}{AU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{isbn}{1930934300, 9781930934306}
+    \field{title}{The ParaView Guide: A Parallel Visualization Application}
+    \list{location}{1}{%
+      {USA}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Childs:SciDAC2011}{inproceedings}{}
+    \name{author}{22}{}{%
+      {{hash=CH}{%
+         family={Childs},
+         familyi={C\bibinitperiod},
+         given={Hank},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Brugger},
+         familyi={B\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Whitlock},
+         familyi={W\bibinitperiod},
+         given={Brad},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Meredith},
+         familyi={M\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Ahern},
+         familyi={A\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Bonnell},
+         familyi={B\bibinitperiod},
+         given={Kathleen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WGH}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Gunther\bibnamedelima H.},
+         giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Harrison},
+         familyi={H\bibinitperiod},
+         given={Cyrus},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pugmire},
+         familyi={P\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Fogal},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Garth},
+         familyi={G\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sanderson},
+         familyi={S\bibinitperiod},
+         given={Allen},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BEW}{%
+         family={Bethel},
+         familyi={B\bibinitperiod},
+         given={E.\bibnamedelima Wes},
+         giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Durant},
+         familyi={D\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Camp},
+         familyi={C\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FJM}{%
+         family={Favre},
+         familyi={F\bibinitperiod},
+         given={Jean\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RO}{%
+         family={R\"{u}bel},
+         familyi={R\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Navr\'{a}til},
+         familyi={N\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wheeler},
+         familyi={W\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Selby},
+         familyi={S\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VF}{%
+         family={Vivodtzev},
+         familyi={V\bibinitperiod},
+         given={Fabien},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CH+1}
+    \strng{fullhash}{CHBEWBMJASBKMMWGHHCPDFTGCSABEWDMCDFJMRONPWMSPVF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{{Proceedings of SciDAC 2011}}
+    \field{title}{{VisIt: An End-User Tool For Visualizing and Analyzing Very
+  Large Data}}
+    \list{location}{1}{%
+      {Denver, CO}%
+    }
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Fogal2010Tuvok}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=FT}{%
+         family={Fogal},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kr\"uger},
+         familyi={K\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FTKJ1}
+    \strng{fullhash}{FTKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Proceedings of the 15th International Workshop on Vision,
+  Modeling, and Visualization}
+    \field{title}{Tuvok, an Architecture for Large Scale Volume Rendering}
+    \verb{url}
+    \verb http://www.sci.utah.edu/~tfogal/academic/tuvok/Fogal-Tuvok.pdf
+    \endverb
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Reference1}{article}{}
     \name{author}{3}{}{%
       {{hash=HCJ}{%
@@ -121,6 +335,69 @@
     \field{journaltitle}{Review of Scientific Instruments}
     \field{month}{12}
     \field{year}{2001}
+  \endentry
+
+  \entry{4303986}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{computerised tomography;entropy;image classification;image
+  segmentation;mechanical products;production engineering computing;rendering
+  (computer graphics);statistical analysis;transfer functions;histogram;image
+  thresholding;industrial CT images;minimum cross entropy;transfer
+  function;volume rendering classification;voxel opacity;Blades;Classification
+  algorithms;Computational modeling;Computed tomography;Computer
+  industry;Entropy;Histograms;Partitioning algorithms;Rendering (computer
+  graphics);Transfer functions;Classification;Histogram of volume data;minimum
+  cross entropy;partition of the histogram}
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJZLYHLHZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{2007 International Conference on Mechatronics and
+  Automation}
+    \verb{doi}
+    \verb 10.1109/ICMA.2007.4303986
+    \endverb
+    \field{issn}{2152-7431}
+    \field{pages}{2710\bibrangedash 2715}
+    \field{title}{Classification for Volume Rendering of Industrial CT Based on
+  Minimum Cross Entropy}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Reference2}{article}{}

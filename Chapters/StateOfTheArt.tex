@@ -206,6 +206,23 @@ values alone. The second functionality of a TF deals with specifying
 optical properties for portions of the data range previously identified
 as being relevant
 
+The transfer functions can be classified according to different criteria.
+\begin{itemize}
+\item \textbf{The dimension: } The one-dimensional TF classifies the scalar data value, $d$, and subsequently maps the material to an optical property for rendering: $ \textbf{q}(d)=\textbf{V}(\textbf{M}(d))$ where $\textbf{M}(.)$ is the material classification function and $\textbf{V}(.)$ is the
+visual mapping of the material. One-dimensional TFs are adequate in many cases of simulation data where measurement noise is low or even non-existent where different materials of interest have few overlapping intensity
+ranges \cite{4303986}. One-dimensional TFs are often the first tool available in software packages providing volume rendering, as they are relatively easy to comprehend for the novice or occasional user. Practically all production
+visualization software, such as ParaView by \cite{paraview},
+ VisIt by \cite{Childs:SciDAC2011}, 
+or ImageVis3D by {\cite{Fogal2010Tuvok}}, support 1D TF editors.
+
+Multidimensional TFs are used for Multidimensional data. If the user has to manipulate the TF definition directly, moving beyond
+2D TFs immediately poses significant challenges in terms of
+user interfaces and cognitive comprehension.
+
+\item \textbf{}
+
+\end{itemize}
+
 \subsection{Segmentation}
 
 \subsection{Deformations}

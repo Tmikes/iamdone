@@ -141,7 +141,7 @@ To generate oblique slices using 3D texturing, one only has to calculate the ver
 \end{figure}
 
 \subsubsection{Raycasting}
-Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps:
+Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
 \begin{itemize}
 
 \item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
@@ -164,9 +164,64 @@ Volume raycasting computes a 2D image from the 3D volumetric data set.The basic 
 
 \subsection{Surface-fitting}
 
+
 \section{Occlusion management strategies}
 
+
+
 \subsection{Transfer Function}
+
+A transfer function (TF) maps volumetric data to optical properties
+and is part of the traditional visualization pipeline: data acquisition,
+processing, visual mapping, and rendering. Volumetric data is
+considered to be a scalar function from a three-dimensional spatial
+domain with a one-dimensional range (e.g., density, flow magnitude,
+etc.). Image generation involves mapping data samples through the
+TF, where they are given optical properties such as color and opacity,
+and compositing them into the image.
+A TF simultaneously defines which parts of the data are essential
+to depict and  how to depict these, often small, portions
+of the volumetric data. Considering the first step, a TF is a special,
+but important, case of a segmentation or classification. With classifi-
+cation, certain regions in a three-dimensional domain are identified
+to belong to the same material, such as bone, vessel, or soft tissue,
+in medical imaging. A plethora of classification and segmentation
+algorithms have been developed over the last decades, with semiautomatic
+approaches often tailored to specific application scenarios.
+Segmentation algorithms can be quite intricate since information
+from the three-dimensional spatial domain and the one-dimensional
+data range are taken into account. TFs in their basic form are, on the
+other hand, restricted to using only the data ranges. In comparison
+with general classification algorithms, this characteristic makes a
+TF less powerful with respect to identifying relevant parts of the
+data. The advantage of a TF is, however, a substantial performance
+gain as classification based on the one-dimensional data range reduces
+the complexity tremendously. This gain is the result of the
+three-dimensional domain being typically two orders of magnitude
+larger than the small data range. Histograms are an example of discarding
+potentially complex spatial information and aggregating
+only the data values to binned-frequency information. In the same
+spirit, TFs classify interesting parts of the data by considering data
+values alone. The second functionality of a TF deals with specifying
+optical properties for portions of the data range previously identified
+as being relevant
+
+The transfer functions can be classified according to different criteria.
+\begin{itemize}
+\item \textbf{The dimension: } The one-dimensional TF classifies the scalar data value, $d$, and subsequently maps the material to an optical property for rendering: $ \textbf{q}(d)=\textbf{V}(\textbf{M}(d))$ where $\textbf{M}(.)$ is the material classification function and $\textbf{V}(.)$ is the
+visual mapping of the material. One-dimensional TFs are adequate in many cases of simulation data where measurement noise is low or even non-existent where different materials of interest have few overlapping intensity
+ranges \cite{4303986}. One-dimensional TFs are often the first tool available in software packages providing volume rendering, as they are relatively easy to comprehend for the novice or occasional user. Practically all production
+visualization software, such as ParaView by \cite{paraview},
+ VisIt by \cite{Childs:SciDAC2011}, 
+or ImageVis3D by {\cite{Fogal2010Tuvok}}, support 1D TF editors.
+
+Multidimensional TFs are used for Multidimensional data. If the user has to manipulate the TF definition directly, moving beyond
+2D TFs immediately poses significant challenges in terms of
+user interfaces and cognitive comprehension.
+
+\item \textbf{}
+
+\end{itemize}
 
 \subsection{Segmentation}
 
