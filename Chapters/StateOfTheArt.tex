@@ -206,7 +206,8 @@ values alone. The second functionality of a TF deals with specifying
 optical properties for portions of the data range previously identified
 as being relevant
 
-The transfer functions can be classified according to different criteria.
+The transfer functions can be classified according to different criteria. Some of the most important are:
+
 \begin{itemize}
 \item \textbf{The dimension: } The one-dimensional TF classifies the scalar data value, $d$, and subsequently maps the material to an optical property for rendering: $ \textbf{q}(d)=\textbf{V}(\textbf{M}(d))$ where $\textbf{M}(.)$ is the material classification function and $\textbf{V}(.)$ is the
 visual mapping of the material. One-dimensional TFs are adequate in many cases of simulation data where measurement noise is low or even non-existent where different materials of interest have few overlapping intensity
@@ -215,17 +216,51 @@ visualization software, such as ParaView by \cite{paraview},
  VisIt by \cite{Childs:SciDAC2011}, 
 or ImageVis3D by {\cite{Fogal2010Tuvok}}, support 1D TF editors.
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/2dtf}
+\decoRule
+\caption[2D transfer Function]{ The two-dimensional TF editor widgets allow the user
+to more precisely control the classification power of the 2D TF.
+The triangular widget can also be skewed to better fit the desired
+classification domain (\cite{1021579}) }
+\label{fig:tf2d}
+\end{figure}
+
 Multidimensional TFs are used for Multidimensional data. If the user has to manipulate the TF definition directly, moving beyond
 2D TFs immediately poses significant challenges in terms of
-user interfaces and cognitive comprehension.
+user interfaces and cognitive comprehension (\cite{1021579}). Much research and
+work on Multidimensional TFs is, therefore, related to various forms of automation
+and advanced user interfaces. Typical approaches include dimensional reduction, clustering
+and grouping, machine learning, and various user interface
+approaches such as parallel coordinates by \cite{5742368} or direct slice or volume
+view interaction. 
 
-\item \textbf{}
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/mdtf}
+\decoRule
+\caption[Multidimensional transfer Function]{ Parallel coordinates with embedded multidimensional scale plots for editing multidimensional TFs(\cite{5742368}) }
+\label{fig:tfmd}
+\end{figure}
+
+
+\item \textbf{The automation}: The automation includes techniques such as adapting presets, semi-automatic, automatic, and supervised machine learning. Volume rendering has established itself as
+a powerful visualization tool in many domains, but the necessary
+design of TFs is a time consuming and tedious task. Consequently,
+a significant amount of work is dedicated to the automatic and semiautomatic generation of TFs. 
+
+\item \textbf{The aggregated attributes} : Conceptually, the introduction of additional quantities in the TF definition makes it possible to discriminate more parts in a dataset. Histogram clustering helps to reduce the degrees of freedom in designing a TF. As an illustration, \cite{5887324} propose modeling the
+histogram space using a Gaussian mixture model. An elliptical TF
+is assigned to each Gaussian, and the user interaction is simplified in order to edit the parameters of these ellipsoids.  
 
 \end{itemize}
 
 \subsection{Segmentation}
 
 \subsection{Deformations}
+
+\subsection{Focus + Context}
 
 \section{Volume rendering in Virtual Reality and Augmented Reality}
 
