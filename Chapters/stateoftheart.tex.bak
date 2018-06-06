@@ -206,7 +206,8 @@ values alone. The second functionality of a TF deals with specifying
 optical properties for portions of the data range previously identified
 as being relevant
 
-The transfer functions can be classified according to different criteria.
+The transfer functions can be classified according to different criteria. Some of the most important are:
+
 \begin{itemize}
 \item \textbf{The dimension: } The one-dimensional TF classifies the scalar data value, $d$, and subsequently maps the material to an optical property for rendering: $ \textbf{q}(d)=\textbf{V}(\textbf{M}(d))$ where $\textbf{M}(.)$ is the material classification function and $\textbf{V}(.)$ is the
 visual mapping of the material. One-dimensional TFs are adequate in many cases of simulation data where measurement noise is low or even non-existent where different materials of interest have few overlapping intensity
@@ -215,17 +216,75 @@ visualization software, such as ParaView by \cite{paraview},
  VisIt by \cite{Childs:SciDAC2011}, 
 or ImageVis3D by {\cite{Fogal2010Tuvok}}, support 1D TF editors.
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/2dtf}
+\decoRule
+\caption[2D transfer Function]{ The two-dimensional TF editor widgets allow the user
+to more precisely control the classification power of the 2D TF.
+The triangular widget can also be skewed to better fit the desired
+classification domain (\cite{1021579}) }
+\label{fig:tf2d}
+\end{figure}
+
 Multidimensional TFs are used for Multidimensional data. If the user has to manipulate the TF definition directly, moving beyond
 2D TFs immediately poses significant challenges in terms of
-user interfaces and cognitive comprehension.
+user interfaces and cognitive comprehension (\cite{1021579}). Much research and
+work on Multidimensional TFs is, therefore, related to various forms of automation
+and advanced user interfaces. Typical approaches include dimensional reduction, clustering
+and grouping, machine learning, and various user interface
+approaches such as parallel coordinates by \cite{5742368} or direct slice or volume
+view interaction. 
 
-\item \textbf{}
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/mdtf}
+\decoRule
+\caption[Multidimensional transfer Function]{ Parallel coordinates with embedded multidimensional scale plots for editing multidimensional TFs(\cite{5742368}) }
+\label{fig:tfmd}
+\end{figure}
+
+
+\item \textbf{The automation}: The automation includes techniques such as adapting presets, semi-automatic, automatic, and supervised machine learning. Volume rendering has established itself as
+a powerful visualization tool in many domains, but the necessary
+design of TFs is a time consuming and tedious task. Consequently,
+a significant amount of work is dedicated to the automatic and semiautomatic generation of TFs. 
+
+\item \textbf{The aggregated attributes} : Conceptually, the introduction of additional quantities in the TF definition makes it possible to discriminate more parts in a dataset. Histogram clustering helps to reduce the degrees of freedom in designing a TF. As an illustration, \cite{5887324} propose modeling the
+histogram space using a Gaussian mixture model. An elliptical TF
+is assigned to each Gaussian, and the user interaction is simplified in order to edit the parameters of these ellipsoids.  
 
 \end{itemize}
 
 \subsection{Segmentation}
 
-\subsection{Deformations}
+\subsection{Deformations and Focus + Context}
+
+An interactive lens is a lightweight tool to solve a localized visualization problems by temporarily altering a selected part of the visual representation of the data~\cite{CGF:CGF12871}. Using this lens approach, we propose an interactive volume deformation based on GPU accelerated ray-casting to free a designated target from local occlusion while keeping the global context.
+
+A lens is a parameterizable selection according to which a base visualization is altered. Typically, a lens is added to a visualization to interactively solve a specific localized problem. This property is very interesting with the aim of providing a focus+context solution to occlusion in volume rendering. Lenses can have different geometric properties not only defining their appearance, but also determining the selection, which is the subset of the data where these lenses take effect. The major geometric properties of a lens are shape, position, and size as well as the orientation.
+The shape of a lens is usually chosen to fulfill the requirements of the application and is strongly linked to the lens function. Most virtual lenses are circular~\cite{1648236} or are rectangular~\cite{Kincaid:2010:SFA:1907651.1907963} as the real-world ones (magnifying glass, windows). Our lens has also a circular shape in order to remind its magnifying property. Some lenses, such as the  JellyLens~\cite{Pindat:2012:JCA:2380116.2380150} and the smart lenses~\cite{Thiede2008} can adapt their shape automatically according to the data. 
+The position and the size parametrization can increase the flexibility of an interactive lens.
+Modifying this position or size will set its focus on a different part of the data according to the user's interest. It is possible to update automatically these parameters in order to guide the user toward interesting events in the data~\cite{Tominski:2011:ECU:2336207.2336211}, or adjust the lens position according to predefined paths as the Routelens~\cite{Alvina:2014:RER:2598153.2598200} does. With this mind, our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest. 
+
+Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. Wang et al. addressed these issues by proposing the Magic Lens~\cite{1532818}. This Magic Lens renders the obstructions with higher transparency and magnifies volumetric pre-computed features interactively or automatically in a pre-segmented dataset. In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. Tong et al. proposed the GlyphLens~\cite{7539643} that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/explodedview}
+\decoRule
+\caption[ Interactive exploded-view]{ Interactive exploded-view illustration of a human head with increasing degrees-of-explosion. Two hinge joints are used to constrain part
+movement}
+\label{fig:exploded}
+\end{figure}
+
+Hsu et al. developed a framework that can generate non-linear sampling rays that smoothly project objects in a scene at multiple levels of detail onto a single image~\cite{Hsu:2011:RFM:2070781.2024165}. Such a technique requires a lot of computational time to render a single image from features of interest at different scales.
+  Bruckner and  Groller~\cite{4015467} proposed exploded view for volume data by partitioning the volume into several segments \ref{fig:exploded}, while Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
+ 
+ 
+Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. Some studies performed deformations using surgical metaphors ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume, but they do not offer tools for local manipulation of the point of view which allows perceiving a target under a different perspective while keeping the global context.
+
 
 \section{Volume rendering in Virtual Reality and Augmented Reality}
 
