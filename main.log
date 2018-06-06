@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  24 MAY 2018 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  25 MAY 2018 15:22
 entering extended mode
 **./main.tex
 (main.tex
@@ -1980,6 +1980,16 @@ Package biblatex Info: ... file 'main.bbl' found.
 (main.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Alvina:2014:RER:2598153.2598200':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '4015467':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Childs:SciDAC2011':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1995,12 +2005,47 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '4069230':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with '1021579':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with '4303986':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '1250400':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Pindat:2012:JCA:2380116.2380150':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '1648236':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '7539643':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '7332955':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '1532818':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -2297,113 +2342,113 @@ Package pdftex.def Info: Figures/mdtf.png  used on input line 241. on input lin
 e 241.
 Package pdftex.def Info: Requested size: 404.02908pt x 94.41565pt on input line
  241.
- [9 <./Figures/2dtf.png>]
+ [9 <./Figures/2dtf.png>] [10 <./Figures/mdtf.png>]
 
-LaTeX Warning: Citation 'ljung_full_2006' on page 10 undefined on input line 26
-9.
-
-
-LaTeX Warning: Citation 'carr_computing_2000' on page 10 undefined on input lin
-e 272.
+LaTeX Warning: Citation 'ljung_full_2006' on page 11 undefined on input line 28
+4.
 
 
-LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 10 undefined o
-n input line 272.
+LaTeX Warning: Citation 'carr_computing_2000' on page 11 undefined on input lin
+e 287.
 
 
-LaTeX Warning: Citation 'guo_local_2013' on page 10 undefined on input line 272
+LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 11 undefined o
+n input line 287.
+
+
+LaTeX Warning: Citation 'guo_local_2013' on page 11 undefined on input line 287
 .
 
 
-LaTeX Warning: Citation 'chen_3-d_2000' on page 10 undefined on input line 272.
+LaTeX Warning: Citation 'chen_3-d_2000' on page 11 undefined on input line 287.
 
 
 
-LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 10 undefined on i
-nput line 273.
+LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 11 undefined on i
+nput line 288.
 
 
-LaTeX Warning: Citation 'correa_size-based_2008' on page 10 undefined on input 
-line 273.
+LaTeX Warning: Citation 'correa_size-based_2008' on page 11 undefined on input 
+line 288.
 
 
-LaTeX Warning: Citation 'sereda_visualization_2006' on page 10 undefined on inp
-ut line 273.
+LaTeX Warning: Citation 'sereda_visualization_2006' on page 11 undefined on inp
+ut line 288.
 
 
-LaTeX Warning: Citation 'patel_moment_2009' on page 10 undefined on input line 
-273.
+LaTeX Warning: Citation 'patel_moment_2009' on page 11 undefined on input line 
+288.
 
 
-LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 10 undefined on input line 2
-73.
+LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 11 undefined on input line 2
+88.
 
 
-LaTeX Warning: Citation 'tversky_animation:_2002' on page 10 undefined on input
- line 273.
+LaTeX Warning: Citation 'tversky_animation:_2002' on page 11 undefined on input
+ line 288.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 10 undefined on input
- line 274.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 11 undefined on input
+ line 289.
 
 
-LaTeX Warning: Citation 'sainz_point-based_2004' on page 10 undefined on input 
-line 274.
+LaTeX Warning: Citation 'sainz_point-based_2004' on page 11 undefined on input 
+line 289.
 
 
-LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 10 undefined on in
-put line 274.
+LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 11 undefined on in
+put line 289.
 
 
-LaTeX Warning: Citation 'elmqvist_color_2011' on page 10 undefined on input lin
-e 274.
+LaTeX Warning: Citation 'elmqvist_color_2011' on page 11 undefined on input lin
+e 289.
 
 
-LaTeX Warning: Citation 'hurter_moleview:_2011' on page 10 undefined on input l
-ine 274.
+LaTeX Warning: Citation 'hurter_moleview:_2011' on page 11 undefined on input l
+ine 289.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 10 undefined on input
- line 274.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 11 undefined on input
+ line 289.
 
 )
-Overfull \hbox (51.04758pt too wide) in paragraph at lines 271--288
+Overfull \hbox (51.04758pt too wide) in paragraph at lines 286--288
 \T1/ppl/m/n/10.95 a set of poly-gons rep-re-sent-ing an iso-surface. The con-to
 ur tree al-go-rithm  []
  []
 
 
-Overfull \hbox (8.0259pt too wide) in paragraph at lines 271--288
+Overfull \hbox (8.0259pt too wide) in paragraph at lines 286--288
 \T1/ppl/m/n/10.95 and other al-ter-na-tives such as branch de-com-po-si-tion  [
 ]
  []
 
 
-Overfull \hbox (27.22226pt too wide) in paragraph at lines 271--288
+Overfull \hbox (27.22226pt too wide) in paragraph at lines 286--288
 []  [] \T1/ppl/m/n/10.95 or user in-ter-ac-tions  [].
  []
 
 
-Overfull \hbox (6.63371pt too wide) in paragraph at lines 271--288
+Overfull \hbox (6.63371pt too wide) in paragraph at lines 286--288
 \T1/ppl/m/n/10.95 in-ter-ac-tion tech-niques with suf-fi-cient ab-strac-tion le
 vel re-gard-ing tech-ni-cal con-straints.
  []
 
-[10 <./Figures/mdtf.png>] [11]
+[11] [12]
 \openout2 = `Chapters/Chapter1.aux'.
 
- (Chapters/Chapter1.tex [12
-
-
-
-]
+ (Chapters/Chapter1.tex
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 1: section
-[13]
+[13
+
+
+
+]
 Overfull \hbox (12.15245pt too wide) in paragraph at lines 72--74
 \T1/ppl/m/n/10.95 site, here: [][]$\T1/cmtt/m/n/10.95 http : / / www . ecs . so
 ton . ac . uk / ~srg / softwaretools / document / templates/$[][] 
@@ -2420,7 +2465,7 @@ tclass
  []
 
 [18] [19]
-<Figures/Electron.pdf, id=547, pagebox=cropbox, 398.3386pt x 284.52756pt>
+<Figures/Electron.pdf, id=579, pagebox=cropbox, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf  used on input line 262. on input
@@ -2455,21 +2500,22 @@ Appendix A.
 
 
 ]
+1: section
+[25]
 Overfull \hbox (9.1917pt too wide) in paragraph at lines 313--313
 \T1/ppl/m/n/10.95 Model. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-tions on Vi-su-a
 l-iza-tion and Com-puter Graph-ics \T1/ppl/m/n/10.95 17.11, pp. 1560
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
-1: section
-[25]
+[26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
  (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
 (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 301B2421D572C0289AA7ED3D5266DF5C;7232.
+(rerunfilecheck)             Checksum: 052D9051A5CB72590CCBE44C9B600A54;7293.
 
 
 LaTeX Warning: There were undefined references.
@@ -2484,10 +2530,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36551 strings out of 493312
- 726064 string characters out of 3138899
- 961638 words of memory out of 3000000
- 39542 multiletter control sequences out of 15000+200000
+ 36678 strings out of 493312
+ 733477 string characters out of 3138899
+ 981069 words of memory out of 3000000
+ 39652 multiletter control sequences out of 15000+200000
  609184 words of font info for 171 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,1250b,2422s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2506,9 +2552,9 @@ fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (49 pages, 2631347 bytes).
+Output written on main.pdf (50 pages, 2654990 bytes).
 PDF statistics:
- 873 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
+ 950 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

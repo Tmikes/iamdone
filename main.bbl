@@ -17,6 +17,64 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{Alvina:2014:RER:2598153.2598200}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=AJ}{%
+         family={Alvina},
+         familyi={A\bibinitperiod},
+         given={Jessalyn},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Appert},
+         familyi={A\bibinitperiod},
+         given={Caroline},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Chapuis},
+         familyi={C\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Pietriga},
+         familyi={P\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{focus+context, map, route, steering law}
+    \strng{namehash}{AJ+1}
+    \strng{fullhash}{AJACCOPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Proceedings of the 2014 International Working Conference
+  on Advanced Visual Interfaces}
+    \verb{doi}
+    \verb 10.1145/2598153.2598200
+    \endverb
+    \field{isbn}{978-1-4503-2775-6}
+    \field{pages}{125\bibrangedash 128}
+    \field{series}{AVI '14}
+    \field{title}{RouteLens: Easy Route Following for Map Applications}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2598153.2598200
+    \endverb
+    \list{location}{1}{%
+      {Como, Italy}%
+    }
+    \field{year}{2014}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{Reference3}{article}{}
     \name{author}{4}{}{%
       {{hash=AAS}{%
@@ -99,6 +157,53 @@
       {USA}%
     }
     \field{year}{2015}
+  \endentry
+
+  \entry{4015467}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={Bruckner},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GME}{%
+         family={Groller},
+         familyi={G\bibinitperiod},
+         given={M.\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;hidden feature removal;rendering (computer
+  graphics);GPU-based volume ray casting algorithm;context information;exploded
+  views;force-based model;occlusion;view-dependent explosion;volume
+  data;Casting;Computer graphics;Data visualization;Explosions;Force
+  control;Geometry;Rendering (computer graphics);Tomography;exploded
+  views;illustrative visualization;volume rendering;Algorithms;Anatomy,
+  Cross-Sectional;Computer Graphics;Computer Simulation;Computer-Assisted
+  Instruction;Humans;Image Enhancement;Image Interpretation,
+  Computer-Assisted;Imaging, Three-Dimensional;Information Storage and
+  Retrieval;Models, Anatomic;User-Computer Interface}
+    \strng{namehash}{BSGME1}
+    \strng{fullhash}{BSGME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1109/TVCG.2006.140
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{1077\bibrangedash 1084}
+    \field{title}{Exploded Views for Volume Data}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Childs:SciDAC2011}{inproceedings}{}
@@ -254,6 +359,117 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Correa:2007:IDD:1313046.1313163}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CC}{%
+         family={Correa},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={Debora},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Mi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Educational Activities Department}%
+    }
+    \keyw{Volume deformation, Volume deformation, focus+context visualization,
+  interaction techniques, focus+context visualization, interaction techniques}
+    \strng{namehash}{CCSDCM1}
+    \strng{fullhash}{CCSDCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/TVCG.2007.70565
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{6}
+    \field{pages}{1320\bibrangedash 1327}
+    \field{title}{Illustrative Deformation for Data Exploration}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/TVCG.2007.70565
+    \endverb
+    \field{volume}{13}
+    \list{location}{1}{%
+      {Piscataway, NJ, USA}%
+    }
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{month}{11}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Correa:2006:FAV:1187627.1187827}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CC}{%
+         family={Correa},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={Deborah},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Min},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Educational Activities Department}%
+    }
+    \keyw{GPU computing, Illustrative manipulation, Illustrative visualization,
+  Illustrative visualization, Illustrative manipulation, GPU computing, volume
+  rendering, volume deformation, computer-assisted medical illustration,
+  computer-assisted medical illustration, volume deformation, volume rendering}
+    \strng{namehash}{CCSDCM2}
+    \strng{fullhash}{CCSDCM2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/TVCG.2006.144
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{1069\bibrangedash 1076}
+    \field{title}{Feature Aligned Volume Manipulation for Illustration and
+  Visualization}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/TVCG.2006.144
+    \endverb
+    \field{volume}{12}
+    \list{location}{1}{%
+      {Piscataway, NJ, USA}%
+    }
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{month}{09}
+    \field{year}{2006}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%
@@ -387,6 +603,160 @@
     \field{year}{2001}
   \endentry
 
+  \entry{Hsu:2011:RFM:2070781.2024165}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HWH}{%
+         family={Hsu},
+         familyi={H\bibinitperiod},
+         given={Wei-Hsien},
+         giveni={W\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=MKL}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Kwan-Liu},
+         giveni={K\bibinitperiod-L\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Correa},
+         familyi={C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{camera model, levels of detail, multiscale views, visualization}
+    \strng{namehash}{HWHMKLCC1}
+    \strng{fullhash}{HWHMKLCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1145/2070781.2024165
+    \endverb
+    \field{issn}{0730-0301}
+    \field{number}{6}
+    \field{pages}{131:1\bibrangedash 131:10}
+    \field{title}{A Rendering Framework for Multiscale Views of 3D Models}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2070781.2024165
+    \endverb
+    \field{volume}{30}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{ACM Trans. Graph.}
+    \field{month}{12}
+    \field{year}{2011}
+  \endentry
+
+  \entry{4069230}{article}{}
+    \name{author}{3}{}{%
+      {{hash=IS}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{computer animation;graph theory;image texture;rendering (computer
+  graphics);solid modelling;constructive volume geometry;discrete
+  specifications;explicit splitting;explosion effect;fire effect;implicit
+  splitting;medical illustration;object hypertexture;procedural
+  specifications;spatial specification;spatial transfer function;special
+  effects;temporal specification;volume animation;volume graphics;volume scene
+  graph;volume visualization;volume-based modeling;volume-based
+  rendering;volumetric object splitting;Animation;Biomedical imaging;Data
+  visualization;Explosions;Focusing;Graphics;Layout;Rendering (computer
+  graphics);Silver;Surgery;Volume graphics;constructive volume
+  geometry;explosion effect.;fire effect;medical illustration;spatial transfer
+  function;volume animation;volume splitting;volume visualization;volumetric
+  scene graph;Algorithms;Computer Graphics;Image Enhancement;Image
+  Interpretation, Computer-Assisted;Imaging, Three-Dimensional;Information
+  Storage and Retrieval;Numerical Analysis, Computer-Assisted;Reproducibility
+  of Results;Sensitivity and Specificity;Signal Processing, Computer-Assisted}
+    \strng{namehash}{ISSDCM1}
+    \strng{fullhash}{ISSDCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.1109/TVCG.2007.48
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{2}
+    \field{pages}{193\bibrangedash 203}
+    \field{title}{Volume Splitting and Its Applications}
+    \field{volume}{13}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kincaid:2010:SFA:1907651.1907963}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KR}{%
+         family={Kincaid},
+         familyi={K\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Educational Activities Department}%
+    }
+    \keyw{Electronic Signal, Focus+Context, Focus+Context, Lens, Test and
+  Measurement, Electronic Signal, Signal Processing, Lens, Signal Processing,
+  Test and Measurement}
+    \strng{namehash}{KR1}
+    \strng{fullhash}{KR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1109/TVCG.2010.193
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{6}
+    \field{pages}{900\bibrangedash 907}
+    \field{title}{SignalLens: Focus+Context Applied to Electronic Time Series}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/TVCG.2010.193
+    \endverb
+    \field{volume}{16}
+    \list{location}{1}{%
+      {Piscataway, NJ, USA}%
+    }
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{month}{11}
+    \field{year}{2010}
+  \endentry
+
   \entry{1021579}{article}{}
     \name{author}{3}{}{%
       {{hash=KJ}{%
@@ -501,6 +871,514 @@
     \field{title}{Classification for Volume Rendering of Industrial CT Based on
   Minimum Cross Entropy}
     \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{1250400}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MMJ}{%
+         family={McGuffin},
+         familyi={M\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tancau},
+         familyi={T\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Balakrishnan},
+         familyi={B\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;graphical user interfaces;rendering (computer
+  graphics);solid modelling;3D widgets;image deformation;interaction
+  techniques;pop-up menu;semantic layers;spatial data;volumetric data
+  browsing;Bones;Chromium;Computer graphics;Computer science;Cutting tools;Data
+  visualization;Feedback;Humans;Muscles;Skin}
+    \strng{namehash}{MMJTLBR1}
+    \strng{fullhash}{MMJTLBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{IEEE Visualization, 2003. VIS 2003.}
+    \verb{doi}
+    \verb 10.1109/VISUAL.2003.1250400
+    \endverb
+    \field{pages}{401\bibrangedash 408}
+    \field{title}{Using deformations for browsing volumetric data}
+    \field{year}{2003}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Pindat:2012:JCA:2380116.2380150}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=PC}{%
+         family={Pindat},
+         familyi={P\bibinitperiod},
+         given={Cyprien},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Pietriga},
+         familyi={P\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Chapuis},
+         familyi={C\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Puech},
+         familyi={P\bibinitperiod},
+         given={Claude},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{focus+context, lenses, multi-scale interfaces}
+    \strng{namehash}{PC+1}
+    \strng{fullhash}{PCPECOPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proceedings of the 25th Annual ACM Symposium on User
+  Interface Software and Technology}
+    \verb{doi}
+    \verb 10.1145/2380116.2380150
+    \endverb
+    \field{isbn}{978-1-4503-1580-7}
+    \field{pages}{261\bibrangedash 270}
+    \field{series}{UIST '12}
+    \field{title}{JellyLens: Content-aware Adaptive Lenses}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2380116.2380150
+    \endverb
+    \list{location}{1}{%
+      {Cambridge, Massachusetts, USA}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Thiede2008}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=TC}{%
+         family={Thiede},
+         familyi={T\bibinitperiod},
+         given={Conrad},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fuchs},
+         familyi={F\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schumann},
+         familyi={S\bibinitperiod},
+         given={Heidrun},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BA}{%
+         family={Butz},
+         familyi={B\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FB}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kr{\"u}ger},
+         familyi={K\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OP}{%
+         family={Olivier},
+         familyi={O\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Christie},
+         familyi={C\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \strng{namehash}{TCFGSH1}
+    \strng{fullhash}{TCFGSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Smart Graphics: 9th International Symposium, SG 2008,
+  Rennes, France, August 27-29, 2008. Proceedings}
+    \verb{doi}
+    \verb 10.1007/978-3-540-85412-8_16
+    \endverb
+    \field{isbn}{978-3-540-85412-8}
+    \field{pages}{178\bibrangedash 189}
+    \field{title}{Smart Lenses}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/978-3-540-85412-8_16
+    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{1648236}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=TC}{%
+         family={Tominski},
+         familyi={T\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Abello},
+         familyi={A\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=vHF}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Ham},
+         familyi={H\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schumann},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;graph theory;tree data structures;clustered
+  graphs;composite lenses;fisheye distortion;fisheye tree
+  views;focus+context;graph layouts;graph visualization;hierarchy trees;local
+  graph information;overview+detail;Classification tree analysis;Computer
+  displays;File systems;Lenses;Navigation;Random access memory;Tree
+  graphs;Visualization}
+    \strng{namehash}{TC+1}
+    \strng{fullhash}{TCAJHFvSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Tenth International Conference on Information
+  Visualisation (IV'06)}
+    \verb{doi}
+    \verb 10.1109/IV.2006.54
+    \endverb
+    \field{issn}{1550-6037}
+    \field{pages}{17\bibrangedash 24}
+    \field{title}{Fisheye Tree Views and Lenses for Graph Visualization}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{CGF:CGF12871}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TC}{%
+         family={Tominski},
+         familyi={T\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gladisch},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KU}{%
+         family={Kister},
+         familyi={K\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dachselt},
+         familyi={D\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schumann},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{Visualization, interaction, magic lenses, H.5.2 [Information
+  Interfaces and Presentation]: User Interfaces–Interaction Styles}
+    \strng{namehash}{TC+1}
+    \strng{fullhash}{TCGSKUDRSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1111/cgf.12871
+    \endverb
+    \field{issn}{1467-8659}
+    \field{pages}{n/a\bibrangedash n/a}
+    \field{title}{Interactive Lenses for Visualization: An Extended Survey}
+    \verb{url}
+    \verb http://dx.doi.org/10.1111/cgf.12871
+    \endverb
+    \field{journaltitle}{Computer Graphics Forum}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Tominski:2011:ECU:2336207.2336211}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TC}{%
+         family={Tominski},
+         familyi={T\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Palgrave Macmillan}%
+    }
+    \keyw{event, user, visualization}
+    \strng{namehash}{TC1}
+    \strng{fullhash}{TC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1057/ivs.2009.32
+    \endverb
+    \field{issn}{1473-8716}
+    \field{number}{1}
+    \field{pages}{65\bibrangedash 81}
+    \field{title}{Event-based Concepts for User-driven Visualization}
+    \verb{url}
+    \verb http://dx.doi.org/10.1057/ivs.2009.32
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Information Visualization}
+    \field{month}{01}
+    \field{year}{2011}
+  \endentry
+
+  \entry{7539643}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TX}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SHW}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={H.\bibnamedelima W.},
+         giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;interactive systems;solid modelling;2D surface;3D
+  spatial structure;3D volumetric dataset;GlyphLens;context
+  information;display-interaction techniques;feature surface;interactive glyph
+  visualization;lens shape models;multivariate visualization technique;slicing
+  plane;space deformation models;spatial distributions;user-interested
+  region;view-dependent interactive 3D lens;view-dependent occlusion
+  management;visual channels;Context;Data
+  visualization;Lenses;Probes;Shape;Three-dimensional
+  displays;Visualization;View-dependent visualization;focus + context
+  techniques;glyph-based techniques;human-computer interaction;manipulation and
+  deformation}
+    \strng{namehash}{TXLCSHW1}
+    \strng{fullhash}{TXLCSHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1109/TVCG.2016.2599049
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{1}
+    \field{pages}{891\bibrangedash 900}
+    \field{title}{GlyphLens: View-Dependent Occlusion Management in the
+  Interactive Glyph Visualization}
+    \field{volume}{23}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{7332955}{article}{}
+    \name{author}{6}{}{%
+      {{hash=TX}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Edwards},
+         familyi={E\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CCM}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={C.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SHW}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={H.\bibnamedelima W.},
+         giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=JCR}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={C.\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=WPC}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={P.\bibnamedelima C.},
+         giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;flow visualisation;interactive
+  systems;tensors;vectors;3D flow visualization;3D vector;customized
+  view-dependent deformation algorithm;direct-touch interactions;interactive
+  visualization tool;lens metaphor;mouse interactions;occluded
+  structures;streamline visualization;tensor field visualization;view-dependent
+  streamline deformation;view-dependent streamline exploration;visual
+  clutter;Context;Deformable models;Lenses;Shape;Streaming
+  media;Three-dimensional displays;Visualization;Flow
+  visualization;deformation;focus+context;occlusion;streamline;white matter
+  tracts}
+    \strng{namehash}{TX+1}
+    \strng{fullhash}{TXEJCCMSHWJCRWPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1109/TVCG.2015.2502583
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{7}
+    \field{pages}{1788\bibrangedash 1801}
+    \field{title}{View-Dependent Streamline Deformation and Exploration}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{1532818}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mueller},
+         familyi={M\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kaufman},
+         familyi={K\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{image resolution;image segmentation;lenses;rendering (computer
+  graphics);hardware-assisted volume rendering;interactive focus-context
+  technique;magic volume lens;resolution-important feature;Computer
+  displays;Computer graphics;Focusing;Humans;Image generation;Large screen
+  displays;Lenses;Navigation;Rendering (computer graphics);Retina}
+    \strng{namehash}{WL+1}
+    \strng{fullhash}{WLZYMKKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{VIS 05. IEEE Visualization, 2005.}
+    \verb{doi}
+    \verb 10.1109/VISUAL.2005.1532818
+    \endverb
+    \field{pages}{367\bibrangedash 374}
+    \field{title}{The magic volume lens: an interactive focus+context technique
+  for volume rendering}
+    \field{year}{2005}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
