@@ -297,9 +297,9 @@ E = mc^{2}
 \end{equation}
 
 All equations you write (which are not in the middle of paragraph text) are automatically given equation numbers by \LaTeX{}. If you don't want a particular equation numbered, use the unnumbered form:
-\begin{verbatim}
+%\begin{verbatim}
 \[ a^{2}=4 \]
-\end{verbatim}
+%\end{verbatim}
 
 %----------------------------------------------------------------------------------------
 

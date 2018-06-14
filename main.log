@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  6 JUN 2018 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  14 JUN 2018 09:04
 entering extended mode
 **./main.tex
 (main.tex
@@ -2242,7 +2242,7 @@ Package epstopdf Info: Source file: <Figures/2D_slices.eps>
 rted-to.pdf Figures/2D_slices.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2D_slices-eps-converted-to.pdf, id=380, pagebox=cropbox, 188.705pt x 1
+<Figures/2D_slices-eps-converted-to.pdf, id=382, pagebox=cropbox, 188.705pt x 1
 32.495pt>
 File: Figures/2D_slices-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2D_slices-eps-converted-to.pdf>
@@ -2261,7 +2261,7 @@ Package epstopdf Info: Source file: <Figures/2dtexmapping.eps>
 nverted-to.pdf Figures/2dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2dtexmapping-eps-converted-to.pdf, id=381, pagebox=cropbox, 346.29375p
+<Figures/2dtexmapping-eps-converted-to.pdf, id=383, pagebox=cropbox, 346.29375p
 t x 138.5175pt>
 File: Figures/2dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2dtexmapping-eps-converted-to.pdf>
@@ -2289,7 +2289,7 @@ Package epstopdf Info: Source file: <Figures/3dtexmapping.eps>
 nverted-to.pdf Figures/3dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/3dtexmapping-eps-converted-to.pdf, id=397, pagebox=cropbox, 389.455pt 
+<Figures/3dtexmapping-eps-converted-to.pdf, id=399, pagebox=cropbox, 389.455pt 
 x 175.65625pt>
 File: Figures/3dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/3dtexmapping-eps-converted-to.pdf>
@@ -2308,7 +2308,7 @@ Package epstopdf Info: Source file: <Figures/cubeSlice.eps>
 rted-to.pdf Figures/cubeSlice.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/cubeSlice-eps-converted-to.pdf, id=414, pagebox=cropbox, 283.0575pt x 
+<Figures/cubeSlice-eps-converted-to.pdf, id=416, pagebox=cropbox, 283.0575pt x 
 184.69pt>
 File: Figures/cubeSlice-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/cubeSlice-eps-converted-to.pdf>
@@ -2318,7 +2318,7 @@ Package pdftex.def Info: Requested size: 283.0568pt x 184.68953pt on input line
  137.
  [6 <./Figures/3dtexmapping-eps-converted-to.pdf> <./Figures/cubeSlice-eps-conv
 erted-to.pdf>]
-<Figures/raycasting.png, id=435, 1150.2975pt x 358.33875pt>
+<Figures/raycasting.png, id=437, 1150.2975pt x 358.33875pt>
 File: Figures/raycasting.png Graphic file (type png)
 <use Figures/raycasting.png>
 Package pdftex.def Info: Figures/raycasting.png  used on input line 159. on inp
@@ -2326,7 +2326,7 @@ ut line 159.
 Package pdftex.def Info: Requested size: 404.02908pt x 125.86333pt on input lin
 e 159.
  [7 <./Figures/raycasting.png>]
-<Figures/2dtf.png, id=447, 537.50812pt x 539.01375pt>
+<Figures/2dtf.png, id=449, 537.50812pt x 539.01375pt>
 File: Figures/2dtf.png Graphic file (type png)
 <use Figures/2dtf.png>
 Package pdftex.def Info: Figures/2dtf.png  used on input line 221. on input lin
@@ -2334,7 +2334,7 @@ e 221.
 Package pdftex.def Info: Requested size: 404.02908pt x 405.16402pt on input lin
 e 221.
  [8]
-<Figures/mdtf.png, id=461, 1662.21pt x 388.45125pt>
+<Figures/mdtf.png, id=463, 1662.21pt x 388.45125pt>
 File: Figures/mdtf.png Graphic file (type png)
 <use Figures/mdtf.png>
 Package pdftex.def Info: Figures/mdtf.png  used on input line 241. on input lin
@@ -2342,107 +2342,119 @@ e 241.
 Package pdftex.def Info: Requested size: 404.02908pt x 94.41565pt on input line
  241.
  [9 <./Figures/2dtf.png>] [10 <./Figures/mdtf.png>]
-<Figures/explodedview.png, id=491, 1961.82938pt x 526.21594pt>
+Overfull \hbox (6.26242pt too wide) in paragraph at lines 280--281
+\T1/ppl/m/n/10.95 con-ti-nu-ity as well as image-space smooth-ness. The mul-ti-
+scale cam-era can also achieve
+ []
+
+<Figures/multiscale3d.png, id=495, 2054.42531pt x 883.04906pt>
+File: Figures/multiscale3d.png Graphic file (type png)
+<use Figures/multiscale3d.png>
+Package pdftex.def Info: Figures/multiscale3d.png  used on input line 284. on i
+nput line 284.
+Package pdftex.def Info: Requested size: 404.02908pt x 173.65582pt on input lin
+e 284.
+[11]
+<Figures/explodedview.png, id=506, 1961.82938pt x 526.21594pt>
 File: Figures/explodedview.png Graphic file (type png)
 <use Figures/explodedview.png>
-Package pdftex.def Info: Figures/explodedview.png  used on input line 275. on i
-nput line 275.
+Package pdftex.def Info: Figures/explodedview.png  used on input line 310. on i
+nput line 310.
 Package pdftex.def Info: Requested size: 404.02908pt x 108.36476pt on input lin
-e 275.
+e 310.
+ [12 <./Figures/multiscale3d.png>]
 
-
-LaTeX Warning: Citation 'ljung_full_2006' on page 11 undefined on input line 29
+LaTeX Warning: Citation 'ljung_full_2006' on page 13 undefined on input line 33
 3.
 
-[11 <./Figures/explodedview.png>]
 
-LaTeX Warning: Citation 'carr_computing_2000' on page 12 undefined on input lin
-e 296.
-
-
-LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 12 undefined o
-n input line 296.
+LaTeX Warning: Citation 'carr_computing_2000' on page 13 undefined on input lin
+e 336.
 
 
-LaTeX Warning: Citation 'guo_local_2013' on page 12 undefined on input line 296
+LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 13 undefined o
+n input line 336.
+
+
+LaTeX Warning: Citation 'guo_local_2013' on page 13 undefined on input line 336
 .
 
 
-LaTeX Warning: Citation 'chen_3-d_2000' on page 12 undefined on input line 296.
+LaTeX Warning: Citation 'chen_3-d_2000' on page 13 undefined on input line 336.
 
 
 
-LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 12 undefined on i
-nput line 297.
+LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 13 undefined on i
+nput line 337.
 
 
-LaTeX Warning: Citation 'correa_size-based_2008' on page 12 undefined on input 
-line 297.
+LaTeX Warning: Citation 'correa_size-based_2008' on page 13 undefined on input 
+line 337.
 
 
-LaTeX Warning: Citation 'sereda_visualization_2006' on page 12 undefined on inp
-ut line 297.
+LaTeX Warning: Citation 'sereda_visualization_2006' on page 13 undefined on inp
+ut line 337.
 
 
-LaTeX Warning: Citation 'patel_moment_2009' on page 12 undefined on input line 
-297.
+LaTeX Warning: Citation 'patel_moment_2009' on page 13 undefined on input line 
+337.
 
 
-LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 12 undefined on input line 2
-97.
+LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 13 undefined on input line 3
+37.
 
 
-LaTeX Warning: Citation 'tversky_animation:_2002' on page 12 undefined on input
- line 297.
+LaTeX Warning: Citation 'tversky_animation:_2002' on page 13 undefined on input
+ line 337.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 12 undefined on input
- line 298.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 13 undefined on input
+ line 338.
 
 
-LaTeX Warning: Citation 'sainz_point-based_2004' on page 12 undefined on input 
-line 298.
+LaTeX Warning: Citation 'sainz_point-based_2004' on page 13 undefined on input 
+line 338.
 
 
-LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 12 undefined on in
-put line 298.
+LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 13 undefined on in
+put line 338.
 
 
-LaTeX Warning: Citation 'elmqvist_color_2011' on page 12 undefined on input lin
-e 298.
+LaTeX Warning: Citation 'elmqvist_color_2011' on page 13 undefined on input lin
+e 338.
 
 
-LaTeX Warning: Citation 'hurter_moleview:_2011' on page 12 undefined on input l
-ine 298.
+LaTeX Warning: Citation 'hurter_moleview:_2011' on page 13 undefined on input l
+ine 338.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 12 undefined on input
- line 298.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 13 undefined on input
+ line 338.
 
 )
-Overfull \hbox (51.04758pt too wide) in paragraph at lines 295--288
+Overfull \hbox (51.04758pt too wide) in paragraph at lines 335--288
 \T1/ppl/m/n/10.95 a set of poly-gons rep-re-sent-ing an iso-surface. The con-to
 ur tree al-go-rithm  []
  []
 
 
-Overfull \hbox (8.0259pt too wide) in paragraph at lines 295--288
+Overfull \hbox (8.0259pt too wide) in paragraph at lines 335--288
 \T1/ppl/m/n/10.95 and other al-ter-na-tives such as branch de-com-po-si-tion  [
 ]
  []
 
 
-Overfull \hbox (27.22226pt too wide) in paragraph at lines 295--288
+Overfull \hbox (27.22226pt too wide) in paragraph at lines 335--288
 []  [] \T1/ppl/m/n/10.95 or user in-ter-ac-tions  [].
  []
 
 
-Overfull \hbox (6.63371pt too wide) in paragraph at lines 295--288
+Overfull \hbox (6.63371pt too wide) in paragraph at lines 335--288
 \T1/ppl/m/n/10.95 in-ter-ac-tion tech-niques with suf-fi-cient ab-strac-tion le
 vel re-gard-ing tech-ni-cal con-straints.
  []
 
-[12]
+[13 <./Figures/explodedview.png>] [14]
 \openout2 = `Chapters/Chapter1.aux'.
 
  (Chapters/Chapter1.tex
@@ -2452,7 +2464,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 1: section
-[13
+[15
 
 
 
@@ -2462,25 +2474,25 @@ Overfull \hbox (12.15245pt too wide) in paragraph at lines 72--74
 ton . ac . uk / ~srg / softwaretools / document / templates/$[][] 
  []
 
-[14] [15]
+[16] [17]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 136.
- [16] [17]
+ [18] [19]
 Overfull \hbox (8.37132pt too wide) in paragraph at lines 180--181
 \T1/ppl/m/n/10.95 sided print-ing is as sim-ple as un-com-ment-ing the \T1/cmtt
 /m/it/10.95 oneside \T1/ppl/m/n/10.95 op-tion of the \T1/cmtt/m/n/10.95 documen
 tclass
  []
 
-[18] [19]
-<Figures/Electron.pdf, id=579, pagebox=cropbox, 398.3386pt x 284.52756pt>
+[20] [21]
+<Figures/Electron.pdf, id=592, pagebox=cropbox, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf  used on input line 262. on input
  line 262.
 Package pdftex.def Info: Requested size: 398.33762pt x 284.52686pt on input lin
 e 262.
- [20 <./Figures/Electron.pdf>]
+ [22 <./Figures/Electron.pdf>]
 Overfull \hbox (0.90797pt too wide) in paragraph at lines 308--309
 \T1/ppl/m/n/10.95 au-to-mat-i-cally builds a ta-ble of Con-tents by look-ing at
  all the [][]\T1/cmtt/m/n/10.95 \chapter{}[]\T1/ppl/m/n/10.95 , [][]\T1/cmtt/m/
@@ -2493,37 +2505,37 @@ Overfull \hbox (0.45015pt too wide) in paragraph at lines 310--311
 hree (3) lev-els. A [][]\T1/cmtt/m/n/10.95 chapter{}
  []
 
-[21]) [22]
+[23]) [24]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (Appendices/AppendixA.tex
 Appendix A.
 )
 1: section
-[23
+[25
 
 
 
-] [24
+] [26
 
 
 ]
 1: section
-[25]
+[27]
 Overfull \hbox (9.1917pt too wide) in paragraph at lines 313--313
 \T1/ppl/m/n/10.95 Model. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-tions on Vi-su-a
 l-iza-tion and Com-puter Graph-ics \T1/ppl/m/n/10.95 17.11, pp. 1560
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
-[26]
+[28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
  (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
 (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 04CE91F4BEB3074AE3E9E22FAAB7B9A0;7204.
+(rerunfilecheck)             Checksum: 907F92F10A2FCAD368A4F1215C3145F3;7204.
 
 
 LaTeX Warning: There were undefined references.
@@ -2538,10 +2550,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35970 strings out of 493312
- 729192 string characters out of 3138893
- 978126 words of memory out of 3000000
- 38941 multiletter control sequences out of 15000+200000
+ 35979 strings out of 493312
+ 729370 string characters out of 3138893
+ 978170 words of memory out of 3000000
+ 38946 multiletter control sequences out of 15000+200000
  607118 words of font info for 169 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10379b,2422s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2560,9 +2572,9 @@ blic/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/
 uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (50 pages, 4584882 bytes).
+Output written on main.pdf (52 pages, 8109587 bytes).
 PDF statistics:
- 950 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 963 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 395 words of extra memory for PDF output out of 10000 (max. 10000000)
 

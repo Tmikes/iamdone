@@ -270,6 +270,41 @@ Modifying this position or size will set its focus on a different part of the da
 Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. Wang et al. addressed these issues by proposing the Magic Lens~\cite{1532818}. This Magic Lens renders the obstructions with higher transparency and magnifies volumetric pre-computed features interactively or automatically in a pre-segmented dataset. In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. Tong et al. proposed the GlyphLens~\cite{7539643} that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
 
 
+
+
+ \cite{Hsu:2011:RFM:2070781.2024165} developed a framework that can generate non-linear sampling rays that smoothly project objects in a scene at multiple levels of detail onto a single image. Such a technique requires a lot of computational time to render a single image from features of interest at different scales, see figure \ref{fig:multiscale}.This  multiscale rendering framework consists of a sequence of pinhole cameras, each of which captures a view of interest at a particular scale. The camera rays for each pixel in the final projected image are generated based on a user-defined image mask which specifies the interesting regions in each view.  The camera rays non-linearly cast through all scales of interest. Since the camera rays in the model are bent coherently and march consistently, the objects projected on the image are continuous in both image-space and object-space. 
+ Their method starts by setting up several pinhole cameras for viewing different scales of interest, utilizing most users’ ease and familiarity with manipulating ordinary pinhole cameras. Each camera produces an image of its view. In order to combine all such views to form a single multiscale image, a user-specified image mask is used to indicate regions of each view that the user would like to show in the final image. In other words, every camera projects only part of its view onto the final image space, based on a corresponding image mask. In order to ensure consistency while projecting different camera
+viewpoints onto different parts of the image, we force all camera rays to originate from the first camera, which is the one that has the largest scale of view. The rest of the cameras define intermediate
+points that camera rays must pass through in order, from the largest to smallest scales. They use B\'ezier curves to connect the nearclipping planes of two successive cameras.
+
+  The rays are bent gradually from one scale to another to maintain object-space continuity as well as image-space smoothness. The multiscale camera can also achieve a focus+context effect, a technique frequently used in many visualization applications. Finally, we show that it can potentially create pictures that mimic artistic or impossible views of objects or scenes like the kind made by the artist M. C. Escher. 
+ 
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/multiscale3d}
+\decoRule
+\caption[ multiscale ]{ A Rendering Framework for Multiscale Views of 3D Models. A continuous multiscale view (right) of a volumetric human body dataset shows three different levels of detail (left three) in a single image. The image on the right is directly rendered with our multiscale framework.}
+\label{fig:multiscale}
+\end{figure} 
+ 
+  Bruckner and  Groller~\cite{4015467} proposed exploded view for volume data by partitioning the volume into several segments (figure \ref{fig:exploded}). Basically, in an exploded view the object is decomposed into several parts which are displaced so that internal details are visible. This does not only give an unobstructed view on the focus but also potentially reveals other interesting information, such as
+cross-sections of the split object. The advantage of exploded views is that they simultaneously convey the global structure of the depicted object, the details of individual components, and the local relationships
+among them. A Force-directed layout approach is used to arrange three-dimensional objects
+in such a way that they do not occlude another object, but with as little displacement as possible. Four forces are used. \textbf{The Return force } is an attractive force that tries to move the parts towards
+their original location. The force $F_r$ is realized as a logarithmic spring:
+ \[ F_r=c_{r}\ln(||r||)\cdot \frac{r}{||r||} \] 
+ where $r$ is the vector from the vertex's current position to its original location and $c_r$ is a constant factor.
+ \textbf{The Explosion force} drives the specified parts away from our selection object. The explosion point is also weighted according to the size of the region corresponding to an octree node. Each explosion point exerts a force $F_e$ on every part $P_i$:
+  \[ F_e=  \frac{c_e}{e^{||r||} } \cdot \frac{r}{||r||} \]
+  where $r$ is the vector from the explosion point to the closest point of the part geometry of $P_i$ and $c_e$ is a scaling factor.
+   \textbf{The Viewing force} is a view-dependent force which attempts to arrange parts so that they do not occlude the selection for the current viewing transformation. The force $F_v$ is:
+   \[ F_v=  \frac{c_v}{||r||} \cdot \frac{r}{||r||} \] 
+   where $r$ is the vector from the closest point along the viewing ray to the center of the body and $c_v$ is a scaling factor.
+   \textbf{The Spacing force} prevents clustering of parts, we also add a
+repulsive force $F_s$. For a part $P_i$, the spacing force exerted by another part $P_j$ is:
+\[ F_s=  \frac{c_s}{||r||^2} \cdot \frac{r}{||r||} \] 
+where $r$ is the vector from the center of $P_j$ to the center of $P_i$ and
+$c_s$ is a constant scaling factor. 
 \begin{figure}[th]
 \centering
 \includegraphics[width=\textwidth]{Figures/explodedview}
@@ -278,12 +313,19 @@ Lenses for volume visualization face challenges mainly related to spatial select
 movement}
 \label{fig:exploded}
 \end{figure}
+  
+  Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
+ 
+ 
+Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. 
 
-Hsu et al. developed a framework that can generate non-linear sampling rays that smoothly project objects in a scene at multiple levels of detail onto a single image~\cite{Hsu:2011:RFM:2070781.2024165}. Such a technique requires a lot of computational time to render a single image from features of interest at different scales.
-  Bruckner and  Groller~\cite{4015467} proposed exploded view for volume data by partitioning the volume into several segments \ref{fig:exploded}, while Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
- 
- 
-Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. Some studies performed deformations using surgical metaphors ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume, but they do not offer tools for local manipulation of the point of view which allows perceiving a target under a different perspective while keeping the global context.
+Some studies performed deformations using surgical metaphors like ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume.
+They propose a feature-based technique for manipulating volumetric objects for illustrative visualization, and describe a GPU-based implementation that enables interactive specification and rendering
+such visualization. Inspired by medical illustrations that frequently depict the results of manipulation with tools such as peelers, retractors and pliers, they allow the specification of manipulation
+through a collection of procedurally-defined manipulation operators.
+
+
+  but they do not offer tools for local manipulation of the point of view which allows perceiving a target under a different perspective while keeping the global context. 
 
 
 \section{Volume rendering in Virtual Reality and Augmented Reality}
