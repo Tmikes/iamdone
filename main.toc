@@ -17,32 +17,32 @@
 \contentsline {subsection}{\numberline {2.2.1}Transfer Function}{8}{subsection.30}
 \contentsline {subsection}{\numberline {2.2.2}Segmentation}{10}{subsection.33}
 \contentsline {subsection}{\numberline {2.2.3}Deformations and Focus + Context}{10}{subsection.34}
-\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{13}{section.37}
-\contentsline {subsection}{\numberline {2.3.1} Remote volume rendering}{13}{subsection.38}
-\contentsline {chapter}{\numberline {3}Chapter Title Here}{15}{chapter.39}
-\contentsline {section}{\numberline {3.1}Welcome and Thank You}{15}{section.40}
-\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{15}{section.41}
-\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{15}{subsection.42}
-\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{16}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{16}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{16}{subsection.45}
-\contentsline {section}{\numberline {3.3}Getting Started with this Template}{16}{section.46}
-\contentsline {subsection}{\numberline {3.3.1}About this Template}{16}{subsection.47}
-\contentsline {section}{\numberline {3.4}What this Template Includes}{17}{section.48}
-\contentsline {subsection}{\numberline {3.4.1}Folders}{17}{subsection.49}
-\contentsline {subsection}{\numberline {3.4.2}Files}{17}{subsection.50}
-\contentsline {section}{\numberline {3.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{18}{section.51}
-\contentsline {section}{\numberline {3.6}The \texttt {main.tex} File Explained}{19}{section.52}
-\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{20}{section.53}
-\contentsline {subsection}{\numberline {3.7.1}Printing Format}{20}{subsection.54}
-\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{20}{subsection.55}
-\contentsline {subsection}{\numberline {3.7.3}References}{20}{subsection.56}
-\contentsline {subsubsection}{A Note on bibtex}{21}{section*.58}
-\contentsline {subsection}{\numberline {3.7.4}Tables}{21}{subsection.59}
-\contentsline {subsection}{\numberline {3.7.5}Figures}{22}{subsection.61}
-\contentsline {subsection}{\numberline {3.7.6}Typesetting mathematics}{23}{subsection.63}
-\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{23}{section.65}
-\contentsline {section}{\numberline {3.9}In Closing}{24}{section.66}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{25}{appendix.67}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{25}{section.68}
-\contentsline {chapter}{Bibliography}{27}{appendix*.69}
+\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{14}{section.39}
+\contentsline {subsection}{\numberline {2.3.1} Remote volume rendering}{14}{subsection.40}
+\contentsline {chapter}{\numberline {3}Chapter Title Here}{17}{chapter.41}
+\contentsline {section}{\numberline {3.1}Welcome and Thank You}{17}{section.42}
+\contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{17}{section.43}
+\contentsline {subsection}{\numberline {3.2.1}A (not so short) Introduction to \LaTeX {}}{17}{subsection.44}
+\contentsline {subsection}{\numberline {3.2.2}A Short Math Guide for \LaTeX {}}{18}{subsection.45}
+\contentsline {subsection}{\numberline {3.2.3}Common \LaTeX {} Math Symbols}{18}{subsection.46}
+\contentsline {subsection}{\numberline {3.2.4}\LaTeX {} on a Mac}{18}{subsection.47}
+\contentsline {section}{\numberline {3.3}Getting Started with this Template}{18}{section.48}
+\contentsline {subsection}{\numberline {3.3.1}About this Template}{18}{subsection.49}
+\contentsline {section}{\numberline {3.4}What this Template Includes}{19}{section.50}
+\contentsline {subsection}{\numberline {3.4.1}Folders}{19}{subsection.51}
+\contentsline {subsection}{\numberline {3.4.2}Files}{19}{subsection.52}
+\contentsline {section}{\numberline {3.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{20}{section.53}
+\contentsline {section}{\numberline {3.6}The \texttt {main.tex} File Explained}{21}{section.54}
+\contentsline {section}{\numberline {3.7}Thesis Features and Conventions}{22}{section.55}
+\contentsline {subsection}{\numberline {3.7.1}Printing Format}{22}{subsection.56}
+\contentsline {subsection}{\numberline {3.7.2}Using US Letter Paper}{22}{subsection.57}
+\contentsline {subsection}{\numberline {3.7.3}References}{22}{subsection.58}
+\contentsline {subsubsection}{A Note on bibtex}{23}{section*.60}
+\contentsline {subsection}{\numberline {3.7.4}Tables}{23}{subsection.61}
+\contentsline {subsection}{\numberline {3.7.5}Figures}{24}{subsection.63}
+\contentsline {subsection}{\numberline {3.7.6}Typesetting mathematics}{25}{subsection.65}
+\contentsline {section}{\numberline {3.8}Sectioning and Subsectioning}{25}{section.67}
+\contentsline {section}{\numberline {3.9}In Closing}{26}{section.68}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{27}{appendix.69}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{27}{section.70}
+\contentsline {chapter}{Bibliography}{29}{appendix*.71}

@@ -49,7 +49,7 @@ dimensions is proportional to the ratio of the dimensions of the
 measured substance or substance being simulated. This may
 involve interpolating between values in adjacent slices to construct
 new slices, replicating existing slices, interpolating to estimate
-missing values, or scan-converting an irregular grid or nonorthogonal
+missing values, or scan-converting an irregular grid or non-orthogonal
 grid onto a Cartesian grid by interpolation. At this point
 three-dimensional enhancement may be applied, such as a slight
 blurring of the data values. Next, a data-classification or
@@ -314,18 +314,64 @@ movement}
 \label{fig:exploded}
 \end{figure}
   
-  Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
+ 
+  
+   McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
  
  
 Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. 
 
-Some studies performed deformations using surgical metaphors like ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume.
-They propose a feature-based technique for manipulating volumetric objects for illustrative visualization, and describe a GPU-based implementation that enables interactive specification and rendering
-such visualization. Inspired by medical illustrations that frequently depict the results of manipulation with tools such as peelers, retractors and pliers, they allow the specification of manipulation
+
+ Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. Some studies performed deformations using surgical metaphors like ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume, see figure \ref{fig:cut}. They propose a feature-based technique for manipulating volumetric objects for illustrative visualization, and describe a GPU-based implementation that enables interactive specification and their rendering.
+Inspired by medical illustrations that frequently
+depict the results of manipulation with tools such as peelers,
+retractors and pliers, this system allows the specification of manipulation
 through a collection of procedurally-defined manipulation operators.
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/cut}
+\decoRule
+\caption[ Feature Aligned Volume Manipulation]{ A feature-aligned retraction applied to a human hand data set, showing bones (left) and vessels (right)}
+\label{fig:cut}
+\end{figure}
 
-  but they do not offer tools for local manipulation of the point of view which allows perceiving a target under a different perspective while keeping the global context. 
+  \begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/peel.pdf}
+\decoRule
+\caption[ Feature Aligned Volume Manipulation]{ An example of different types of alignment. (a) Axis aligned peel. Note how the peeled layer is thick and flat, since it is aligned with
+an orthogonal axis. (b) Surface aligned peel, aligned with a computed
+distance field. Notice how it approximates a surface. (c) Segment
+aligned peel, based on segmentation, which is more accurate. Note
+that in the feature based alignment (b) and (c) the peel is thin and
+rounded.}
+\label{fig:peel}
+\end{figure}
+
+ Correa et al. introduced two feature-based methods, namely surface alignment and segment alignment for modeling and rendering illustrative manipulation, and compare them with the traditional axis alignment method, see figure \ref{fig:peel}. They devise a method for estimating accurate normals along the surface of cuts
+and dissections while maintaining continuous normals, which allows
+us to obtain correct shading of the object being manipulated, opaque
+or translucent. The four operators proposed in this framework are the following:
+\begin{itemize}
+\item Peeler: The peeler simulates peeling or cutting of the outer layers
+of a volumetric model. Different parameters
+of the peeler, such as thickness of the cut and the angle of bending of
+the peeled layer, can be manipulated interactively to obtain different
+illustrative effects.
+\item Retractors: In the context of surgical illustration, retractors are tools used to spread organs or bones, or to hold back soft tissues such as
+skin. In the context of illustration, they are useful for illustrating the
+access to the internal organs.
+\item Pliers: Pliers are tools used to grasp tissue and pull it or poke it into the volumetric object. The operator parameters include the shape of
+the displacement and the radius of influence which specifies how the
+displacement propagates through the volume.
+\item Dilator: Dilators are used to gain access into narrow regions, cuts
+or vessels. They essentially scale the region from the inside typically
+by blowing air, to increase the visibility or accessibility of the region.
+When applied to volumetric manipulation, dilators have a similar effect
+to that of volumetric magic lenses (~\cite{1532818}).
+\end{itemize} 
+However this framework do not offer tools for local manipulation and exploration inside the cut, which allows perceiving a target under a different perspective while keeping the global context. 
 
 
 \section{Volume rendering in Virtual Reality and Augmented Reality}
