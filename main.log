@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  14 JUN 2018 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  18 JUN 2018 16:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -1782,7 +1782,12 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
+
+
+LaTeX Warning: Unused global option(s):
+    [onehalfspacingheadsepline].
+
+(main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
 (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
@@ -2347,7 +2352,7 @@ Overfull \hbox (6.26242pt too wide) in paragraph at lines 280--281
 scale cam-era can also achieve
  []
 
-<Figures/multiscale3d.png, id=499, 2054.42531pt x 883.04906pt>
+<Figures/multiscale3d.png, id=500, 2054.42531pt x 883.04906pt>
 File: Figures/multiscale3d.png Graphic file (type png)
 <use Figures/multiscale3d.png>
 Package pdftex.def Info: Figures/multiscale3d.png  used on input line 284. on i
@@ -2366,110 +2371,111 @@ e 310.
 <Figures/cut.png, id=523, 1126.96031pt x 793.46437pt>
 File: Figures/cut.png Graphic file (type png)
 <use Figures/cut.png>
-Package pdftex.def Info: Figures/cut.png  used on input line 333. on input line
- 333.
+Package pdftex.def Info: Figures/cut.png  used on input line 358. on input line
+ 358.
 Package pdftex.def Info: Requested size: 404.02908pt x 284.46043pt on input lin
-e 333.
+e 358.
 <Figures/peel.pdf, id=524, pagebox=cropbox, 1049.9225pt x 914.41624pt>
 File: Figures/peel.pdf Graphic file (type pdf)
 <use Figures/peel.pdf>
-Package pdftex.def Info: Figures/peel.pdf  used on input line 341. on input lin
-e 341.
+Package pdftex.def Info: Figures/peel.pdf  used on input line 366. on input lin
+e 366.
 Package pdftex.def Info: Requested size: 404.02908pt x 351.87694pt on input lin
-e 341.
+e 366.
  [13 <./Figures/explodedview.png>]
 
-LaTeX Warning: Citation 'ljung_full_2006' on page 14 undefined on input line 38
-1.
+LaTeX Warning: Citation 'ljung_full_2006' on page 14 undefined on input line 40
+6.
+
+[14 <./Figures/cut.png>]
+
+LaTeX Warning: Citation 'carr_computing_2000' on page 15 undefined on input lin
+e 409.
 
 
-LaTeX Warning: Citation 'carr_computing_2000' on page 14 undefined on input lin
-e 384.
+LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 15 undefined o
+n input line 409.
 
 
-LaTeX Warning: Citation 'pascucci_multi-resolution_2004' on page 14 undefined o
-n input line 384.
-
-
-LaTeX Warning: Citation 'guo_local_2013' on page 14 undefined on input line 384
+LaTeX Warning: Citation 'guo_local_2013' on page 15 undefined on input line 409
 .
 
 
-LaTeX Warning: Citation 'chen_3-d_2000' on page 14 undefined on input line 384.
+LaTeX Warning: Citation 'chen_3-d_2000' on page 15 undefined on input line 409.
 
 
 
-LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 14 undefined on i
-nput line 385.
+LaTeX Warning: Citation 'kniss_multidimensional_2002' on page 15 undefined on i
+nput line 410.
 
 
-LaTeX Warning: Citation 'correa_size-based_2008' on page 14 undefined on input 
-line 385.
+LaTeX Warning: Citation 'correa_size-based_2008' on page 15 undefined on input 
+line 410.
 
 
-LaTeX Warning: Citation 'sereda_visualization_2006' on page 14 undefined on inp
-ut line 385.
+LaTeX Warning: Citation 'sereda_visualization_2006' on page 15 undefined on inp
+ut line 410.
 
 
-LaTeX Warning: Citation 'patel_moment_2009' on page 14 undefined on input line 
-385.
+LaTeX Warning: Citation 'patel_moment_2009' on page 15 undefined on input line 
+410.
 
 
-LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 14 undefined on input line 3
-85.
+LaTeX Warning: Citation 'guo_wysiwyg_2011' on page 15 undefined on input line 4
+10.
 
 
-LaTeX Warning: Citation 'tversky_animation:_2002' on page 14 undefined on input
- line 385.
+LaTeX Warning: Citation 'tversky_animation:_2002' on page 15 undefined on input
+ line 410.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 14 undefined on input
- line 386.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 15 undefined on input
+ line 411.
 
 
-LaTeX Warning: Citation 'sainz_point-based_2004' on page 14 undefined on input 
-line 386.
+LaTeX Warning: Citation 'sainz_point-based_2004' on page 15 undefined on input 
+line 411.
 
 
-LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 14 undefined on in
-put line 386.
+LaTeX Warning: Citation 'chevalier_histomages:_2012' on page 15 undefined on in
+put line 411.
 
 
-LaTeX Warning: Citation 'elmqvist_color_2011' on page 14 undefined on input lin
-e 386.
+LaTeX Warning: Citation 'elmqvist_color_2011' on page 15 undefined on input lin
+e 411.
 
 
-LaTeX Warning: Citation 'hurter_moleview:_2011' on page 14 undefined on input l
-ine 386.
+LaTeX Warning: Citation 'hurter_moleview:_2011' on page 15 undefined on input l
+ine 411.
 
 
-LaTeX Warning: Citation 'hurter_interactive_2014' on page 14 undefined on input
- line 386.
+LaTeX Warning: Citation 'hurter_interactive_2014' on page 15 undefined on input
+ line 411.
 
 )
-Overfull \hbox (51.04758pt too wide) in paragraph at lines 383--288
+Overfull \hbox (51.04758pt too wide) in paragraph at lines 408--288
 \T1/ppl/m/n/10.95 a set of poly-gons rep-re-sent-ing an iso-surface. The con-to
 ur tree al-go-rithm  []
  []
 
 
-Overfull \hbox (8.0259pt too wide) in paragraph at lines 383--288
+Overfull \hbox (8.0259pt too wide) in paragraph at lines 408--288
 \T1/ppl/m/n/10.95 and other al-ter-na-tives such as branch de-com-po-si-tion  [
 ]
  []
 
 
-Overfull \hbox (27.22226pt too wide) in paragraph at lines 383--288
+Overfull \hbox (27.22226pt too wide) in paragraph at lines 408--288
 []  [] \T1/ppl/m/n/10.95 or user in-ter-ac-tions  [].
  []
 
 
-Overfull \hbox (6.63371pt too wide) in paragraph at lines 383--288
+Overfull \hbox (6.63371pt too wide) in paragraph at lines 408--288
 \T1/ppl/m/n/10.95 in-ter-ac-tion tech-niques with suf-fi-cient ab-strac-tion le
 vel re-gard-ing tech-ni-cal con-straints.
  []
 
-[14 <./Figures/cut.png>] [15 <./Figures/peel.pdf>] [16]
+[15 <./Figures/peel.pdf>] [16]
 \openout2 = `Chapters/Chapter1.aux'.
 
  (Chapters/Chapter1.tex
@@ -2565,10 +2571,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35996 strings out of 493312
- 729649 string characters out of 3138893
- 978324 words of memory out of 3000000
- 38957 multiletter control sequences out of 15000+200000
+ 35993 strings out of 493312
+ 729650 string characters out of 3138893
+ 978362 words of memory out of 3000000
+ 38955 multiletter control sequences out of 15000+200000
  607118 words of font info for 169 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10379b,2422s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2587,7 +2593,7 @@ blic/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/
 uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (54 pages, 12517397 bytes).
+Output written on main.pdf (54 pages, 12517872 bytes).
 PDF statistics:
  1094 PDF objects out of 1200 (max. 8388607)
  152 named destinations out of 1000 (max. 500000)

@@ -17,8 +17,8 @@
 \contentsline {subsection}{\numberline {2.2.1}Transfer Function}{8}{subsection.30}
 \contentsline {subsection}{\numberline {2.2.2}Segmentation}{10}{subsection.33}
 \contentsline {subsection}{\numberline {2.2.3}Deformations and Focus + Context}{10}{subsection.34}
-\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{14}{section.39}
-\contentsline {subsection}{\numberline {2.3.1} Remote volume rendering}{14}{subsection.40}
+\contentsline {section}{\numberline {2.3}Volume rendering in Virtual Reality and Augmented Reality}{15}{section.39}
+\contentsline {subsection}{\numberline {2.3.1} Remote volume rendering}{15}{subsection.40}
 \contentsline {chapter}{\numberline {3}Chapter Title Here}{17}{chapter.41}
 \contentsline {section}{\numberline {3.1}Welcome and Thank You}{17}{section.42}
 \contentsline {section}{\numberline {3.2}Learning \LaTeX {}}{17}{section.43}

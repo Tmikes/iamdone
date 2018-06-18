@@ -267,7 +267,7 @@ The shape of a lens is usually chosen to fulfill the requirements of the applica
 The position and the size parametrization can increase the flexibility of an interactive lens.
 Modifying this position or size will set its focus on a different part of the data according to the user's interest. It is possible to update automatically these parameters in order to guide the user toward interesting events in the data~\cite{Tominski:2011:ECU:2336207.2336211}, or adjust the lens position according to predefined paths as the Routelens~\cite{Alvina:2014:RER:2598153.2598200} does. With this mind, our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest. 
 
-Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. Wang et al. addressed these issues by proposing the Magic Lens~\cite{1532818}. This Magic Lens renders the obstructions with higher transparency and magnifies volumetric pre-computed features interactively or automatically in a pre-segmented dataset. In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. Tong et al. proposed the GlyphLens~\cite{7539643} that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
+Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. \cite{1532818} addressed these issues by proposing the Magic Lens . This Magic Lens renders the obstructions with higher transparency and magnifies volumetric pre-computed features interactively or automatically in a pre-segmented dataset. In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. \cite{7539643} proposed the GlyphLens that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
 
 
 
@@ -316,7 +316,32 @@ movement}
   
  
   
-   McGuffin et al.~\cite{1250400} performed deformations using peeling to see hidden parts of the data. However, these techniques have the disadvantage of removing potentially important surrounding contextual information while trying to solve the local occlusion. 
+  \cite{1250400} performed deformations using peeling to see hidden parts of the data. Their goal in using deformations is to increase the visibility of
+the inner portions of the volume, without completely removing the
+surrounding data that normally occludes the inside. This is akin to
+focus+context schemes that allow a user to zoom-in on data of
+interest, while using remaining screen space to show the surrounding
+context. Appropriately chosen deformations could, for example,
+split open a volume, showing displaced structures side-by-side,
+making it easy for the user to see how they connect, and allowing
+the user to mentally stitch them together into a whole. Deformations
+with familiar real-world analogues (e.g. cutting and peeling
+the skin off a fruit, or the layers off an onion) are also likely to be
+readily understood by users.
+Therefore in their work, they describe a prototype system that implements
+different metaphors for deformation-based browsing of volumetric
+data. 
+As will be seen, a key element of our approach is to support
+differential treatment of the various semantic layers in a data set.
+The term ''semantic layers'', means subsets of the data that are useful
+or meaningful to the user. These layers could be defined geometrically,
+for example as sections created with parallel planar cuts.
+More typically, layers would depend on the voxel data values, for
+example boundaries that are found during segmentation or isosurface
+extraction. In the context of medical visualization, there is at
+least anecdotal evidence that anatomists, for example, prefer to remove
+tissue layer by layer, rather than making
+arbitrary planar cuts.
  
  
 Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. 
