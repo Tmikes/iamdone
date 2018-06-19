@@ -346,13 +346,6 @@ arbitrary planar cuts.
  
 Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. 
 
-
- Correa et al. proposed a framework~\cite{Correa:2007:IDD:1313046.1313163} allowing the users to physically or actively manipulate the geometry of a data object. Some studies performed deformations using surgical metaphors like ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume, see figure \ref{fig:cut}. They propose a feature-based technique for manipulating volumetric objects for illustrative visualization, and describe a GPU-based implementation that enables interactive specification and their rendering.
-Inspired by medical illustrations that frequently
-depict the results of manipulation with tools such as peelers,
-retractors and pliers, this system allows the specification of manipulation
-through a collection of procedurally-defined manipulation operators.
-
 \begin{figure}[th]
 \centering
 \includegraphics[width=\textwidth]{Figures/cut}
@@ -360,8 +353,15 @@ through a collection of procedurally-defined manipulation operators.
 \caption[ Feature Aligned Volume Manipulation]{ A feature-aligned retraction applied to a human hand data set, showing bones (left) and vessels (right)}
 \label{fig:cut}
 \end{figure}
+\cite{Correa:2007:IDD:1313046.1313163} proposed a framework  allowing the users to physically or actively manipulate the geometry of a data object. Some studies performed deformations using surgical metaphors like ~\cite{4069230,Correa:2006:FAV:1187627.1187827} to see hidden parts of the volume, see figure \ref{fig:cut}. They propose a feature-based technique for manipulating volumetric objects for illustrative visualization, and describe a GPU-based implementation that enables interactive specification and their rendering.
+Inspired by medical illustrations that frequently
+depict the results of manipulation with tools such as peelers,
+retractors and pliers, this system allows the specification of manipulation
+through a collection of procedurally-defined manipulation operators.
 
-  \begin{figure}[th]
+
+
+\begin{figure}[th]
 \centering
 \includegraphics[width=\textwidth]{Figures/peel.pdf}
 \decoRule
@@ -394,9 +394,50 @@ displacement propagates through the volume.
 or vessels. They essentially scale the region from the inside typically
 by blowing air, to increase the visibility or accessibility of the region.
 When applied to volumetric manipulation, dilators have a similar effect
-to that of volumetric magic lenses (~\cite{1532818}).
+to that of volumetric magic lenses (\cite{1532818}).
 \end{itemize} 
 However this framework do not offer tools for local manipulation and exploration inside the cut, which allows perceiving a target under a different perspective while keeping the global context. 
+
+
+\cite{6787171} propose a set of linked views that display
+subsets of data attributes. Example views are 3D DVR plots, 2D
+scatterplots, and 2D and 3D histograms. Views are linked by brushing
+and free-form selection. Using the optimal view(s), one can find structures
+of interest, e.g. spatially compact zones in DVR renderings or peaks in histograms, and highlight or erase such structures in all views
+at once. They enhance classical histogram views with shading, sorting,
+and depth, to allow spotting complex patterns with greater ease. In addition, they
+propose a smooth animation between multiple views, to locate (and select)
+data patterns which are hard to isolate in static plots. This framework integrate
+a Focus+Context deformation that adds the ability to uncover locally occluded
+spatial patterns in different views. The GPU implementation of their
+techniques, which they call color tunneling, creates real-time interactive,
+animated, explorations of datasets of tens of millions of points
+on a modern PC. Since the goal is to explore dense multivariate datasets which exhibit significant
+overlap between groups of voxels or pixels, tools to
+interactively unveil the occluded structures of interest are needed.
+Five interactive techniques have been proposed as follows (see figure \ref{fig:colortunneling}):
+\begin{itemize}
+\item View linking: Three configurable views (2 exploration views and
+one lock view) for data exploration,
+\item Warp: Animates a view between two configurations,
+\item Lock: Locks items not to be affected by brush or dig ,
+\item Brush: With the lock view, brushing allows adding or removing
+data in a view,
+\item Dig: With the lock view, digging pushes data points away from
+the lens center to unveil occluded structures 
+
+\end{itemize}
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/colortunneling}
+\decoRule
+\caption[ Color Tunneling]{ Brush, dig, and lock tools. Locked items are not affected by
+brush and dig. We used transfer functions to make air voxels transparent
+and standard gradient shading. We see that the head is surrounded by a
+large amount of uninteresting noise (yellow).}
+\label{fig:colortunneling}
+\end{figure}
 
 
 \section{Volume rendering in Virtual Reality and Augmented Reality}

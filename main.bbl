@@ -655,6 +655,66 @@
     \field{year}{2011}
   \endentry
 
+  \entry{6787171}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Carpendale},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Telea},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{astronomy computing;computer animation;data visualisation;image
+  colour analysis;image segmentation;interactive systems;medical image
+  processing;2D image segmentation;3D data;3D medical volume
+  exploration;animation;astrophysical exploration;color tunneling;complex data
+  selections;data filtering;data subset selection;dataset sizes;entangled
+  patterns;interactive data exploration;interactive data
+  manipulation;interactive selection;occlusion reduction;real-time
+  multidimensional data deformation techniques;semantic
+  filtering;spatial-and-data pattern analysis;spatial-and-data pattern
+  elimination;spatial-and-data pattern selection;view configurations;view
+  deformation;visual interaction;volumetric
+  datasets;Animation;Brushes;Histograms;Image color
+  analysis;Mice;Skin;Three-dimensional displays;Interaction techniques}
+    \strng{namehash}{HC+1}
+    \strng{fullhash}{HCTRCSTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{2014 IEEE Pacific Visualization Symposium}
+    \verb{doi}
+    \verb 10.1109/PacificVis.2014.61
+    \endverb
+    \field{issn}{2165-8765}
+    \field{pages}{225\bibrangedash 232}
+    \field{title}{Color Tunneling: Interactive Exploration and Selection in
+  Volumetric Datasets}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{4069230}{article}{}
     \name{author}{3}{}{%
       {{hash=IS}{%
