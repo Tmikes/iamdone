@@ -260,6 +260,18 @@ is assigned to each Gaussian, and the user interaction is simplified in order to
 
 \subsection{Deformations and Focus + Context}
 
+%%camera !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\cite{5613463} Almost all images used in visualization are computed with a planar pinhole camera (PPC). One reason for this is that the PPC models the
+human eye well, producing images that resemble what users would
+see if they were actually looking at the dataset to be visualized.
+Another reason is simplicity: software and hardware
+implementations of PPC rendering algorithms allow visualizing
+complex 3-D datasets at interactive rates. However, the simplicity of
+the PPC model also brings three important limitations. First, the PPC
+has a limited field of view. Second, the sampling rate of the PPC is
+uniform over its entire field of view. Third, the PPC has only a single
+viewpoint, i.e. the pinhole where all rays converge. 
+
 An interactive lens is a lightweight tool to solve a localized visualization problems by temporarily altering a selected part of the visual representation of the data~\cite{CGF:CGF12871}. Using this lens approach, we propose an interactive volume deformation based on GPU accelerated ray-casting to free a designated target from local occlusion while keeping the global context.
 
 A lens is a parameterizable selection according to which a base visualization is altered. Typically, a lens is added to a visualization to interactively solve a specific localized problem. This property is very interesting with the aim of providing a focus+context solution to occlusion in volume rendering. Lenses can have different geometric properties not only defining their appearance, but also determining the selection, which is the subset of the data where these lenses take effect. The major geometric properties of a lens are shape, position, and size as well as the orientation.
@@ -267,7 +279,13 @@ The shape of a lens is usually chosen to fulfill the requirements of the applica
 The position and the size parametrization can increase the flexibility of an interactive lens.
 Modifying this position or size will set its focus on a different part of the data according to the user's interest. It is possible to update automatically these parameters in order to guide the user toward interesting events in the data~\cite{Tominski:2011:ECU:2336207.2336211}, or adjust the lens position according to predefined paths as the Routelens~\cite{Alvina:2014:RER:2598153.2598200} does. With this mind, our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest. 
 
-Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. \cite{1532818} addressed these issues by proposing the Magic Lens . This Magic Lens renders the obstructions with higher transparency and magnifies volumetric pre-computed features interactively or automatically in a pre-segmented dataset. In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. \cite{7539643} proposed the GlyphLens that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
+Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. \cite{1532818} addressed these issues by proposing the Magic Lens . This framework propose FOUR different types of lenses allowing a free-form volumetric lens function that
+can be feature-adaptive or user-configurable for a high-quality
+aliased, and interactive display with smooth transitions from highto
+low-resolution areas.
+
+
+In addition to interactively magnifying areas and objects of interest, our lens frees them from obstruction and allows local modification of the camera to see the target under other perspectives. \cite{7539643} proposed the GlyphLens that removes the occluding glyphs by pulling the glyphs aside through the animation, but this tool is only well suited for systems where 3D volumetric dataset are visualized using glyphs. Lenses can create discontinuities between their inner part and the rest of the volume. Deformation can be a solution to this discontinuity issue.   
 
 
 
