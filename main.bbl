@@ -470,6 +470,64 @@
     \field{year}{2006}
   \endentry
 
+  \entry{5613463}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CJ}{%
+         family={Cui},
+         familyi={C\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Rosen},
+         familyi={R\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Popescu},
+         familyi={P\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hoffmann},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{cameras;data visualisation;interactive systems;3D point projection
+  operation;C1-continuous curves;continuous multiperspective
+  visualization;curved ray camera;interactive visualization;occlusions
+  handling;planar pinhole camera;single viewpoint
+  limitation;Cameras;Computational modeling;Context;Data
+  visualization;Mathematical model;Rendering (computer
+  graphics);Visualization;Alleviating occlusions;camera model;curved
+  rays;interactive visualization;multiperspective visualization}
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJRPPVHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/TVCG.2010.127
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{6}
+    \field{pages}{1235\bibrangedash 1242}
+    \field{title}{A Curved Ray Camera for Handling Occlusions through
+  Continuous Multiperspective Visualization}
+    \field{volume}{16}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%
@@ -1555,6 +1613,53 @@
     \field{journaltitle}{Review of Scientific Instruments}
     \field{month}{01}
     \field{year}{1991}
+  \endentry
+
+  \entry{7120994}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WML}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={M.\bibnamedelima L.},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Popescu},
+         familyi={P\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{cameras;data visualisation;image processing;rendering (computer
+  graphics);camera model;camera model fast projection operation;complex dataset
+  visualization;data subsets;image regions;information bandwidth;interactive
+  rates;molecular biology geometric datasets;multiperspective focus+context
+  visualization;multiperspective visualization rendering;occlusions;volume
+  rendered density datasets;Cameras;Context;Data visualization;Image
+  segmentation;Rendering (computer graphics);Solid modeling;Three-dimensional
+  displays;Occlusion management;camera models;focus+context;interactive
+  visualization;multiperspective visualization;Algorithms;Computer
+  Graphics;Imaging, Three-Dimensional}
+    \strng{namehash}{WMLPV1}
+    \strng{fullhash}{WMLPV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/TVCG.2015.2443804
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{1555\bibrangedash 1567}
+    \field{title}{Multiperspective Focus + Context Visualization}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

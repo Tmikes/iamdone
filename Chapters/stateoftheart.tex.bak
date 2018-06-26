@@ -261,7 +261,7 @@ is assigned to each Gaussian, and the user interaction is simplified in order to
 \subsection{Deformations and Focus + Context}
 
 %%camera !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-\cite{5613463} Almost all images used in visualization are computed with a planar pinhole camera (PPC). One reason for this is that the PPC models the
+Almost all images used in visualization are computed with a planar pinhole camera (PPC). One reason for this is that the PPC models the
 human eye well, producing images that resemble what users would
 see if they were actually looking at the dataset to be visualized.
 Another reason is simplicity: software and hardware
@@ -270,7 +270,54 @@ complex 3-D datasets at interactive rates. However, the simplicity of
 the PPC model also brings three important limitations. First, the PPC
 has a limited field of view. Second, the sampling rate of the PPC is
 uniform over its entire field of view. Third, the PPC has only a single
-viewpoint, i.e. the pinhole where all rays converge. 
+viewpoint, i.e. the pinhole where all rays converge.
+\newline \textbf{Multiperspective }  visualization is a promising approach based on
+integrating data sampled from multiple viewpoints into a single
+image. The multiple viewpoints are integrated tightly which
+alleviates the visualization discontinuity problem of multiple
+individual images. Like in the case of the dataset distortion approach,
+multiperspective visualization amounts to a warp of global spatial
+relationships between data subsets. However, multiperspective
+visualization allows specifying the desired disocclusion effect
+directly in the image, as opposed to indirectly, through a dataset
+distortion. Finally, multiperspective visualization does not preclude
+but rather enhances interactive exploration of datasets. The
+multiperspective image provides a preview of data subsets to come
+which improves interactive visualization efficiency. Multiperspective visualization has challenges of its own. The
+multiperspective image is computed using a non-pinhole camera
+model that does not project 3-D lines to image plane lines, so one
+challenge is achieving the desired disocclusion effect while
+minimizing visualization distortions. The non-pinhole camera model
+is considerably more complex than the PPC model, so a second
+challenge is to achieve adequate rendering performance to support
+interactive visualization and dynamic datasets. Eliminating the single
+viewpoint constraint of the PPC model results in a multidimensional
+camera model design space. Whereas for the PPC model the only
+intrinsic parameter of significant relevance in shaping the
+visualization is the focal length, optimizing multiperspective
+visualization requires tuning a large number of parameters.
+Consequently a third challenge is to specify the camera model that
+best visualizes a given dataset from a given location. \newline
+\cite{5613463} proposed a multiperspective visualization technique
+based on the curved ray camera (CRC). The CRC is designed to
+address the challenges of multiperspective visualization described
+above. The CRC integrates multiple viewpoints seamlessly. The
+curved rays allow for a progressive transition between one viewpoint
+and the next. A CRC ray is a sequence of line segments connected by
+conic curve segments. Each conic connects consecutive line
+segments with C'
+ continuity, which alleviates visualization
+distortions. The CRC provides a fast projection operation which
+allows rendering 3-D surface datasets efficiently by projection
+followed by rasterization, with the help of graphics hardware. The
+rays of the CRC can be traced inexpensively which enables
+visualization techniques that require ray casting, such as volume
+rendering. \newline
+\cite{7120994} extended this work by proposing a framework that allows constructing continuous multiperspective visualizations
+by changing the viewpoint for individual focus regions
+in an image, by connecting input images with continuous
+context, and by alleviating occlusions to moving targets
+without distorting or displacing the target subimages.
 
 An interactive lens is a lightweight tool to solve a localized visualization problems by temporarily altering a selected part of the visual representation of the data~\cite{CGF:CGF12871}. Using this lens approach, we propose an interactive volume deformation based on GPU accelerated ray-casting to free a designated target from local occlusion while keeping the global context.
 
