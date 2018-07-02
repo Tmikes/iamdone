@@ -10,6 +10,33 @@
 	Volume = {72},
 	Url = {http://link.aip.org/link/?RSI/72/4477/1},
 	Year = {2001}}
+	
+	
+@INPROCEEDINGS{7892381, 
+author={T. Ard and D. M. Krum and T. Phan and D. Duncan and R. Essex and M. Bolas and A. Toga}, 
+booktitle={2017 IEEE Virtual Reality (VR)}, 
+title={NIVR: Neuro imaging in virtual reality}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={465-466}, 
+keywords={data visualisation;medical computing;neurophysiology;virtual reality;NIVR;data visualization;immersive visualization;neuro imaging;neuroimaging data navigation;neuroimaging information representation;neuroscience;neuroscientific research;raymarching volume visualization;stereo visualization;virtual reality;Data visualization;Magnetic resonance imaging;Navigation;Neuroimaging;Rendering (computer graphics);Sockets;Virtual reality;MRI;Medical Imaging;Virtual Reality}, 
+doi={10.1109/VR.2017.7892381}, 
+ISSN={}, 
+month={March},}
+
+@INPROCEEDINGS{7852799, 
+author={Y. Xin and H. C. Wong}, 
+booktitle={2016 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI)}, 
+title={Intuitive volume rendering on mobile devices}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={696-701}, 
+keywords={augmented reality;mobile computing;rendering (computer graphics);transfer functions;GLSL shader;OpenGL ES 3.0;augment reality;direct-touch transfer function design;intuitive volume rendering;mobile devices;one-pass shader;real-time intuitive volume data exploration;user interaction;virtual reality;Histograms;Image color analysis;Mobile handsets;Rendering (computer graphics);Transfer functions;Two dimensional displays;Direct volume rendering;direct touch;mobile devices;transfer function design;user interface design;volume data}, 
+doi={10.1109/CISP-BMEI.2016.7852799}, 
+ISSN={}, 
+month={Oct},}
 
 @ARTICLE{5613463, 
 author={J. Cui and P. Rosen and V. Popescu and C. Hoffmann}, 
@@ -108,6 +135,32 @@ month={Aug},}
         year={2011},
    }
    
+   @ARTICLE{4015450, 
+author={J. Kruger and J. Schneider and R. Westermann}, 
+journal={IEEE Transactions on Visualization and Computer Graphics}, 
+title={ClearView: An Interactive Context Preserving Hotspot Visualization Technique}, 
+year={2006}, 
+volume={12}, 
+number={5}, 
+pages={941-948}, 
+keywords={data visualisation;focusing;image resolution;rendering (computer graphics);user interfaces;ClearView;complex volumetric data;context information focus;image information;interactive context preserving hotspot visualization technique;mental exercise;point-and-click interface;texture-based volume ray-casting;visual clutter;Computer graphics;Context;Data visualization;Focusing;Information filtering;Information filters;Navigation;Rendering (computer graphics);Shape;Topology;GPU rendering;TermsÂ¿Focus & Context;volume raycasting;Algorithms;Computer Graphics;Computer Simulation;Humans;Image Enhancement;Image Interpretation, Computer-Assisted;Imaging, Three-Dimensional;Information Storage and Retrieval;Models, Anatomic;Software;User-Computer Interface}, 
+doi={10.1109/TVCG.2006.124}, 
+ISSN={1077-2626}, 
+month={Sept},}
+
+@INPROCEEDINGS{7938241, 
+author={L. Ran and J. Dingliana}, 
+booktitle={2016 International Conference on Virtual Reality and Visualization (ICVRV)}, 
+title={Infocarve: A Framework for Volume Visualization on Commodity Augmented Reality Displays}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={473-479}, 
+keywords={augmented reality;data visualisation;rendering (computer graphics);3D volume data interactive real-time visualization;Infocarve;commodity augmented reality displays;depth sensor;graphical rendering capabilities;internal anatomy data sets;prototype AR hardware devices;relative depth perception;rendered volume images;Augmented reality;Cameras;Data visualization;Graphics processing units;Mobile communication;Rendering (computer graphics);Three-dimensional displays;Augmented reality;Mixed reality;Real-time graphics rendering;Scientific visualization;Volume rendering}, 
+doi={10.1109/ICVRV.2016.86}, 
+ISSN={}, 
+month={Sept},}
+
 @InProceedings{Fogal2010Tuvok,
   author = {Thomas Fogal AND Jens Kr\"uger},
    title = {Tuvok, an Architecture for Large Scale Volume Rendering},
@@ -754,18 +807,7 @@ month={March},}
  address = {New York, NY, USA},
 } 
 
-@ARTICLE{4015450, 
-author={J. Kruger and J. Schneider and R. Westermann}, 
-journal={IEEE Transactions on Visualization and Computer Graphics}, 
-title={ClearView: An Interactive Context Preserving Hotspot Visualization Technique}, 
-year={2006}, 
-volume={12}, 
-number={5}, 
-pages={941-948}, 
-keywords={data visualisation;focusing;image resolution;rendering (computer graphics);user interfaces;ClearView;complex volumetric data;context information focus;image information;interactive context preserving hotspot visualization technique;mental exercise;point-and-click interface;texture-based volume ray-casting;visual clutter;Computer graphics;Context;Data visualization;Focusing;Information filtering;Information filters;Navigation;Rendering (computer graphics);Shape;Topology;GPU rendering;TermsÂ¿Focus & Context;volume raycasting;Algorithms;Computer Graphics;Computer Simulation;Humans;Image Enhancement;Image Interpretation, Computer-Assisted;Imaging, Three-Dimensional;Information Storage and Retrieval;Models, Anatomic;Software;User-Computer Interface}, 
-doi={10.1109/TVCG.2006.124}, 
-ISSN={1077-2626}, 
-month={Sept},}
+
 
 @article{Kincaid:2010:SFA:1907651.1907963,
  author = {Kincaid, Robert},

@@ -75,6 +75,77 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{7892381}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=AT}{%
+         family={Ard},
+         familyi={A\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KDM}{%
+         family={Krum},
+         familyi={K\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Phan},
+         familyi={P\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Duncan},
+         familyi={D\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Essex},
+         familyi={E\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bolas},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Toga},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;medical computing;neurophysiology;virtual
+  reality;NIVR;data visualization;immersive visualization;neuro
+  imaging;neuroimaging data navigation;neuroimaging information
+  representation;neuroscience;neuroscientific research;raymarching volume
+  visualization;stereo visualization;virtual reality;Data
+  visualization;Magnetic resonance imaging;Navigation;Neuroimaging;Rendering
+  (computer graphics);Sockets;Virtual reality;MRI;Medical Imaging;Virtual
+  Reality}
+    \strng{namehash}{AT+1}
+    \strng{fullhash}{ATKDMPTDDERBMTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{2017 IEEE Virtual Reality (VR)}
+    \verb{doi}
+    \verb 10.1109/VR.2017.7892381
+    \endverb
+    \field{pages}{465\bibrangedash 466}
+    \field{title}{NIVR: Neuro imaging in virtual reality}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Reference3}{article}{}
     \name{author}{4}{}{%
       {{hash=AAS}{%
@@ -929,6 +1000,62 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{4015450}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KJ}{%
+         family={Kruger},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Westermann},
+         familyi={W\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;focusing;image resolution;rendering (computer
+  graphics);user interfaces;ClearView;complex volumetric data;context
+  information focus;image information;interactive context preserving hotspot
+  visualization technique;mental exercise;point-and-click
+  interface;texture-based volume ray-casting;visual clutter;Computer
+  graphics;Context;Data visualization;Focusing;Information
+  filtering;Information filters;Navigation;Rendering (computer
+  graphics);Shape;Topology;GPU rendering;TermsÂ¿Focus & Context;volume
+  raycasting;Algorithms;Computer Graphics;Computer Simulation;Humans;Image
+  Enhancement;Image Interpretation, Computer-Assisted;Imaging,
+  Three-Dimensional;Information Storage and Retrieval;Models,
+  Anatomic;Software;User-Computer Interface}
+    \strng{namehash}{KJSJWR1}
+    \strng{fullhash}{KJSJWR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1109/TVCG.2006.124
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{941\bibrangedash 948}
+    \field{title}{ClearView: An Interactive Context Preserving Hotspot
+  Visualization Technique}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{4303986}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=LJ}{%
@@ -1092,6 +1219,50 @@
     }
     \field{year}{2012}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{7938241}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RL}{%
+         family={Ran},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dingliana},
+         familyi={D\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{augmented reality;data visualisation;rendering (computer graphics);3D
+  volume data interactive real-time visualization;Infocarve;commodity augmented
+  reality displays;depth sensor;graphical rendering capabilities;internal
+  anatomy data sets;prototype AR hardware devices;relative depth
+  perception;rendered volume images;Augmented reality;Cameras;Data
+  visualization;Graphics processing units;Mobile communication;Rendering
+  (computer graphics);Three-dimensional displays;Augmented reality;Mixed
+  reality;Real-time graphics rendering;Scientific visualization;Volume
+  rendering}
+    \strng{namehash}{RLDJ1}
+    \strng{fullhash}{RLDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{2016 International Conference on Virtual Reality and
+  Visualization (ICVRV)}
+    \verb{doi}
+    \verb 10.1109/ICVRV.2016.86
+    \endverb
+    \field{pages}{473\bibrangedash 479}
+    \field{title}{Infocarve: A Framework for Volume Visualization on Commodity
+  Augmented Reality Displays}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Thiede2008}{inbook}{}
@@ -1658,6 +1829,48 @@
     \field{volume}{22}
     \field{journaltitle}{IEEE Transactions on Visualization and Computer
   Graphics}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{7852799}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=XY}{%
+         family={Xin},
+         familyi={X\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WHC}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={H.\bibnamedelima C.},
+         giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{augmented reality;mobile computing;rendering (computer
+  graphics);transfer functions;GLSL shader;OpenGL ES 3.0;augment
+  reality;direct-touch transfer function design;intuitive volume
+  rendering;mobile devices;one-pass shader;real-time intuitive volume data
+  exploration;user interaction;virtual reality;Histograms;Image color
+  analysis;Mobile handsets;Rendering (computer graphics);Transfer functions;Two
+  dimensional displays;Direct volume rendering;direct touch;mobile
+  devices;transfer function design;user interface design;volume data}
+    \strng{namehash}{XYWHC1}
+    \strng{fullhash}{XYWHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{booktitle}{2016 9th International Congress on Image and Signal
+  Processing, BioMedical Engineering and Informatics (CISP-BMEI)}
+    \verb{doi}
+    \verb 10.1109/CISP-BMEI.2016.7852799
+    \endverb
+    \field{pages}{696\bibrangedash 701}
+    \field{title}{Intuitive volume rendering on mobile devices}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
   \endentry

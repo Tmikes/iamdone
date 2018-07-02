@@ -370,7 +370,7 @@ repulsive force $F_s$. For a part $P_i$, the spacing force exerted by another pa
 \[ F_s=  \frac{c_s}{||r||^2} \cdot \frac{r}{||r||} \] 
 where $r$ is the vector from the center of $P_j$ to the center of $P_i$ and
 $c_s$ is a constant scaling factor. 
-\begin{figure}[th]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/explodedview}
 \decoRule
@@ -378,8 +378,35 @@ $c_s$ is a constant scaling factor.
 movement}
 \label{fig:exploded}
 \end{figure}
+
   
- 
+\cite{4015450} proposed ClearView, an interactive and intuitive volume
+visualization tool that provides the user with a simple exploration
+metaphor, see figure \ref{fig:clearview} . Following traditional technical illustrations, several 3D
+layers of volumetric data sets are extracted using texture-based raycasting.
+They are composed to produce high-quality images at high
+frame rates. The user guides the exploration process by moving the
+hotspot, a lens-like yet distortion free region, in which additional layers
+of the data set are augmented to convey relevant features. The proposed
+GPU system exploits feature-based techniques to improve the
+understanding of complex 3D data sets, and it utilizes image-based
+deferred shading to maximize performance. ClearView does not require
+any additional feature volumes, making the method suitable for
+the interactive rendering of high-resolution data sets on recent GPUs.
+Several shaders to intuitively convey material and shape properties are
+integrated into the system. To keep the user interface slim, only few
+parameters abstract from the technical realization. The user simply
+positions the hotspot on the data set and selects an amount of transparency
+to continuously blend between focus and context information.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/clearview}
+\decoRule
+\caption[ clearview]{ The ClearView system can be used to visually explore complex data sets at interactive frame rates by using a focus+context metaphor. Even the leftmost image
+of the 5123 visible human data set with multiple iso-surfaces was generated at about 15 fps on a 800x600 viewport.}
+\label{fig:clearview}
+\end{figure}
+
   
   \cite{1250400} performed deformations using peeling to see hidden parts of the data. Their goal in using deformations is to increase the visibility of
 the inner portions of the volume, without completely removing the
@@ -411,7 +438,7 @@ arbitrary planar cuts.
  
 Deformations can reveal predefined features in the dataset by taking into account the precomputed segmentation. Tong et al. proposed a deforming Lens which moves streamlines to observe the inner part of streamline bundles~\cite{7332955}. 
 
-\begin{figure}[th]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/cut}
 \decoRule
@@ -426,7 +453,7 @@ through a collection of procedurally-defined manipulation operators.
 
 
 
-\begin{figure}[th]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/peel.pdf}
 \decoRule
@@ -493,7 +520,7 @@ the lens center to unveil occluded structures
 
 \end{itemize}
 
-\begin{figure}[th]
+\begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/colortunneling}
 \decoRule
@@ -505,13 +532,103 @@ large amount of uninteresting noise (yellow).}
 \end{figure}
 
 
-\section{Volume rendering in Virtual Reality and Augmented Reality}
+\section{Volume rendering in mobile devices( smartphones, Virtual Reality, and Augmented Reality) }
 
-\subsection{ Remote volume rendering}
+The computational power of mobile devices is much 
+stronger, and some traditional tasks on computer can be
+handled by mobile devices. One of the most obvious areas is
+graphics on mobile devices. Usually people use vertex data to
+represent polygons and combine multiple polygons to describe
+the surface of an object. The surface of an object can be
+reconstructed easily with polygons, but the inner structures
+of the object is invisible. Most of the time, such as in
+3D computer games, people do not concern the structures
+inside the object. However, some fields including science,
+engineering, and medicine, visualizing inner structures of a
+volume data is important. Therefore, direct volume rendering
+(DVR) was developed to visualize volume data. As
+mobile devices are getting ubiquitous, people need portable
+equipment solutions for DVR. Although the computation time
+of DVR is more expensive than that of polygon data, there is
+still a need to implement DVR on latest mobile devices with
+new graphics technologies.
 
-Volumetric data exploration with direct volume rendering technique is of great help to visually extract relevant structures in many fields of science: medical imaging ~\cite{ljung_full_2006}, astrophysics and more recently in baggage inspection. To leverage this knowledge extraction, many techniques have been developed. 
+\cite{7852799} proposed a framework based on OpenGL ES and GLSL shaders. This
+mobile framework has three components, namely, rendering,
+histogram mapping, and transfer function design. They
+implemented a one-pass shader in order to allow the system
+work in real-time. High dimension transfer functions can
+be easily used in our framework without losing the user
+interaction intuition. The user interface and transfer function
+design steps are user friendly to the non-professional user. They proposed different interactions such as:
+\begin{itemize}
+\item \textbf{Draw touch mode check box}: he default drag action
+on screen is to rotate the volume object. When this
+check box is checked, the system will switch to draw
+mode. The touch or drag action will apply color onto the
+corresponding position on the transfer function texture.
+\item \textbf{2D transfer function check box}: If this check box is
+checked, the system will enable 2D transfer functions.
+\item \textbf{Compositing mode radio group}: : There are four
+compositing modes: X-ray, MIP, iso-surface, and full
+rendering.
+\item \textbf{Showing texture radio group}: There are four textures
+which can be shown: back face, final, intensity, and
+gradient textures.
+\item \textbf{Showing texture radio group}: There are four colors that can
+be selected in this control panel. One may design a
+better color selector for specific the brush color.
+\item \textbf{Other controls}: More controls that have not yet been
+implemented in this control panel. For example, the ray
+casting steps can be controlled, more steps bring higher
+render quality, fewer steps bring better performance. The
+pen size and sharp can also be controlled, even the 2D
+transfer function image can be paint directly. Due to the
+complex of the system, we have not yet implemented all
+the controls.
+\end{itemize}
+The rendering performance of this framework in the Xray,
+MIP, and iso-surface modes are around 11 FPS, almost
+the same. For the full rendering mode, due to its heavy
+computation, the rendering performance is much slower as 2
+FPS. Basically we can achieve real-time DVR on this mobile
+device by reducing unnecessary frames.
 
-In this section, we detail existing ones with volume visualization, transfer function, direct voxel manipulation, and focus plus context interaction.
-Volume visualization can be done with geometric rendering system which transforms the data into a set of polygons representing an iso-surface. The contour tree algorithm ~\cite{carr_computing_2000} and other alternatives such as branch decomposition ~\cite{pascucci_multi-resolution_2004} are usually used to find these iso-surfaces. According to H. Guo ~\cite{guo_local_2013}, contour trees algorithms are vulnerable to noises, which can be problematic in baggage inspections since dense materials (e.g. iron) cause noises by reflecting the X-rays. For this reason we used the volume rendering technique; Chen et al. provide a review of existing techniques ~\cite{chen_3-d_2000}.
-In order to investigate volumetric dataset, one can use the Transfer Function (TF). In practice, it maps the voxel density with a specific color (including its transparency). Transfer function can be 1D, 2D or nD and are of great help to isolate structures of interest in volumetric data ~\cite{kniss_multidimensional_2002}. Thanks to the color blending process, suitable transfer function can also reveal iso surface or hide density to improve the volumetric data visualization. The setup of this transfer function remains complex, but some automatic systems provide solution thanks to data analysis ~\cite{correa_size-based_2008} ~\cite{sereda_visualization_2006} ~\cite{patel_moment_2009} or user interactions ~\cite{guo_wysiwyg_2011}. Since our users have a limited knowledge on volume rendering, we developed new interaction techniques with sufficient abstraction level regarding technical constraints. These techniques will be detailed in this paper. As an example, we investigated predefined transfer functions with smooth transitions when changing their setup to reduce disruptive animation effects ~\cite{tversky_animation:_2002}.
-Since graphic card power never stops to improve, new techniques allow the direct manipulation of the voxels which composes the volume to be displayed. Color tunneling introduced a set of interactions (lock, Brush, Dig) to explore 2D and 3D dataset composed of pixels of voxels ~\cite{hurter_interactive_2014} with point based rendering techniques ~\cite{sainz_point-based_2004} . Histomage also provides direct manipulation of pixels thanks to a histogram which can be used as a new selection and pixel modification tool ~\cite{chevalier_histomages:_2012}. Other interactive systems investigated pixel exploration with a lens as a focus plus context technique ~\cite{elmqvist_color_2011} ~\cite{hurter_moleview:_2011}. Our work provides additional interaction techniques with pixel based techniques ~\cite{hurter_interactive_2014} to address occlusion issues, focus and context awareness, reversibility of the actions, and continuity.  
+
+
+\cite{7892381} proposed Neuro Imaging in Virtual Reality (NIVR), which is a visualization
+suite that employs various immersive visualizations to represent
+neuroimaging information in VR. Some established techniques,
+such as raymarching volume visualization, are paired with newer
+techniques, such as near-field rendering, to provide a broad basis
+of how we can leverage VR to improve visualization and
+navigation of neuroimaging data. Several of the neuroscientific
+visualization approaches presented are, to our knowledge, the first
+of their kind.
+NIVR offers not only an exploration of neuroscientific data
+visualization \ref{fig:nivr}, but also a tool to expose and educate the public
+regarding recent advancements in the field of neuroimaging. By
+providing an engaging experience to explore new techniques and
+discoveries in neuroimaging, we hope to spark scientific interest
+through a broad audience. 
+\begin{figure}[th]
+\centering
+\includegraphics[width=\textwidth]{Figures/NIVR}
+\decoRule
+\caption[ NIVR]{ Near Field renderings in NIVR}
+\label{fig:nivr}
+\end{figure}
+
+
+
+\cite{7938241} presented a framework for rendering 3D volumetric data
+on augmented reality displays. The system exploits depth
+sensors that are becoming available in most augmented reality
+HMDs and mobile devices. They provided adaptations to their
+framework to accommodate devices with relatively low-end
+computational capabilities, as is common in mobile and HMD
+platforms designed to be highly portable. The framework
+achieves real-time performance across a number of platforms
+and provides improvements that preserve the sense of interior
+volumes being embedded inside real-world objects. 
+
