@@ -57,7 +57,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
 \usepackage{mathpazo} % Use the Palatino font by default
-
+\usepackage{siunitx}
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{example.bib} % The filename of the bibliography
@@ -275,6 +275,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 
 \include{Chapters/Introduction}
 \include{Chapters/StateOfTheArt}
+\include{Chapters/DesignStudy}
 \include{Chapters/Chapter1}
 
 %\include{Chapters/Chapter2} 

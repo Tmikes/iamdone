@@ -599,6 +599,30 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{deans2007radon}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DSR}{%
+         family={Deans},
+         familyi={D\bibinitperiod},
+         given={Stanley\bibnamedelima R},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Courier Corporation}%
+    }
+    \strng{namehash}{DSR1}
+    \strng{fullhash}{DSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{The Radon transform and some of its applications}
+    \field{year}{2007}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%
