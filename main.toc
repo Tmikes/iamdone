@@ -8,10 +8,10 @@
 \contentsline {chapter}{\numberline {2}State of the art}{3}{chapter.15}
 \contentsline {section}{\numberline {2.1}Volume rendering algorithms}{3}{section.16}
 \contentsline {subsection}{\numberline {2.1.1}Direct Volume Rendering}{4}{subsection.17}
-\contentsline {subsubsection}{Texture mapping}{4}{section*.18}
-\contentsline {paragraph}{2D Texture mapping}{4}{section*.19}
-\contentsline {paragraph}{3D Texture mapping}{5}{section*.23}
-\contentsline {subsubsection}{Raycasting}{6}{section*.26}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Texture mapping}{4}{subsubsection.18}
+\contentsline {paragraph}{\numberline {2.1.1.1.1}2D Texture mapping}{4}{paragraph.19}
+\contentsline {paragraph}{\numberline {2.1.1.1.2}3D Texture mapping}{5}{paragraph.23}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Raycasting}{7}{subsubsection.26}
 \contentsline {subsection}{\numberline {2.1.2}Surface-fitting}{8}{subsection.28}
 \contentsline {section}{\numberline {2.2}Occlusion management strategies}{8}{section.29}
 \contentsline {subsection}{\numberline {2.2.1}Transfer Function}{8}{subsection.30}
@@ -22,46 +22,50 @@
 \contentsline {section}{\numberline {3.1}Introduction}{23}{section.44}
 \contentsline {section}{\numberline {3.2}Activity analysis}{23}{section.45}
 \contentsline {subsection}{\numberline {3.2.1}Task description}{24}{subsection.46}
-\contentsline {subsubsection}{The Equipment}{24}{section*.47}
-\contentsline {subsubsection}{Prohibited articles}{25}{section*.49}
-\contentsline {subsubsection}{Scan analysis}{25}{section*.50}
-\contentsline {paragraph}{Global picture analysis}{25}{section*.51}
-\contentsline {paragraph}{The in-depth analysis}{26}{section*.52}
-\contentsline {paragraph}{The structure analysis}{26}{section*.53}
-\contentsline {paragraph}{The context}{26}{section*.54}
-\contentsline {subsection}{\numberline {3.2.2}The activity issues}{26}{subsection.55}
-\contentsline {subsubsection}{ Error Types }{27}{section*.57}
-\contentsline {paragraph}{Perception errors}{27}{section*.58}
-\contentsline {paragraph}{Interpretation errors}{27}{section*.60}
-\contentsline {paragraph}{Decision making errors}{29}{section*.62}
-\contentsline {subsubsection}{ Dissimulation techniques }{29}{section*.63}
-\contentsline {subsection}{\numberline {3.2.3} Requirements }{30}{subsection.68}
+\contentsline {subsubsection}{\numberline {3.2.1.1}The Equipment}{24}{subsubsection.47}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Prohibited articles}{25}{subsubsection.49}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Scan analysis}{25}{subsubsection.50}
+\contentsline {paragraph}{\numberline {3.2.1.3.1}Global picture analysis}{26}{paragraph.51}
+\contentsline {paragraph}{\numberline {3.2.1.3.2}The in-depth analysis}{26}{paragraph.52}
+\contentsline {paragraph}{\numberline {3.2.1.3.3}The structure analysis}{26}{paragraph.53}
+\contentsline {paragraph}{\numberline {3.2.1.3.4}The context}{26}{paragraph.54}
+\contentsline {subsection}{\numberline {3.2.2}The activity issues}{27}{subsection.55}
+\contentsline {subsubsection}{\numberline {3.2.2.1} Error Types }{27}{subsubsection.57}
+\contentsline {paragraph}{\numberline {3.2.2.1.1}Perception errors}{27}{paragraph.58}
+\contentsline {paragraph}{\numberline {3.2.2.1.2}Interpretation errors}{27}{paragraph.60}
+\contentsline {paragraph}{\numberline {3.2.2.1.3}Decision making errors}{28}{paragraph.62}
+\contentsline {subsubsection}{\numberline {3.2.2.2} Dissimulation techniques }{28}{subsubsection.63}
+\contentsline {subsection}{\numberline {3.2.3} Requirements }{29}{subsection.68}
 \contentsline {section}{\numberline {3.3} Interactive exploration of 3D scanned baggage }{32}{section.69}
 \contentsline {subsection}{\numberline {3.3.1}Top Level Structure}{32}{subsection.70}
-\contentsline {chapter}{\numberline {4}Chapter Title Here}{35}{chapter.72}
-\contentsline {section}{\numberline {4.1}Welcome and Thank You}{35}{section.73}
-\contentsline {section}{\numberline {4.2}Learning \LaTeX {}}{35}{section.74}
-\contentsline {subsection}{\numberline {4.2.1}A (not so short) Introduction to \LaTeX {}}{36}{subsection.75}
-\contentsline {subsection}{\numberline {4.2.2}A Short Math Guide for \LaTeX {}}{36}{subsection.76}
-\contentsline {subsection}{\numberline {4.2.3}Common \LaTeX {} Math Symbols}{36}{subsection.77}
-\contentsline {subsection}{\numberline {4.2.4}\LaTeX {} on a Mac}{36}{subsection.78}
-\contentsline {section}{\numberline {4.3}Getting Started with this Template}{37}{section.79}
-\contentsline {subsection}{\numberline {4.3.1}About this Template}{37}{subsection.80}
-\contentsline {section}{\numberline {4.4}What this Template Includes}{38}{section.81}
-\contentsline {subsection}{\numberline {4.4.1}Folders}{38}{subsection.82}
-\contentsline {subsection}{\numberline {4.4.2}Files}{38}{subsection.83}
-\contentsline {section}{\numberline {4.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{40}{section.84}
-\contentsline {section}{\numberline {4.6}The \texttt {main.tex} File Explained}{40}{section.85}
-\contentsline {section}{\numberline {4.7}Thesis Features and Conventions}{41}{section.86}
-\contentsline {subsection}{\numberline {4.7.1}Printing Format}{41}{subsection.87}
-\contentsline {subsection}{\numberline {4.7.2}Using US Letter Paper}{42}{subsection.88}
-\contentsline {subsection}{\numberline {4.7.3}References}{42}{subsection.89}
-\contentsline {subsubsection}{A Note on bibtex}{43}{section*.91}
-\contentsline {subsection}{\numberline {4.7.4}Tables}{43}{subsection.92}
-\contentsline {subsection}{\numberline {4.7.5}Figures}{44}{subsection.94}
-\contentsline {subsection}{\numberline {4.7.6}Typesetting mathematics}{45}{subsection.96}
-\contentsline {section}{\numberline {4.8}Sectioning and Subsectioning}{46}{section.98}
-\contentsline {section}{\numberline {4.9}In Closing}{46}{section.99}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{47}{appendix.100}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{47}{section.101}
-\contentsline {chapter}{Bibliography}{49}{appendix*.102}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Interaction techniques}{34}{subsubsection.72}
+\contentsline {paragraph}{\numberline {3.3.1.1.1} function edition}{34}{paragraph.73}
+\contentsline {paragraph}{\numberline {3.3.1.1.2} Objects selection and investigation}{34}{paragraph.75}
+\contentsline {subparagraph}{ Selection of an object}{36}{subparagraph*.77}
+\contentsline {chapter}{\numberline {4}Chapter Title Here}{37}{chapter.79}
+\contentsline {section}{\numberline {4.1}Welcome and Thank You}{37}{section.80}
+\contentsline {section}{\numberline {4.2}Learning \LaTeX {}}{37}{section.81}
+\contentsline {subsection}{\numberline {4.2.1}A (not so short) Introduction to \LaTeX {}}{38}{subsection.82}
+\contentsline {subsection}{\numberline {4.2.2}A Short Math Guide for \LaTeX {}}{38}{subsection.83}
+\contentsline {subsection}{\numberline {4.2.3}Common \LaTeX {} Math Symbols}{38}{subsection.84}
+\contentsline {subsection}{\numberline {4.2.4}\LaTeX {} on a Mac}{38}{subsection.85}
+\contentsline {section}{\numberline {4.3}Getting Started with this Template}{39}{section.86}
+\contentsline {subsection}{\numberline {4.3.1}About this Template}{39}{subsection.87}
+\contentsline {section}{\numberline {4.4}What this Template Includes}{40}{section.88}
+\contentsline {subsection}{\numberline {4.4.1}Folders}{40}{subsection.89}
+\contentsline {subsection}{\numberline {4.4.2}Files}{40}{subsection.90}
+\contentsline {section}{\numberline {4.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{42}{section.91}
+\contentsline {section}{\numberline {4.6}The \texttt {main.tex} File Explained}{42}{section.92}
+\contentsline {section}{\numberline {4.7}Thesis Features and Conventions}{43}{section.93}
+\contentsline {subsection}{\numberline {4.7.1}Printing Format}{43}{subsection.94}
+\contentsline {subsection}{\numberline {4.7.2}Using US Letter Paper}{44}{subsection.95}
+\contentsline {subsection}{\numberline {4.7.3}References}{44}{subsection.96}
+\contentsline {subsubsection}{\numberline {4.7.3.1}A Note on bibtex}{45}{subsubsection.98}
+\contentsline {subsection}{\numberline {4.7.4}Tables}{45}{subsection.99}
+\contentsline {subsection}{\numberline {4.7.5}Figures}{46}{subsection.101}
+\contentsline {subsection}{\numberline {4.7.6}Typesetting mathematics}{47}{subsection.103}
+\contentsline {section}{\numberline {4.8}Sectioning and Subsectioning}{48}{section.105}
+\contentsline {section}{\numberline {4.9}In Closing}{48}{section.106}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{49}{appendix.107}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{49}{section.108}
+\contentsline {chapter}{Bibliography}{51}{appendix*.109}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  4 JUL 2018 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.31)  6 JUL 2018 15:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -1645,6 +1645,18 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (C:\Users\michael\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
 ))
+(C:\Users\michael\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip89
+\aftertitleunit=\skip90
+\ttl@plus=\dimen189
+\ttl@minus=\dimen190
+\ttl@toksa=\toks28
+\titlewidth=\dimen191
+\titlewidthlast=\dimen192
+\titlewidthfirst=\dimen193
+)
 (C:\Users\michael\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
 Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
 \csq@reset=\count417
@@ -1653,7 +1665,7 @@ Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
 \csq@qlevel=\count420
 \csq@maxlvl=\count421
 \csq@tshold=\count422
-\csq@ltx@everypar=\toks28
+\csq@ltx@everypar=\toks29
 
 (C:\Users\michael\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
 File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
@@ -1704,7 +1716,7 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen189
+\@linkdim=\dimen194
 \Hy@linkcounter=\count423
 \Hy@pagecounter=\count424
 
@@ -1727,10 +1739,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count426
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen190
+\XeTeXLinkMargin=\dimen195
 \Fld@menulength=\count427
-\Field@Width=\dimen191
-\Fld@charsize=\dimen192
+\Field@Width=\dimen196
+\Fld@charsize=\dimen197
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -1746,7 +1758,7 @@ LaTeX Info: Redefining \pageref on input line 6432.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 105.
+(scrhack)             need that hack, on input line 114.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1761,19 +1773,19 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip89
+\Hy@SectionHShift=\skip91
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 105.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 105.
-Package hyperref Info: Option `colorlinks' set `true' on input line 105.
-Package hyperref Info: Option `unicode' set `true' on input line 105.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 114.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 114.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
+Package hyperref Info: Option `unicode' set `true' on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
 File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 105.
+Package hyperref Info: Option `breaklinks' set `true' on input line 114.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1791,23 +1803,23 @@ LaTeX Warning: Unused global option(s):
 (Chapters/DesignStudy.aux) (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1898,16 +1910,16 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 (C:\Users\michael\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count433
-\scratchdimen=\dimen193
-\scratchbox=\box57
+\scratchdimen=\dimen198
+\scratchbox=\box58
 \nofMPsegments=\count434
 \nofMParguments=\count435
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count436
-\MPscratchDim=\dimen194
+\MPscratchDim=\dimen199
 \MPnumerator=\count437
 \makeMPintoPDFobject=\count438
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks31
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1962,14 +1974,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 105.
-Package scrbase Info: activating english \abbrevname on input line 105.
-Package scrbase Info: activating english \byname on input line 105.
-Package scrbase Info: activating english \acknowledgementname on input line 105
+(scrlayer)             \begin{document} on input line 114.
+Package scrbase Info: activating english \abbrevname on input line 114.
+Package scrbase Info: activating english \byname on input line 114.
+Package scrbase Info: activating english \acknowledgementname on input line 114
 .
-Package scrbase Info: activating english \authorshipname on input line 105.
-Package scrbase Info: activating english \constantsname on input line 105.
-Package scrbase Info: activating english \symbolsname on input line 105.
+Package scrbase Info: activating english \authorshipname on input line 114.
+Package scrbase Info: activating english \constantsname on input line 114.
+Package scrbase Info: activating english \symbolsname on input line 114.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -2092,10 +2104,10 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 105.
-Package biblatex Info: Reference segment=0 on input line 105.
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring ON on input line 105.
+Package biblatex Info: Reference section=0 on input line 114.
+Package biblatex Info: Reference segment=0 on input line 114.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring ON on input line 114.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2104,37 +2116,37 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count439
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+LaTeX Info: Redefining \nameref on input line 114.
 
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 105.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 114.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 105
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 114
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 105
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 114
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 105
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 114
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 105
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 114
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -2142,7 +2154,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 123.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 132.
 [1
 
 
@@ -2154,15 +2166,15 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 163.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 172.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 163.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
@@ -2176,7 +2188,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 194.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 203.
 1: section
 [7] [8
 
@@ -2189,16 +2201,16 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 213.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 222.
  (main.toc
 1: section
 [11] [12]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 53.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 57.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 53.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 57.
 )
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -2283,7 +2295,7 @@ Package epstopdf Info: Source file: <Figures/2D_slices.eps>
 rted-to.pdf Figures/2D_slices.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2D_slices-eps-converted-to.pdf, id=483, pagebox=cropbox, 188.705pt x 1
+<Figures/2D_slices-eps-converted-to.pdf, id=506, pagebox=cropbox, 188.705pt x 1
 32.495pt>
 File: Figures/2D_slices-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2D_slices-eps-converted-to.pdf>
@@ -2302,7 +2314,7 @@ Package epstopdf Info: Source file: <Figures/2dtexmapping.eps>
 nverted-to.pdf Figures/2dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2dtexmapping-eps-converted-to.pdf, id=484, pagebox=cropbox, 346.29375p
+<Figures/2dtexmapping-eps-converted-to.pdf, id=507, pagebox=cropbox, 346.29375p
 t x 138.5175pt>
 File: Figures/2dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2dtexmapping-eps-converted-to.pdf>
@@ -2310,16 +2322,11 @@ Package pdftex.def Info: Figures/2dtexmapping-eps-converted-to.pdf  used on inp
 ut line 87. on input line 87.
 Package pdftex.def Info: Requested size: 346.2929pt x 138.51715pt on input line
  87.
- [4 <./Figures/2D_slices-eps-converted-to.pdf>]
+ [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 99.
-
-Overfull \hbox (1.96939pt too wide) in paragraph at lines 119--121
-\T1/ppl/m/n/10.95 in Fig-ure [][]2.2[][], 2D texture-mapping in-ter-po-lates tw
-o ad-di-tional co-or-di-nates (s, t) across
- []
-
-[5 <./Figures/2dtexmapping-eps-converted-to.pdf>]
+ [5 <./Figures/2D_slices-eps-converted-to.pdf> <./Figures/2dtexmapping-eps-conv
+erted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/3dtexmapping.eps>
 (epstopdf)                    date: 2018-05-04 17:32:32
 (epstopdf)                    size: 1355654 bytes
@@ -2331,7 +2338,7 @@ Package epstopdf Info: Source file: <Figures/3dtexmapping.eps>
 nverted-to.pdf Figures/3dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/3dtexmapping-eps-converted-to.pdf, id=514, pagebox=cropbox, 389.455pt 
+<Figures/3dtexmapping-eps-converted-to.pdf, id=537, pagebox=cropbox, 389.455pt 
 x 175.65625pt>
 File: Figures/3dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/3dtexmapping-eps-converted-to.pdf>
@@ -2349,7 +2356,7 @@ Package epstopdf Info: Source file: <Figures/cubeSlice.eps>
 rted-to.pdf Figures/cubeSlice.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/cubeSlice-eps-converted-to.pdf, id=516, pagebox=cropbox, 283.0575pt x 
+<Figures/cubeSlice-eps-converted-to.pdf, id=539, pagebox=cropbox, 283.0575pt x 
 184.69pt>
 File: Figures/cubeSlice-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/cubeSlice-eps-converted-to.pdf>
@@ -2357,9 +2364,9 @@ Package pdftex.def Info: Figures/cubeSlice-eps-converted-to.pdf  used on input
 line 137. on input line 137.
 Package pdftex.def Info: Requested size: 283.0568pt x 184.68953pt on input line
  137.
- [6 <./Figures/3dtexmapping-eps-converted-to.pdf>] [7 <./Figures/cubeSlice-eps-
-converted-to.pdf>]
-<Figures/raycasting.png, id=543, 1150.2975pt x 358.33875pt>
+ [6 <./Figures/3dtexmapping-eps-converted-to.pdf>]
+[7 <./Figures/cubeSlice-eps-converted-to.pdf>]
+<Figures/raycasting.png, id=566, 1150.2975pt x 358.33875pt>
 File: Figures/raycasting.png Graphic file (type png)
 <use Figures/raycasting.png>
 Package pdftex.def Info: Figures/raycasting.png  used on input line 159. on inp
@@ -2367,21 +2374,22 @@ ut line 159.
 Package pdftex.def Info: Requested size: 404.02908pt x 125.86333pt on input lin
 e 159.
  [8 <./Figures/raycasting.png>]
-<Figures/2dtf.png, id=554, 537.50812pt x 539.01375pt>
+<Figures/2dtf.png, id=577, 537.50812pt x 539.01375pt>
 File: Figures/2dtf.png Graphic file (type png)
 <use Figures/2dtf.png>
 Package pdftex.def Info: Figures/2dtf.png  used on input line 221. on input lin
 e 221.
 Package pdftex.def Info: Requested size: 404.02908pt x 405.16402pt on input lin
 e 221.
-<Figures/mdtf.png, id=559, 1662.21pt x 388.45125pt>
+<Figures/mdtf.png, id=582, 1662.21pt x 388.45125pt>
 File: Figures/mdtf.png Graphic file (type png)
 <use Figures/mdtf.png>
 Package pdftex.def Info: Figures/mdtf.png  used on input line 241. on input lin
 e 241.
 Package pdftex.def Info: Requested size: 404.02908pt x 94.41565pt on input line
  241.
- [9] [10 <./Figures/2dtf.png>]
+
+[9] [10 <./Figures/2dtf.png>]
 Overfull \hbox (23.58452pt too wide) in paragraph at lines 322--323
 \T1/ppl/m/n/10.95 lems by tem-porar-ily al-ter-ing a se-lected part of the vi-s
 ual rep-re-sen-ta-tion of the data []Tomin-
@@ -2393,7 +2401,7 @@ Overfull \hbox (6.26242pt too wide) in paragraph at lines 345--346
 scale cam-era can also achieve
  []
 
-<Figures/multiscale3d.png, id=612, 2054.42531pt x 883.04906pt>
+<Figures/multiscale3d.png, id=635, 2054.42531pt x 883.04906pt>
 File: Figures/multiscale3d.png Graphic file (type png)
 <use Figures/multiscale3d.png>
 Package pdftex.def Info: Figures/multiscale3d.png  used on input line 349. on i
@@ -2401,14 +2409,14 @@ nput line 349.
 Package pdftex.def Info: Requested size: 404.02908pt x 173.65582pt on input lin
 e 349.
 [13 <./Figures/multiscale3d.png>]
-<Figures/explodedview.png, id=621, 1961.82938pt x 526.21594pt>
+<Figures/explodedview.png, id=644, 1961.82938pt x 526.21594pt>
 File: Figures/explodedview.png Graphic file (type png)
 <use Figures/explodedview.png>
 Package pdftex.def Info: Figures/explodedview.png  used on input line 375. on i
 nput line 375.
 Package pdftex.def Info: Requested size: 404.02908pt x 108.36476pt on input lin
 e 375.
-<Figures/clearview.png, id=624, 2511.3825pt x 472.01344pt>
+<Figures/clearview.png, id=647, 2511.3825pt x 472.01344pt>
 File: Figures/clearview.png Graphic file (type png)
 <use Figures/clearview.png>
 Package pdftex.def Info: Figures/clearview.png  used on input line 403. on inpu
@@ -2416,7 +2424,7 @@ t line 403.
 Package pdftex.def Info: Requested size: 404.02908pt x 75.93422pt on input line
  403.
  [14 <./Figures/explodedview.png>]
-<Figures/cut.png, id=633, 1126.96031pt x 793.46437pt>
+<Figures/cut.png, id=656, 1126.96031pt x 793.46437pt>
 File: Figures/cut.png Graphic file (type png)
 <use Figures/cut.png>
 Package pdftex.def Info: Figures/cut.png  used on input line 443. on input line
@@ -2424,7 +2432,7 @@ Package pdftex.def Info: Figures/cut.png  used on input line 443. on input line
 Package pdftex.def Info: Requested size: 404.02908pt x 284.46043pt on input lin
 e 443.
  [15 <./Figures/clearview.png>]
-<Figures/peel.pdf, id=645, pagebox=cropbox, 1049.9225pt x 914.41624pt>
+<Figures/peel.pdf, id=668, pagebox=cropbox, 1049.9225pt x 914.41624pt>
 File: Figures/peel.pdf Graphic file (type pdf)
 <use Figures/peel.pdf>
 Package pdftex.def Info: Figures/peel.pdf  used on input line 458. on input lin
@@ -2432,7 +2440,7 @@ e 458.
 Package pdftex.def Info: Requested size: 404.02908pt x 351.87694pt on input lin
 e 458.
  [16 <./Figures/cut.png>] [17 <./Figures/peel.pdf>]
-<Figures/colortunneling.png, id=775, 872.50969pt x 1076.52188pt>
+<Figures/colortunneling.png, id=798, 872.50969pt x 1076.52188pt>
 File: Figures/colortunneling.png Graphic file (type png)
 <use Figures/colortunneling.png>
 Package pdftex.def Info: Figures/colortunneling.png  used on input line 525. on
@@ -2447,7 +2455,7 @@ Overfull \hbox (1.37904pt too wide) in paragraph at lines 556--564
  []
 
 [20]
-<Figures/NIVR.png, id=794, 1394.96156pt x 667.74469pt>
+<Figures/NIVR.png, id=817, 1394.96156pt x 667.74469pt>
 File: Figures/NIVR.png Graphic file (type png)
 <use Figures/NIVR.png>
 Package pdftex.def Info: Figures/NIVR.png  used on input line 616. on input lin
@@ -2464,7 +2472,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-77.
+86.
 
 
 Overfull \vbox (8.34636pt too high) has occurred while \output is active []
@@ -2481,7 +2489,7 @@ Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 Chapter 3.
 1: section
 [23]
-<Figures/contour.png, id=815, 1278.27562pt x 516.42938pt>
+<Figures/contour.png, id=838, 1278.27562pt x 516.42938pt>
 File: Figures/contour.png Graphic file (type png)
 <use Figures/contour.png>
 Package pdftex.def Info: Figures/contour.png  used on input line 41. on input l
@@ -2489,14 +2497,14 @@ ine 41.
 Package pdftex.def Info: Requested size: 366.20432pt x 147.95424pt on input lin
 e 41.
  [24] [25 <./Figures/contour.png>] [26]
-<Figures/constraints.png, id=834, 986.18437pt x 939.51pt>
+<Figures/constraints.png, id=857, 986.18437pt x 939.51pt>
 File: Figures/constraints.png Graphic file (type png)
 <use Figures/constraints.png>
 Package pdftex.def Info: Figures/constraints.png  used on input line 91. on inp
 ut line 91.
 Package pdftex.def Info: Requested size: 155.29475pt x 147.95424pt on input lin
 e 91.
-<Figures/perceptionError.png, id=836, 681.29532pt x 381.67593pt>
+<Figures/perceptionError.png, id=859, 681.29532pt x 381.67593pt>
 File: Figures/perceptionError.png Graphic file (type png)
 <use Figures/perceptionError.png>
 Package pdftex.def Info: Figures/perceptionError.png  used on input line 108. o
@@ -2508,16 +2516,15 @@ Overfull \hbox (2.27708pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-<Figures/interpretationError.png, id=838, 1094.58937pt x 677.53125pt>
+<Figures/interpretationError.png, id=861, 1094.58937pt x 677.53125pt>
 File: Figures/interpretationError.png Graphic file (type png)
 <use Figures/interpretationError.png>
 Package pdftex.def Info: Figures/interpretationError.png  used on input line 11
 7. on input line 117.
 Package pdftex.def Info: Requested size: 367.72942pt x 227.62204pt on input lin
 e 117.
-[27 <./Figures/constraints.png>] [28 <./Figures/perceptionError.png> <./Figures
-/interpretationError.png>]
-<Figures/superposition.png, id=854, 1437.87187pt x 734.745pt>
+[27 <./Figures/constraints.png>]
+<Figures/superposition.png, id=871, 1437.87187pt x 734.745pt>
 File: Figures/superposition.png Graphic file (type png)
 <use Figures/superposition.png>
 Package pdftex.def Info: Figures/superposition.png  used on input line 134. on 
@@ -2529,22 +2536,22 @@ Overfull \hbox (41.42137pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
-<Figures/positioning.png, id=856, 1086.30844pt x 872.50969pt>
+[28 <./Figures/perceptionError.png>]
+<Figures/positioning.png, id=879, 1086.30844pt x 872.50969pt>
 File: Figures/positioning.png Graphic file (type png)
 <use Figures/positioning.png>
 Package pdftex.def Info: Figures/positioning.png  used on input line 142. on in
 put line 142.
 Package pdftex.def Info: Requested size: 283.39493pt x 227.62204pt on input lin
 e 142.
-<Figures/Dissociation.png, id=858, 968.86969pt x 863.47594pt>
+<Figures/Dissociation.png, id=881, 968.86969pt x 863.47594pt>
 File: Figures/Dissociation.png Graphic file (type png)
 <use Figures/Dissociation.png>
 Package pdftex.def Info: Figures/Dissociation.png  used on input line 150. on i
 nput line 150.
 Package pdftex.def Info: Requested size: 255.40392pt x 227.62204pt on input lin
 e 150.
-[29 <./Figures/superposition.png>]
-<Figures/bait.png, id=867, 1403.2425pt x 811.53188pt>
+<Figures/bait.png, id=883, 1403.2425pt x 811.53188pt>
 File: Figures/bait.png Graphic file (type png)
 <use Figures/bait.png>
 Package pdftex.def Info: Figures/bait.png  used on input line 158. on input lin
@@ -2553,60 +2560,86 @@ Package pdftex.def Info: Requested size: 393.5904pt x 227.62204pt on input line
  158.
 
 
-LaTeX Warning: Citation 'preim2013visual' on page 30 undefined on input line 16
+LaTeX Warning: Citation 'preim2013visual' on page 29 undefined on input line 16
 6.
 
-[30 <./Figures/positioning.png>] [31 <./Figures/Dissociation.png> <./Figures/ba
-it.png>]
-
-LaTeX Warning: Reference `f:figure2' on page 32 undefined on input line 183.
-
-<Figures/layout.png, id=879, 2168.1pt x 3022.29124pt>
+[29 <./Figures/interpretationError.png>] [30 <./Figures/superposition.png> <./F
+igures/positioning.png>] [31 <./Figures/Dissociation.png> <./Figures/bait.png>]
+<Figures/layout.png, id=904, 2168.1pt x 3022.29124pt>
 File: Figures/layout.png Graphic file (type png)
 <use Figures/layout.png>
 Package pdftex.def Info: Figures/layout.png  used on input line 188. on input l
 ine 188.
 Package pdftex.def Info: Requested size: 285.73355pt x 398.33858pt on input lin
 e 188.
-) [32] [33 <./Figures/layout.png (PNG copy)>]
+[32] [33 <./Figures/layout.png (PNG copy)>]
+<Figures/preset.png, id=914, 2133.9725pt x 723.70375pt>
+File: Figures/preset.png Graphic file (type png)
+<use Figures/preset.png>
+Package pdftex.def Info: Figures/preset.png  used on input line 209. on input l
+ine 209.
+Package pdftex.def Info: Requested size: 426.79134pt x 144.73817pt on input lin
+e 209.
+
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 209--210
+ [][] 
+ []
+
+<Figures/menace.png, id=916, 1066.98625pt x 1304.875pt>
+File: Figures/menace.png Graphic file (type png)
+<use Figures/menace.png>
+Package pdftex.def Info: Figures/menace.png  used on input line 220. on input l
+ine 220.
+Package pdftex.def Info: Requested size: 256.0748pt x 313.1565pt on input line 
+220.
+[34 <./Figures/preset.png (PNG copy)>] [35 <./Figures/menace.png (PNG copy)>]
+<Figures/selection.png, id=928, 1022.82124pt x 1279.78125pt>
+File: Figures/selection.png Graphic file (type png)
+<use Figures/selection.png>
+Package pdftex.def Info: Figures/selection.png  used on input line 231. on inpu
+t line 231.
+Package pdftex.def Info: Requested size: 256.0748pt x 320.39366pt on input line
+ 231.
+)
+[36 <./Figures/selection.png (PNG copy)>]
 \openout2 = `Chapters/Chapter1.aux'.
 
- (Chapters/Chapter1.tex [34
-
-
-
-]
+ (Chapters/Chapter1.tex
 Chapter 4.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 1: section
-[35] [36]
+[37
+
+
+
+] [38]
 Overfull \hbox (12.15245pt too wide) in paragraph at lines 72--74
 \T1/ppl/m/n/10.95 site, here: [][]$\T1/cmtt/m/n/10.95 http : / / www . ecs . so
 ton . ac . uk / ~srg / softwaretools / document / templates/$[][] 
  []
 
-[37] [38]
+[39] [40]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 136.
- [39] [40]
+ [41] [42]
 Overfull \hbox (8.37132pt too wide) in paragraph at lines 180--181
 \T1/ppl/m/n/10.95 sided print-ing is as sim-ple as un-com-ment-ing the \T1/cmtt
 /m/it/10.95 oneside \T1/ppl/m/n/10.95 op-tion of the \T1/cmtt/m/n/10.95 documen
 tclass
  []
 
-[41] [42] [43]
-<Figures/Electron.pdf, id=960, pagebox=cropbox, 398.3386pt x 284.52756pt>
+[43] [44] [45]
+<Figures/Electron.pdf, id=1002, pagebox=cropbox, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf  used on input line 262. on input
  line 262.
 Package pdftex.def Info: Requested size: 398.33762pt x 284.52686pt on input lin
 e 262.
- [44] [45 <./Figures/Electron.pdf>]
+ [46] [47 <./Figures/Electron.pdf>]
 Overfull \hbox (0.90797pt too wide) in paragraph at lines 308--309
 \T1/ppl/m/n/10.95 au-to-mat-i-cally builds a ta-ble of Con-tents by look-ing at
  all the [][]\T1/cmtt/m/n/10.95 \chapter{}[]\T1/ppl/m/n/10.95 , [][]\T1/cmtt/m/
@@ -2619,37 +2652,37 @@ Overfull \hbox (0.45015pt too wide) in paragraph at lines 310--311
 hree (3) lev-els. A [][]\T1/cmtt/m/n/10.95 chapter{}
  []
 
-) [46]
+) [48]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (Appendices/AppendixA.tex
 Appendix A.
 )
 1: section
-[47
+[49
 
 
 
-] [48
+] [50
 
 
 ]
 1: section
-[49] [50]
-Overfull \hbox (9.1917pt too wide) in paragraph at lines 303--303
+[51] [52]
+Overfull \hbox (9.1917pt too wide) in paragraph at lines 312--312
 \T1/ppl/m/n/10.95 Model. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-tions on Vi-su-a
 l-iza-tion and Com-puter Graph-ics \T1/ppl/m/n/10.95 17.11, pp. 1560
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
-[51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+[53]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
 (Chapters/DesignStudy.aux) (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1B37C2531AC2DEC2506826882904C818;9476.
+(rerunfilecheck)             Checksum: 2C2F9053D70BD5FC89BD17D5DA4C1053;9698.
 
 
 LaTeX Warning: There were undefined references.
@@ -2664,13 +2697,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36195 strings out of 493312
- 737670 string characters out of 3138893
- 992250 words of memory out of 3000000
- 39076 multiletter control sequences out of 15000+200000
+ 36503 strings out of 493312
+ 742011 string characters out of 3138893
+ 999472 words of memory out of 3000000
+ 39368 multiletter control sequences out of 15000+200000
  606802 words of font info for 168 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,82p,10379b,2947s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,21n,82p,10379b,2949s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ectt1000.pk> <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecit1095.pk> <C:\Users\michael\AppData\Local\MiKTeX\2.9\fonts\pk\
@@ -2685,9 +2718,9 @@ o/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (77 pages, 34366295 bytes).
+Output written on main.pdf (79 pages, 38309754 bytes).
 PDF statistics:
- 1349 PDF objects out of 1440 (max. 8388607)
- 214 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1397 PDF objects out of 1440 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 584 words of extra memory for PDF output out of 10000 (max. 10000000)
 

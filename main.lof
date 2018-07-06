@@ -3,7 +3,7 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 2D Sclices}}{4}{figure.caption.20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 2D Sclices}}{5}{figure.caption.20}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 2D texture mapping}}{5}{figure.caption.21}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 3D texture mapping}}{6}{figure.caption.24}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 3D Cube slice}}{7}{figure.caption.25}
@@ -21,12 +21,15 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces X-ray scan with the 3 standard colors (orange, green, and blue)\relax }}{25}{figure.caption.48}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces The operational constraints of the security agents.\relax }}{27}{figure.caption.56}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) \relax }}{28}{figure.caption.59}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{28}{figure.caption.61}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Dissimulation by superposition\relax }}{29}{figure.caption.64}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{29}{figure.caption.61}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dissimulation by superposition\relax }}{30}{figure.caption.64}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Dissimulation by the location\relax }}{30}{figure.caption.65}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Dissimulation by dissociation\relax }}{31}{figure.caption.66}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Dissimulation using a bait\relax }}{31}{figure.caption.67}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available throught this GUI\relax }}{33}{figure.caption.71}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI\relax }}{33}{figure.caption.71}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets \relax }}{34}{figure.caption.74}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Inspection of an object from different perspectives. 1- The user defines an object of interest for further inspection. This object is then inside a box with red borders. 2- The user modifies the transfer function to see the target in another context. 3- The user rotates the baggage to look at the menace from a different perspective. It stays visible whatever the manipulation carried out. \relax }}{35}{figure.caption.76}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Selection of an umbrella for further inspection. 1- The user wants to check an object looking like an umbrella. 2- After a double click, the object is selected and becomes gray as a feedback. 3- After the activation of the 2nd view, the user can manipulate the umbrella with or without the whole baggage. All the Selected items are also available on this second view. \relax }}{36}{figure.caption.78}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces An Electron}}{45}{figure.caption.95}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces An Electron}}{47}{figure.caption.102}
 \addvspace {10\p@ }

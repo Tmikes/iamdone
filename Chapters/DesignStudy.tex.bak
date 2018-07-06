@@ -34,7 +34,7 @@ In most French airport, the security agents two types of fluoroscopic system: th
 \item and input/output devices (keyboard, screens).
 \end{itemize}
 When a luggage get in the frame, the x-rays are sent from the generator to the L-shaped detector through the luggage's components. The x-rays are attenuated depending on the molecular density of the encountered objects, which allows to receive different x-ray intensities on the L-shaped detector. Then, the different received intensities are processed to get the final 2D scan.
-The final image does not keep the original colors, instead they use 3 colors (orange, green, and blue) to show the density of each encountered object. The orange color is used for low density matters which are mainly organic. In opposition, the blue color is used for high density matters which are mainly inorganic. The green color expresses the superposition of different kinds of materials or average density materials, see \ref{f:image2d}.
+The final image does not keep the original colors, instead they use 3 colors (orange, green, and blue) to show the density of each encountered object. The orange color is used for low density matters which are mainly organic. In opposition, the blue color is used for high density matters which are mainly inorganic. The green color expresses the superposition of different kinds of materials or average density materials, see figure \ref{f:image2d}.
 
 \begin{figure}
 \centering
@@ -58,24 +58,24 @@ In addition to these prohibitions, some articles such as liquid, gels, and aeros
 \subsubsection{Scan analysis}
 Whatever fluoroscopic system is used, the security agents try to follow an analysis protocol to ensure any prohibited article is detected. This protocol is composed of 4 major steps, which are the global picture analysis, the in-depth analysis, the structure analysis, and the context.
 
-\paragraph{Global picture analysis}:
+\paragraph{Global picture analysis}
 
 
 First, the security agent check whether the luggage is well placed. Indeed, the luggage should appear on the screen with \ang{45} of rotation. If it is not the case, a re-positioning is required. To avoid this issue, another agent must check the luggage positioning.
 Next, the agent try to find out whether the luggage is complex or not. A luggage is complex when there is a superposition of usual objects and metallic materials. A complex luggage can hide threat and make them invisible. If possible, the complex luggage is opened and all troublesome objects are removed.
 
-\paragraph{The in-depth analysis}:
+\paragraph{The in-depth analysis}
 
 
 First, the security agent divides the luggage's component in groups. The aim is to reduce the risk of error. Indeed, smaller prohibited articles may be easily unseen. Then, the dark areas must be lightened up. To do it, the security agent can use functionalities such as high penetration or contour enhancement. If the area is still dark, the luggage must be opened to remove the serious doubts.
 Next, the agent focus on the problematical shapes. A non-recognizable shape may be caused by a bad positioning. Any unrecognized object must be inspected by the agent. If any prohibited article is detected, the agent follows the procedure related to the threat. In addition, an organic matter superposed to an electronic device is considered as a sufficient reason to open the luggage. Liquids, gels, and aerosols should be less than 100ml otherwise they will be removed from the luggage. These liquids should be placed into a plastic bag.
 
-\paragraph{The structure analysis}:
+\paragraph{The structure analysis}
 
 
 During this step, the security agent compare each element of the luggage which must be symmetrical because of its industrial conception such us suitcase's wheels. If the symmetry is not respected, it is might be a clue to the deliberate luggage modification for dissimulating prohibited objects.
 
-\paragraph{The context}:
+\paragraph{The context}
 
 
 Depending on the context some articles are prohibited or not. The agent must be aware of his work position.
@@ -100,7 +100,7 @@ First of all, The facilitation constraint implies that the security agent has to
 
 The security agents can usually do 3 types of error during the baggage inspection process.
 
-\paragraph{Perception errors}:
+\paragraph{Perception errors}
 
 The security agent does not detect the right area to analyze. He is not focus on the troublesome area, see figure \ref{f:perception}.
 \begin{figure}
@@ -109,7 +109,7 @@ The security agent does not detect the right area to analyze. He is not focus on
 	\caption{Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) }
 	\label{f:perception}
 \end{figure}
-\paragraph{Interpretation errors}:
+\paragraph{Interpretation errors}
 
 The security agent detects the right troublesome area but does not judge it as a potential threat. In other words, he is focused on the right area but cannot see the menace. The agents used to combine what they find out with their knowledge on real world objects stored in their memories. They have their own model of the situation, see figure \ref{f:interpretation}.
 \begin{figure}
@@ -119,7 +119,7 @@ The security agent detects the right troublesome area but does not judge it as a
 	\label{f:interpretation}
 \end{figure}
 
-\paragraph{Decision making errors}:
+\paragraph{Decision making errors}
 In this case, the security agent detects the right troublesome area with a good interpretation, but make a bad decision. It might be related to the context or the procedure knowledge.
 In addition to these errors related to the agent, four hiding techniques can be used to bypass the security mechanisms. Those techniques are superposition, positioning, dissociation, and bait.
 
@@ -180,13 +180,13 @@ superposition of items inside the luggage hinders their visualization.
 
 \subsection{Top Level Structure}
 
-Our system is composed of one main view (Volume Visualization) and 5 sub views to control and customize it. Our interactive system does not provide menu and every feature is directly accessible from this main view (\autoref{f:figure2}).
+Our system is composed of one main view (Volume Visualization) and 5 sub views to control and customize it, see figure \ref{f:layout}. Our interactive system does not provide menu and every feature is directly accessible from this main view (\autoref{f:layout}).
 The Volume Visualization can contain up to two views to ease interactions with the 3D scan. These views display the baggage and one can navigate through it (zoom, pan, rotation), manipulate its content (brushing, selection, deletion). These two views can be linked or disconnected in order to inspect selected objects with or without their context.
 A smaller view called Overview shows the location of the investigated area. The overview is one-eighth the size of the main window and is located at its bottom right.
 \begin{figure}
 \centering
 	\includegraphics[height=14cm]{Figures/layout}
-	\caption{Top level layout and screenshot of our Graphical User Interface. All the features are available throught this GUI}
+	\caption{Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI}
 	\label{f:layout}
 \end{figure}
 
@@ -195,3 +195,44 @@ The Snapshot shows saved instances with their setting (pan, zoom, rotation, tran
 The Toolbox contains every interactive tools to explore the baggage (brushing, selection, eraser, density picker, navigation tools).
 Transfer Function presets contains six predefined settings ordered by their filtering power. Low level shows every density, high level only show high density values. 
 This global layout can be customized thanks to View Options. One can display one or two views of the Volume Visualization, the Temporal Instances, the Snapshot and the Overview.
+
+\subsubsection{Interaction techniques}
+
+We used a multi touchscreen Wacom 24HD equipped with a stylus. Most of the developed interactions can be performed with every available modality: mouse, hand or pen.
+\paragraph{ function edition}	
+Datasets such as two dimensional raster images or three dimensional voxel based representations are often processed for representation using a transfer function (TF) defined by a curve. 
+
+Since airport security agents have a reduced time frame and limited knowledge of technical constraints, we defined six TF presets (\autoref{f:preset}). These presets only modify the TF transparency curve while keeping the same color mapping. These presets are ordered by their density filtering power: the first preset displays every density and the last one only highest density of the volume (i.e. metal). 
+
+\begin{figure}
+   \centering   
+	%\includegraphics[width=18cm]{Figures/preset.png}
+	\caption{ Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets }
+	\label{f:preset}
+\end{figure}
+When clicking on a preset, the TF changes with a short transition (1 second) toward a new one. 
+Finally, the user can select a transfer function located between two presets. To do so, the user drags from any location within the TF presets area until the volume visualization shows interesting features 
+
+\paragraph{ Objects selection and investigation}
+In order to investigate in detail a specific object, one can isolate it, remove surrounding items to address occlusion issues, or find a suitable point of view (\autoref{f:menace}). This section details these interaction techniques which encompass the selection of  many objects.
+\begin{figure}
+\centering   
+\includegraphics[width=9cm]{Figures/menace.png}
+\caption{ Inspection of an object from different perspectives. 1- The user defines an object of interest for further inspection. This object is then inside a box with red borders. 2-  The user modifies the transfer function to see the target in another context. 3- The user rotates the baggage to look at the menace from a different perspective. It stays visible whatever the manipulation carried out.  }
+\label{f:menace}
+\end{figure} 
+
+\subparagraph{	Selection of an object}
+We developed three different ways to select objects with the three different modalities: hand, mouse or pen. When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. Otherwise, the user has to double click on the target with the mouse pointer. After the target is selected, our system tries to find a better point of view to display the selected object with the minimum of occluded parts. The details of this algorithm will be explained in the technical part of this paper. We use a smooth transition to rotate and zoom the baggage. 
+
+
+\begin{figure}
+\centering   
+	\includegraphics[width=9cm]{Figures/selection.png}
+	\caption{ Selection of an umbrella for further inspection.  1- The user wants to check an object looking like an umbrella. 2- After a double click, the object is selected and becomes gray as a feedback. 3- After the activation of the 2nd view, the user can manipulate the umbrella with or without the whole baggage. All the Selected items are also available on this second view. }
+	\label{f:selection}
+\end{figure}
+
+
+
+If the user has activated the 2 views Volume Visualization (Button 2 views in the View Option panel), the selected object is isolated in the second view (on the right side of the main view \autoref{f:selection} ). The selection is incremental and many object can be selected one after another. To undo the selection, the user has to select the desired object in the second view.
