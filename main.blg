@@ -3,10 +3,13 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Introduction.aux
 A level-1 auxiliary file: Chapters/StateOfTheArt.aux
 A level-1 auxiliary file: Chapters/DesignStudy.aux
-A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/lens.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Database file #1: main-blx.bib
 Database file #2: example.bib
 Warning--I didn't find a database entry for "preim2013visual"
+Warning--I didn't find a database entry for "4276082"
+Warning--I didn't find a database entry for "cui10"
+Warning--I didn't find a database entry for "wu16"
 Biblatex version: 3.8
-(There was 1 warning)
+(There were 4 warnings)

@@ -146,62 +146,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Reference3}{article}{}
-    \name{author}{4}{}{%
-      {{hash=AAS}{%
-         family={Arnold},
-         familyi={A\bibinitperiod},
-         given={A.\bibnamedelima S.},
-         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=WJS}{%
-         family={Wilson},
-         familyi={W\bibinitperiod},
-         given={J.\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=BMG}{%
-         family={Boshier},
-         familyi={B\bibinitperiod},
-         given={M.\bibnamedelima G.},
-         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Smith},
-         familyi={S\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AAS+1}
-    \strng{fullhash}{AASWJSBMGSJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1998}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    Operating a laser diode in an extended cavity which provides
-  frequency-selective feedback is a very effective method of reducing the
-  laser's linewidth and improving its tunability. We have developed an
-  extremely simple laser of this type, built from inexpensive commercial
-  components with only a few minor modifications. A 780~nm laser built to this
-  design has an output power of 80~mW, a linewidth of 350~kHz, and it has been
-  continuously locked to a Doppler-free rubidium transition for several days.%
-    }
-    \field{number}{3}
-    \field{pages}{1236\bibrangedash 1239}
-    \field{title}{A Simple Extended-Cavity Diode Laser}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/69/1236/1
-    \endverb
-    \field{volume}{69}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{03}
-    \field{year}{1998}
-  \endentry
-
   \entry{paraview}{book}{}
     \name{author}{1}{}{%
       {{hash=AU}{%
@@ -275,6 +219,156 @@
   Graphics}
     \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Burns:2008:ACC:1457515.1409107}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Burns},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Finkelstein},
+         familyi={F\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{NPR, cutaway diagram, distance transform, visibility}
+    \strng{namehash}{BMFA1}
+    \strng{fullhash}{BMFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{ACM SIGGRAPH Asia 2008 Papers}
+    \verb{doi}
+    \verb 10.1145/1457515.1409107
+    \endverb
+    \field{isbn}{978-1-4503-1831-0}
+    \field{pages}{154:1\bibrangedash 154:7}
+    \field{series}{SIGGRAPH Asia '08}
+    \field{title}{Adaptive Cutaways for Comprehensible Rendering of Polygonal
+  Scenes}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/1457515.1409107
+    \endverb
+    \list{location}{1}{%
+      {Singapore}%
+    }
+    \field{year}{2008}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{595268}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CMST}{%
+         family={Carpendale},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima S.\bibnamedelima T.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=CDJ}{%
+         family={Cowperthwaite},
+         familyi={C\bibinitperiod},
+         given={D.\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FFD}{%
+         family={Fracchia},
+         familyi={F\bibinitperiod},
+         given={F.\bibnamedelima D.},
+         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{data compression;data visualisation;three-dimensional displays;3D
+  distortion viewing;3D information display;3D information layouts;3D visual
+  access tool;detail-in-context views;fisheye views;global
+  relationships;graphs;image compression;information layout adjustment
+  tools;line of sight;local details;magnification;multiscale
+  views;occlusion;region of interest;visual exploration techniques;visual
+  pattern recognition;Computer displays;Graphics;Humans;Image
+  coding;Information filtering;Information filters;Information
+  representation;Three dimensional displays;Two dimensional
+  displays;Visualization}
+    \strng{namehash}{CMSTCDJFFD1}
+    \strng{fullhash}{CMSTCDJFFD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/38.595268
+    \endverb
+    \field{issn}{0272-1716}
+    \field{number}{4}
+    \field{pages}{42\bibrangedash 51}
+    \field{title}{Extending distortion viewing from 2D to 3D}
+    \field{volume}{17}
+    \field{journaltitle}{IEEE Computer Graphics and Applications}
+    \field{year}{1997}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{carr_computing_2000}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CH}{%
+         family={Carr},
+         familyi={C\bibinitperiod},
+         given={Hamish},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Snoeyink},
+         familyi={S\bibinitperiod},
+         given={Jack},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AU}{%
+         family={Axen},
+         familyi={A\bibinitperiod},
+         given={Ulrike},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Society for Industrial}%
+      {Applied Mathematics}%
+    }
+    \strng{namehash}{CHSJAU1}
+    \strng{fullhash}{CHSJAU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of the Eleventh Annual {ACM}-{SIAM} Symposium
+  on Discrete Algorithms}
+    \field{isbn}{0-89871-453-2}
+    \field{pages}{918\bibrangedash 926}
+    \field{series}{{SODA} '00}
+    \field{title}{Computing Contour Trees in All Dimensions}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=338219.338659
+    \endverb
+    \list{location}{1}{%
+      {Philadelphia, {PA}, {USA}}%
+    }
+    \field{year}{2000}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2015}
   \endentry
 
   \entry{Childs:SciDAC2011}{inproceedings}{}
@@ -426,6 +520,52 @@
     \list{location}{1}{%
       {Denver, CO}%
     }
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5416704}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CCD}{%
+         family={Correa},
+         familyi={C\bibinitperiod},
+         given={C.\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MKL}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={K.\bibnamedelima L.},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \keyw{rendering (computer graphics);complex data set visualisation;direct
+  volume rendering;feedback mechanism;multidimensional graphical
+  representations;visibility driven transfer functions;visibility
+  histograms;volume rendered image;Attenuation;Data
+  visualization;Feedback;Histograms;Image generation;Multidimensional
+  systems;Process design;Quality management;Rendering (computer
+  graphics);Transfer functions;Transfer functions;histograms.;view-point
+  dependent rendering;visibility;volume rendering}
+    \strng{namehash}{CCDMKL1}
+    \strng{fullhash}{CCDMKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/TVCG.2010.35
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{2}
+    \field{pages}{192\bibrangedash 204}
+    \field{title}{Visibility Histograms and Visibility-Driven Transfer
+  Functions}
+    \field{volume}{17}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -623,6 +763,51 @@
     \field{year}{2007}
   \endentry
 
+  \entry{4483791}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EN}{%
+         family={Elmqvist},
+         familyi={E\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tsigas},
+         familyi={T\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;human computer interaction;human
+  factors;interactive systems;3D occlusion management techniques;3D
+  visualization;depth perception;human computer interaction;human
+  perception;interactive techniques;Applications;Computer
+  Graphics;Three-Dimensional Graphics and Realism;User Interfaces;Virtual
+  reality;Visualization;Algorithms;Computer Graphics;Image Enhancement;Image
+  Interpretation, Computer-Assisted;Imaging, Three-Dimensional;User-Computer
+  Interface}
+    \strng{namehash}{ENTP1}
+    \strng{fullhash}{ENTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{doi}
+    \verb 10.1109/TVCG.2008.59
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{1095\bibrangedash 1109}
+    \field{title}{A Taxonomy of 3D Occlusion Management for Visualization}
+    \field{volume}{14}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%
@@ -704,56 +889,6 @@
   dimension projection embedded in parallel coordinates}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Reference1}{article}{}
-    \name{author}{3}{}{%
-      {{hash=HCJ}{%
-         family={Hawthorn},
-         familyi={H\bibinitperiod},
-         given={C.\bibnamedelima J.},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=WKP}{%
-         family={Weber},
-         familyi={W\bibinitperiod},
-         given={K.\bibnamedelima P.},
-         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=SRE}{%
-         family={Scholten},
-         familyi={S\bibinitperiod},
-         given={R.\bibnamedelima E.},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HCJWKPSRE1}
-    \strng{fullhash}{HCJWKPSRE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2001}
-    \field{labeldatesource}{year}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{abstract}{%
-    We have developed an enhanced Littrow configuration extended cavity diode
-  laser (ECDL) that can be tuned without changing the direction of the output
-  beam. The output of a conventional Littrow ECDL is reflected from a plane
-  mirror fixed parallel to the tuning diffraction grating. Using a free-space
-  Michelson wavemeter to measure the laser wavelength, we can tune the laser
-  over a range greater than 10 nm without any alteration of alignment.%
-    }
-    \field{number}{12}
-    \field{pages}{4477\bibrangedash 4479}
-    \field{title}{Littrow Configuration Tunable External Cavity Diode Laser
-  with Fixed Direction Output Beam}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/72/4477/1
-    \endverb
-    \field{volume}{72}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{12}
-    \field{year}{2001}
   \endentry
 
   \entry{Hsu:2011:RFM:2070781.2024165}{article}{}
@@ -1143,6 +1278,74 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Li:2012:LVV:2425296.2425325}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LW}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paladini},
+         familyi={P\bibinitperiod},
+         given={Gianluca},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Grady},
+         familyi={G\bibinitperiod},
+         given={Leo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kohlberger},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SVK}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Vivek\bibnamedelima Kumar},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bahlmann},
+         familyi={B\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{LW+1}
+    \strng{fullhash}{LWPGGLKTSVKBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proceedings of the Workshop at SIGGRAPH Asia}
+    \verb{doi}
+    \verb 10.1145/2425296.2425325
+    \endverb
+    \field{isbn}{978-1-4503-1835-8}
+    \field{pages}{161\bibrangedash 168}
+    \field{series}{WASA '12}
+    \field{title}{Luggage Visualization and Virtual Unpacking}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2425296.2425325
+    \endverb
+    \list{location}{1}{%
+      {Singapore, Singapore}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{1250400}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=MMJ}{%
@@ -1185,6 +1388,50 @@
     \field{title}{Using deformations for browsing volumetric data}
     \field{year}{2003}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pascucci_multi-resolution_2004}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PV}{%
+         family={Pascucci},
+         familyi={P\bibinitperiod},
+         given={Valerio},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CMK}{%
+         family={Cole-{McLaughlin}},
+         familyi={C\bibinitperiod-M\bibinitperiod},
+         given={Kree},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Scorzelli},
+         familyi={S\bibinitperiod},
+         given={Giorgio},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PVCMKSG1}
+    \strng{fullhash}{PVCMKSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{452\bibrangedash 290}
+    \field{title}{Multi-resolution computation and presentation of contour
+  trees}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.308.8105&rep
+    \verb =rep1&type=pdf
+    \endverb
+    \field{journaltitle}{Proc. {IASTED} Conference on Visualization, Imaging,
+  and Image Processing}
+    \field{year}{2004}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2015}
   \endentry
 
   \entry{Pindat:2012:JCA:2380116.2380150}{inproceedings}{}
@@ -1245,6 +1492,65 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{CGF:CGF12927}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PB}{%
+         family={Preim},
+         familyi={P\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Baer},
+         familyi={B\bibinitperiod},
+         given={Alexandra},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Cunningham},
+         familyi={C\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=IT}{%
+         family={Isenberg},
+         familyi={I\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Ropinski},
+         familyi={R\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Categories and Subject Descriptors (according to ACM CCS), I.3.3
+  [Computer Graphics]: Picture/Image Generation—Line and curve generation}
+    \strng{namehash}{PB+1}
+    \strng{fullhash}{PBBACDITRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1111/cgf.12927
+    \endverb
+    \field{issn}{1467-8659}
+    \field{number}{3}
+    \field{pages}{501\bibrangedash 525}
+    \field{title}{A Survey of Perceptually Motivated 3D Visualization of
+  Medical Image Data}
+    \verb{url}
+    \verb http://dx.doi.org/10.1111/cgf.12927
+    \endverb
+    \field{volume}{35}
+    \field{journaltitle}{Computer Graphics Forum}
+    \field{year}{2016}
+  \endentry
+
   \entry{7938241}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=RL}{%
@@ -1287,6 +1593,100 @@
   Augmented Reality Displays}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{CGF:CGF979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RSC}{%
+         family={Rezk-Salama},
+         familyi={R\bibinitperiod-S\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kolb},
+         familyi={K\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Blackwell Publishing, Inc}%
+    }
+    \strng{namehash}{RSCKA1}
+    \strng{fullhash}{RSCKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1111/j.1467-8659.2006.00979.x
+    \endverb
+    \field{issn}{1467-8659}
+    \field{number}{3}
+    \field{pages}{597\bibrangedash 606}
+    \field{title}{Opacity Peeling for Direct Volume Rendering}
+    \verb{url}
+    \verb http://dx.doi.org/10.1111/j.1467-8659.2006.00979.x
+    \endverb
+    \field{volume}{25}
+    \field{journaltitle}{Computer Graphics Forum}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Sonnet:2004:IEA:989863.989871}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SH}{%
+         family={Sonnet},
+         familyi={S\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Carpendale},
+         familyi={C\bibinitperiod},
+         given={Sheelagh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Strothotte},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{3D model exploration, expanding annotations, explosion diagram,
+  interaction design}
+    \strng{namehash}{SHCSST1}
+    \strng{fullhash}{SHCSST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the Working Conference on Advanced Visual
+  Interfaces}
+    \verb{doi}
+    \verb 10.1145/989863.989871
+    \endverb
+    \field{isbn}{1-58113-867-9}
+    \field{pages}{63\bibrangedash 70}
+    \field{series}{AVI '04}
+    \field{title}{Integrating Expanding Annotations with a 3D Explosion Probe}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/989863.989871
+    \endverb
+    \list{location}{1}{%
+      {Gallipoli, Italy}%
+    }
+    \field{year}{2004}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{Thiede2008}{inbook}{}
@@ -1423,6 +1823,62 @@
     \field{title}{Fisheye Tree Views and Lenses for Graph Visualization}
     \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{6327262}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TC}{%
+         family={Tominski},
+         familyi={T\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schumann},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Andrienko},
+         familyi={A\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AN}{%
+         family={Andrienko},
+         familyi={A\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{cartography;data visualisation;geographic information systems;solid
+  modelling;2D map;2D time graph;2D-3D display;3D navigation;color
+  mapping;dynamic query mechanism;maritime navigation;radiation
+  surveillance;spatial context;spatio-temporal context;stacked 3D trajectory
+  band;stacking-based visualization;traffic analysis;trajectory attribute
+  data;trajectory visualization;Data visualization;Image color
+  analysis;Navigation;Trajectory;Visualization;exploratory
+  analysis;interaction;spatio-temporal data;trajectory attribute data}
+    \strng{namehash}{TC+1}
+    \strng{fullhash}{TCSHAGAN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1109/Transactions on Visualization and Computer Graphics.2012.265
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{12}
+    \field{pages}{2565\bibrangedash 2574}
+    \field{title}{Stacking-Based Visualization of Trajectory Attribute Data}
+    \field{volume}{18}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2012}
   \endentry
 
   \entry{CGF:CGF12871}{article}{}
@@ -1644,6 +2100,99 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{7819413}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Traor\'e},
+         familyi={T\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{airports;data visualisation;image processing;interactive
+  systems;security;3D scanned baggage;GUI design;airport security
+  screenings;baggage inspection;ease of use;interactive image-based
+  visualization system;volumetric data exploration;Image color
+  analysis;Interactive systems;Navigation;Network security;Three-dimensional
+  displays;Transfer functions;Visualization;airport security;computer
+  graphics;computer graphics applications;human-computer interaction;volume
+  visualization;volumetric data}
+    \strng{namehash}{TMHC1}
+    \strng{fullhash}{TMHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1109/MCG.2017.10
+    \endverb
+    \field{issn}{0272-1716}
+    \field{number}{1}
+    \field{pages}{27\bibrangedash 33}
+    \field{title}{Interactive Exploration of 3D Scanned Baggage}
+    \field{volume}{37}
+    \field{journaltitle}{IEEE Computer Graphics and Applications}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{tversky_animation:_2002}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TB}{%
+         family={Tversky},
+         familyi={T\bibinitperiod},
+         given={Barbara},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MJB}{%
+         family={Morrison},
+         familyi={M\bibinitperiod},
+         given={Julie\bibnamedelima Bauer},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Betrancourt},
+         familyi={B\bibinitperiod},
+         given={Mireille},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TBMJBBM1}
+    \strng{fullhash}{TBMJBBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1006/ijhc.2002.1017
+    \endverb
+    \field{issn}{1071-5819}
+    \field{number}{4}
+    \field{pages}{247\bibrangedash 262}
+    \field{shorttitle}{Animation}
+    \field{title}{Animation: Can It Facilitate?}
+    \verb{url}
+    \verb http://dx.doi.org/10.1006/ijhc.2002.1017
+    \endverb
+    \field{volume}{57}
+    \field{journaltitle}{Int. J. Hum.-Comput. Stud.}
+    \field{month}{10}
+    \field{year}{2002}
+    \field{urlday}{02}
+    \field{urlmonth}{10}
+    \field{urlyear}{2015}
+  \endentry
+
   \entry{1532818}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=WL}{%
@@ -1765,49 +2314,58 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Reference2}{article}{}
-    \name{author}{2}{}{%
-      {{hash=WCE}{%
-         family={Wieman},
-         familyi={W\bibinitperiod},
-         given={Carl\bibnamedelima E.},
-         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+  \entry{WangBaldonado:2000:GUM:345513.345271}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WBMQ}{%
+         family={Wang\bibnamedelima Baldonado},
+         familyi={W\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Michelle\bibnamedelima Q.},
+         giveni={M\bibinitperiod\bibinitdelim Q\bibinitperiod},
       }}%
-      {{hash=HL}{%
-         family={Hollberg},
-         familyi={H\bibinitperiod},
-         given={Leo},
-         giveni={L\bibinitperiod},
+      {{hash=WA}{%
+         family={Woodruff},
+         familyi={W\bibinitperiod},
+         given={Allison},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kuchinsky},
+         familyi={K\bibinitperiod},
+         given={Allan},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{Diode Laser}
-    \strng{namehash}{WCEHL1}
-    \strng{fullhash}{WCEHL1}
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{design guidelines, information visualization, multiple views,
+  usability heuristics, user interfaces}
+    \strng{namehash}{WBMQWAKA1}
+    \strng{fullhash}{WBMQWAKA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{1991}
+    \field{labelyear}{2000}
     \field{labeldatesource}{year}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{abstract}{%
-    We present a review of the use of diode lasers in atomic physics with an
-  extensive list of references. We discuss the relevant characteristics of
-  diode lasers and explain how to purchase and use them. We also review the
-  various techniques that have been used to control and narrow the spectral
-  outputs of diode lasers. Finally we present a number of examples illustrating
-  the use of diode lasers in atomic physics experiments. Review of Scientific
-  Instruments is copyrighted by The American Institute of Physics.%
-    }
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{Using Diode Lasers for Atomic Physics}
-    \verb{url}
-    \verb http://link.aip.org/link/?RSI/62/1/1
+    \field{booktitle}{Proceedings of the Working Conference on Advanced Visual
+  Interfaces}
+    \verb{doi}
+    \verb 10.1145/345513.345271
     \endverb
-    \field{volume}{62}
-    \field{journaltitle}{Review of Scientific Instruments}
-    \field{month}{01}
-    \field{year}{1991}
+    \field{isbn}{1-58113-252-2}
+    \field{pages}{110\bibrangedash 119}
+    \field{series}{AVI '00}
+    \field{title}{Guidelines for Using Multiple Views in Information
+  Visualization}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/345513.345271
+    \endverb
+    \list{location}{1}{%
+      {Palermo, Italy}%
+    }
+    \field{year}{2000}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{7120994}{article}{}

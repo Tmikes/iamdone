@@ -62,11 +62,16 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{titlesec}
 
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{5}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \addbibresource{example.bib} % The filename of the bibliography
@@ -285,7 +290,8 @@ $\omega$ & angular frequency & \si{\radian} \\
 \include{Chapters/Introduction}
 \include{Chapters/StateOfTheArt}
 \include{Chapters/DesignStudy}
-\include{Chapters/Chapter1}
+\include{Chapters/lens}
+%\include{Chapters/Chapter1}
 
 %\include{Chapters/Chapter2} 
 %\include{Chapters/Chapter3}
