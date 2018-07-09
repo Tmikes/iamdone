@@ -116,6 +116,76 @@ headsepline, % Uncomment to get a line under the header
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 }
 
+
+\usepackage{amssymb}
+\usepackage{array,longtable}
+
+\newcounter{mquestion}
+\newcounter{row}
+
+\makeatletter
+\newtoks\@tabtoks
+\newcommand\addtabtoks[1]{\@tabtoks\expandafter{\the\@tabtoks#1}}
+\newcommand*\resettabtoks{\@tabtoks{}}
+\newcommand*\printtabtoks{\the\@tabtoks}
+\makeatother
+
+\newcommand\CheckTable[1]{%
+  \setcounter{mquestion}{0}
+  \setcounter{row}{0}
+  \resettabtoks
+  \loop\ifnum\therow<#1\relax
+    \stepcounter{row}
+    \addtabtoks{& $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\}%
+  \repeat
+  \begin{longtable}{>{\stepcounter{mquestion}}l*{5}{c}}
+    \multicolumn{1}{c}{} & Bad & Not Bad & Neutral & OK & Good \\
+    \printtabtoks
+  \end{longtable}%
+}
+
+
+\newcommand\CheckTablelevel[1]{%
+  \setcounter{mquestion}{0}
+  \setcounter{row}{0}
+  \resettabtoks
+  \loop\ifnum\therow<#1\relax
+    \stepcounter{row}
+    \addtabtoks{& $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\}%
+  \repeat
+  \begin{longtable}{>{\stepcounter{mquestion}}l*{5}{c}}
+    \multicolumn{1}{c}{} & Novice &  Adv. Beginner &  Competent & Proficient  & Expert \\
+    \printtabtoks
+  \end{longtable}%
+}
+
+\newcommand\CheckTableDifficulty[1]{%
+  \setcounter{mquestion}{0}
+  \setcounter{row}{0}
+  \resettabtoks
+  \loop\ifnum\therow<#1\relax
+    \stepcounter{row}
+    \addtabtoks{& $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\}%
+  \repeat
+  \begin{longtable}{>{\stepcounter{mquestion}}l*{5}{c}}
+    \multicolumn{1}{c}{} & Easy & Quite Easy & Neutral & Quite Hard & Hard \\
+    \printtabtoks
+  \end{longtable}%
+}
+
+
+\usepackage{xpatch}% http://ctan.org/pkg/etoolbox
+\xpatchcmd{\answerline}% <cmd>
+  {\par\nobreak\vskip\answerskip}% <search>
+  {}% <replace>
+  {}{}% <success><failure>
+
+\newcommand{\leftanswerline}[1][]%
+{\ifthenelse{\equal{#1}{}}%
+{\par\hspace{-1.3em}\begin{minipage}{1em}\answerline\end{minipage}}%
+{\par\hspace{-1.3em}\begin{minipage}{1em}\answerline[#1]\end{minipage}}%
+}
+
 \begin{document}
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
@@ -282,7 +352,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
-\pagestyle{thesis} % Return the page headers back to the "thesis" style
+eee\pagestyle{thesis} % Return the page headers back to the "thesis" style
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
@@ -307,7 +377,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+\include{Appendices/questionnaire}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
