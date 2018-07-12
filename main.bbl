@@ -2048,6 +2048,68 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{5743036}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TWJ}{%
+         family={Tam},
+         familyi={T\bibinitperiod},
+         given={W.\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Speranza},
+         familyi={S\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yano},
+         familyi={Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Shimono},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=OH}{%
+         family={Ono},
+         familyi={O\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{human factors;stereo image processing;three-dimensional
+  displays;three-dimensional television;visual
+  communication;broadcaster;content creator;display manufacturer;program
+  provider;stereoscopic 3D-TV;stereoscopic displays;three-dimensional
+  television;visual comfort;visual
+  communication;Cameras;Humans;Pixel;Retina;TV;Visual
+  system;Visualization;Human factors;stereoscopic TV;three-dimensional
+  displays;visual comfort;visual communication}
+    \strng{namehash}{TWJ+1}
+    \strng{fullhash}{TWJSFYSSKOH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1109/TBC.2011.2125070
+    \endverb
+    \field{issn}{0018-9316}
+    \field{number}{2}
+    \field{pages}{335\bibrangedash 346}
+    \field{title}{Stereoscopic 3D-TV: Visual Comfort}
+    \field{volume}{57}
+    \field{journaltitle}{IEEE Transactions on Broadcasting}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Thiede2008}{inbook}{}
     \name{author}{3}{}{%
       {{hash=TC}{%
