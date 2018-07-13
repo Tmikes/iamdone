@@ -1851,6 +1851,37 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{preim2013visual}{book}{}
+    \name{author}{2}{}{%
+      {{hash=PB}{%
+         family={Preim},
+         familyi={P\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BCP}{%
+         family={Botha},
+         familyi={B\bibinitperiod},
+         given={Charl\bibnamedelima P},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Newnes}%
+    }
+    \strng{namehash}{PBBCP1}
+    \strng{fullhash}{PBBCP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Visual Computing for Medicine: Theory, Algorithms, and
+  Applications}
+    \field{year}{2013}
+  \endentry
+
   \entry{CGF:CGF12927}{article}{}
     \name{author}{5}{}{%
       {{hash=PB}{%

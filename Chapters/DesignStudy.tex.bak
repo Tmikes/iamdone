@@ -1,4 +1,4 @@
-\chapter{Design Study: Interactive exploration of 3D scanned baggage} % Main chapter title
+\chapter{User Study: Interactive exploration of 3D scanned baggage} % Main chapter title
 \label{DesignStudy}
 
 \section{Introduction}
@@ -215,12 +215,7 @@ Finally, the user can select a transfer function located between two presets. To
 
 \paragraph{ Objects selection and investigation}
 In order to investigate in detail a specific object, one can isolate it, remove surrounding items to address occlusion issues, or find a suitable point of view (\autoref{f:menace}). This section details these interaction techniques which encompass the selection of  many objects.
-\begin{figure}
-\centering   
-\includegraphics[width=9cm]{Figures/menace.png}
-\caption{ Inspection of an object from different perspectives. 1- The user defines an object of interest for further inspection. This object is then inside a box with red borders. 2-  The user modifies the transfer function to see the target in another context. 3- The user rotates the baggage to look at the menace from a different perspective. It stays visible whatever the manipulation carried out.  }
-\label{f:menace}
-\end{figure} 
+
 
 \subparagraph{	Selection of an object}
 We developed three different ways to select objects with the three different modalities: hand, mouse or pen. When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. Otherwise, the user has to double click on the target with the mouse pointer. After the target is selected, our system tries to find a better point of view to display the selected object with the minimum of occluded parts. The details of this algorithm will be explained in the technical part of this study. We use a smooth transition to rotate and zoom the baggage. 
@@ -276,11 +271,82 @@ Our system offers the possibility to restore previously brushed areas. To do so,
 
 \paragraph{Snapshots}
 Our system can store visual configurations thanks to snapshots. These snapshots are displayed on the right of the main view and record the current rotation, the zoom, the pan and the current transfer function.
-To take a snapshot, the user must press the space bar. A name can be given to any snapshot using the keyboard. This name is displayed on the top left of its thumbnail. The user can restore a saved object by clicking on its snapshot. When a snapshot is selected, the system animates the view from its current state to the selected snapshot (pan, zoom and transfer function linear interpolation). A snapshot can be deleted by clicking on the close icon located on its top right.
+To take a snapshot, the user must press the space bar. A name can be given to any snapshot using the keyboard. This name is displayed on the top left of its thumbnail. The user can restore a saved object by clicking on its snapshot. When a snapshot is selected, the system animates the view from its current state to the selected snapshot (pan, zoom and transfer function linear interpolation). A snapshot can be deleted by clicking on the close icon located on its top right (\autoref{f:snapshots}).
+ \begin{figure}
+ \centering
+	\includegraphics[width=9cm]{Figures/snapshots.png}
+	\caption{ The labelled snapshots taken by the user representing objects of interest}
+	\label{f:snapshots}
+\end{figure}
 
 \paragraph{Dual temporal instance navigation}
 
-Our system provides many animated transitions when the user explores the baggage (change of point of view, transfer function modification, item selection...) like \cite{tversky_animation:_2002}. To ease user’s navigation, we added two temporal instances representing the states before and after an automatic modification of the visual configuration. This interaction is based on the undo-redo paradigm. On the top right of the main window, we added two views representing the previous state before the transition and the final one after the transition. One can navigate through this transition by dragging from one state toward the other one. The more the cursor gets close to the center of a state, the more the current view gets close to its configuration. The user can also click on the desired state to directly assign its visual configuration.
+Our system provides many animated transitions when the user explores the baggage (change of point of view, transfer function modification, item selection...) like \cite{tversky_animation:_2002}. To ease user's navigation, we added two temporal instances representing the states before and after an automatic modification of the visual configuration. This interaction is based on the undo-redo paradigm. On the top right of the main window, we added two views representing the previous state before the transition and the final one after the transition. One can navigate through this transition by dragging from one state toward the other one. The more the cursor gets close to the center of a state, the more the current view gets close to its configuration. The user can also click on the desired state to directly assign its visual configuration (\autoref{f:temporal}).
+ \begin{figure}
+ \centering
+	\includegraphics[width=9cm]{Figures/temporal.png}
+	\caption{ The labelled snapshots taken by the user representing objects of interest}
+	\label{f:temporal}
+\end{figure}
+
+\subsubsection{Possible Use Cases}
+
+This section presents two scenarios that underline our system assets. The first scenario illustrates how users can explore a suspicious baggage and address occlusion to inspect items inside. The second scenario shows how to visualize the content of a closed metallic container. Currently, most airport don't use 3d systems, so we propose possible scenarios to highlight  how the usefulness of our interaction techniques.
+
+\paragraph{	Inspection of a suspicious baggage }
+When a baggage arrives, the user sees it in its initial appearance which mainly shows the global structure . In order to better perceive its content, the user explores  the different transfer function presets. He or She clicks on the first level, then drags the cursors toward the others. This manipulation aims to reveal high density items hidden by those with low density 
+
+(\autoref{f:scenario1_1}).
+\begin{figure}
+\centering
+\includegraphics[width=9cm]{Figures/scenario1_1.png}
+\caption{ The transfer function presets help the user perceive the different types of material inside the baggage }
+\label{f:scenario1_1}
+\end{figure}    
+Once the user has a global understanding of the baggage, it seems to be a parcel bomb. So he or she decides to further inspect some specific areas. For instance, the user focuses an object which looks like an explosive material. To estimate the potential damages that could be caused by this potential threat, the security agent lock the camera on it. This object is now the main object of interest, and all  manipulations (e.g. translation, rotation) are now done around this object. This object of interest stays visible even if other items are in front of it (\autoref{f:menace}). 
+
+\begin{figure}
+\centering   
+\includegraphics[width=9cm]{Figures/menace.png}
+\caption{ Inspection of an object from different perspectives. 1- The user defines an object of interest for further inspection. This object is then inside a box with red borders. 2-  The user modifies the transfer function to see the target in another context. 3- The user rotates the baggage to look at the menace from a different perspective. It stays visible whatever the manipulation carried out.  }
+\label{f:menace}
+\end{figure} 
+
+
+After the user finished this contextual inspection, he or she decides to inspect this object alone. To do so, the user selects it, and enables the second view. More information such as density and volume are displayed (\autoref{f:scenario1_3}).
+\begin{figure}
+\centering
+\includegraphics[width=7cm]{Figures/scenario1_3.PNG}
+\caption{ A suspicious object is inspected apart of the rest of the baggage }
+\label{f:scenario1_3}
+\end{figure}
+
+\paragraph{Inspection of a big metallic object}
+
+In this scenario, the user inspects a baggage featuring many visual artifacts which could be considered as noise (\autoref{f:scenario2_1b}). These spikes are created by the reflection of the x-rays on the heavy materials. Therefore, these visual artefacts are a hint indicating the presence of large metallic object. The user navigates through the different transfer function presets (\autoref{f:scenario2_2}) .
+ 
+\begin{figure}
+\centering
+\includegraphics[width=9cm]{Figures/scenario2_1.PNG}
+\caption{ Noise due to the presence of a big metallic object }
+\label{f:scenario2_1b}
+\end{figure}
+After the selection of the adequate transfer function setting, he or she decides to farther inspect this metallic object. To do so, the user selects it with a double clicking on it. This object seems to be an engine.
+\begin{figure}
+\centering
+\includegraphics[width=9cm]{Figures/scenario2_2.PNG}
+\caption{ The baggage actually contains  an engine }
+\label{f:scenario2_2}
+\end{figure}
+
+In order to find out whether this engine is empty or not, the user decides to brush its half and to see its content. The user activates the brush tool, and while holding down the right button of the mouse, he or she brushes to remove the undesired section. After the brushing is carried out, the user modify the transfer function to show the lowest densities(\autoref{f:scenario2_1}).
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/scenario2_3.png}
+\caption{ the user reveals some low density materials inside the engine }
+\label{f:scenario2_1}
+\end{figure}
+
 
 \subsubsection{Technical Constraints and Implementation}
 
@@ -306,7 +372,7 @@ The cancellation of the brushing is quite similar to the previous algorithm. The
 
 Since we developed this system with four baggage security practitioners, we had the opportunity to validate the usefulness of each developed technique. Through an interactive process, the users gave their feedbacks all along the development process which helped to assess and to guide the proposed interaction techniques. Feedback was mainly positive and the user did not face any specific difficulty to use our system. Users mainly appreciated the simple interface with few widgets and the reduced set of interactions. Surprisingly, users were very interested to use the transfer function. The histogram and its transfer function were also appreciated even if the corresponding technique is not simple to understand. We suppose that our interface motivates users to learn more regarding the technique behind it. Users also mentioned the need to display the actual density (the numerical value) of selected object. They also ask many times if the displayed color corresponds to the one currently in use in operational settings. This confirms the fact that users are willing to keep some existing features and prefer to use a system they are already familiar with.
 The users also appreciated our design requirements with smooth transitions and incremental investigations of baggage.
-\par All of these observations and qualitative evaluations deserve to be validated through proper evaluations which are out of the scope of this design study paper.
+\par All of these observations and qualitative evaluations deserve to be validated through proper evaluations which are out of the scope of this user study paper.
 Our system is fully functional and interactive enough to perform baggage explorations. Many improvements can still be done in order to improve its usages in terms of new interactions and exploration time reductions.
 Technically speaking, the selection of the adequate point of view can be improved with more than 6 investigated faces. But in practice, this simple paradigm remains suitable. If the computed point of view is not fully satisfactory, one can manual rotate the baggage. Nevertheless, the developed algorithm will not necessary provide the best solution (the lowest occlusion) but a satisfactory one.
 \par Our goal was to develop
