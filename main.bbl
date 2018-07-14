@@ -923,6 +923,51 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{ddh}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EMH}{%
+         family={Everts},
+         familyi={E\bibinitperiod},
+         given={M.\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bekker},
+         familyi={B\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Roerdink},
+         familyi={R\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=IT}{%
+         family={Isenberg},
+         familyi={I\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EMH+1}
+    \strng{fullhash}{EMHBHRJIT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{number}{6}
+    \field{pages}{1299\bibrangedash 1306}
+    \field{title}{Depth-Dependent Halos: Illustrative Rendering of Dense Line
+  Data}
+    \field{volume}{15}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2009}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%
@@ -2139,6 +2184,37 @@
     \field{journaltitle}{IEEE Transactions on Broadcasting}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{telea_vis_99}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TA}{%
+         family={Telea},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=vWJJ}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Wijk},
+         familyi={W\bibinitperiod},
+         given={J.\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TAWJJv1}
+    \strng{fullhash}{TAWJJv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Proc. IEEE Visualization}
+    \field{pages}{263\bibrangedash 270}
+    \field{title}{Simplified representation of vector fields}
+    \field{year}{1999}
   \endentry
 
   \entry{Thiede2008}{inbook}{}

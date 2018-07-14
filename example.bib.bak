@@ -12,6 +12,25 @@ ISSN={0018-9316},
 month={June},}
 
 
+@inproceedings{telea_vis_99,
+author = {A. Telea and J. J. van Wijk},
+title = {Simplified representation of vector fields},
+booktitle = {Proc. IEEE Visualization},
+year = 1999,
+pages = {263-270}
+}
+
+
+@article{ddh,
+author = {M. H. Everts and H. Bekker and J. Roerdink and T. Isenberg},
+title  = {Depth-Dependent Halos: Illustrative Rendering of Dense Line Data},
+journal = {IEEE Transactions on Visualization and Computer Graphics},
+volume = 15,
+number = 6,
+pages = {1299-1306},
+year = 2009
+}
+
 @book{preim2013visual,
   title={Visual Computing for Medicine: Theory, Algorithms, and Applications},
   author={Preim, Bernhard and Botha, Charl P},
