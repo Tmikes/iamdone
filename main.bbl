@@ -1794,6 +1794,30 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{merzkirch2012flow}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MW}{%
+         family={Merzkirch},
+         familyi={M\bibinitperiod},
+         given={Wolgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MW1}
+    \strng{fullhash}{MW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Flow visualization}
+    \field{year}{2012}
+  \endentry
+
   \entry{pascucci_multi-resolution_2004}{article}{}
     \name{author}{3}{}{%
       {{hash=PV}{%
