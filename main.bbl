@@ -2967,6 +2967,54 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{4276082}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{data visualisation;transfer functions;animations;context
+  visualization;direct volume rendered images;image editing;interactive
+  transfer function;visualization techniques;Animation;Biomedical
+  imaging;Computational fluid dynamics;Data
+  visualization;Focusing;Fuses;Graphics;Rendering (computer graphics);Transfer
+  functions;User interfaces;Direct volume rendering;animation;focus +
+  context;image editing;intuitive user interface;morphing;transfer function
+  design;Algorithms;Computer Graphics;Image Enhancement;Image Interpretation,
+  Computer-Assisted;Imaging, Three-Dimensional;Information Storage and
+  Retrieval;Numerical Analysis, Computer-Assisted;Signal Processing,
+  Computer-Assisted;User-Computer Interface;Word Processing}
+    \strng{namehash}{WYQH1}
+    \strng{fullhash}{WYQH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/TVCG.2007.1051
+    \endverb
+    \field{issn}{1077-2626}
+    \field{number}{5}
+    \field{pages}{1027\bibrangedash 1040}
+    \field{title}{Interactive Transfer Function Design Based on Editing Direct
+  Volume Rendered Images}
+    \field{volume}{13}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2007}
+  \endentry
+
   \entry{7852799}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=XY}{%

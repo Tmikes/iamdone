@@ -9,7 +9,6 @@ A level-1 auxiliary file: Chapters/conclusion.aux
 A level-1 auxiliary file: Appendices/questionnaire.aux
 Database file #1: main-blx.bib
 Database file #2: example.bib
-Warning--I didn't find a database entry for "4276082"
 Warning--I didn't find a database entry for "cudasdk"
 Warning--I didn't find a database entry for "patent"
 Warning--I didn't find a database entry for "cubu"
@@ -18,4 +17,4 @@ Warning--I didn't find a database entry for "slicer"
 Warning--I didn't find a database entry for "assaf08"
 Warning--I didn't find a database entry for "everts15"
 Biblatex version: 3.8
-(There were 8 warnings)
+(There were 7 warnings)
