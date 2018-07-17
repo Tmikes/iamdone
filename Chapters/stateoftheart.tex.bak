@@ -1,6 +1,12 @@
 \chapter{State of the art} % Main chapter title
 \label{StateOfTheArt}
 
+\section{Introduction}
+
+a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( smartphones, Virtual Reality, and Augmented Reality). First we present the existing algorithms to render volumetric data-sets, then we discuss the existing strategies of occlusion management. finally we  describe the previous work on  volume rendering in mobile devices.
+
+
+
 \section{Volume rendering algorithms}
 
 The fundamental volume visualization algorithms described
