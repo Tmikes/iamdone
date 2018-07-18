@@ -16,56 +16,74 @@
 \newlabel{f:fisheye}{{4.1}{58}{Obstruction-free lens working. A target is (mostly) hidden by occluders in front of it. (a) Classic DVR shows a small part of the target. (b) Our lens gathers rays to avoid occluders (\autoref {sec:gathering}). Once close to the target, rays follow again their initial paths. Yet, only a small part of the target is visible. (c) Scattering rays makes the full target visible (\autoref {sec:scattering}). Finally, we adjust the local viewing and lighting directions $\mathbf {a}$, $\mathbf {l}^{lens}$ (\autoref {sec:inter_expl}).\relax }{figure.caption.118}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Principle}{58}{section.119}}
 \newlabel{sec:principle}{{4.3}{58}{Principle}{section.119}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Creating an unobstructed view}{58}{subsection.121}}
-\newlabel{sec:gathering}{{4.3.1}{58}{Creating an unobstructed view}{subsection.121}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Creating an unobstructed view}{59}{subsection.121}}
+\newlabel{sec:gathering}{{4.3.1}{59}{Creating an unobstructed view}{subsection.121}{}}
 \newlabel{eqn:gathering}{{4.3}{59}{Creating an unobstructed view}{equation.123}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Setting a wide field of view}{59}{subsection.124}}
 \newlabel{sec:scattering}{{4.3.2}{59}{Setting a wide field of view}{subsection.124}{}}
 \newlabel{eqn:scattering}{{4.4}{59}{Setting a wide field of view}{equation.125}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Interactive exploration of the target}{59}{subsection.126}}
-\newlabel{sec:inter_expl}{{4.3.3}{59}{Interactive exploration of the target}{subsection.126}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Changing lighting parameters in the lens. (a) Constant global specular coefficient. (b) Specular coefficient high in the lens and low outside. (c-f) Changing the in-lens light vector yields the effect of a flashlight rotating around the target. The ball icons illustrate the local light vector direction.\relax }}{60}{figure.caption.127}}
 \newlabel{f:params}{{4.2}{60}{Changing lighting parameters in the lens. (a) Constant global specular coefficient. (b) Specular coefficient high in the lens and low outside. (c-f) Changing the in-lens light vector yields the effect of a flashlight rotating around the target. The ball icons illustrate the local light vector direction.\relax }{figure.caption.127}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Construction of local transfer function $TF_{o}$. See \autoref  {sec:inter_expl}.\relax }}{61}{figure.caption.133}}
-\newlabel{fig:tf}{{4.3}{61}{Construction of local transfer function $TF_{o}$. See \autoref {sec:inter_expl}.\relax }{figure.caption.133}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }}{62}{figure.caption.136}}
-\newlabel{f:rotation}{{4.4}{62}{Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }{figure.caption.136}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Smooth transitions}{62}{subsection.134}}
-\newlabel{continuity}{{4.3.4}{62}{Smooth transitions}{subsection.134}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Implementation}{63}{section.137}}
-\newlabel{sec:implem}{{4.4}{63}{Implementation}{section.137}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Application Scenarios}{63}{section.138}}
-\newlabel{sec:scenarios}{{4.5}{63}{Application Scenarios}{section.138}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Baggage inspection: An unusual blunt object}{63}{subsection.139}}
-\newlabel{sec:baggage}{{4.5.1}{63}{Baggage inspection: An unusual blunt object}{subsection.139}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces (a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).\relax }}{64}{figure.caption.140}}
-\newlabel{f:baggage_lens}{{4.5}{64}{(a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).\relax }{figure.caption.140}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}).\relax }}{66}{figure.caption.141}}
-\newlabel{fig:questanswers}{{4.6}{66}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}).\relax }{figure.caption.141}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Fluid flow: A deep-buried spherical vortex}{67}{subsection.142}}
-\newlabel{sec:flow}{{4.5.2}{67}{Fluid flow: A deep-buried spherical vortex}{subsection.142}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).\relax }}{68}{figure.caption.143}}
-\newlabel{f:stream_lens}{{4.7}{68}{Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).\relax }{figure.caption.143}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Chest scan: A hard to see tumor}{68}{subsection.144}}
-\newlabel{sec:chest}{{4.5.3}{68}{Chest scan: A hard to see tumor}{subsection.144}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\tmspace  +\thinmuskip {.1667em}\cite {slicer}.\relax }}{69}{figure.caption.145}}
-\newlabel{f:slicer}{{4.8}{69}{Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\,\cite {slicer}.\relax }{figure.caption.145}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Aircraft trajectories: Outliers in the French sky}{70}{subsection.147}}
-\newlabel{sec:atc}{{4.5.4}{70}{Aircraft trajectories: Outliers in the French sky}{subsection.147}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Visualizing one day of aircraft trajectories over France\tmspace  +\thinmuskip {.1667em}\cite {hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.\relax }}{71}{figure.caption.146}}
-\newlabel{f:fromdady}{{4.9}{71}{Visualizing one day of aircraft trajectories over France\,\cite {hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.\relax }{figure.caption.146}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }}{72}{figure.caption.148}}
-\newlabel{f:aircraft_lens}{{4.10}{72}{Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }{figure.caption.148}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Brain fibers: Uncluttering the bridge}{72}{subsection.149}}
-\newlabel{sec:dti}{{4.5.5}{72}{Brain fibers: Uncluttering the bridge}{subsection.149}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Discussion}{73}{section.151}}
-\newlabel{sec:discussion}{{4.6}{73}{Discussion}{section.151}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Revealing the \emph  {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{74}{figure.caption.150}}
-\newlabel{fig:dti}{{4.11}{74}{Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }{figure.caption.150}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusions}{76}{section.152}}
-\newlabel{sec:conclusions}{{4.7}{76}{Conclusions}{section.152}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Interactive exploration of the target}{60}{subsection.126}}
+\newlabel{sec:inter_expl}{{4.3.3}{60}{Interactive exploration of the target}{subsection.126}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Smooth transitions}{61}{subsection.134}}
+\newlabel{continuity}{{4.3.4}{61}{Smooth transitions}{subsection.134}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Construction of local transfer function $TF_{o}$. See \autoref  {sec:inter_expl}.\relax }}{62}{figure.caption.133}}
+\newlabel{fig:tf}{{4.3}{62}{Construction of local transfer function $TF_{o}$. See \autoref {sec:inter_expl}.\relax }{figure.caption.133}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Implementation}{62}{section.137}}
+\newlabel{sec:implem}{{4.4}{62}{Implementation}{section.137}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }}{63}{figure.caption.136}}
+\newlabel{f:rotation}{{4.4}{63}{Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }{figure.caption.136}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Application Scenarios}{64}{section.138}}
+\newlabel{sec:scenarios}{{4.5}{64}{Application Scenarios}{section.138}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Baggage inspection: An unusual blunt object}{64}{subsection.139}}
+\newlabel{sec:baggage}{{4.5.1}{64}{Baggage inspection: An unusual blunt object}{subsection.139}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces (a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).\relax }}{65}{figure.caption.140}}
+\newlabel{f:baggage_lens}{{4.5}{65}{(a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).\relax }{figure.caption.140}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1.1}Early results}{66}{subsubsection.141}}
+\newlabel{questanswers}{{4.5.1.1}{66}{Early results}{subsubsection.141}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Experience years.\relax }}{67}{figure.caption.142}}
+\newlabel{fig:graph1}{{4.6}{67}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Experience years.\relax }{figure.caption.142}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Familiarity with 3D tools.\relax }}{67}{figure.caption.143}}
+\newlabel{fig:graph2}{{4.7}{67}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Familiarity with 3D tools.\relax }{figure.caption.143}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Scenario 1 - Ease of untargeted exploration.\relax }}{68}{figure.caption.144}}
+\newlabel{fig:graph3}{{4.8}{68}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Ease of untargeted exploration.\relax }{figure.caption.144}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Scenario 1 - Tool's value for untargeted exploration.\relax }}{68}{figure.caption.145}}
+\newlabel{fig:graph4}{{4.9}{68}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value for untargeted exploration.\relax }{figure.caption.145}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Scenario 1 - Tool's value, untargeted exploration, vs other used tools.\relax }}{68}{figure.caption.146}}
+\newlabel{fig:graph5}{{4.10}{68}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value, untargeted exploration, vs other used tools.\relax }{figure.caption.146}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}) : Scenario 2 - Ease of untargeted exploration.\relax }}{69}{figure.caption.147}}
+\newlabel{fig:graph6}{{4.11}{69}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}) : Scenario 2 - Ease of untargeted exploration.\relax }{figure.caption.147}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Scenario 2 - Tool's value for untargeted exploration.\relax }}{69}{figure.caption.148}}
+\newlabel{fig:graph7}{{4.12}{69}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value for untargeted exploration.\relax }{figure.caption.148}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Scenario 2 - Tool's value, untargeted exploration, vs other used tools.\relax }}{69}{figure.caption.149}}
+\newlabel{fig:graph8}{{4.13}{69}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value, untargeted exploration, vs other used tools.\relax }{figure.caption.149}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref  {sec:baggage}): Which functions of this tool bring the most added-value vs tool you already know and have used for the same task (categorical).\relax }}{70}{figure.caption.150}}
+\newlabel{fig:graph9}{{4.14}{70}{Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Which functions of this tool bring the most added-value vs tool you already know and have used for the same task (categorical).\relax }{figure.caption.150}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Fluid flow: A deep-buried spherical vortex}{70}{subsection.151}}
+\newlabel{sec:flow}{{4.5.2}{70}{Fluid flow: A deep-buried spherical vortex}{subsection.151}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).\relax }}{71}{figure.caption.152}}
+\newlabel{f:stream_lens}{{4.15}{71}{Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).\relax }{figure.caption.152}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Chest scan: A hard to see tumor}{71}{subsection.153}}
+\newlabel{sec:chest}{{4.5.3}{71}{Chest scan: A hard to see tumor}{subsection.153}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Aircraft trajectories: Outliers in the French sky}{72}{subsection.156}}
+\newlabel{sec:atc}{{4.5.4}{72}{Aircraft trajectories: Outliers in the French sky}{subsection.156}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\tmspace  +\thinmuskip {.1667em}\cite {slicer}.\relax }}{73}{figure.caption.154}}
+\newlabel{f:slicer}{{4.16}{73}{Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\,\cite {slicer}.\relax }{figure.caption.154}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Visualizing one day of aircraft trajectories over France\tmspace  +\thinmuskip {.1667em}\cite {hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.\relax }}{74}{figure.caption.155}}
+\newlabel{f:fromdady}{{4.17}{74}{Visualizing one day of aircraft trajectories over France\,\cite {hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.\relax }{figure.caption.155}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }}{75}{figure.caption.157}}
+\newlabel{f:aircraft_lens}{{4.18}{75}{Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }{figure.caption.157}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.5}Brain fibers: Uncluttering the bridge}{75}{subsection.158}}
+\newlabel{sec:dti}{{4.5.5}{75}{Brain fibers: Uncluttering the bridge}{subsection.158}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Discussion}{76}{section.160}}
+\newlabel{sec:discussion}{{4.6}{76}{Discussion}{section.160}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.19}{\ignorespaces Revealing the \emph  {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{77}{figure.caption.159}}
+\newlabel{fig:dti}{{4.19}{77}{Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }{figure.caption.159}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusions}{79}{section.161}}
+\newlabel{sec:conclusions}{{4.7}{79}{Conclusions}{section.161}{}}
 \@setckpt{Chapters/lens}{
-\setcounter{page}{77}
+\setcounter{page}{80}
 \setcounter{equation}{10}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -80,7 +98,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{11}
+\setcounter{figure}{19}
 \setcounter{table}{1}
 \setcounter{LT@tables}{3}
 \setcounter{LT@chunks}{1}
@@ -208,6 +226,6 @@
 \setcounter{row}{0}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{69}
+\setcounter{bookmark@seq@number}{70}
 \setcounter{section@level}{0}
 }
