@@ -75,6 +75,62 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{AMIRA20081954}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AA}{%
+         family={Amira},
+         familyi={A\bibinitperiod},
+         given={Abbes},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chandrasekaran},
+         familyi={C\bibinitperiod},
+         given={Shrutisagar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MDW}{%
+         family={Montgomery},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima W.G.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=UIS}{%
+         family={Uzun},
+         familyi={U\bibinitperiod},
+         given={Isa\bibnamedelima Servan},
+         giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \keyw{Positron emission tomography (PET), Medical image segmentation,
+  Multiscale Markov modelling, Gaussian mixture modelling, Wavelet, Tumour
+  quantification, Co-processing, Field programmable gate arrays (FPGAs)}
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AACSMDWUIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neucom.2007.10.026
+    \endverb
+    \field{issn}{0925-2312}
+    \field{note}{Neurocomputing for Vision Research Advances in Blind Signal
+  Processing}
+    \field{number}{10}
+    \field{pages}{1954 \bibrangedash  1965}
+    \field{title}{A segmentation concept for positron emission tomography
+  imaging using multiresolution analysis}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0925231208001306
+    \endverb
+    \field{volume}{71}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2008}
+  \endentry
+
   \entry{7892381}{inproceedings}{}
     \name{author}{7}{}{%
       {{hash=AT}{%
@@ -1001,6 +1057,55 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{1580491}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GL}{%
+         family={Grady},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SEL}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={E.\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \keyw{graph theory;image segmentation;linear systems;high quality
+  segmentations;image segmentation;isoperimetric constant;isoperimetric graph
+  partitioning;linear system;spectral graph partitioning;spectral
+  methods;Application software;Computer architecture;Computer
+  vision;Equations;Graph theory;Image representation;Image segmentation;Linear
+  systems;Partitioning algorithms;Stability;Index Terms- Graph-theoretic
+  methods;algorithms;applications.;computer vision;graph algorithms;graphs and
+  networks;image representation;special architectures;Algorithms;Artificial
+  Intelligence;Computer Graphics;Image Enhancement;Image Interpretation,
+  Computer-Assisted;Information Storage and Retrieval;Pattern Recognition,
+  Automated;Reproducibility of Results;Sensitivity and Specificity;Subtraction
+  Technique}
+    \strng{namehash}{GLSEL1}
+    \strng{fullhash}{GLSEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1109/TPAMI.2006.57
+    \endverb
+    \field{issn}{0162-8828}
+    \field{number}{3}
+    \field{pages}{469\bibrangedash 475}
+    \field{title}{Isoperimetric graph partitioning for image segmentation}
+    \field{volume}{28}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{griebel2004flow}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=GM}{%
@@ -1750,6 +1855,42 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{Lorensen:1987:MCA}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LWE}{%
+         family={Lorensen},
+         familyi={L\bibinitperiod},
+         given={William\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CHE}{%
+         family={Cline},
+         familyi={C\bibinitperiod},
+         given={Harvey\bibnamedelima E.},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LWECHE1}
+    \strng{fullhash}{LWECHE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1987}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1145/37402.37422
+    \endverb
+    \field{number}{4}
+    \field{pages}{163\bibrangedash 169}
+    \field{title}{Marching Cubes: A High Resolution {3D} Surface Construction
+  Algorithm}
+    \field{volume}{21}
+    \field{journaltitle}{SIGGRAPH Computer Graphics}
+    \field{month}{08}
+    \field{year}{1987}
+  \endentry
+
   \entry{1250400}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=MMJ}{%
@@ -2093,6 +2234,63 @@
     \field{volume}{25}
     \field{journaltitle}{Computer Graphics Forum}
     \field{year}{2006}
+  \endentry
+
+  \entry{Sahoo:1988:STT:46072.46079}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SPK}{%
+         family={Sahoo},
+         familyi={S\bibinitperiod},
+         given={P.\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Soltani},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WAK}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={A.\bibnamedelima K.C.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CYC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Y.\bibnamedelima C.},
+         giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press Professional, Inc.}%
+    }
+    \strng{namehash}{SPK+1}
+    \strng{fullhash}{SPKSSWAKCYC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1988}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/0734-189X(88)90022-9
+    \endverb
+    \field{issn}{0734-189X}
+    \field{number}{2}
+    \field{pages}{233\bibrangedash 260}
+    \field{title}{A Survey of Thresholding Techniques}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/0734-189X(88)90022-9
+    \endverb
+    \field{volume}{41}
+    \list{location}{1}{%
+      {San Diego, CA, USA}%
+    }
+    \field{journaltitle}{Comput. Vision Graph. Image Process.}
+    \field{month}{02}
+    \field{year}{1988}
   \endentry
 
   \entry{Sonnet:2004:IEA:989863.989871}{inproceedings}{}

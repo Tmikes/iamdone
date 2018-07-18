@@ -170,6 +170,30 @@ Volume raycasting computes a 2D image from the 3D volumetric data set.The basic 
 
 \subsection{Surface-fitting}
 
+This subsection describes an algorithm for creating a polygonal surface representation of an isosurface of a 3D scalar field. A common name for this type of problem is the so called \textbf{ "marching cubes" } algorithm. It combines simplicity with high speed since it works almost entirely on lookup tables.
+
+The fundamental problem is to form a facet approximation to an isosurface through a scalar field sampled on a rectangular 3D grid. Given one grid cell defined by its vertices and scalar values at each vertex, it is necessary to create planar facets that best represent the isosurface through that grid cell. The isosurface may not be pass through the grid cell, it may cut off any one of the vertices, or it may pass through in any one of a number of more complicated ways. Each possibility will be characterised by the number of vertices that have values above or below the isosurface. If one vertex is above the isosurface say and an adjacent vertex is below the isosurface then we know the isosurface cuts the edge between these two vertices. The position that it cuts the edge will be linearly interpolated, the ratio of the length between the two vertices will be the same as the ratio of the isosurface value to the values at the vertices of the grid cell.
+
+
+There are two major components of the Marching cubes algorithm proposed by \cite{Lorensen:1987:MCA}. The first is deciding how to define the section or sections of surface which chop up an individual cube. If we classify each corner as either being below or above the isovalue, there are 256 possible configurations of corner classifications. Two of these are trivial; where all points are inside or outside the cube does not contribute to the isosurface. For all other configurations we need to determine where, along each cube edge, the isosurface crosses, and use these edge intersection points to create one or more triangular patches for the isosurface.
+
+
+If you account for symmetries, there are actually only 14 unique configurations in the remaining 254 possibilities. When there is only one corner less than the isovalue, this forms a single triangle which intersects the edges which meet at this corner, with the patch normal facing away from the corner. Obviously there are 8 related configurations of this sort . By reversing the normal we get 8 configurations which have 7 corners less than the isovalue. We don't consider these really unique, however. For configurations with 2 corners less than the isovalue, there are 3 unique configurations, depending on whether the corners belong to the same edge, belong the same face of the cube, or are diagonally positioned relative to each other. For configurations with 3 corners less than the isovalue there are again 3 unique configurations (e.g. for configuration 14), depending on whether there are 0, 1, or 2 shared edges (2 shared edges gives you an 'L' shape). There are 7 unique configurations when you have 4 corners less than the isovalue, depending on whether there are 0, 2, 3 (3 variants on this one), or 4 shared edges (e.g. for configuration 30 - again you may need to tweak the colours to see the triangle for the isolated (far) inside sphere/pixel).
+
+Each of the non-trivial configurations results in between 1 and 4 triangles being added to the isosurface. The actual vertices themselves can be computed by interpolation along edges, or, default their location to the middle of the edge. The interpolated locations will obviously give you better shading calculations and smoother surfaces.
+
+The quality of the final the polygonal surface representation heavily depends on the number on isosurface generated. Accoording to the implementation used and the optimization strategies we can find a better trade-off between the quality and the frame rate (see \autoref{fig:isosurface}). 
+
+
+Using isosurfaces allow to be faster than direct volume rendering. However, we lose the flexibility and the precision of the DVR algorithms because of the different approximations made while extracting these isosurfaces according to a maximum number of surfaces. 
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/isosurface}
+\caption[Volume raycasting]{ Two  molecules, generated at different grid sizes }
+\label{fig:isosurface}
+\end{figure}
 
 \section{Occlusion management strategies}
 
@@ -263,6 +287,21 @@ is assigned to each Gaussian, and the user interaction is simplified in order to
 \end{itemize}
 
 \subsection{Segmentation}
+
+Many segmentation algorithms allows to extract features form images (2D) and 3D volumes. In this subsection, we present two common algorithms: \textbf{Thresholding}, and \textbf{Clustering}
+
+\subsubsection{ Thresholding }
+Scalar images can be segmented using thresholding approaches by partitioning the volume intensities. This methodology attempts to determine an intensity value that can separate the signal into a desired number of classes. Segmented volumes can be achieved by clustering all pixels with intensities larger than the threshold value into one class, and all others into another. In many applications, the threshold values selection can be done depending on the basis of histogram. Multithresholding occurs when more than one threshold value is determined (see \cite{Sahoo:1988:STT:46072.46079}).
+The voxels of a certain object are not necessarily connected after thresholding because this technique does not consider the spatial characteristics of an image, thus causing it to be sensitive to noise and intensity fluctuations. For this reason it cannot be easily applied to many medical imaging modalities. These drawbacks essentially corrupt the histogram of the image-making partitioning via the selection of more problematic appropriate thresholds.
+
+3D thresholding method is similar to the 2D approaches where thresholding process is applied on all pixels in the volume instead of that in the plane.
+
+
+\subsubsection{ Clustering }
+Clustering technique is the process of classifying each group of pixels in an image into one class, each class has the same or similar properties which evaluate a specific part of an image or a volume. Each class is highlighted in the segmented volume to illustrate the volume as a number of separated regions, and the region of interest may be one of those regions. Clustering technique is based on multithreshold values which can be set depending on the image histogram. \cite{AMIRA20081954} propose a method for segmenting medical volumes; it is the most commonly used clustering technique. -means will be used in the fourth section of this research paper as a previously available work to validate the proposed techniques in the comparison tables.
+
+K-means clustering classifies n voxels into K clusters or classes ( K less than n ). This algorithm chooses the number of clusters (K) then randomly generates K clusters and determine the cluster centers. The next step is assigning each point in the volume to the nearest cluster center and finally recompute the new cluster centers. The two previous steps are repeated until the minimum variance criterion is achieved. This approach is similar to the expectation-maximization algorithm for Gaussian mixture in which they both attempt to find the centers of clusters in the volume.
+
 
 \subsection{Deformations and Focus + Context}
 
@@ -538,6 +577,57 @@ large amount of uninteresting noise (yellow).}
 \end{figure}
 
 
+
+\cite{Li:2012:LVV:2425296.2425325} present a system for luggage visualization where any object is
+clearly distinguishable from its neighbors. It supports virtual unpacking
+by visually moving any object away from its original pose. To achieve these, we first apply a volume segmentation guided by
+a confidence measure that recursively splits connected regions until
+semantically meaningful objects are obtained, and a label volume
+whose voxels specifying the object IDs is generated. 
+
+First, a volumetric representation of a luggage is
+segmented into meaningful real-world objects. Then the segmented
+objects are assigned distinguishable colors depending on the viewing
+parameters. The original luggage volume, the segmentation
+results, and the automatically assigned colors are fed into a volume
+rendering system. For any user defined unpacking direction,
+unpackable objects are determined and unpacking is visualized by
+showing that the transition of the objects flying from its original
+position to a unpacking destination. Unpacked objects can be manipulated
+individually, such as rotating, changing transfer function,
+etc, for inspection. The system keeps packed luggage, already unpacked
+objects, and the objects in transition in the same scene and
+allows repacking.
+
+For the luggage segmentation strategy, this system utilizes a the
+graph partitioning approach by \cite{1580491} enhanced
+by a confidence measure of the quality of a segmentation. The
+confidence measure gives high scores to semantic meaningful realworld
+objects that are homogeneous and have well-defined boundaries
+against the surrounding segments, and it guides the segmentation
+algorithm to recursively split connected objects in an input
+volume until the segmentation quality cannot be improved any more.
+
+In order to assign distinct colors to objects close to each other in
+an image, their system first generates a layered image of object IDs,
+from which whether any pair of objects are interfering each other
+is determined. A modified graph coloring algorithm is then computed
+to ensure any interfering pair are assigned distinguishable
+hues while the hue space is fully exploited. In order to reduce volume
+rendering cost as well as to keep smooth transitions across
+touching objects, this system adopts a tinting approach, in which the assigned
+hues of an object is modulated onto a master transfer function, see \autoref{fig:unpack} .
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Images/unpack.eps}
+\caption[ unpack]{Virtual unpacking: (a) all objects in packed positions, (b)-(c)images extracted from the animation of unpacking the red doll, which
+first moves towards the camera, then it flies to the top-right corner of the image; and (e) most objects are in unpacked positions}
+\label{fig:unpack}
+\end{figure}
+
+
 \section{Volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }
 
 The computational power of mobile devices is much 
@@ -638,3 +728,17 @@ achieves real-time performance across a number of platforms
 and provides improvements that preserve the sense of interior
 volumes being embedded inside real-world objects. 
 
+To virtually unpack a luggage, instead of physically partitioning the
+original volume, the system performs volume rendering in multiple passes
+and each pass is associated with the proper transfer function and geometric
+transformation. A brutal-force design requires the number
+of rendering passes equals to that of the objects in the worst case.
+This obviously is too expensive considering a typical luggage contains
+several dozens of objects. To efficiently handle a scene mixed
+with a volume of packed objects, unpacked objects, and the animation
+of objects being unpacked or restored, they have designed a layered
+approach. Each layer is responsible for rendering objects in a
+particular state as well as caches and displays the previous rendered
+images to avoid unnecessary rendering. The layer of unpacked objects
+is further decomposed into a set of 3D sprites to minimize
+memory usage
