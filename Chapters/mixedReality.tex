@@ -95,7 +95,7 @@ Another way to create AR experiences is to use special smart glasses or headsets
 
 In mixed reality (sometimes called hybrid reality), virtual content is not only overlaid on the real environment (as in AR) but is anchored to and interacts with that environment.
 
-In a nutshell, in mixed reality you can see virtual objects just like you can in augmented reality, but these objects can also interact with the real world. In a sense, mixed reality is a more immersive and interactive type of augmented reality.
+In a nutshell, with mixed reality you can see virtual objects just like you can with augmented reality, but these objects can also interact with the real world. In a sense, mixed reality is a more immersive and interactive type of augmented reality.
 
 There can be, however, a different form of mixed reality – when users see and interact with a completely virtual environment overlaid on the real world around them.
 
@@ -109,5 +109,36 @@ To avoid this problem, a headset must be able to track the real world and adjust
 
 \end{itemize}
 
+\subsection{Implementation}
 
-HEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRE
+During the end of this thesis, we begin to implement a volume rendering framework on a Holographic device. We use an Hololens (see \cite{hololens}) as the holographic design to support the volume renderer framework. We tried two different types of implementations. The first one and the least difficult is to compute and render the volume on the holographic device itself. The second type of implementation is to use the \textbf{ "remoting" } strategy. The remoting strategy allow to do all the computation on a computer (usually more powerful than the holographic device) and send the final images (one for each eye) through the WiFi to be rendered on the Hololens.
+
+\subsubsection{Computation on the hololens}
+
+The GPU of the hololens is not really powerful and as a low memory capacity (around 600 MB).  Knowing that the default and maximum supported resolution is 720p (1268x720) for each eye, have to compute two images with a lower resolution than this maximum value.  To develop an holographic app, one can either use the Unity framework or directly develop an universal holographic application using Visual studio and directX.
+
+
+Using the Unity framework to develop an holographic application is quite simple. We test different types of volume rendering algorithms: rayasting, 3D textures, and isosurfaces.
+We used Cg/HLSL in Unity to speed up the rendering process. Although the final result was beautiful, the prototype was not interactive because of low frame rates (between 1 and 5) according to the algorithm used and the different parameters such as the number of isosurfaces, the step during raycasting, or the number of slices computed when using 3D textures.
+
+
+The second solution was to directly develop an universal holographic application using Visual studio and directX. It help us to gain more speed and frame rate than the unity version of each of these algorithms (see \autoref{fig:mixediso}, and \autoref{fig:mixedray}). 
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{Figures/mixediso}
+\caption{A head CT scan rendered on the hololens using isosurfaces }
+\label{fig:mixediso}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{Figures/mixedray}
+\caption{A head CT scan rendered on the hololens using a raycasting algorithm }
+\label{fig:mixedray}
+\end{figure}
+
+We just develop some basic interactions so far. For instance we switch from the isosurface representation to the one using the raycasting algorithm by using the \textbf{"air tap"} gesture. Air tap is a tapping gesture with the hand held upright, similar to a mouse click or select. This is used in most HoloLens experiences for the equivalent of a "click" on a UI element after targeting it.  We use the \textbf{manipulation} gesture to modify the transfer function presets when using the raycasting algorithm.
+
+\subsubsection{ Holographic remoting }

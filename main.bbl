@@ -1959,6 +1959,23 @@
     \field{year}{2012}
   \endentry
 
+  \entry{hololens}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\url{https://www.microsoft.com/en-us/hololens}}
+    \field{title}{Microsoft Hololens}
+  \endentry
+
   \entry{pascucci_multi-resolution_2004}{article}{}
     \name{author}{3}{}{%
       {{hash=PV}{%

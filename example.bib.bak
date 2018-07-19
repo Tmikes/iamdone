@@ -123,6 +123,11 @@ year = 1999,
 pages = {263-270}
 }
 
+@misc{hololens,
+  title = {Microsoft Hololens},
+  howpublished = {\url{https://www.microsoft.com/en-us/hololens}},
+  author = {Microsoft},
+}
 
 @article{ddh,
 author = {M. H. Everts and H. Bekker and J. Roerdink and T. Isenberg},
@@ -140,6 +145,7 @@ year = 2009
   year={2013},
   publisher={Newnes}
 }
+
 
 
 @article{Reference1,

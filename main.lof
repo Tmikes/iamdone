@@ -63,5 +63,7 @@
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }}{79}{figure.caption.161}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{81}{figure.caption.163}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A head CT scan rendered on the hololens using isosurfaces \relax }}{90}{figure.caption.178}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A head CT scan rendered on the hololens using a raycasting algorithm \relax }}{91}{figure.caption.179}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
