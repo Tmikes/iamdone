@@ -2253,6 +2253,25 @@
     \field{year}{2006}
   \endentry
 
+  \entry{oculus}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RO}{%
+         family={Rift},
+         familyi={R\bibinitperiod},
+         given={Oculus},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RO1}
+    \strng{fullhash}{RO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{howpublished}{\url{https://www.oculus.com/}}
+    \field{title}{Oculus Rift}
+  \endentry
+
   \entry{Sahoo:1988:STT:46072.46079}{article}{}
     \name{author}{4}{}{%
       {{hash=SPK}{%

@@ -51,7 +51,19 @@ VR headsets can be used along with special controllers. In this case, users can 
 
 The most popular PC-connected VR headsets are HTC Vive, PlayStation VR, and Oculus Rift.
 
-HEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRE
+\subsubsection{Implementation}
+
+During this study, we implemented a volume renderer based on a cuda acclerated raycasting algorithm on a virtual reality headset. The device we used was the Oculus rift \cite{oculus}. The performances on the occulus rift was half lower than the performances on a PC. This is due to the fact that all the computations are carried out by the CPU and the GPU of the PC to which the headset is connected.  However, it is possible to increase the frame rates just by reducing the resolution or the quality of the rendered images. \autoref{fig:vr} shows a lung  CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm. So far, we did not developed the interactions to manipulate and modify the volume inside the head mounted device. We still use the mouse even though it is not simple to use external devices while wearing an headset.
+
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{images/vrraycasting}
+\caption{A lung CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm }
+\label{fig:vr}
+\end{figure}
+
+
 
 \subsection{Standalone headsets}
 
@@ -84,6 +96,8 @@ That is how common AR apps work, the best example being Pokemon Go. Millions of 
 
 
 Since smartphones are extremely affordable now, augmented reality could bring more experience into the visualization of volumetric datasets. 
+
+
 
 HEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRE
 

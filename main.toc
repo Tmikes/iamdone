@@ -92,20 +92,22 @@
 \contentsline {section}{\numberline {5.2}Stereoscopic 3D}{86}{section.168}
 \contentsline {section}{\numberline {5.3} Virtual Reality (VR)}{87}{section.169}
 \contentsline {subsection}{\numberline {5.3.1}PC-connected headsets}{87}{subsection.170}
-\contentsline {subsection}{\numberline {5.3.2}Standalone headsets}{87}{subsection.171}
-\contentsline {section}{\numberline {5.4} Augmented Reality (AR)}{88}{section.172}
-\contentsline {subsection}{\numberline {5.4.1}Portable devices}{88}{subsection.173}
-\contentsline {subsection}{\numberline {5.4.2}Smart glasses and AR headsets}{89}{subsection.174}
-\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{89}{section.175}
-\contentsline {subsection}{\numberline {5.5.1}Implementation}{89}{subsection.176}
-\contentsline {subsubsection}{\numberline {5.5.1.1}Computation on the hololens}{90}{subsubsection.177}
-\contentsline {chapter}{\numberline {6} Conclusion }{93}{chapter.180}
-\contentsline {section}{\numberline {6.1}summary}{94}{section.181}
-\contentsline {subsection}{\numberline {6.1.1} Design Study: Interactive exploration of 3D scanned baggage }{94}{subsection.182}
-\contentsline {subsection}{\numberline {6.1.2} Design Study: Interactive exploration of 3D scanned baggage }{95}{subsection.183}
-\contentsline {chapter}{\numberline {A}Questionnaire}{97}{appendix.184}
-\contentsline {section}{\numberline {A.1}Information}{97}{section.185}
-\contentsline {section}{\numberline {A.2}Scenario 1: Random Observation }{97}{section.187}
-\contentsline {section}{\numberline {A.3}Scenario 2: Observation of an area of interest }{98}{section.191}
-\contentsline {section}{\numberline {A.4}Suggestions}{98}{section.195}
-\contentsline {chapter}{Bibliography}{101}{appendix*.196}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Implementation}{87}{subsubsection.171}
+\contentsline {subsection}{\numberline {5.3.2}Standalone headsets}{88}{subsection.173}
+\contentsline {section}{\numberline {5.4} Augmented Reality (AR)}{89}{section.174}
+\contentsline {subsection}{\numberline {5.4.1}Portable devices}{89}{subsection.175}
+\contentsline {subsection}{\numberline {5.4.2}Smart glasses and AR headsets}{89}{subsection.176}
+\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{89}{section.177}
+\contentsline {subsection}{\numberline {5.5.1}Implementation}{90}{subsection.178}
+\contentsline {subsubsection}{\numberline {5.5.1.1}Computation on the hololens}{90}{subsubsection.179}
+\contentsline {subsubsection}{\numberline {5.5.1.2} Holographic remoting }{91}{subsubsection.182}
+\contentsline {chapter}{\numberline {6} Conclusion }{93}{chapter.183}
+\contentsline {section}{\numberline {6.1}summary}{94}{section.184}
+\contentsline {subsection}{\numberline {6.1.1} Design Study: Interactive exploration of 3D scanned baggage }{94}{subsection.185}
+\contentsline {subsection}{\numberline {6.1.2} Design Study: Interactive exploration of 3D scanned baggage }{95}{subsection.186}
+\contentsline {chapter}{\numberline {A}Questionnaire}{97}{appendix.187}
+\contentsline {section}{\numberline {A.1}Information}{97}{section.188}
+\contentsline {section}{\numberline {A.2}Scenario 1: Random Observation }{97}{section.190}
+\contentsline {section}{\numberline {A.3}Scenario 2: Observation of an area of interest }{98}{section.194}
+\contentsline {section}{\numberline {A.4}Suggestions}{98}{section.198}
+\contentsline {chapter}{Bibliography}{101}{appendix*.199}
