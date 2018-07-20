@@ -127,6 +127,19 @@ To avoid this problem, a headset must be able to track the real world and adjust
 
 During the end of this thesis, we begin to implement a volume rendering framework on a Holographic device. We use an Hololens (see \cite{hololens}) as the holographic design to support the volume renderer framework. We tried two different types of implementations. The first one and the least difficult is to compute and render the volume on the holographic device itself. The second type of implementation is to use the \textbf{ "remoting" } strategy. The remoting strategy allow to do all the computation on a computer (usually more powerful than the holographic device) and send the final images (one for each eye) through the WiFi to be rendered on the Hololens.
 
+
+Another limitation of the \cite{hololens} is the non compatibility with GPGPU langages such us CUDA and OpenCL which is quite obvious knowing the weak compute capability of the Hololens GPU called \textbf{HoloLens Graphics}. This is quite important for our framework since most of the novel and interesting interaction techniques rely on the computational power of the graphic card thanks to the GPGPU approach. \newline
+To bypass this limitation, we used the \textbf{ compute shaders} which are now available  in the common shader langages (HLSL, GLSL).
+
+
+The \textbf{ compute shader} is a Shader Stage that is used entirely for computing arbitrary information. While it can do rendering, it is generally used for tasks not directly related to drawing triangles and pixels.
+
+Compute shaders operate differently from other shader stages. All of the other shader stages have a well-defined set of input values, some built-in and some user-defined. The frequency at which a shader stage executes is specified by the nature of that stage; vertex shaders execute once per input vertex, for example (though some executions can be skipped via caching). Fragment shader execution is defined by the fragments generated from the rasterization process.
+
+Compute shaders work very differently. The "space" that a compute shader operates on is largely abstract; it is up to each compute shader to decide what the space means. The number of compute shader executions is defined by the function used to execute the compute operation. Most important of all, compute shaders have no user-defined inputs and no outputs at all. The built-in inputs only define where in the "space" of execution a particular compute shader invocation is.
+
+Therefore, if a compute shader wants to take some values as input, it is up to the shader itself to fetch that data, via texture access, arbitrary image load, shader storage blocks, or other forms of interface. Similarly, if a compute shader is to actually compute anything, it must explicitly write to an image or shader storage block.
+
 \subsubsection{Computation on the hololens}
 
 The GPU of the hololens is not really powerful and as a low memory capacity (around 600 MB).  Knowing that the default and maximum supported resolution is 720p (1268x720) for each eye, have to compute two images with a lower resolution than this maximum value.  To develop an holographic app, one can either use the Unity framework or directly develop an universal holographic application using Visual studio and directX.
@@ -156,3 +169,26 @@ The second solution was to directly develop an universal holographic application
 We just develop some basic interactions so far. For instance we switch from the isosurface representation to the one using the raycasting algorithm by using the \textbf{"air tap"} gesture. Air tap is a tapping gesture with the hand held upright, similar to a mouse click or select. This is used in most HoloLens experiences for the equivalent of a "click" on a UI element after targeting it.  We use the \textbf{manipulation} gesture to modify the transfer function presets when using the raycasting algorithm.
 
 \subsubsection{ Holographic remoting }
+
+\textbf {Holographic remoting } allows your app to target a HoloLens with holographic content hosted on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote immersive views into existing desktop PC software. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens. The connection is made using standard Wi-Fi. 
+
+\textbf {Holographic Remoting Player} is a companion app that connects to PC apps and software that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection. The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
+
+A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real-time.
+
+\paragraph{Performance}
+
+The Holographic remoting allows to have performances almost close to the ones when using a PC. I allows to bypass many weaknesses in the technical specifications of the Hololens. In fact, having access to the GPU and the CPU of a PC allow to perform a lot more heavy or time consuming tasks on this PC, before rendering the final result on the remote Hololens thanks to the Holographic Remoting Player.
+The quality and performance of your experience will vary based on three factors:
+\begin{itemize}
+
+\item  The holographic application you are running - Applications that render high-resolution or highly-detailed content may require a faster PC or faster wireless connection.
+
+\item Your PC's hardware - Your PC needs to be able to run and encode your holographic experience at 60 frames per second. For a graphics card, Microsoft generally recommends a GeForce GTX 970 or AMD Radeon R9 290 or better. Again, your particular experience may require a higher or lower-end card.
+
+\item Your Wi-Fi connection - The holographic application is streamed over Wi-Fi. Therefore, it is important to a fast network with low congestion to maximize quality. Using a PC that is connected over an Ethernet cable, rather than Wi-Fi, may also improve quality.
+
+\end{itemize}
+
+
+
