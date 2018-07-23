@@ -108,7 +108,7 @@ headsepline, % Uncomment to get a line under the header
 \university{\href{https://www.isae-supaero.fr/en/}{Institut supérieur de l'aéronautique et de l'espace (ISAE-SUPAERO)}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 \department{\href{http://www.enac.fr}{\'Ecole Nationale de l'Aviation Civile (ENAC)}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
 \group{\href{http://devi.recherche.enac.fr}{Data Economics and Interactive Visualization (DEVI)}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
-\faculty{\href{http://faculty.university.com}{Faculty Name}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\faculty{\href{https://www.adum.fr/as/ed/page.pl?site=edsys&page=accueil}{\'Ecole Doctorale Syst\`emes (EDSYS)}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -278,8 +278,12 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+Occlusion is an issue in volumetric visualization as it prevents direct visualization of the region of interest.
+While most existing systems use a combination of Direct Volume Rendering (DVR) technique and its corresponding Transfer Function (TF), we considered alternative interaction techniques to explore such datasets. 
 
-abstract here
+First, we proposed a new interactive visualization system for 3D scanned baggage accelerated with GPGPU techniques in accordance with the needs we extracted from the contextual inquiry with the airport security agents. 
+
+Secondly, we proposed a novel technique which combines high-quality DVR with a fast, versatile, and easy to use, lens to support the interactive exploration of occluded data in volumes.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
