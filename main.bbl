@@ -1935,6 +1935,23 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{radiology}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=m}{%
+         family={medicinenet},
+         familyi={m\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{m1}
+    \strng{fullhash}{m1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\url{https://www.medicinenet.com}}
+    \field{title}{Scans}
+  \endentry
+
   \entry{merzkirch2012flow}{book}{}
     \name{author}{1}{}{%
       {{hash=MW}{%
