@@ -182,7 +182,7 @@ If you account for symmetries, there are actually only 14 unique configurations 
 
 Each of the non-trivial configurations results in between 1 and 4 triangles being added to the isosurface. The actual vertices themselves can be computed by interpolation along edges, or, default their location to the middle of the edge. The interpolated locations will obviously give you better shading calculations and smoother surfaces.
 
-The quality of the final the polygonal surface representation heavily depends on the number on isosurface generated. Accoording to the implementation used and the optimization strategies we can find a better trade-off between the quality and the frame rate (see \autoref{fig:isosurface}). 
+The quality of the final the polygonal surface representation heavily depends on the number on isosurface generated. According to the implementation used and the optimization strategies we can find a better trade-off between the quality and the frame rate (see \autoref{fig:isosurface}). 
 
 
 Using isosurfaces allow to be faster than direct volume rendering. However, we lose the flexibility and the precision of the DVR algorithms because of the different approximations made while extracting these isosurfaces according to a maximum number of surfaces. 
@@ -194,6 +194,17 @@ Using isosurfaces allow to be faster than direct volume rendering. However, we l
 \caption[Volume raycasting]{ Two  molecules, generated at different grid sizes }
 \label{fig:isosurface}
 \end{figure}
+
+\subsection{summary}
+The existing algorithms to render volumetric data-sets  can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms.
+
+
+Rendering a volume directly with DVR methods is usually better for visualising softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
+
+
+Isosurfaces from surface-fitting methods tend to be a popular form of visualization for volume datasets since they can be rendered by a simple polygonal model, which can be drawn on the screen very quickly. They are very useful when we want to examine structures and boundaries in volume data, such as bone shape or distinct parts of the brain. It is then better to extract a triangle or tetrahedral mesh from the voxel data or implicit field. These meshes can be studied for their topology and curvature, and rendered as solid looking objects.
+
+
 
 \section{Occlusion management strategies}
 
@@ -302,6 +313,22 @@ Clustering technique is the process of classifying each group of pixels in an im
 
 K-means clustering classifies n voxels into K clusters or classes ( K less than n ). This algorithm chooses the number of clusters (K) then randomly generates K clusters and determine the cluster centers. The next step is assigning each point in the volume to the nearest cluster center and finally recompute the new cluster centers. The two previous steps are repeated until the minimum variance criterion is achieved. This approach is similar to the expectation-maximization algorithm for Gaussian mixture in which they both attempt to find the centers of clusters in the volume.
 
+\cite{Li:2012:LVV:2425296.2425325} present a system for luggage visualization where any object is
+clearly distinguishable from its neighbors. It supports virtual unpacking
+by visually moving any object away from its original pose. To virtually unpack a luggage, instead of physically partitioning the
+original volume, the system performs volume rendering in multiple passes
+and each pass is associated with the proper transfer function and geometric
+transformation ( see \autoref{fig:unpack} ).  A brutal-force design requires the number
+of rendering passes equals to that of the objects in the worst case.
+This obviously is too expensive considering a typical luggage contains
+several dozens of objects. To efficiently handle a scene mixed
+with a volume of packed objects, unpacked objects, and the animation
+of objects being unpacked or restored, they have designed a layered
+approach. Each layer is responsible for rendering objects in a
+particular state as well as caches and displays the previous rendered
+images to avoid unnecessary rendering. The layer of unpacked objects
+is further decomposed into a set of 3D sprites to minimize
+memory usage.
 
 \subsection{Deformations and Focus + Context}
 
@@ -628,7 +655,18 @@ first moves towards the camera, then it flies to the top-right corner of the ima
 \end{figure}
 
 
-\section{Volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }
+\subsection{summary}
+In this section, we studied existing occlusion  management strategies in volume rendering. 
+the transfer function, the segmentation, an deformations as well as Focus+context techniques. 
+The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge on the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example.
+
+
+Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depends of the type of the data-sets (medical, industrial).  
+
+
+Focus + Context methods as well as deformations modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allow to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed.
+
+\section{Volume rendering on mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }
 
 The computational power of mobile devices is much 
 stronger, and some traditional tasks on computer can be
@@ -728,17 +766,17 @@ achieves real-time performance across a number of platforms
 and provides improvements that preserve the sense of interior
 volumes being embedded inside real-world objects. 
 
-To virtually unpack a luggage, instead of physically partitioning the
-original volume, the system performs volume rendering in multiple passes
-and each pass is associated with the proper transfer function and geometric
-transformation. A brutal-force design requires the number
-of rendering passes equals to that of the objects in the worst case.
-This obviously is too expensive considering a typical luggage contains
-several dozens of objects. To efficiently handle a scene mixed
-with a volume of packed objects, unpacked objects, and the animation
-of objects being unpacked or restored, they have designed a layered
-approach. Each layer is responsible for rendering objects in a
-particular state as well as caches and displays the previous rendered
-images to avoid unnecessary rendering. The layer of unpacked objects
-is further decomposed into a set of 3D sprites to minimize
-memory usage
+\subsection{summary}
+In this section, we studied the previous volume rendering works on mobile devices with 3 different contexts: Virtual reality, Augmented really, and Mixed reality. The potential of this technologies is really interesting even though these mobile devices usually suffer from relatively low computational power.   
+
+\section{Conlusion}
+In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality).
+
+ The existing algorithms to render volumetric data-sets  can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms.Rendering a volume directly with DVR methods is usually better for visualising softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
+Isosurfaces from surface-fitting methods tend to be a popular form of visualization for volume datasets since they can be rendered by a simple polygonal model, which can be drawn on the screen very quickly. They are very useful when we want to examine structures and boundaries in volume data, such as bone shape or distinct parts of the brain. It is then better to extract a triangle or tetrahedral mesh from the voxel data or implicit field. These meshes can be studied for their topology and curvature, and rendered as solid looking objects.
+
+
+Many strategies can help to deal with occlusion in volumetric data-sets. The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge on the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example.Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depends of the type of the data-sets (medical, industrial).  Focus + Context methods as well as deformations modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allow to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed.
+
+
+ The potential of AR, VR, and MR technologies is really interesting even though these mobile devices usually suffer from relatively low computational power.   

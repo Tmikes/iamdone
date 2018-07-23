@@ -24,7 +24,7 @@ Volumetric data sets are present in many fields such as medical imaging, physics
 Volumetric data is very common nowadays. The importance of this dataset type will grow rapidly due to the development of the 3D data acquisition field, and the possibilities to perform an advanced visualization on a modern office workstation with an interactive framerate.
 
 
-The dataset can be captured by various technologies, e.g. \textbf{  MRI (Magnetic resonance imaging) } , \textbf{ CT (computed tomography ) }, \textbf{PET (Positron-emission tomography ) }, \textbf{ USCT (Ultrasound computer tomography ) echolocation }. It also can be produced by physical simulations, for example, fluid dynamics or particle systems. The set of technologies mentioned before demonstrates that volumetric information plays an important role in medicine. It is used for an advanced cancer detection, visualization of aneurysms, and treatment planning. This kind of data is also very useful for non-destructive material testing via computer tomography or ultrasound. In addition, huge three-dimensional dataset is produced by geoseismic research.
+The dataset can be captured by various technologies, e.g. \textbf{  MRI (Magnetic resonance imaging) } , \textbf{ CT (computed tomography ) }, \textbf{PET (Positron-emission tomography ) }, \textbf{ USCT (Ultrasound computer tomography ) echolocation }, see \cite{radiology} . It also can be produced by physical simulations, for example, fluid dynamics or particle systems. The set of technologies mentioned before demonstrates that volumetric information plays an important role in medicine. It is used for an advanced cancer detection, visualization of aneurysms, and treatment planning. This kind of data is also very useful for non-destructive material testing via computer tomography or ultrasound. In addition, huge three-dimensional dataset is produced by geoseismic research.
 
 
 An \textbf{  MRI (Magnetic resonance imaging) } is a radiology technique scan that uses magnetism, radio waves, and a computer to produce images of body structures. The MRI scanner is a tube surrounded by a giant circular magnet. The patient is placed on a movable bed that is inserted into the magnet. The magnet creates a strong magnetic field that aligns the protons of hydrogen atoms, which are then exposed to a beam of radio waves. This spins the various protons of the body, and they produce a faint signal that is detected by the receiver portion of the MRI scanner. A computer processes the receiver information, which produces an image.
@@ -87,7 +87,7 @@ During this thesis, we mainly focused on two main topics:
 To address this issue, various techniques have been designed including transfer functions, segmentation, selection, and clipping. Yet, all such techniques have limitations.  \emph{Global} mechanisms, like transfer function editing, can remove both occluders and targets if these have similar densities. In certain applications, carefully designed transfer functions exist and should be used without (significant) modifications to facilitate understanding and user training like with \cite{4276082}. \emph{Local} mechanisms like segmentation, selection, or clipping are more effective in manipulating data confined to a given spatial region. Yet, many such mechanisms assume that one can easily and accurately select targets to remove them (occluders) or keep them (occluded). This is hard to do when \emph{e.g.} one does not have direct access to the targets, or when significant 3D interaction is required to select occluder(s).
 
 
-A different way to handle occlusion is to use \emph{lenses}. These are flexible lightweight tools which enable local and temporary modifications of the DVR to reveal targets while keeping the global visualization context\,\cite{595268,CGF:CGF12871,6327262}. However, efficiently selecting the target and  removing all in-between occluders is still challenging. More specifically, most existing occlusion management techniques do not simultaneously meet all following requirements: 
+A different way to handle occlusion is to use \emph{lenses}. These are flexible lightweight tools which enable local and temporary modifications of the DVR to reveal targets while keeping the global visualization context ( \cite{595268,CGF:CGF12871,6327262} ). However, efficiently selecting the target and  removing all in-between occluders is still challenging. More specifically, most existing occlusion management techniques do not simultaneously meet all following requirements: 
 
 
 \begin{itemize}
@@ -127,4 +127,16 @@ This thesis present two main contributions. The first one is  a  user Study of t
 Before detailing those contributions, this manuscript starts with a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( smartphones, Virtual Reality, and Augmented Reality). First we present the existing algorithms to render volumetric data-sets, then we discuss the existing strategies of occlusion management. finally we  describe the previous work on  volume rendering in mobile devices.
 
 
-The third chapter present the user study of the interactive exploration of 3D scanned baggage.
+The third chapter present the user study of the interactive exploration of 3D scanned baggage. First, we present the activity of airport security agents and the difficulties they face in order to highlight the main requirements for the new 3D systems. Second, we propose a set of GPGPU interactions to explore the baggage. Then we illustrate the efficiency of the proposed interactions with two use cases or scenarios.
+In addition, we highlight the technical constraints and  the implementation of these interaction techniques. Finally we conclude this chapter and discuss the pertinence of the work presented in this chapter.
+
+
+The fourth chapter  proposes a focus-and-context (F+C) lens that combines a distortion technique, which pushes aside the occluding objects, with a fish-eye field of view, to provide a better perspective on targets. First we exhaustively define  the requirements already  presented in \autoref{problem}. Second, we present the principle of our novel lens by describing all the   parameters and their influences. Third, we show how this lens has been implemented on the GPU. Furthermore, we illustrate this novel lens thanks  to five different scenarios from different fields of activity. Finally we discuss the advantages and the shortcomings of this lens, then conclude this chapter.  
+
+
+The fifth chapter deals with volume rendering on mobile devices (Virtual Reality, Augmented Reality, Mixed Reality). In fact, This chapter presents an early on going work on this topic. First we define role of the stereoscopic 3D technique. Second, we present address the case of virtual reality (VR). Third, we deal with Augmented reality (AR). Then, we study volume rendering in mixed reality (MR). Finally we conclude and discuss the perspective of this work.
+
+
+Finally, we present the conclusion of the thesis and directions for future work.
+
+

@@ -432,6 +432,36 @@ KOMA-script documentation for details.}]{fancyhdr}
 	}
 }
 
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\usepackage{xcolor}
+\colorlet{mdtRed}{red!50!black}
+\newcommand{\publicationname}{Publications}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\publicationname}{Publications} % Acknowledgement text for English countries
+\providecaptionname{german,ngerman,austrian,naustrian}{\publicationname}{Danksagung} % Acknowledgement text for Germanic countries
+
+\ifbool{consistentlayout}{
+	\DeclareDocumentEnvironment{publications}{}{%
+		\tttypeout{\publicationname}
+		\addchap*{\publicationname}
+	}
+}
+{
+	\DeclareDocumentEnvironment{publications}{}{%
+		\checktoopen
+		\tttypeout{\publicationname}
+		\thispagestyle{plain}
+		\begin{center}{\huge\textit{\publicationname}\par}\end{center}
+	}
+	{
+		\vfil\vfil\null
+	}
+}
+
+
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE DESIGN
 %----------------------------------------------------------------------------------------

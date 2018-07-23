@@ -1024,6 +1024,58 @@
     \field{year}{2009}
   \endentry
 
+  \entry{everts15}{article}{}
+    \name{author}{5}{}{%
+      {{hash=EMH}{%
+         family={Everts},
+         familyi={E\bibinitperiod},
+         given={Maarten\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Begue},
+         familyi={B\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bekker},
+         familyi={B\bibinitperiod},
+         given={Henk},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RJBTM}{%
+         family={Roerdink},
+         familyi={R\bibinitperiod},
+         given={Jos B. T.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod
+  T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=IT}{%
+         family={Isenberg},
+         familyi={I\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EMH+2}
+    \strng{fullhash}{EMHBEBHRJBTMIT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{number}{7}
+    \field{pages}{808\bibrangedash 821}
+    \field{title}{Exploration of the Brain's White Matter Structure through
+  Visual Abstraction and Multi-Scale Local Fiber Tract Contraction}
+    \field{volume}{21}
+    \field{journaltitle}{IEEE Transactions on Visualization and Computer
+  Graphics}
+    \field{year}{2015}
+  \endentry
+
   \entry{Fogal2010Tuvok}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FT}{%

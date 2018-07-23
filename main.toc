@@ -4,116 +4,117 @@
 \contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}
 \contentsline {chapter}{Abstract}{vii}{section*.2}
 \contentsline {chapter}{Acknowledgements}{ix}{section*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.14}
-\contentsline {section}{\numberline {1.1}Context}{1}{section.15}
-\contentsline {section}{\numberline {1.2}Problem}{4}{section.16}
-\contentsline {subsection}{\numberline {1.2.1}Baggage inspection}{4}{subsection.17}
-\contentsline {subsection}{\numberline {1.2.2}Occlusion management using Focus+Context techniques}{5}{subsection.18}
-\contentsline {section}{\numberline {1.3}Research Question}{5}{section.19}
-\contentsline {section}{\numberline {1.4} Thesis outline }{6}{section.20}
-\contentsline {chapter}{\numberline {2}State of the art}{9}{chapter.21}
-\contentsline {section}{\numberline {2.1}Introduction}{9}{section.22}
-\contentsline {section}{\numberline {2.2}Volume rendering algorithms}{9}{section.23}
-\contentsline {subsection}{\numberline {2.2.1}Direct Volume Rendering}{10}{subsection.24}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Texture mapping}{10}{subsubsection.25}
-\contentsline {paragraph}{\numberline {2.2.1.1.1}2D Texture mapping}{10}{paragraph.26}
-\contentsline {paragraph}{\numberline {2.2.1.1.2}3D Texture mapping}{12}{paragraph.30}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Raycasting}{13}{subsubsection.33}
-\contentsline {subsection}{\numberline {2.2.2}Surface-fitting}{14}{subsection.35}
-\contentsline {subsection}{\numberline {2.2.3}summary}{16}{subsection.37}
-\contentsline {section}{\numberline {2.3}Occlusion management strategies}{16}{section.38}
-\contentsline {subsection}{\numberline {2.3.1}Transfer Function}{16}{subsection.39}
-\contentsline {subsection}{\numberline {2.3.2}Segmentation}{19}{subsection.42}
-\contentsline {subsubsection}{\numberline {2.3.2.1} Thresholding }{19}{subsubsection.43}
-\contentsline {subsubsection}{\numberline {2.3.2.2} Clustering }{19}{subsubsection.44}
-\contentsline {subsection}{\numberline {2.3.3}Deformations and Focus + Context}{20}{subsection.45}
-\contentsline {subsection}{\numberline {2.3.4}summary}{31}{subsection.53}
-\contentsline {section}{\numberline {2.4}Volume rendering on mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }{31}{section.54}
-\contentsline {subsection}{\numberline {2.4.1}summary}{33}{subsection.56}
-\contentsline {section}{\numberline {2.5}Conlusion}{33}{section.57}
-\contentsline {chapter}{\numberline {3}User Study: Interactive exploration of 3D scanned baggage}{35}{chapter.58}
-\contentsline {section}{\numberline {3.1}Introduction}{35}{section.59}
-\contentsline {section}{\numberline {3.2}Activity analysis}{35}{section.60}
-\contentsline {subsection}{\numberline {3.2.1}Task description}{36}{subsection.61}
-\contentsline {subsubsection}{\numberline {3.2.1.1}The Equipment}{36}{subsubsection.62}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Prohibited articles}{37}{subsubsection.64}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Scan analysis}{37}{subsubsection.65}
-\contentsline {paragraph}{\numberline {3.2.1.3.1}Global picture analysis}{38}{paragraph.66}
-\contentsline {paragraph}{\numberline {3.2.1.3.2}The in-depth analysis}{38}{paragraph.67}
-\contentsline {paragraph}{\numberline {3.2.1.3.3}The structure analysis}{38}{paragraph.68}
-\contentsline {paragraph}{\numberline {3.2.1.3.4}The context}{38}{paragraph.69}
-\contentsline {subsection}{\numberline {3.2.2}The activity issues}{39}{subsection.70}
-\contentsline {subsubsection}{\numberline {3.2.2.1} Error Types }{39}{subsubsection.72}
-\contentsline {paragraph}{\numberline {3.2.2.1.1}Perception errors}{39}{paragraph.73}
-\contentsline {paragraph}{\numberline {3.2.2.1.2}Interpretation errors}{39}{paragraph.75}
-\contentsline {paragraph}{\numberline {3.2.2.1.3}Decision making errors}{40}{paragraph.77}
-\contentsline {subsubsection}{\numberline {3.2.2.2} Dissimulation techniques }{40}{subsubsection.78}
-\contentsline {subsection}{\numberline {3.2.3} Requirements }{41}{subsection.83}
-\contentsline {section}{\numberline {3.3} Interactive exploration of 3D scanned baggage }{44}{section.84}
-\contentsline {subsection}{\numberline {3.3.1}Top Level Structure}{44}{subsection.85}
-\contentsline {subsection}{\numberline {3.3.2}Interaction techniques}{46}{subsection.87}
-\contentsline {subsubsection}{\numberline {3.3.2.1} Transfer function edition}{46}{subsubsection.88}
-\contentsline {subsubsection}{\numberline {3.3.2.2} Objects selection and investigation}{46}{subsubsection.90}
-\contentsline {paragraph}{\numberline {3.3.2.2.1} Selection of an object}{47}{paragraph.91}
-\contentsline {paragraph}{\numberline {3.3.2.2.2}Occlusion management}{48}{paragraph.93}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Extended Brushing techniques}{48}{subsubsection.95}
-\contentsline {paragraph}{\numberline {3.3.2.3.1}Range Based brushing technique}{49}{paragraph.97}
-\contentsline {paragraph}{\numberline {3.3.2.3.2}Magic brushing technique}{51}{paragraph.99}
-\contentsline {paragraph}{\numberline {3.3.2.3.3}The cancellation of the brushing}{51}{paragraph.100}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Snapshots}{51}{subsubsection.101}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Dual temporal instance navigation}{52}{subsubsection.103}
-\contentsline {subsection}{\numberline {3.3.3}Possible Use Cases}{52}{subsection.105}
-\contentsline {subsubsection}{\numberline {3.3.3.1} Inspection of a suspicious baggage }{52}{subsubsection.106}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Inspection of a big metallic object}{53}{subsubsection.110}
-\contentsline {subsection}{\numberline {3.3.4}Technical Constraints and Implementation}{55}{subsection.114}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Object selection}{55}{subsubsection.115}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Occlusion minimization}{57}{subsubsection.116}
-\contentsline {subsubsection}{\numberline {3.3.4.3}Extended brushing technique}{57}{subsubsection.117}
-\contentsline {subsection}{\numberline {3.3.5}Discussion and conclusion}{58}{subsection.118}
-\contentsline {chapter}{\numberline {4}Interactive obstruction-free lensing for volumetric data visualization}{59}{chapter.119}
-\contentsline {section}{\numberline {4.1}Introduction}{59}{section.120}
-\contentsline {section}{\numberline {4.2}Requirements}{60}{section.121}
-\contentsline {subsection}{\numberline {4.2.1}Occlusion management}{61}{subsection.122}
-\contentsline {subsection}{\numberline {4.2.2}Lenses and deformations}{62}{subsection.123}
-\contentsline {subsection}{\numberline {4.2.3}Detailed contributions}{63}{subsection.125}
-\contentsline {section}{\numberline {4.3}Principle}{64}{section.127}
-\contentsline {subsection}{\numberline {4.3.1}Creating an unobstructed view}{65}{subsection.129}
-\contentsline {subsection}{\numberline {4.3.2}Setting a wide field of view}{65}{subsection.132}
-\contentsline {subsection}{\numberline {4.3.3}Interactive exploration of the target}{66}{subsection.134}
-\contentsline {subsection}{\numberline {4.3.4}Smooth transitions}{67}{subsection.142}
-\contentsline {section}{\numberline {4.4}Implementation}{68}{section.145}
-\contentsline {section}{\numberline {4.5}Application Scenarios}{70}{section.146}
-\contentsline {subsection}{\numberline {4.5.1}Baggage inspection: An unusual blunt object}{70}{subsection.147}
-\contentsline {subsubsection}{\numberline {4.5.1.1}Early results}{72}{subsubsection.149}
-\contentsline {subsection}{\numberline {4.5.2}Fluid flow: A deep-buried spherical vortex}{76}{subsection.159}
-\contentsline {subsection}{\numberline {4.5.3}Chest scan: A hard to see tumor}{77}{subsection.161}
-\contentsline {subsection}{\numberline {4.5.4}Aircraft trajectories: Outliers in the French sky}{78}{subsection.164}
-\contentsline {subsection}{\numberline {4.5.5}Brain fibers: Uncluttering the bridge}{81}{subsection.166}
-\contentsline {section}{\numberline {4.6}Discussion}{82}{section.168}
-\contentsline {section}{\numberline {4.7}Conclusions}{85}{section.169}
-\contentsline {chapter}{\numberline {5}Volume rendering on mobile devices (Virtual Reality, Augmented Reality, Mixed Reality) }{87}{chapter.170}
-\contentsline {section}{\numberline {5.1}Introduction}{87}{section.171}
-\contentsline {section}{\numberline {5.2}Stereoscopic 3D}{88}{section.172}
-\contentsline {section}{\numberline {5.3} Virtual Reality (VR)}{89}{section.173}
-\contentsline {subsection}{\numberline {5.3.1}PC-connected headsets}{89}{subsection.174}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Implementation}{89}{subsubsection.175}
-\contentsline {subsection}{\numberline {5.3.2}Standalone headsets}{90}{subsection.177}
-\contentsline {section}{\numberline {5.4} Augmented Reality (AR)}{91}{section.178}
-\contentsline {subsection}{\numberline {5.4.1}Portable devices}{91}{subsection.179}
-\contentsline {subsection}{\numberline {5.4.2}Smart glasses and AR headsets}{91}{subsection.181}
-\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{93}{section.182}
-\contentsline {subsection}{\numberline {5.5.1}Implementation}{93}{subsection.183}
-\contentsline {subsubsection}{\numberline {5.5.1.1}Computation on the hololens}{94}{subsubsection.184}
-\contentsline {subsubsection}{\numberline {5.5.1.2} Holographic remoting }{96}{subsubsection.187}
-\contentsline {paragraph}{\numberline {5.5.1.2.1}Performance}{96}{paragraph.188}
-\contentsline {chapter}{\numberline {6} Conclusion }{97}{chapter.189}
-\contentsline {section}{\numberline {6.1}summary}{98}{section.190}
-\contentsline {subsection}{\numberline {6.1.1} Design Study: Interactive exploration of 3D scanned baggage }{98}{subsection.191}
-\contentsline {subsection}{\numberline {6.1.2}Interactive obstruction-free lensing for volumetric data visualization }{99}{subsection.192}
-\contentsline {section}{\numberline {6.2}Perspective and future work}{100}{section.193}
-\contentsline {chapter}{\numberline {A}Questionnaire}{101}{appendix.194}
-\contentsline {section}{\numberline {A.1}Information}{101}{section.195}
-\contentsline {section}{\numberline {A.2}Scenario 1: Random Observation }{101}{section.197}
-\contentsline {section}{\numberline {A.3}Scenario 2: Observation of an area of interest }{102}{section.201}
-\contentsline {section}{\numberline {A.4}Suggestions}{102}{section.205}
-\contentsline {chapter}{Bibliography}{105}{appendix*.206}
+\contentsline {chapter}{Publications}{xi}{section*.4}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.16}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.17}
+\contentsline {section}{\numberline {1.2}Problem}{4}{section.18}
+\contentsline {subsection}{\numberline {1.2.1}Baggage inspection}{4}{subsection.19}
+\contentsline {subsection}{\numberline {1.2.2}Occlusion management using Focus+Context techniques}{5}{subsection.20}
+\contentsline {section}{\numberline {1.3}Research Question}{5}{section.21}
+\contentsline {section}{\numberline {1.4} Thesis outline }{6}{section.22}
+\contentsline {chapter}{\numberline {2}State of the art}{9}{chapter.23}
+\contentsline {section}{\numberline {2.1}Introduction}{9}{section.24}
+\contentsline {section}{\numberline {2.2}Volume rendering algorithms}{9}{section.25}
+\contentsline {subsection}{\numberline {2.2.1}Direct Volume Rendering}{10}{subsection.26}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Texture mapping}{10}{subsubsection.27}
+\contentsline {paragraph}{\numberline {2.2.1.1.1}2D Texture mapping}{10}{paragraph.28}
+\contentsline {paragraph}{\numberline {2.2.1.1.2}3D Texture mapping}{12}{paragraph.32}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Raycasting}{13}{subsubsection.35}
+\contentsline {subsection}{\numberline {2.2.2}Surface-fitting}{14}{subsection.37}
+\contentsline {subsection}{\numberline {2.2.3}summary}{16}{subsection.39}
+\contentsline {section}{\numberline {2.3}Occlusion management strategies}{16}{section.40}
+\contentsline {subsection}{\numberline {2.3.1}Transfer Function}{16}{subsection.41}
+\contentsline {subsection}{\numberline {2.3.2}Segmentation}{19}{subsection.44}
+\contentsline {subsubsection}{\numberline {2.3.2.1} Thresholding }{19}{subsubsection.45}
+\contentsline {subsubsection}{\numberline {2.3.2.2} Clustering }{19}{subsubsection.46}
+\contentsline {subsection}{\numberline {2.3.3}Deformations and Focus + Context}{20}{subsection.47}
+\contentsline {subsection}{\numberline {2.3.4}summary}{31}{subsection.55}
+\contentsline {section}{\numberline {2.4}Volume rendering on mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }{31}{section.56}
+\contentsline {subsection}{\numberline {2.4.1}summary}{33}{subsection.58}
+\contentsline {section}{\numberline {2.5}Conlusion}{33}{section.59}
+\contentsline {chapter}{\numberline {3}User Study: Interactive exploration of 3D scanned baggage}{35}{chapter.60}
+\contentsline {section}{\numberline {3.1}Introduction}{35}{section.61}
+\contentsline {section}{\numberline {3.2}Activity analysis}{35}{section.62}
+\contentsline {subsection}{\numberline {3.2.1}Task description}{36}{subsection.63}
+\contentsline {subsubsection}{\numberline {3.2.1.1}The Equipment}{36}{subsubsection.64}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Prohibited articles}{37}{subsubsection.66}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Scan analysis}{37}{subsubsection.67}
+\contentsline {paragraph}{\numberline {3.2.1.3.1}Global picture analysis}{38}{paragraph.68}
+\contentsline {paragraph}{\numberline {3.2.1.3.2}The in-depth analysis}{38}{paragraph.69}
+\contentsline {paragraph}{\numberline {3.2.1.3.3}The structure analysis}{38}{paragraph.70}
+\contentsline {paragraph}{\numberline {3.2.1.3.4}The context}{38}{paragraph.71}
+\contentsline {subsection}{\numberline {3.2.2}The activity issues}{39}{subsection.72}
+\contentsline {subsubsection}{\numberline {3.2.2.1} Error Types }{39}{subsubsection.74}
+\contentsline {paragraph}{\numberline {3.2.2.1.1}Perception errors}{39}{paragraph.75}
+\contentsline {paragraph}{\numberline {3.2.2.1.2}Interpretation errors}{39}{paragraph.77}
+\contentsline {paragraph}{\numberline {3.2.2.1.3}Decision making errors}{40}{paragraph.79}
+\contentsline {subsubsection}{\numberline {3.2.2.2} Dissimulation techniques }{40}{subsubsection.80}
+\contentsline {subsection}{\numberline {3.2.3} Requirements }{41}{subsection.85}
+\contentsline {section}{\numberline {3.3} Interactive exploration of 3D scanned baggage }{44}{section.86}
+\contentsline {subsection}{\numberline {3.3.1}Top Level Structure}{44}{subsection.87}
+\contentsline {subsection}{\numberline {3.3.2}Interaction techniques}{46}{subsection.89}
+\contentsline {subsubsection}{\numberline {3.3.2.1} Transfer function edition}{46}{subsubsection.90}
+\contentsline {subsubsection}{\numberline {3.3.2.2} Objects selection and investigation}{46}{subsubsection.92}
+\contentsline {paragraph}{\numberline {3.3.2.2.1} Selection of an object}{47}{paragraph.93}
+\contentsline {paragraph}{\numberline {3.3.2.2.2}Occlusion management}{48}{paragraph.95}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Extended Brushing techniques}{48}{subsubsection.97}
+\contentsline {paragraph}{\numberline {3.3.2.3.1}Range Based brushing technique}{49}{paragraph.99}
+\contentsline {paragraph}{\numberline {3.3.2.3.2}Magic brushing technique}{51}{paragraph.101}
+\contentsline {paragraph}{\numberline {3.3.2.3.3}The cancellation of the brushing}{51}{paragraph.102}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Snapshots}{51}{subsubsection.103}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Dual temporal instance navigation}{52}{subsubsection.105}
+\contentsline {subsection}{\numberline {3.3.3}Possible Use Cases}{52}{subsection.107}
+\contentsline {subsubsection}{\numberline {3.3.3.1} Inspection of a suspicious baggage }{52}{subsubsection.108}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Inspection of a big metallic object}{53}{subsubsection.112}
+\contentsline {subsection}{\numberline {3.3.4}Technical Constraints and Implementation}{55}{subsection.116}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Object selection}{55}{subsubsection.117}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Occlusion minimization}{57}{subsubsection.118}
+\contentsline {subsubsection}{\numberline {3.3.4.3}Extended brushing technique}{57}{subsubsection.119}
+\contentsline {subsection}{\numberline {3.3.5}Discussion and conclusion}{58}{subsection.120}
+\contentsline {chapter}{\numberline {4}Interactive obstruction-free lensing for volumetric data visualization}{59}{chapter.121}
+\contentsline {section}{\numberline {4.1}Introduction}{59}{section.122}
+\contentsline {section}{\numberline {4.2}Requirements}{60}{section.123}
+\contentsline {subsection}{\numberline {4.2.1}Occlusion management}{61}{subsection.124}
+\contentsline {subsection}{\numberline {4.2.2}Lenses and deformations}{62}{subsection.125}
+\contentsline {subsection}{\numberline {4.2.3}Detailed contributions}{63}{subsection.127}
+\contentsline {section}{\numberline {4.3}Principle}{64}{section.129}
+\contentsline {subsection}{\numberline {4.3.1}Creating an unobstructed view}{65}{subsection.131}
+\contentsline {subsection}{\numberline {4.3.2}Setting a wide field of view}{65}{subsection.134}
+\contentsline {subsection}{\numberline {4.3.3}Interactive exploration of the target}{66}{subsection.136}
+\contentsline {subsection}{\numberline {4.3.4}Smooth transitions}{67}{subsection.144}
+\contentsline {section}{\numberline {4.4}Implementation}{68}{section.147}
+\contentsline {section}{\numberline {4.5}Application Scenarios}{70}{section.148}
+\contentsline {subsection}{\numberline {4.5.1}Baggage inspection: An unusual blunt object}{70}{subsection.149}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Early results}{72}{subsubsection.151}
+\contentsline {subsection}{\numberline {4.5.2}Fluid flow: A deep-buried spherical vortex}{76}{subsection.161}
+\contentsline {subsection}{\numberline {4.5.3}Chest scan: A hard to see tumor}{77}{subsection.163}
+\contentsline {subsection}{\numberline {4.5.4}Aircraft trajectories: Outliers in the French sky}{78}{subsection.166}
+\contentsline {subsection}{\numberline {4.5.5}Brain fibers: Uncluttering the bridge}{81}{subsection.168}
+\contentsline {section}{\numberline {4.6}Discussion}{82}{section.170}
+\contentsline {section}{\numberline {4.7}Conclusions}{85}{section.171}
+\contentsline {chapter}{\numberline {5}Volume rendering on mobile devices (Virtual Reality, Augmented Reality, Mixed Reality) }{87}{chapter.172}
+\contentsline {section}{\numberline {5.1}Introduction}{87}{section.173}
+\contentsline {section}{\numberline {5.2}Stereoscopic 3D}{88}{section.174}
+\contentsline {section}{\numberline {5.3} Virtual Reality (VR)}{89}{section.175}
+\contentsline {subsection}{\numberline {5.3.1}PC-connected headsets}{89}{subsection.176}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Implementation}{89}{subsubsection.177}
+\contentsline {subsection}{\numberline {5.3.2}Standalone headsets}{90}{subsection.179}
+\contentsline {section}{\numberline {5.4} Augmented Reality (AR)}{91}{section.180}
+\contentsline {subsection}{\numberline {5.4.1}Portable devices}{91}{subsection.181}
+\contentsline {subsection}{\numberline {5.4.2}Smart glasses and AR headsets}{91}{subsection.183}
+\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{93}{section.184}
+\contentsline {subsection}{\numberline {5.5.1}Implementation}{93}{subsection.185}
+\contentsline {subsubsection}{\numberline {5.5.1.1}Computation on the hololens}{94}{subsubsection.186}
+\contentsline {subsubsection}{\numberline {5.5.1.2} Holographic remoting }{96}{subsubsection.189}
+\contentsline {paragraph}{\numberline {5.5.1.2.1}Performance}{96}{paragraph.190}
+\contentsline {chapter}{\numberline {6} Conclusion }{97}{chapter.191}
+\contentsline {section}{\numberline {6.1}summary}{98}{section.192}
+\contentsline {subsection}{\numberline {6.1.1} Design Study: Interactive exploration of 3D scanned baggage }{98}{subsection.193}
+\contentsline {subsection}{\numberline {6.1.2}Interactive obstruction-free lensing for volumetric data visualization }{99}{subsection.194}
+\contentsline {section}{\numberline {6.2}Perspective and future work}{100}{section.195}
+\contentsline {chapter}{\numberline {A}Questionnaire}{101}{appendix.196}
+\contentsline {section}{\numberline {A.1}Information}{101}{section.197}
+\contentsline {section}{\numberline {A.2}Scenario 1: Random Observation }{101}{section.199}
+\contentsline {section}{\numberline {A.3}Scenario 2: Observation of an area of interest }{102}{section.203}
+\contentsline {section}{\numberline {A.4}Suggestions}{102}{section.207}
+\contentsline {chapter}{Bibliography}{105}{appendix*.208}
