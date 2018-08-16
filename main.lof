@@ -13,41 +13,41 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Multidimensional transfer Function}}{19}{figure.caption.43}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces multiscale }}{23}{figure.caption.48}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Interactive exploded-view}}{24}{figure.caption.49}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces clearview}}{25}{figure.caption.50}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Feature Aligned Volume Manipulation}}{26}{figure.caption.51}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Feature Aligned Volume Manipulation}}{27}{figure.caption.52}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces clearview}}{24}{figure.caption.50}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Feature Aligned Volume Manipulation}}{25}{figure.caption.51}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Feature Aligned Volume Manipulation}}{26}{figure.caption.52}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Color Tunneling}}{29}{figure.caption.53}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces unpack}}{30}{figure.caption.54}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces NIVR}}{33}{figure.caption.57}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces NIVR}}{35}{figure.caption.60}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces X-ray scan with the 3 standard colors (orange, green, and blue)\relax }}{37}{figure.caption.65}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The operational constraints of the security agents.\relax }}{39}{figure.caption.73}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) \relax }}{40}{figure.caption.76}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{41}{figure.caption.78}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Dissimulation by superposition\relax }}{42}{figure.caption.81}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Dissimulation by the location\relax }}{42}{figure.caption.82}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Dissimulation by dissociation\relax }}{43}{figure.caption.83}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Dissimulation using a bait\relax }}{43}{figure.caption.84}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI\relax }}{45}{figure.caption.88}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets \relax }}{46}{figure.caption.91}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Selection of an umbrella for further inspection. 1- The user wants to check an object looking like an umbrella. 2- After a double click, the object is selected and becomes gray as a feedback. 3- After the activation of the 2nd view, the user can manipulate the umbrella with or without the whole baggage. All the Selected items are also available on this second view. \relax }}{47}{figure.caption.94}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Addressing occlusion issue by removing objects from one view to another one. 1- The user wants to remove the bars of the baggage. 2- After a double click with the deletion tool, the object is removed from the main view. 3- After the activation of the 2nd view, the removed objects are visible outside the baggage.\relax }}{48}{figure.caption.96}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Brushing a bottle to see its content. 1- The initial baggage before brushing. 2- The result after using the old brushing technique: the content of the bottle has been removed too. 3- The result after using the new brushing technique: the content of the bottle is still visible. This brushing technique removes until it encounters an object out of the selected density range. \relax }}{49}{figure.caption.98}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Brushing low density materials to see a metallic object hidden inside the baggage. 1- The baggage before brushing. 2- After a density range is defined, the users brushes a part of the baggage. This interaction reveals a metallic bottle. \relax }}{50}{figure.caption.100}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{51}{figure.caption.104}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{52}{figure.caption.106}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces The transfer function presets help the user perceive the different types of material inside the baggage \relax }}{53}{figure.caption.109}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Inspection of an object from different perspectives. 1- The user defines an object of interest for further inspection. This object is then inside a box with red borders. 2- The user modifies the transfer function to see the target in another context. 3- The user rotates the baggage to look at the menace from a different perspective. It stays visible whatever the manipulation carried out. \relax }}{54}{figure.caption.110}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces A suspicious object is inspected apart of the rest of the baggage \relax }}{54}{figure.caption.111}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Noise due to the presence of a big metallic object \relax }}{55}{figure.caption.113}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces The baggage actually contains an engine \relax }}{56}{figure.caption.114}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces the user reveals some low density materials inside the engine \relax }}{56}{figure.caption.115}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces X-ray scan with the 3 standard colors (orange, green, and blue)\relax }}{39}{figure.caption.68}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The operational constraints of the security agents.\relax }}{41}{figure.caption.76}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) \relax }}{42}{figure.caption.79}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{43}{figure.caption.81}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dissimulation by superposition\relax }}{44}{figure.caption.84}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Dissimulation by the location\relax }}{44}{figure.caption.85}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Dissimulation by dissociation\relax }}{45}{figure.caption.86}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Dissimulation using a bait\relax }}{45}{figure.caption.87}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI\relax }}{47}{figure.caption.91}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets \relax }}{48}{figure.caption.94}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Selection of an umbrella for further inspection.}}{49}{figure.caption.97}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Addressing occlusion issue by removing objects from one view to another one.}}{50}{figure.caption.99}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Brushing a bottle to see its content.}}{51}{figure.caption.101}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Brushing low density materials to see a metallic object hidden inside the baggage.}}{52}{figure.caption.103}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{53}{figure.caption.107}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{54}{figure.caption.109}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces The transfer function presets help the user perceive the different types of material inside the baggage \relax }}{55}{figure.caption.112}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Inspection of an object from different perspectives.}}{56}{figure.caption.113}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces A suspicious object is inspected apart of the rest of the baggage \relax }}{56}{figure.caption.114}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Noise due to the presence of a big metallic object \relax }}{57}{figure.caption.116}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces The baggage actually contains an engine \relax }}{58}{figure.caption.117}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces the user reveals some low density materials inside the engine \relax }}{58}{figure.caption.118}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Obstruction-free lens working. A target is (mostly) hidden by occluders in front of it. (a) Classic DVR shows a small part of the target. (b) Our lens gathers rays to avoid occluders (\autoref {sec:gathering}). Once close to the target, rays follow again their initial paths. Yet, only a small part of the target is visible. (c) Scattering rays makes the full target visible (\autoref {sec:scattering}). Finally, we adjust the local viewing and lighting directions $\mathbf {a}$, $\mathbf {l}^{lens}$ (\autoref {sec:inter_expl}).\relax }}{64}{figure.caption.128}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Changing lighting parameters in the lens. (a) Constant global specular coefficient. (b) Specular coefficient high in the lens and low outside. (c-f) Changing the in-lens light vector yields the effect of a flashlight rotating around the target. The ball icons illustrate the local light vector direction.\relax }}{66}{figure.caption.137}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Obstruction-free lens working.}}{64}{figure.caption.128}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Changing lighting parameters in the lens.}}{66}{figure.caption.137}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Construction of local transfer function $TF_{o}$. See \autoref {sec:inter_expl}.\relax }}{68}{figure.caption.143}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }}{69}{figure.caption.146}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces (a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).\relax }}{71}{figure.caption.150}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Using our interactive lens on baggage.}}{71}{figure.caption.150}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Experience years.\relax }}{73}{figure.caption.152}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Familiarity with 3D tools.\relax }}{73}{figure.caption.153}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Ease of untargeted exploration.\relax }}{74}{figure.caption.154}
@@ -57,10 +57,10 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value for untargeted exploration.\relax }}{75}{figure.caption.158}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value, untargeted exploration, vs other used tools.\relax }}{75}{figure.caption.159}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Which functions of this tool bring the most added-value vs tool you already know and have used for the same task (categorical).\relax }}{76}{figure.caption.160}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).\relax }}{77}{figure.caption.162}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\tmspace +\thinmuskip {.1667em}\cite {slicer}.\relax }}{79}{figure.caption.164}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Visualizing one day of aircraft trajectories over France\tmspace +\thinmuskip {.1667em}\cite {hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.\relax }}{80}{figure.caption.165}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.\relax }}{81}{figure.caption.167}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows).}}{77}{figure.caption.162}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Lung tumor visualization using slices and standard DVR.}}{79}{figure.caption.164}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Visualizing one day of aircraft trajectories over France.}}{80}{figure.caption.165}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail.}}{81}{figure.caption.167}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{83}{figure.caption.169}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces A lung CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm \relax }}{90}{figure.caption.178}

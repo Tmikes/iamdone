@@ -41,9 +41,37 @@ MRI image and resolution is quite detailed, and it can detect tiny changes of st
 \textbf{ USCT (Ultrasound computer tomography ) echolocation }  uses ultrasound waves for creating images. In the first measurement step a defined ultrasound wave is generated with  ultrasound transducers, transmitted in direction of the measurement object and received with other or the same ultrasound transducers. While traversing and interacting with the object the ultrasound wave is changed by the object and carries now information about the object. After being recorded the information from the modulated waves can be extracted and used to create an image of the object in a second step. Unlike X-ray or other physical properties which provide typically only one information, ultrasound provides multiple information of the object for imaging: the attenuation the wave's sound pressure experiences indicate on the object's attenuation coefficient, the time-of-flight of the wave gives the speed of sound information, and the scattered wave indicates on the echogenicity of the object (e.g. refraction index, surface morphology, etc.)
 
 
+After acquiring data from any of theses technologies, the first challenge is to summarize the main characteristics of a dataset. This initial step is commonly data exploration.
+
+\textbf{Data exploration} is the initial step in data analysis, where users explore a large data set in an unstructured way to uncover initial patterns, characteristics, and points of interest. This process isn’t meant to reveal every bit of information a dataset holds, but rather to help create a broad picture of important trends and major points to study in greater detail. Data exploration can use a combination of manual methods and automated tools such as data visualizations and charts.
+
+This process makes deeper analysis easier because it can help target future searches and begin the process of excluding irrelevant data points (which can be considered as noises) and search paths or areas that may not turn up any interesting result. More importantly, it helps build a familiarity with the existing information that makes finding better answers much simpler.
+
+Many times, data exploration uses visualization because it creates a more straightforward view of data sets than simply examining thousands of individual numbers or names. In any data exploration, the manual and automated aspects also look at different sides of the same coin.
+
+
+In one hand, manual analysis helps users familiarize themselves with information and can point to broad trends. These methods are also by definition unstructured so that users can examine a whole data-sets without any preconceptions.
+
+In the other hand, automated tools, on the other hand, are excellent at pruning out less applicable data points, reorganizing data into sets that are easier to analyze, and scrubbing data sets to make their findings relevant.
+
+
+Visualizing beyond the two dimensions has become an integral part of the technical domain. Application of the third dimension is useful in many allied domains such as: animation (for entertainment and education), 3D printing, architecture, game creation, and scientific visualization. Although these (and many other) domains are wide apart in their application, they can be best explored using a common focal point of 3D visualization. In order to display the volumetric data-sets acquired through the technologies presented above, a specific type of 3D visualization is used:  \textbf{the volume rendering}.
+
+
+
+In addition to modeling and rendering volumetric phenomena, volume rendering is essential to scientific and engineering applications that require visualization of three-dimensional data sets. Examples include visualization of data acquired by medical imaging devices or resulting from computational fluid dynamics simulations. Users of interactive volume rendering applications rely on the performance of modern graphics accelerators for efficient data exploration and feature discovery.
+
+
 To visualize these type of data-sets, different rendering algorithms can be used. There are two major approaches to volume rendering. The first approach is to use ray casting based algorithms. They directly come from the rendering equation. They consists in shooting rays for each pixel of the final rasterized 2D image, sampling along the part of the ray located inside the volume, shading the sampling points, and compositing all the sampling points.   
 The second approach to render volumetric data sets is to use plane compositing. It consists in accumulating information over the whole view plane for each plane of voxels in the data set. When each plane is processed, a pixel of the final rasterized 2D image is updated. This technique is texture-based and uses slices of the 3D Volume. Theses slices can be either aligned with the data set or with the viewing plane.
 
+
+Theses three dimensional data-sets are usually big (i.e beyond $512^{3}$ ) as the resolution and the precision of the hardware used during the acquisition keep improving. Therefore, a powerful graphic card is need to visualize these data-sets with high quality and \textbf{interactivity}. 
+
+In general, \textbf{interactivity} means controlling the parameters in the visualization reference model. This naturally means that there are different types of interactivity, because the user could control the parameters to data transformations, to visual mappings, or to view transformations. It also means that there are different forms of interactivity based on the response cycle of the interaction, see \cite{jacko2012human}. Thus, the visualization should allow users inputs and respond fast enough and avoid latency time. The design of how a user communicates, or interacts, with theses visualization is consequently very important. The design of the interaction component of a visualization tools is  concerned with what users can and should do with the represented information, what actions should be made available to them to work and think with the represented information, and what their subsequent reactions should be. The focus of interaction design, then, is on the rhetoric that takes place between users and the represented information. It is through interaction with the represented information that users can restructure and modify the form and amount of displayed information in order to optimize and enhance its utility for performing complex cognitive activities.
+
+     
+To summarize, there many challenges throughout the whole process of getting insight and retrieve relevant information from the three dimensional data-sets.  
 During this thesis, we mainly focused on two main topics: 
 
 \begin{itemize}
@@ -119,7 +147,7 @@ Can we create interactive techniques to explore volumetric data-sets  while taki
 
 \section{ Thesis outline }
 
-This thesis present two main contributions. The first one is  a  user Study of the interactive exploration of 3D scanned baggage.
+This thesis presents two scientific contributions embedded into a visualization software followed by three patents. The first one is  a  user Study of the interactive exploration of 3D scanned baggage.
 
  As second contribution, we increase the flexibility of lenses for direct volume rendering exploration to jointly cover all above requirements in \autoref{introreq}. We propose a focus-and-context (F+C) lens that combines a distortion technique, which pushes aside the occluding objects, with a fish-eye field of view, to provide a better perspective on targets.
  
@@ -134,7 +162,7 @@ In addition, we highlight the technical constraints and  the implementation of t
 The fourth chapter  proposes a focus-and-context (F+C) lens that combines a distortion technique, which pushes aside the occluding objects, with a fish-eye field of view, to provide a better perspective on targets. First we exhaustively define  the requirements already  presented in \autoref{problem}. Second, we present the principle of our novel lens by describing all the   parameters and their influences. Third, we show how this lens has been implemented on the GPU. Furthermore, we illustrate this novel lens thanks  to five different scenarios from different fields of activity. Finally we discuss the advantages and the shortcomings of this lens, then conclude this chapter.  
 
 
-The fifth chapter deals with volume rendering on mobile devices (Virtual Reality, Augmented Reality, Mixed Reality). In fact, This chapter presents an early on going work on this topic. First we define role of the stereoscopic 3D technique. Second, we present address the case of virtual reality (VR). Third, we deal with Augmented reality (AR). Then, we study volume rendering in mixed reality (MR). Finally we conclude and discuss the perspective of this work.
+The fifth chapter deals with volume rendering on mobile devices or advanced displays (Virtual Reality, Augmented Reality, Mixed Reality). In fact, This chapter presents an early on going work on this topic. First we define role of the stereoscopic 3D technique. Second, we present address the case of virtual reality (VR). Third, we deal with Augmented reality (AR). Then, we study volume rendering in mixed reality (MR). Finally we conclude and discuss the perspective of this work.
 
 
 Finally, we present the conclusion of the thesis and directions for future work.

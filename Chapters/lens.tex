@@ -14,12 +14,12 @@ be separated by transfer function manipulations (R4).
 
 In this chapter, we increase the flexibility of lenses for DVR exploration to jointly cover all above requirements. We propose a focus-and-context (F+C) lens that combines a distortion technique, which pushes aside the occluding objects, with a fish-eye field of view, to provide a better perspective on targets. We specifically target the use-case of \emph{partially occluded} objects, where the user has a glimpse of an interesting structure, buried deep in the data, but only slightly visible from a given viewpoint and transfer-function setting. We allow the user to ''open up'' the volume without changing these settings, and reveal the target, by simple point, click, and scroll operations. Next, we provide several F+C modifications of the lighting parameters, transfer function, and geometry in the focus area to better understand the target. Our technique, implemented using a CUDA-based approach, can be easily incorporated in any generic DVR system.
 
-The chapter is structured as follows. \autoref{sec:requirements} presents four requirements for occlusion management in DVR visualization. \autoref{sec:principle} introduces the principle of our lens. \autoref{sec:implem} introduces implementation details.\autoref{sec:scenarios} presents five application scenarios for our lens in baggage inspection, 3D fluid flow visualization, chest radiology, air traffic planning, and DTI fiber exploration. \autoref{sec:discussion} discusses our proposal. Finally, Section~\autoref{sec:conclusions} concludes the chapter.
+The chapter is structured as follows. \autoref{sec:requirements} presents again the four requirements for occlusion management in DVR visualization. \autoref{sec:principle} introduces the principle of our lens. \autoref{sec:implem} introduces implementation details.\autoref{sec:scenarios} presents five application scenarios for our lens in baggage inspection, 3D fluid flow visualization, chest radiology, air traffic planning, and DTI fiber exploration. \autoref{sec:discussion} discusses our proposal. Finally, Section~\autoref{sec:conclusions} concludes the chapter.
 
 \section{Requirements}
 \label{sec:requirements}
 
-To start with, let us refine requirements R1$,\ldots,$R4.
+To start with, let us recall requirements R1$,\ldots,$R4.
 \begin{itemize}
 \item{\textbf{R1:}} The technique should rapidly create an unobstructed view of the target, \emph{i.e.}, such a view should be created at interactive frame rates (10 fps or more) with no special pre-processing of the input volume (\emph{e.g.}, segmentation), and with minimal user input (\emph{e.g.}, using simple mouse and/or keyboard-modifier events). All above are needed to ensure that one can freely \emph{explore} the volume by activating the lens anywhere with minimal effort and seeing its effect in real-time.
 
@@ -31,51 +31,9 @@ To start with, let us refine requirements R1$,\ldots,$R4.
 \end{itemize}
 
 
-Previous work on handling occlusion when exploring volume data can be divided into occlusion management techniques and lenses-and-deformation techniques. We next discuss these and also point out limitations from the perspective of R1$,\ldots,$R4.
-
-\subsection{Occlusion management}
-%
-Many occlusion management approaches have been proposed\,\cite{4483791}. Multiple viewports show the data from different perspectives\,\cite{WangBaldonado:2000:GUM:345513.345271}. This does not help when the target is strongly occluded from \emph{all} possible viewpoints (R4). Virtual X-ray methods make targets visible by turning occluders (half-)transparent\,\cite{Burns:2008:ACC:1457515.1409107}.\cite{4015450} proposed ClearView, which interactively focuses on specific areas in the data while preserving context without visual clutter by modulating transparency. Correa and Ma\,\cite{5416704} proposed visibility-driven transfer functions (TFs) to maximize the visibility of selected data-intervals. Designing good TFs is still challenging (R2) in general: For instance, in baggage inspection, a dissimulation strategy is to hide a threat among same-density objects, so TF editing cannot easily remove occluders but keep the target (R4)\,\cite{7819413}. De-occluding a tumor from surrounding similar-density tissue in medical scans is a similar situation\,\cite{CGF:CGF12927}. 
-Rezk-Salama and Kolb\,\cite{CGF:CGF979} also considered the voxels' occurrence on the cast ray, besides their densities and positions.\cite{6787171} removed occluders in 2D images, volumes, and trail-sets by deforming (pushing them away) in a focus area. Occludes are selected based on data value-ranges, thus we have here the same limitation as ClearView (R4). \cite{Li:2012:LVV:2425296.2425325} proposed luggage virtual unpacking where targets are cleared by interactively moving away occluders. This, however, alters the \emph{context} (relative position, connectivity) where occluders occur (R3). Recently, an interactive volumetric data exploration via direct voxel manipulation was proposed ,\cite{7819413}. Extending such approaches in a DVR setting to more complex deformations or changes of the data-in-focus is computationally challenging (R1).
 
 
-\subsection{Lenses and deformations}
-%
-An interactive lens is a lightweight tool to solve localized visualization problems by temporarily altering a selected part of the visual data representation\,\cite{CGF:CGF12871}, and hence provides focus-and-context (F+C) solutions to volumetric data occlusion (R2). Parametrizable lens properties include position, shape, appearance, size, orientation, and selection of included data (focus). The lens \emph{shape} is usually chosen to meet the requirements of the application and is linked to the lens function. Most lenses are circular\,\cite{1648236} (a design we also choose), rectangular\,\cite{Kincaid:2010:SFA:1907651.1907963}, or adapt their shape to the data-in-focus\,\cite{Pindat:2012:JCA:2380116.2380150,Thiede2008}. The lens \emph{position} and \emph{size} can be changed manually by the user, or automatically to guide users toward interesting events in the data\,\cite{Tominski:2011:ECU:2336207.2336211} or along a path of interesting events\,\cite{Alvina:2014:RER:2598153.2598200}. Our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest.
 
-Lenses for DVR face spatial selection and occlusion challenges. Magic Lens\,\cite{1532818} addresses these by rendering occlusions with lower opacity and magnifying pre-computed features interactively or automatically in a pre-segmented dataset. This, however, does not provide an (interactive) way to deal with similar-density occluders and targets (R4) and does not propose local exploration of the target context (R2). GlyphLens\,\cite{7539643} removes occluding glyphs by pulling them aside through animation. However, this covers only glyph-based and not DVR visualizations. 
-
-Lenses can create discontinuities between their inside and outside areas. Deformations can be a solution to this.
- \cite{Hsu:2011:RFM:2070781.2024165} create flexible deformations by non-linearly sampled rays to smoothly project objects at multiple levels of detail. However, this is computationally expensive and far from real-time (R1). Exploded views are used to partition a volume into several segments\,\cite{Sonnet:2004:IEA:989863.989871,4015467}. This strongly reduces occlusion but distorts the context (R3) and requires some sort of data pre-segmentation which takes time to compute (R1). \cite{Correa:2007:IDD:1313046.1313163,Correa:2006:FAV:1187627.1187827} allow one to manipulate the geometry of a data object.\cite{1250400} performed deformations using peeling to see hidden parts of the data. Such techniques remove potentially important contextual information surrounding the target, which makes it hard to see how the target is embedded in its context (R2).
-
-Deformations can reveal specific data features by using a precomputed segmentation. \cite{7332955} proposed a deforming lens which moves streamlines to observe the inner part of streamline bundles. Other techniques performed deformations using surgical metaphors, such us \cite{4069230,Correa:2006:FAV:1187627.1187827} to show hidden parts of a volume. Such techniques do not offer tools for local manipulation of the viewpoint that allows seeing a target under multiple perspectives (R2) while keeping the global context. 
-
-Using non-straight-line rays is another way to avoid occluders. \cite{5613463} propose curved (B{\'e}zier) rays to support this.  \cite{7120994} refine this further to create multi-perspective views. These approaches require a quite careful ray-path planning in advance, so they are not directly aimed at a lens effect (R2). Also, the target should be accessible from the viewpoint via a (possibly curved) path (R4). Also, from the presented examples, although two examples of DVR models are given, it seems these techniques mainly address de-occlusion in large 3D polygonal scenes such as terrain and city models.
-
-\autoref{tab:methods} summarizes the main advantages and limitations of a set of volumetric exploration techniques selected from the ones mentioned above which are close to our proposal. As visible, none of the techniques scores high on all requirements. The table also lists the number of different datasets and/or use-cases these techniques were tested on. We will validate our proposal on a similar number of use-cases ( \autoref{sec:scenarios}).
-\begin{table}
-\centering
-\small
-\begin{tabular}{ |c|c|c|c|c|c| }
-\hline
-\textbf{Technique} & \textbf{R1} & \textbf{R2} & \textbf{R3} & \textbf{R4} & \textbf{Use-cases}\\
-\hline
-\hline
-\cite{1250400} & + & -- & + & + & 1\\
-\cite{Sonnet:2004:IEA:989863.989871} & +/- & -- & + & +/- & 5\\
-\cite{1532818} & + & -- & + & +/- & 6\\
-\cite{4015467} & +/- & -- & -- & + & 6\\
-\cite{Correa:2006:FAV:1187627.1187827} & + & -- & + & + & 8\\
-\cite{Correa:2007:IDD:1313046.1313163} & + & -- & + & + & 8\\
-\cite{5613463} & + & -- & + & -- & 5\\
-\cite{Hsu:2011:RFM:2070781.2024165} & -- & +/- & + & + & 4\\
-\cite{6787171} & + & +/- & + & -- & 6\\
-\cite{7120994} & + & -- & + & -- & 5\\
-\hline
-\end{tabular}
-\caption{Related work selection \emph{vs} requirements R1...R4 ('+': good, '+/-': average, '--': limited) and the number of use-cases (datasets) used to demonstrate these methods.}
-\label{tab:methods}
-\end{table}
 \subsection{Detailed contributions}
 %
 Summarizing the above discussion on the requirements and related work on occlusion management, we propose a new technique which combines high-quality DVR with a fast, versatile, and easy to use, lens to support the interactive exploration of occluded data in volumes. In the classification of view deformations by C\cite{595268}, we use a nonlinear radial distortion through an interactive lens to remove occluding items and keep the global context while magnifying a partially occluded item. Related to volumetric lens techniques, we frame our contribution as follows: We propose an interactive deforming lens that magnifies and pushes aside occluding objects located in front of a designated focal point which meets the four requirements; the combination of flexible and real-time interactive changing of the focal point, custom bent rays used for DVR, lens deformation, and shading and transfer function in the focus area allow us to provide \emph{on the fly} a range of perspectives of the targets, without having to change the viewpoint or manipulate complex parameters in multiple linked views.
@@ -86,7 +44,7 @@ Summarizing the above discussion on the requirements and related work on occlusi
 
 \includegraphics [width=\textwidth]{images/principle.eps}
 
-\caption{Obstruction-free lens working. A target is (mostly) hidden by occluders in front of it. (a) Classic DVR shows a small part of the target. (b) Our lens gathers rays to avoid occluders (\autoref{sec:gathering}). Once close to the target, rays follow again their initial paths. Yet, only a small part of the target is visible. (c) Scattering rays makes the full target visible (\autoref{sec:scattering}). Finally, we adjust the local viewing and lighting directions $\mathbf{a}$, $\mathbf{l}^{lens}$ (\autoref{sec:inter_expl}).}
+\caption[Obstruction-free lens working.]{Obstruction-free lens working. A target is (mostly) hidden by occluders in front of it. (a) Classic DVR shows a small part of the target. (b) Our lens gathers rays to avoid occluders (\autoref{sec:gathering}). Once close to the target, rays follow again their initial paths. Yet, only a small part of the target is visible. (c) Scattering rays makes the full target visible (\autoref{sec:scattering}). Finally, we adjust the local viewing and lighting directions $\mathbf{a}$, $\mathbf{l}^{lens}$ (\autoref{sec:inter_expl}).}
 \label{f:fisheye}
 
 \end{figure}
@@ -142,7 +100,7 @@ To achieve a more effective exploration, we can interactively modify several par
 
 \includegraphics [width=\textwidth]{images/params.eps}
 
-\caption{Changing lighting parameters in the lens. (a) Constant global specular coefficient. (b) Specular coefficient high in the lens and low outside. (c-f) Changing the in-lens light vector yields the effect of a flashlight rotating around the target. The ball icons illustrate the local light vector direction.}
+\caption[Changing lighting parameters in the lens.]{Changing lighting parameters in the lens. (a) Constant global specular coefficient. (b) Specular coefficient high in the lens and low outside. (c-f) Changing the in-lens light vector yields the effect of a flashlight rotating around the target. The ball icons illustrate the local light vector direction.}
 \label{f:params}
 
 \end{figure}
@@ -252,7 +210,7 @@ In airports, security agents deal with volumetric data exploration during baggag
 \centering
 \includegraphics [width=\textwidth]{images/shuriken.eps}
 
-\caption{(a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).}
+\caption[Using our interactive lens on baggage.]{(a-c) A baggage scan is viewed from different angles. In view (c), a suspicious sharp object is spotted between a set of mugs. (d-f) Filtering densities using a classical 1D opacity transfer function removes progressively more of the occluders (mugs), but also the target. (g) The user applies the lens on the target object (double-click). An animation starts opening the lens, rays are gathered to pass through occluders. Halfway the animation, the object is magnified, but only the area close to the lens is visible. (h) The fish-eye field of view at the end of the animation scatters rays to fully show the target. (i) The lens is increased to magnify the target (mouse scroll).}
 \label{f:baggage_lens}
 \end{figure}
 
@@ -366,7 +324,7 @@ Finding the details of this vortex cannot be done using standard DVR. Interestin
 \centering
 \includegraphics [width=\textwidth]{images/stream_lens.eps}
 
-\caption{Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).}
+\caption[Flow volume exploration with two different opacity transfer functions (top and bottom rows).]{Flow volume exploration with two different opacity transfer functions (top and bottom rows). In viewpoint (a), we notice a small high-density spherical item. (b) We apply the lens at that location (double click). (c) The directions of rays in the lens are changed to see the whole target in the lens (right click + mouse drag change direction). (d) The lens is gradually closed while keeping the focus area magnified (shift + scroll).}
 
 \label{f:stream_lens}
 \end{figure}
@@ -383,7 +341,7 @@ In our third use-case, we consider a contrast chest CT scan ($512 \times 512 \ti
 \begin{figure}
 \centering
 \includegraphics [width=\textwidth]{images/slicer.eps}
-\caption{Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\,\cite{slicer}.}
+\caption[Lung tumor visualization using slices and standard DVR.]{Lung tumor visualization using slices (a-c) and standard DVR (d). Annotations are manually added by the examiner to delineate the tumor location. Images constructed using the 3D Slicer tool\,\cite{slicer}.}
 \label{f:slicer}
 \end{figure}
 
@@ -396,7 +354,7 @@ Both specialists have over 10 years of medical experience in treating lung cance
 \centering
 \includegraphics [width=\textwidth]{images/aircraft.pdf}
 
-\caption{Visualizing one day of aircraft trajectories over France\,\cite{hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.}
+\caption[Visualizing one day of aircraft trajectories over France.]{Visualizing one day of aircraft trajectories over France\,\cite{hurter2009fromdady}. (a) Overview of all trails. (b) Zoom, filtering, and color mapping techniques are used to highlight an outlier trajectory of an aircraft performing an eight-shaped loop. Revealing this outlier costs significant user effort.}
 \label{f:fromdady}
 
 \end{figure}
@@ -416,7 +374,7 @@ We validated our findings with an air traffic data scientist with more than 10-y
 \begin{figure}
 \centering
 \includegraphics [width= \textwidth]{images/aircraft_lens.pdf}
-\caption{Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.}
+\caption[Inspecting an abnormal aircraft trail.]{Inspecting an abnormal aircraft trail. (a) The abnormal trail is spotted in an all-trails view as it is highly curved while all other trails are relatively straight. Activating the lens at the outlier location (b) and changing the magnification factor (c) reveals the trail's eight-shape. (d) Rotating the viewpoint provides spatial insight on the embedding of the outlier in the surrounding trails.}
 \label{f:aircraft_lens}
 \end{figure}
 %

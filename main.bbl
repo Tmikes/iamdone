@@ -1584,6 +1584,31 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{jacko2012human}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JJA}{%
+         family={Jacko},
+         familyi={J\bibinitperiod},
+         given={Julie\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC press}%
+    }
+    \strng{namehash}{JJA1}
+    \strng{fullhash}{JJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Human computer interaction handbook: Fundamentals, evolving
+  technologies, and emerging applications}
+    \field{year}{2012}
+  \endentry
+
   \entry{Kincaid:2010:SFA:1907651.1907963}{article}{}
     \name{author}{1}{}{%
       {{hash=KR}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  23 JUL 2018 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  16 AUG 2018 15:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -2314,30 +2314,30 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 
 ] (main.lof
 1: section
-[19] [20] [21] [22])
+[19] [20] [21])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [23] [24
-
-] (main.lot)
+ [22] (main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
 
 1: section
-[25] [26
+[23
+
+] [24
 
 ]
 1: section
-[27] [28
+[25] [26
 
 ]
 --------------------
  Dedicatory
 --------------------
 1: section
-[29] [30
+[27] [28
 
 ]
 1: section
@@ -2364,23 +2364,41 @@ Overfull \hbox (4.86688pt too wide) in paragraph at lines 41--42
 n  \T1/ppl/m/n/10.95 uses ul-tra-sound waves
  []
 
-[3]
+
+Overfull \hbox (1.10452pt too wide) in paragraph at lines 46--47
+\T1/ppl/m/n/10.95 data set in an un-struc-tured way to un-cover ini-tial pat-te
+rns, char-ac-ter-is-tics, and points
+ []
+
+
+Overfull \hbox (8.03114pt too wide) in paragraph at lines 48--49
+[]\T1/ppl/m/n/10.95 This pro-cess makes deeper anal-y-sis eas-ier be-cause it c
+an help tar-get fu-ture searches
+ []
+
+
+Overfull \hbox (3.16919pt too wide) in paragraph at lines 50--51
+[]\T1/ppl/m/n/10.95 Many times, data ex-plo-ration uses vi-su-al-iza-tion be-ca
+use it cre-ates a more straight-
+ []
+
+[3] [4]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 65.
- [4] [5]
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 93.
+ [5] [6]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 117.
- [6]) [7]
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 145.
+ [7]) [8]
 \openout2 = `Chapters/StateOfTheArt.aux'.
 
- (Chapters/StateOfTheArt.tex [8
-
-
-
-]
+ (Chapters/StateOfTheArt.tex
 Chapter 2.
 1: section
-[9] [10]
+[9
+
+
+
+] [10]
 Package epstopdf Info: Source file: <Figures/2D_slices.eps>
 (epstopdf)                    date: 2018-05-18 15:24:56
 (epstopdf)                    size: 1339586 bytes
@@ -2391,7 +2409,7 @@ Package epstopdf Info: Source file: <Figures/2D_slices.eps>
 rted-to.pdf Figures/2D_slices.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2D_slices-eps-converted-to.pdf, id=950, pagebox=cropbox, 188.705pt x 1
+<Figures/2D_slices-eps-converted-to.pdf, id=885, pagebox=cropbox, 188.705pt x 1
 32.495pt>
 File: Figures/2D_slices-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2D_slices-eps-converted-to.pdf>
@@ -2410,7 +2428,7 @@ Package epstopdf Info: Source file: <Figures/2dtexmapping.eps>
 nverted-to.pdf Figures/2dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/2dtexmapping-eps-converted-to.pdf, id=951, pagebox=cropbox, 346.29375p
+<Figures/2dtexmapping-eps-converted-to.pdf, id=886, pagebox=cropbox, 346.29375p
 t x 138.5175pt>
 File: Figures/2dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/2dtexmapping-eps-converted-to.pdf>
@@ -2433,7 +2451,7 @@ Package epstopdf Info: Source file: <Figures/3dtexmapping.eps>
 nverted-to.pdf Figures/3dtexmapping.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/3dtexmapping-eps-converted-to.pdf, id=974, pagebox=cropbox, 389.455pt 
+<Figures/3dtexmapping-eps-converted-to.pdf, id=909, pagebox=cropbox, 389.455pt 
 x 175.65625pt>
 File: Figures/3dtexmapping-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/3dtexmapping-eps-converted-to.pdf>
@@ -2451,7 +2469,7 @@ Package epstopdf Info: Source file: <Figures/cubeSlice.eps>
 rted-to.pdf Figures/cubeSlice.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
-<Figures/cubeSlice-eps-converted-to.pdf, id=976, pagebox=cropbox, 283.0575pt x 
+<Figures/cubeSlice-eps-converted-to.pdf, id=911, pagebox=cropbox, 283.0575pt x 
 184.69pt>
 File: Figures/cubeSlice-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/cubeSlice-eps-converted-to.pdf>
@@ -2460,7 +2478,7 @@ line 143. on input line 143.
 Package pdftex.def Info: Requested size: 283.0568pt x 184.68953pt on input line
  143.
  [12] [13 <./Figures/3dtexmapping-eps-converted-to.pdf>]
-<Figures/raycasting.png, id=998, 1150.2975pt x 358.33875pt>
+<Figures/raycasting.png, id=932, 1150.2975pt x 358.33875pt>
 File: Figures/raycasting.png Graphic file (type png)
 <use Figures/raycasting.png>
 Package pdftex.def Info: Figures/raycasting.png  used on input line 165. on inp
@@ -2475,7 +2493,7 @@ Overfull \hbox (9.62984pt too wide) in paragraph at lines 175--176
 
 [14 <./Figures/cubeSlice-eps-converted-to.pdf> <./Figures/raycasting.png>]
 [15]
-<Figures/isosurface.png, id=1019, 904.1278pt x 272.51813pt>
+<Figures/isosurface.png, id=954, 904.1278pt x 272.51813pt>
 File: Figures/isosurface.png Graphic file (type png)
 <use Figures/isosurface.png>
 Package pdftex.def Info: Figures/isosurface.png  used on input line 193. on inp
@@ -2483,14 +2501,14 @@ ut line 193.
 Package pdftex.def Info: Requested size: 404.02908pt x 121.77957pt on input lin
 e 193.
  [16 <./Figures/isosurface.png>]
-<Figures/2dtf.png, id=1029, 537.50812pt x 539.01375pt>
+<Figures/2dtf.png, id=964, 537.50812pt x 539.01375pt>
 File: Figures/2dtf.png Graphic file (type png)
 <use Figures/2dtf.png>
 Package pdftex.def Info: Figures/2dtf.png  used on input line 262. on input lin
 e 262.
-Package pdftex.def Info: Requested size: 404.02908pt x 405.16402pt on input lin
+Package pdftex.def Info: Requested size: 282.81912pt x 283.61153pt on input lin
 e 262.
-<Figures/mdtf.png, id=1034, 1662.21pt x 388.45125pt>
+<Figures/mdtf.png, id=969, 1662.21pt x 388.45125pt>
 File: Figures/mdtf.png Graphic file (type png)
 <use Figures/mdtf.png>
 Package pdftex.def Info: Figures/mdtf.png  used on input line 282. on input lin
@@ -2509,55 +2527,53 @@ Overfull \hbox (6.26242pt too wide) in paragraph at lines 417--418
 scale cam-era can also achieve
  []
 
-[22]
-<Figures/multiscale3d.png, id=1100, 2054.42531pt x 883.04906pt>
+<Figures/multiscale3d.png, id=1028, 2054.42531pt x 883.04906pt>
 File: Figures/multiscale3d.png Graphic file (type png)
 <use Figures/multiscale3d.png>
 Package pdftex.def Info: Figures/multiscale3d.png  used on input line 421. on i
 nput line 421.
 Package pdftex.def Info: Requested size: 404.02908pt x 173.65582pt on input lin
 e 421.
- [23 <./Figures/multiscale3d.png>]
-<Figures/explodedview.png, id=1109, 1961.82938pt x 526.21594pt>
+[22]
+<Figures/explodedview.png, id=1039, 1961.82938pt x 526.21594pt>
 File: Figures/explodedview.png Graphic file (type png)
 <use Figures/explodedview.png>
 Package pdftex.def Info: Figures/explodedview.png  used on input line 447. on i
 nput line 447.
 Package pdftex.def Info: Requested size: 404.02908pt x 108.36476pt on input lin
 e 447.
-<Figures/clearview.png, id=1112, 2511.3825pt x 472.01344pt>
+<Figures/clearview.png, id=1042, 2511.3825pt x 472.01344pt>
 File: Figures/clearview.png Graphic file (type png)
 <use Figures/clearview.png>
 Package pdftex.def Info: Figures/clearview.png  used on input line 475. on inpu
 t line 475.
 Package pdftex.def Info: Requested size: 404.02908pt x 75.93422pt on input line
  475.
- [24 <./Figures/explodedview.png>]
-<Figures/cut.png, id=1122, 1126.96031pt x 793.46437pt>
+ [23 <./Figures/multiscale3d.png>] [24 <./Figures/explodedview.png> <./Figures/
+clearview.png>]
+<Figures/cut.png, id=1058, 1126.96031pt x 793.46437pt>
 File: Figures/cut.png Graphic file (type png)
 <use Figures/cut.png>
 Package pdftex.def Info: Figures/cut.png  used on input line 515. on input line
  515.
 Package pdftex.def Info: Requested size: 404.02908pt x 284.46043pt on input lin
 e 515.
-<Figures/peel.pdf, id=1127, pagebox=cropbox, 1049.9225pt x 914.41624pt>
+ [25 <./Figures/cut.png>]
+<Figures/peel.pdf, id=1070, pagebox=cropbox, 1049.9225pt x 914.41624pt>
 File: Figures/peel.pdf Graphic file (type pdf)
 <use Figures/peel.pdf>
 Package pdftex.def Info: Figures/peel.pdf  used on input line 530. on input lin
 e 530.
 Package pdftex.def Info: Requested size: 404.02908pt x 351.87694pt on input lin
 e 530.
-
-[25 <./Figures/clearview.png>] [26 <./Figures/cut.png>] [27 <./Figures/peel.pdf
->]
-<Figures/colortunneling.png, id=1263, 872.50969pt x 1076.52188pt>
+ [26 <./Figures/peel.pdf>] [27]
+<Figures/colortunneling.png, id=1199, 872.50969pt x 1076.52188pt>
 File: Figures/colortunneling.png Graphic file (type png)
 <use Figures/colortunneling.png>
 Package pdftex.def Info: Figures/colortunneling.png  used on input line 597. on
  input line 597.
 Package pdftex.def Info: Requested size: 404.02908pt x 498.49135pt on input lin
 e 597.
- [28] [29 <./Figures/colortunneling.png>]
 Package epstopdf Info: Source file: <Images/unpack.eps>
 (epstopdf)                    date: 2018-07-20 07:40:06
 (epstopdf)                    size: 9959234 bytes
@@ -2568,16 +2584,36 @@ Package epstopdf Info: Source file: <Images/unpack.eps>
 -to.pdf Images/unpack.eps>
 (epstopdf)             \includegraphics on input line 651.
 Package epstopdf Info: Output file is already uptodate.
-<Images/unpack-eps-converted-to.pdf, id=1278, pagebox=cropbox, 1263.72125pt x 1
+<Images/unpack-eps-converted-to.pdf, id=1203, pagebox=cropbox, 1263.72125pt x 1
 168.365pt>
 File: Images/unpack-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/unpack-eps-converted-to.pdf>
 Package pdftex.def Info: Images/unpack-eps-converted-to.pdf  used on input line
  651. on input line 651.
-Package pdftex.def Info: Requested size: 404.02908pt x 373.54572pt on input lin
+Package pdftex.def Info: Requested size: 282.81912pt x 261.48021pt on input lin
 e 651.
- [30 <./Images/unpack-eps-converted-to.pdf>]
-Overfull \hbox (1.37904pt too wide) in paragraph at lines 690--698
+
+[28] [29 <./Figures/colortunneling.png>] [30 <./Images/unpack-eps-converted-to.
+pdf>] [31]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 696.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 696.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 696.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 696.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 696.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 696.
+
+Overfull \hbox (17.67622pt too wide) in paragraph at lines 696--713
+ [][] 
+ []
+
+[32]
+Overfull \hbox (1.37904pt too wide) in paragraph at lines 749--757
 \T1/ppl/m/n/10.95 togram map-ping, and trans-fer func-tion de-sign. They im-ple
 -mented a one-pass shader
  []
@@ -2591,53 +2627,53 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 7
-04.
+63.
 
 
 Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 
 
-[31]
-<Figures/NIVR.png, id=1303, 1394.96156pt x 667.74469pt>
+[33]
+<Figures/NIVR.png, id=1290, 1394.96156pt x 667.74469pt>
 File: Figures/NIVR.png Graphic file (type png)
 <use Figures/NIVR.png>
-Package pdftex.def Info: Figures/NIVR.png  used on input line 750. on input lin
-e 750.
+Package pdftex.def Info: Figures/NIVR.png  used on input line 809. on input lin
+e 809.
 Package pdftex.def Info: Requested size: 404.02908pt x 193.39645pt on input lin
-e 750.
- [32]
-Overfull \hbox (33.02394pt too wide) in paragraph at lines 775--777
+e 809.
+ [34]
+Overfull \hbox (33.02394pt too wide) in paragraph at lines 834--836
 \T1/ppl/m/n/10.95 two ma-jor types: Di-rect Vol-ume ren-der-ing (DVR), and Surf
 ace-fitting al-go-rithms.Rendering
  []
 
-[33 <./Figures/NIVR.png>]) [34]
+[35 <./Figures/NIVR.png>]) [36]
 \openout2 = `Chapters/DesignStudy.aux'.
 
  (Chapters/DesignStudy.tex
 Chapter 3.
 1: section
-[35
+[37
 
 
 
 ]
-<Figures/contour.png, id=1327, 1278.27562pt x 516.42938pt>
+<Figures/contour.png, id=1314, 1278.27562pt x 516.42938pt>
 File: Figures/contour.png Graphic file (type png)
 <use Figures/contour.png>
 Package pdftex.def Info: Figures/contour.png  used on input line 41. on input l
 ine 41.
 Package pdftex.def Info: Requested size: 366.20432pt x 147.95424pt on input lin
 e 41.
- [36] [37 <./Figures/contour.png>] [38]
-<Figures/constraints.png, id=1347, 986.18437pt x 939.51pt>
+ [38] [39 <./Figures/contour.png>] [40]
+<Figures/constraints.png, id=1334, 986.18437pt x 939.51pt>
 File: Figures/constraints.png Graphic file (type png)
 <use Figures/constraints.png>
 Package pdftex.def Info: Figures/constraints.png  used on input line 91. on inp
 ut line 91.
 Package pdftex.def Info: Requested size: 155.29475pt x 147.95424pt on input lin
 e 91.
-<Figures/perceptionError.png, id=1349, 681.29532pt x 381.67593pt>
+<Figures/perceptionError.png, id=1336, 681.29532pt x 381.67593pt>
 File: Figures/perceptionError.png Graphic file (type png)
 <use Figures/perceptionError.png>
 Package pdftex.def Info: Figures/perceptionError.png  used on input line 108. o
@@ -2649,15 +2685,15 @@ Overfull \hbox (2.27708pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-<Figures/interpretationError.png, id=1351, 1094.58937pt x 677.53125pt>
+<Figures/interpretationError.png, id=1338, 1094.58937pt x 677.53125pt>
 File: Figures/interpretationError.png Graphic file (type png)
 <use Figures/interpretationError.png>
 Package pdftex.def Info: Figures/interpretationError.png  used on input line 11
 7. on input line 117.
 Package pdftex.def Info: Requested size: 367.72942pt x 227.62204pt on input lin
 e 117.
-[39 <./Figures/constraints.png>]
-<Figures/superposition.png, id=1361, 1437.87187pt x 734.745pt>
+[41 <./Figures/constraints.png>]
+<Figures/superposition.png, id=1348, 1437.87187pt x 734.745pt>
 File: Figures/superposition.png Graphic file (type png)
 <use Figures/superposition.png>
 Package pdftex.def Info: Figures/superposition.png  used on input line 134. on 
@@ -2669,40 +2705,40 @@ Overfull \hbox (41.42137pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
-[40 <./Figures/perceptionError.png>]
-<Figures/positioning.png, id=1369, 1086.30844pt x 872.50969pt>
+[42 <./Figures/perceptionError.png>]
+<Figures/positioning.png, id=1356, 1086.30844pt x 872.50969pt>
 File: Figures/positioning.png Graphic file (type png)
 <use Figures/positioning.png>
 Package pdftex.def Info: Figures/positioning.png  used on input line 142. on in
 put line 142.
 Package pdftex.def Info: Requested size: 283.39493pt x 227.62204pt on input lin
 e 142.
-<Figures/Dissociation.png, id=1371, 968.86969pt x 863.47594pt>
+<Figures/Dissociation.png, id=1358, 968.86969pt x 863.47594pt>
 File: Figures/Dissociation.png Graphic file (type png)
 <use Figures/Dissociation.png>
 Package pdftex.def Info: Figures/Dissociation.png  used on input line 150. on i
 nput line 150.
 Package pdftex.def Info: Requested size: 255.40392pt x 227.62204pt on input lin
 e 150.
-<Figures/bait.png, id=1373, 1403.2425pt x 811.53188pt>
+<Figures/bait.png, id=1360, 1403.2425pt x 811.53188pt>
 File: Figures/bait.png Graphic file (type png)
 <use Figures/bait.png>
 Package pdftex.def Info: Figures/bait.png  used on input line 158. on input lin
 e 158.
 Package pdftex.def Info: Requested size: 393.5904pt x 227.62204pt on input line
  158.
- [41 <./Figures/interpretationError.png>]
-[42 <./Figures/superposition.png> <./Figures/positioning.png>] [43 <./Figures/D
+ [43 <./Figures/interpretationError.png>]
+[44 <./Figures/superposition.png> <./Figures/positioning.png>] [45 <./Figures/D
 issociation.png> <./Figures/bait.png>]
-<Figures/layout.png, id=1395, 2168.1pt x 3022.29124pt>
+<Figures/layout.png, id=1382, 2168.1pt x 3022.29124pt>
 File: Figures/layout.png Graphic file (type png)
 <use Figures/layout.png>
 Package pdftex.def Info: Figures/layout.png  used on input line 188. on input l
 ine 188.
 Package pdftex.def Info: Requested size: 285.73355pt x 398.33858pt on input lin
 e 188.
- [44] [45 <./Figures/layout.png (PNG copy)>]
-<Figures/preset.png, id=1405, 2133.9725pt x 723.70375pt>
+ [46] [47 <./Figures/layout.png (PNG copy)>]
+<Figures/preset.png, id=1392, 2133.9725pt x 723.70375pt>
 File: Figures/preset.png Graphic file (type png)
 <use Figures/preset.png>
 Package pdftex.def Info: Figures/preset.png  used on input line 210. on input l
@@ -2714,135 +2750,112 @@ Overfull \hbox (22.76225pt too wide) in paragraph at lines 210--211
  [][] 
  []
 
-[46 <./Figures/preset.png (PNG copy)>]
-<Figures/selection.png, id=1411, 1022.82124pt x 1279.78125pt>
+[48 <./Figures/preset.png (PNG copy)>]
+<Figures/selection.png, id=1398, 1022.82124pt x 1279.78125pt>
 File: Figures/selection.png Graphic file (type png)
 <use Figures/selection.png>
 Package pdftex.def Info: Figures/selection.png  used on input line 227. on inpu
 t line 227.
 Package pdftex.def Info: Requested size: 256.0748pt x 320.39366pt on input line
  227.
- [47 <./Figures/selection.png (PNG copy)>]
-<Figures/deletion.png, id=1419, 1204.5pt x 1431.3475pt>
+ [49 <./Figures/selection.png (PNG copy)>]
+<Figures/deletion.png, id=1406, 1204.5pt x 1431.3475pt>
 File: Figures/deletion.png Graphic file (type png)
 <use Figures/deletion.png>
 Package pdftex.def Info: Figures/deletion.png  used on input line 241. on input
  line 241.
 Package pdftex.def Info: Requested size: 256.0748pt x 304.30475pt on input line
  241.
-<Figures/brushing-new.png, id=1420, 2133.9725pt x 1944.26375pt>
+<Figures/brushing-new.png, id=1407, 2133.9725pt x 1944.26375pt>
 File: Figures/brushing-new.png Graphic file (type png)
 <use Figures/brushing-new.png>
 Package pdftex.def Info: Figures/brushing-new.png  used on input line 249. on i
 nput line 249.
 Package pdftex.def Info: Requested size: 256.0748pt x 233.30157pt on input line
  249.
- [48 <./Figures/deletion.png (PNG copy)>]
-<Figures/brushing-range.png, id=1429, 547.04375pt x 678.535pt>
+ [50 <./Figures/deletion.png (PNG copy)>]
+<Figures/brushing-range.png, id=1416, 547.04375pt x 678.535pt>
 File: Figures/brushing-range.png Graphic file (type png)
 <use Figures/brushing-range.png>
 Package pdftex.def Info: Figures/brushing-range.png  used on input line 262. on
  input line 262.
 Package pdftex.def Info: Requested size: 256.0748pt x 317.62764pt on input line
  262.
- [49 <./Figures/brushing-new.png (PNG copy)>] [50 <./Figures/brushing-range.png
+ [51 <./Figures/brushing-new.png (PNG copy)>] [52 <./Figures/brushing-range.png
  (PNG copy)>]
-<Figures/snapshots.png, id=1442, 1204.5pt x 665.48625pt>
+<Figures/snapshots.png, id=1429, 1204.5pt x 665.48625pt>
 File: Figures/snapshots.png Graphic file (type png)
 <use Figures/snapshots.png>
 Package pdftex.def Info: Figures/snapshots.png  used on input line 278. on inpu
 t line 278.
 Package pdftex.def Info: Requested size: 256.0748pt x 141.4825pt on input line 
 278.
-<Figures/temporal.png, id=1445, 1204.5pt x 722.7pt>
+<Figures/temporal.png, id=1432, 1204.5pt x 722.7pt>
 File: Figures/temporal.png Graphic file (type png)
 <use Figures/temporal.png>
 Package pdftex.def Info: Figures/temporal.png  used on input line 288. on input
  line 288.
 Package pdftex.def Info: Requested size: 256.0748pt x 153.64615pt on input line
  288.
- [51 <./Figures/snapshots.png>]
-<Figures/scenario1_1.png, id=1454, 825.0825pt x 981.6675pt>
+ [53 <./Figures/snapshots.png>]
+<Figures/scenario1_1.png, id=1441, 825.0825pt x 981.6675pt>
 File: Figures/scenario1_1.png Graphic file (type png)
 <use Figures/scenario1_1.png>
 Package pdftex.def Info: Figures/scenario1_1.png  used on input line 303. on in
 put line 303.
 Package pdftex.def Info: Requested size: 256.0748pt x 304.67328pt on input line
  303.
- [52 <./Figures/temporal.png>]
-<Figures/menace.png, id=1462, 1066.98625pt x 1304.875pt>
+ [54 <./Figures/temporal.png>]
+<Figures/menace.png, id=1449, 1066.98625pt x 1304.875pt>
 File: Figures/menace.png Graphic file (type png)
 <use Figures/menace.png>
 Package pdftex.def Info: Figures/menace.png  used on input line 311. on input l
 ine 311.
 Package pdftex.def Info: Requested size: 256.0748pt x 313.1565pt on input line 
 311.
-<Figures/scenario1_3.PNG, id=1464, 1925.69438pt x 1153.30875pt>
+<Figures/scenario1_3.PNG, id=1451, 1925.69438pt x 1153.30875pt>
 File: Figures/scenario1_3.PNG Graphic file (type png)
 <use Figures/scenario1_3.PNG>
 Package pdftex.def Info: Figures/scenario1_3.PNG  used on input line 320. on in
 put line 320.
 Package pdftex.def Info: Requested size: 199.16928pt x 119.27959pt on input lin
 e 320.
-<Figures/scenario2_1.PNG, id=1467, 1219.55624pt x 1026.08344pt>
+<Figures/scenario2_1.PNG, id=1454, 1219.55624pt x 1026.08344pt>
 File: Figures/scenario2_1.PNG Graphic file (type png)
 <use Figures/scenario2_1.PNG>
 Package pdftex.def Info: Figures/scenario2_1.PNG  used on input line 331. on in
 put line 331.
 Package pdftex.def Info: Requested size: 256.0748pt x 215.45256pt on input line
  331.
-<Figures/scenario2_2.PNG, id=1468, 758.08218pt x 851.43094pt>
+<Figures/scenario2_2.PNG, id=1455, 758.08218pt x 851.43094pt>
 File: Figures/scenario2_2.PNG Graphic file (type png)
 <use Figures/scenario2_2.PNG>
 Package pdftex.def Info: Figures/scenario2_2.PNG  used on input line 338. on in
 put line 338.
 Package pdftex.def Info: Requested size: 256.0748pt x 287.61188pt on input line
  338.
- [53 <./Figures/scenario1_1.png>] [54 <./Figures/menace.png (PNG copy)> <./Figu
+ [55 <./Figures/scenario1_1.png>] [56 <./Figures/menace.png (PNG copy)> <./Figu
 res/scenario1_3.PNG>]
-<Figures/scenario2_3.png, id=1479, 884.30376pt x 602.25pt>
+<Figures/scenario2_3.png, id=1466, 884.30376pt x 602.25pt>
 File: Figures/scenario2_3.png Graphic file (type png)
 <use Figures/scenario2_3.png>
 Package pdftex.def Info: Figures/scenario2_3.png  used on input line 346. on in
 put line 346.
 Package pdftex.def Info: Requested size: 404.02908pt x 275.16368pt on input lin
 e 346.
- [55 <./Figures/scenario2_1.PNG>] [56 <./Figures/scenario2_2.PNG> <./Figures/sc
+ [57 <./Figures/scenario2_1.PNG>] [58 <./Figures/scenario2_2.PNG> <./Figures/sc
 enario2_3.png>]
-[57]) [58]
+[59]) [60]
 \openout2 = `Chapters/lens.aux'.
 
  (Chapters/lens.tex
 Chapter 4.
 1: section
-[59
+[61
 
 
 
-] [60]
-Overfull \hbox (7.53258pt too wide) in paragraph at lines 34--35
-\T1/ppl/m/n/10.95 vided into oc-clu-sion man-age-ment tech-niques and lenses-an
-d-deformation tech-niques.
- []
-
-
-Overfull \hbox (5.09789pt too wide) in paragraph at lines 34--35
-\T1/ppl/m/n/10.95 We next dis-cuss these and also point out lim-i-ta-tions from
- the per-spec-tive of R1$\OT1/ppl/m/n/10.95 , [] ,$\T1/ppl/m/n/10.95 R4. 
- []
-
-[61] [62]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 59.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 59.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 59.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 59.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 61.
- [63]
+] [62]
 Package epstopdf Info: Source file: <images/principle.eps>
 (epstopdf)                    date: 2018-07-18 07:42:48
 (epstopdf)                    size: 857752 bytes
@@ -2851,17 +2864,25 @@ Package epstopdf Info: Source file: <images/principle.eps>
 (epstopdf)                    size: 103374 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/principle-eps-conver
 ted-to.pdf images/principle.eps>
-(epstopdf)             \includegraphics on input line 87.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
-<images/principle-eps-converted-to.pdf, id=1587, pagebox=cropbox, 608.2725pt x 
+<images/principle-eps-converted-to.pdf, id=1511, pagebox=cropbox, 608.2725pt x 
 476.78125pt>
 File: images/principle-eps-converted-to.pdf Graphic file (type pdf)
 <use images/principle-eps-converted-to.pdf>
 Package pdftex.def Info: images/principle-eps-converted-to.pdf  used on input l
-ine 87. on input line 87.
+ine 45. on input line 45.
 Package pdftex.def Info: Requested size: 404.02908pt x 316.69907pt on input lin
-e 87.
- [64 <./images/principle-eps-converted-to.pdf>]
+e 45.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 47.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 47.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 47.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 47.
+ [63] [64 <./images/principle-eps-converted-to.pdf>] [65]
 Package epstopdf Info: Source file: <images/params.eps>
 (epstopdf)                    date: 2018-06-08 10:38:40
 (epstopdf)                    size: 101594449 bytes
@@ -2870,17 +2891,17 @@ Package epstopdf Info: Source file: <images/params.eps>
 (epstopdf)                    size: 942220 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/params-eps-converted
 -to.pdf images/params.eps>
-(epstopdf)             \includegraphics on input line 143.
+(epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
-<images/params-eps-converted-to.pdf, id=1640, pagebox=cropbox, 2072.74374pt x 7
+<images/params-eps-converted-to.pdf, id=1577, pagebox=cropbox, 2072.74374pt x 7
 07.64375pt>
 File: images/params-eps-converted-to.pdf Graphic file (type pdf)
 <use images/params-eps-converted-to.pdf>
 Package pdftex.def Info: images/params-eps-converted-to.pdf  used on input line
- 143. on input line 143.
+ 101. on input line 101.
 Package pdftex.def Info: Requested size: 404.02908pt x 137.93059pt on input lin
-e 143.
- [65] [66 <./images/params-eps-converted-to.pdf>]
+e 101.
+ [66 <./images/params-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/tf.eps>
 (epstopdf)                    date: 2018-06-08 10:38:42
 (epstopdf)                    size: 442892 bytes
@@ -2889,16 +2910,16 @@ Package epstopdf Info: Source file: <images/tf.eps>
 (epstopdf)                    size: 20999 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/tf-eps-converted-to.
 pdf images/tf.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 153.
 Package epstopdf Info: Output file is already uptodate.
-<images/tf-eps-converted-to.pdf, id=1689, pagebox=cropbox, 229.85875pt x 161.60
+<images/tf-eps-converted-to.pdf, id=1616, pagebox=cropbox, 229.85875pt x 161.60
 374pt>
 File: images/tf-eps-converted-to.pdf Graphic file (type pdf)
 <use images/tf-eps-converted-to.pdf>
-Package pdftex.def Info: images/tf-eps-converted-to.pdf  used on input line 195
-. on input line 195.
+Package pdftex.def Info: images/tf-eps-converted-to.pdf  used on input line 153
+. on input line 153.
 Package pdftex.def Info: Requested size: 383.82639pt x 269.86742pt on input lin
-e 195.
+e 153.
  [67]
 Package epstopdf Info: Source file: <images/rotation.eps>
 (epstopdf)                    date: 2018-06-28 06:57:36
@@ -2908,19 +2929,19 @@ Package epstopdf Info: Source file: <images/rotation.eps>
 (epstopdf)                    size: 666796 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/rotation-eps-convert
 ed-to.pdf images/rotation.eps>
-(epstopdf)             \includegraphics on input line 214.
+(epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
-<images/rotation-eps-converted-to.pdf, id=1706, pagebox=cropbox, 825.0825pt x 6
+<images/rotation-eps-converted-to.pdf, id=1633, pagebox=cropbox, 825.0825pt x 6
 76.5275pt>
 File: images/rotation-eps-converted-to.pdf Graphic file (type pdf)
 <use images/rotation-eps-converted-to.pdf>
 Package pdftex.def Info: images/rotation-eps-converted-to.pdf  used on input li
-ne 214. on input line 214.
+ne 172. on input line 172.
 Package pdftex.def Info: Requested size: 383.82639pt x 314.71623pt on input lin
-e 214.
+e 172.
 
 
-LaTeX Warning: Citation 'cudasdk' on page 68 undefined on input line 226.
+LaTeX Warning: Citation 'cudasdk' on page 68 undefined on input line 184.
 
 [68 <./images/tf-eps-converted-to.pdf>] [69 <./images/rotation-eps-converted-to
 .pdf>]
@@ -2932,21 +2953,21 @@ Package epstopdf Info: Source file: <images/shuriken.eps>
 (epstopdf)                    size: 1783287 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/shuriken-eps-convert
 ed-to.pdf images/shuriken.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
-<images/shuriken-eps-converted-to.pdf, id=1754, pagebox=cropbox, 466.74374pt x 
+<images/shuriken-eps-converted-to.pdf, id=1683, pagebox=cropbox, 466.74374pt x 
 376.40625pt>
 File: images/shuriken-eps-converted-to.pdf Graphic file (type pdf)
 <use images/shuriken-eps-converted-to.pdf>
 Package pdftex.def Info: images/shuriken-eps-converted-to.pdf  used on input li
-ne 253. on input line 253.
+ne 211. on input line 211.
 Package pdftex.def Info: Requested size: 404.02908pt x 325.84537pt on input lin
-e 253.
+e 211.
 
 
-LaTeX Warning: Citation 'patent' on page 70 undefined on input line 260.
+LaTeX Warning: Citation 'patent' on page 70 undefined on input line 218.
 
-[70] [71 <./images/shuriken-eps-converted-to.pdf>]
+[70] [71 <./images/shuriken-eps-converted-to.pdf>] [72]
 Package epstopdf Info: Source file: <images/graph1.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 998250 bytes
@@ -2955,17 +2976,16 @@ Package epstopdf Info: Source file: <images/graph1.eps>
 (epstopdf)                    size: 30204 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph1-eps-converted
 -to.pdf images/graph1.eps>
-(epstopdf)             \includegraphics on input line 285.
+(epstopdf)             \includegraphics on input line 243.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph1-eps-converted-to.pdf, id=1844, pagebox=cropbox, 862.22125pt x 30
+<images/graph1-eps-converted-to.pdf, id=1778, pagebox=cropbox, 862.22125pt x 30
 1.125pt>
 File: images/graph1-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph1-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph1-eps-converted-to.pdf  used on input line
- 285. on input line 285.
+ 243. on input line 243.
 Package pdftex.def Info: Requested size: 404.02908pt x 141.10144pt on input lin
-e 285.
- [72]
+e 243.
 Package epstopdf Info: Source file: <images/graph2.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1025810 bytes
@@ -2974,16 +2994,16 @@ Package epstopdf Info: Source file: <images/graph2.eps>
 (epstopdf)                    size: 48658 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph2-eps-converted
 -to.pdf images/graph2.eps>
-(epstopdf)             \includegraphics on input line 294.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph2-eps-converted-to.pdf, id=1852, pagebox=cropbox, 857.2025pt x 328
+<images/graph2-eps-converted-to.pdf, id=1781, pagebox=cropbox, 857.2025pt x 328
 .22626pt>
 File: images/graph2-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph2-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph2-eps-converted-to.pdf  used on input line
- 294. on input line 294.
+ 252. on input line 252.
 Package pdftex.def Info: Requested size: 404.02908pt x 154.70207pt on input lin
-e 294.
+e 252.
 Package epstopdf Info: Source file: <images/graph3.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1034862 bytes
@@ -2992,16 +3012,16 @@ Package epstopdf Info: Source file: <images/graph3.eps>
 (epstopdf)                    size: 49896 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph3-eps-converted
 -to.pdf images/graph3.eps>
-(epstopdf)             \includegraphics on input line 302.
+(epstopdf)             \includegraphics on input line 260.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph3-eps-converted-to.pdf, id=1855, pagebox=cropbox, 868.24374pt x 33
+<images/graph3-eps-converted-to.pdf, id=1784, pagebox=cropbox, 868.24374pt x 33
 9.2675pt>
 File: images/graph3-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph3-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph3-eps-converted-to.pdf  used on input line
- 302. on input line 302.
+ 260. on input line 260.
 Package pdftex.def Info: Requested size: 404.02908pt x 157.87682pt on input lin
-e 302.
+e 260.
 Package epstopdf Info: Source file: <images/graph4.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1038238 bytes
@@ -3010,16 +3030,16 @@ Package epstopdf Info: Source file: <images/graph4.eps>
 (epstopdf)                    size: 50007 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph4-eps-converted
 -to.pdf images/graph4.eps>
-(epstopdf)             \includegraphics on input line 310.
+(epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph4-eps-converted-to.pdf, id=1858, pagebox=cropbox, 872.25874pt x 34
+<images/graph4-eps-converted-to.pdf, id=1787, pagebox=cropbox, 872.25874pt x 34
 0.27126pt>
 File: images/graph4-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph4-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph4-eps-converted-to.pdf  used on input line
- 310. on input line 310.
+ 268. on input line 268.
 Package pdftex.def Info: Requested size: 404.02908pt x 157.61182pt on input lin
-e 310.
+e 268.
 Package epstopdf Info: Source file: <images/graph5.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1327650 bytes
@@ -3028,16 +3048,16 @@ Package epstopdf Info: Source file: <images/graph5.eps>
 (epstopdf)                    size: 50225 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph5-eps-converted
 -to.pdf images/graph5.eps>
-(epstopdf)             \includegraphics on input line 317.
+(epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph5-eps-converted-to.pdf, id=1861, pagebox=cropbox, 862.22125pt x 31
+<images/graph5-eps-converted-to.pdf, id=1790, pagebox=cropbox, 862.22125pt x 31
 7.185pt>
 File: images/graph5-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph5-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph5-eps-converted-to.pdf  used on input line
- 317. on input line 317.
+ 275. on input line 275.
 Package pdftex.def Info: Requested size: 404.02908pt x 148.62685pt on input lin
-e 317.
+e 275.
 Package epstopdf Info: Source file: <images/graph6.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1025510 bytes
@@ -3046,16 +3066,16 @@ Package epstopdf Info: Source file: <images/graph6.eps>
 (epstopdf)                    size: 49346 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph6-eps-converted
 -to.pdf images/graph6.eps>
-(epstopdf)             \includegraphics on input line 324.
+(epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph6-eps-converted-to.pdf, id=1864, pagebox=cropbox, 862.22125pt x 33
+<images/graph6-eps-converted-to.pdf, id=1793, pagebox=cropbox, 862.22125pt x 33
 1.2375pt>
 File: images/graph6-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph6-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph6-eps-converted-to.pdf  used on input line
- 324. on input line 324.
+ 282. on input line 282.
 Package pdftex.def Info: Requested size: 404.02908pt x 155.2116pt on input line
- 324.
+ 282.
 Package epstopdf Info: Source file: <images/graph7.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1015762 bytes
@@ -3064,16 +3084,16 @@ Package epstopdf Info: Source file: <images/graph7.eps>
 (epstopdf)                    size: 47010 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph7-eps-converted
 -to.pdf images/graph7.eps>
-(epstopdf)             \includegraphics on input line 331.
+(epstopdf)             \includegraphics on input line 289.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph7-eps-converted-to.pdf, id=1867, pagebox=cropbox, 865.2325pt x 324
+<images/graph7-eps-converted-to.pdf, id=1796, pagebox=cropbox, 865.2325pt x 324
 .21124pt>
 File: images/graph7-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph7-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph7-eps-converted-to.pdf  used on input line
- 331. on input line 331.
+ 289. on input line 289.
 Package pdftex.def Info: Requested size: 404.02908pt x 151.39484pt on input lin
-e 331.
+e 289.
 Package epstopdf Info: Source file: <images/graph8.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 1093386 bytes
@@ -3082,16 +3102,16 @@ Package epstopdf Info: Source file: <images/graph8.eps>
 (epstopdf)                    size: 25449 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph8-eps-converted
 -to.pdf images/graph8.eps>
-(epstopdf)             \includegraphics on input line 338.
+(epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph8-eps-converted-to.pdf, id=1870, pagebox=cropbox, 708.6475pt x 270
+<images/graph8-eps-converted-to.pdf, id=1799, pagebox=cropbox, 708.6475pt x 270
 .00874pt>
 File: images/graph8-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph8-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph8-eps-converted-to.pdf  used on input line
- 338. on input line 338.
+ 296. on input line 296.
 Package pdftex.def Info: Requested size: 404.02908pt x 153.94365pt on input lin
-e 338.
+e 296.
 Package epstopdf Info: Source file: <images/graph9.eps>
 (epstopdf)                    date: 2018-07-17 21:40:43
 (epstopdf)                    size: 2503518 bytes
@@ -3100,18 +3120,18 @@ Package epstopdf Info: Source file: <images/graph9.eps>
 (epstopdf)                    size: 63990 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/graph9-eps-converted
 -to.pdf images/graph9.eps>
-(epstopdf)             \includegraphics on input line 346.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
-<images/graph9-eps-converted-to.pdf, id=1873, pagebox=cropbox, 1168.365pt x 655
+<images/graph9-eps-converted-to.pdf, id=1802, pagebox=cropbox, 1168.365pt x 655
 .44875pt>
 File: images/graph9-eps-converted-to.pdf Graphic file (type pdf)
 <use images/graph9-eps-converted-to.pdf>
 Package pdftex.def Info: images/graph9-eps-converted-to.pdf  used on input line
- 346. on input line 346.
+ 304. on input line 304.
 Package pdftex.def Info: Requested size: 404.02908pt x 226.66013pt on input lin
-e 346.
+e 304.
 
-Overfull \hbox (6.02048pt too wide) in paragraph at lines 352--353
+Overfull \hbox (6.02048pt too wide) in paragraph at lines 310--311
 \T1/ppl/m/n/10.95 pared to the clas-si-cal 2D single-viewpoint X-ray ma-chin-er
 y they rou-tinely use. Quotes
  []
@@ -3122,16 +3142,16 @@ o.pdf> <./images/graph5-eps-converted-to.pdf>] [75 <./images/graph6-eps-convert
 ed-to.pdf> <./images/graph7-eps-converted-to.pdf> <./images/graph8-eps-converte
 d-to.pdf>]
 
-LaTeX Warning: Citation 'cubu' on page 76 undefined on input line 359.
+LaTeX Warning: Citation 'cubu' on page 76 undefined on input line 317.
 
 
-Overfull \hbox (15.56674pt too wide) in paragraph at lines 359--360
+Overfull \hbox (15.56674pt too wide) in paragraph at lines 317--318
 \T1/ppl/m/n/10.95 Flow vi-su-al-iza-tion us-ing stream-lines has a long his-tor
 y[]Brambilla et al., [][]2012[][]; []Merzkirch,
  []
 
 
-Overfull \hbox (9.42123pt too wide) in paragraph at lines 361--364
+Overfull \hbox (9.42123pt too wide) in paragraph at lines 319--322
 []\T1/ppl/m/n/10.95 We first ex-plore the den-sity vol-ume ($\OT1/ppl/m/n/10.95
  500[]$ \T1/ppl/m/n/10.95 vox-els) us-ing stan-dard DVR ([][]Fig-ure 4.15[][][]
 ).
@@ -3146,22 +3166,22 @@ Package epstopdf Info: Source file: <images/stream_lens.eps>
 (epstopdf)                    size: 517884 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/stream_lens-eps-conv
 erted-to.pdf images/stream_lens.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<images/stream_lens-eps-converted-to.pdf, id=2024, pagebox=cropbox, 401.5pt x 1
+<images/stream_lens-eps-converted-to.pdf, id=1953, pagebox=cropbox, 401.5pt x 1
 81.67876pt>
 File: images/stream_lens-eps-converted-to.pdf Graphic file (type pdf)
 <use images/stream_lens-eps-converted-to.pdf>
 Package pdftex.def Info: images/stream_lens-eps-converted-to.pdf  used on input
- line 367. on input line 367.
+ line 325. on input line 325.
 Package pdftex.def Info: Requested size: 404.02908pt x 182.83429pt on input lin
-e 367.
+e 325.
 
 
-LaTeX Warning: Citation 'brierley' on page 77 undefined on input line 379.
+LaTeX Warning: Citation 'brierley' on page 77 undefined on input line 337.
 
 
-LaTeX Warning: Citation 'slicer' on page 77 undefined on input line 379.
+LaTeX Warning: Citation 'slicer' on page 77 undefined on input line 337.
 
 [77 <./images/stream_lens-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/slicer.eps>
@@ -3172,48 +3192,50 @@ Package epstopdf Info: Source file: <images/slicer.eps>
 (epstopdf)                    size: 2091471 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/slicer-eps-converted
 -to.pdf images/slicer.eps>
-(epstopdf)             \includegraphics on input line 385.
+(epstopdf)             \includegraphics on input line 343.
 Package epstopdf Info: Output file is already uptodate.
-<images/slicer-eps-converted-to.pdf, id=2077, pagebox=cropbox, 1120.185pt x 136
+<images/slicer-eps-converted-to.pdf, id=2006, pagebox=cropbox, 1120.185pt x 136
 3.0925pt>
 File: images/slicer-eps-converted-to.pdf Graphic file (type pdf)
 <use images/slicer-eps-converted-to.pdf>
 Package pdftex.def Info: images/slicer-eps-converted-to.pdf  used on input line
- 385. on input line 385.
+ 343. on input line 343.
 Package pdftex.def Info: Requested size: 404.02908pt x 491.6489pt on input line
- 385.
+ 343.
 
 
-LaTeX Warning: Citation 'slicer' on page 78 undefined on input line 386.
+LaTeX Warning: Citation 'slicer' on page 78 undefined on input line 344.
 
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 344.
 
-LaTeX Warning: Citation 'slicer' on page 78 undefined on input line 386.
+LaTeX Warning: Citation 'slicer' on page 78 undefined on input line 344.
 
-<images/aircraft.pdf, id=2083, pagebox=cropbox, 396.98312pt x 234.62656pt>
+<images/aircraft.pdf, id=2012, pagebox=cropbox, 396.98312pt x 234.62656pt>
 File: images/aircraft.pdf Graphic file (type pdf)
 <use images/aircraft.pdf>
-Package pdftex.def Info: images/aircraft.pdf  used on input line 397. on input 
-line 397.
+Package pdftex.def Info: images/aircraft.pdf  used on input line 355. on input 
+line 355.
 Package pdftex.def Info: Requested size: 404.02908pt x 238.7968pt on input line
- 397.
+ 355.
 
-Underfull \hbox (badness 1852) in paragraph at lines 399--399
+Underfull \hbox (badness 1852) in paragraph at lines 357--357
  []\T1/ppl/m/sc/10 Figure 4.17: |\T1/ppl/m/n/10 Vi-su-al-iz-ing one day of air-
 craft tra-jec-to-ries over 
  []
 
 [78] [79 <./images/slicer-eps-converted-to.pdf>] [80 <./images/aircraft.pdf>]
-<images/aircraft_lens.pdf, id=2199, pagebox=cropbox, 755.82375pt x 177.66376pt>
+<images/aircraft_lens.pdf, id=2128, pagebox=cropbox, 755.82375pt x 177.66376pt>
 
 File: images/aircraft_lens.pdf Graphic file (type pdf)
 <use images/aircraft_lens.pdf>
-Package pdftex.def Info: images/aircraft_lens.pdf  used on input line 418. on i
-nput line 418.
+Package pdftex.def Info: images/aircraft_lens.pdf  used on input line 376. on i
+nput line 376.
 Package pdftex.def Info: Requested size: 404.02908pt x 94.9719pt on input line 
-418.
+376.
 
 
-LaTeX Warning: Citation 'assaf08' on page 81 undefined on input line 427.
+LaTeX Warning: Citation 'assaf08' on page 81 undefined on input line 385.
 
 [81 <./images/aircraft_lens.pdf>]
 Package epstopdf Info: Source file: <images/dti.eps>
@@ -3224,19 +3246,19 @@ Package epstopdf Info: Source file: <images/dti.eps>
 (epstopdf)                    size: 1043178 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/dti-eps-converted-to
 .pdf images/dti.eps>
-(epstopdf)             \includegraphics on input line 435.
+(epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
-<images/dti-eps-converted-to.pdf, id=2545, pagebox=cropbox, 503.8825pt x 586.19
+<images/dti-eps-converted-to.pdf, id=2474, pagebox=cropbox, 503.8825pt x 586.19
 pt>
 File: images/dti-eps-converted-to.pdf Graphic file (type pdf)
 <use images/dti-eps-converted-to.pdf>
-Package pdftex.def Info: images/dti-eps-converted-to.pdf  used on input line 43
-5. on input line 435.
+Package pdftex.def Info: images/dti-eps-converted-to.pdf  used on input line 39
+3. on input line 393.
 Package pdftex.def Info: Requested size: 404.02908pt x 470.02599pt on input lin
-e 435.
+e 393.
  [82] [83 <./images/dti-eps-converted-to.pdf>]
 
-LaTeX Warning: Citation 'cudasdk' on page 84 undefined on input line 456.
+LaTeX Warning: Citation 'cudasdk' on page 84 undefined on input line 414.
 
 [84]) [85]
 \openout2 = `Chapters/mixedReality.aux'.
@@ -3259,7 +3281,7 @@ Package epstopdf Info: Source file: <images/vrraycasting.eps>
 verted-to.pdf images/vrraycasting.eps>
 (epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
-<images/vrraycasting-eps-converted-to.pdf, id=2609, pagebox=cropbox, 1455.4375p
+<images/vrraycasting-eps-converted-to.pdf, id=2539, pagebox=cropbox, 1455.4375p
 t x 806.01125pt>
 File: images/vrraycasting-eps-converted-to.pdf Graphic file (type pdf)
 <use images/vrraycasting-eps-converted-to.pdf>
@@ -3278,7 +3300,7 @@ Package epstopdf Info: Source file: <images/arnoshading.eps>
 erted-to.pdf images/arnoshading.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
-<images/arnoshading-eps-converted-to.pdf, id=2627, pagebox=cropbox, 831.105pt x
+<images/arnoshading-eps-converted-to.pdf, id=2557, pagebox=cropbox, 831.105pt x
  1357.07pt>
 File: images/arnoshading-eps-converted-to.pdf Graphic file (type pdf)
 <use images/arnoshading-eps-converted-to.pdf>
@@ -3287,14 +3309,14 @@ Package pdftex.def Info: images/arnoshading-eps-converted-to.pdf  used on input
 Package pdftex.def Info: Requested size: 297.29532pt x 485.44662pt on input lin
 e 108.
  [91] [92 <./images/arnoshading-eps-converted-to.pdf>] [93]
-<Figures/mixediso.png, id=2657, 1926.44719pt x 988.44281pt>
+<Figures/mixediso.png, id=2587, 1926.44719pt x 988.44281pt>
 File: Figures/mixediso.png Graphic file (type png)
 <use Figures/mixediso.png>
 Package pdftex.def Info: Figures/mixediso.png  used on input line 165. on input
  line 165.
 Package pdftex.def Info: Requested size: 404.02908pt x 207.29254pt on input lin
 e 165.
-<Figures/mixedray.png, id=2658, 1885.0425pt x 976.39781pt>
+<Figures/mixedray.png, id=2588, 1885.0425pt x 976.39781pt>
 File: Figures/mixedray.png Graphic file (type png)
 <use Figures/mixedray.png>
 Package pdftex.def Info: Figures/mixedray.png  used on input line 173. on input
@@ -3435,7 +3457,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D90F3F077307299ACB77D23DEA80E834;18706.
+(rerunfilecheck)             Checksum: 5C84850E50E39ED823AB7EC29C5988FB;18873.
 
 
 LaTeX Warning: There were undefined references.
@@ -3450,13 +3472,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38188 strings out of 493312
- 769729 string characters out of 3138899
- 1059569 words of memory out of 3000000
- 40797 multiletter control sequences out of 15000+200000
- 604333 words of font info for 157 fonts, out of 3000000 for 9000
+ 38218 strings out of 493312
+ 770210 string characters out of 3138899
+ 1047248 words of memory out of 3000000
+ 40824 multiletter control sequences out of 15000+200000
+ 612995 words of font info for 187 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,86p,1752b,2949s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,20n,83p,1752b,2949s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\yecou\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
@@ -3470,9 +3492,9 @@ onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (139 pages, 89419924 bytes).
+Output written on main.pdf (137 pages, 89407709 bytes).
 PDF statistics:
- 3039 PDF objects out of 3580 (max. 8388607)
- 415 named destinations out of 1000 (max. 500000)
+ 2967 PDF objects out of 2984 (max. 8388607)
+ 414 named destinations out of 1000 (max. 500000)
  1122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
