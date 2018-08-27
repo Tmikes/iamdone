@@ -1208,6 +1208,53 @@
     \field{year}{2004}
   \endentry
 
+  \entry{Grossman:2005:BCE:1054972.1055012}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=GT}{%
+         family={Grossman},
+         familyi={G\bibinitperiod},
+         given={Tovi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Balakrishnan},
+         familyi={B\bibinitperiod},
+         given={Ravin},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Fitts' law, area cursor, bubble cursor, target acquisition}
+    \strng{namehash}{GTBR1}
+    \strng{fullhash}{GTBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}
+    \verb{doi}
+    \verb 10.1145/1054972.1055012
+    \endverb
+    \field{isbn}{1-58113-998-5}
+    \field{pages}{281\bibrangedash 290}
+    \field{series}{CHI '05}
+    \field{title}{The Bubble Cursor: Enhancing Target Acquisition by Dynamic
+  Resizing of the Cursor's Activation Area}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/1054972.1055012
+    \endverb
+    \list{location}{1}{%
+      {Portland, Oregon, USA}%
+    }
+    \field{year}{2005}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{5742368}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=GH}{%

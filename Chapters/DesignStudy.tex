@@ -1,6 +1,318 @@
 \chapter{User Study: Interactive exploration of 3D scanned baggage} % Main chapter title
 \label{DesignStudy}
 
+\section{ Preliminary user study }
+During the first months of my thesis, I carried out a user study of eye tracking devices to build interactive systems for Air Traffic Controllers. The purpose of that was quite similar to the one I describe in this chapter: Provide fluid and fast interactions to ease the tasks of the users. 
+
+
+While the mouse is the main input device for interacting with different screens, many alternatives do exist. In this work, we reported our exploratory study with the usage of
+eyes as a new input device for Air Traffic Control systems. Our investigations, based on a user-centered design, included a study of the activity, a classification of interaction
+techniques based on eye tracking systems, and finally a working prototype with the evaluations of the developed interaction techniques. Our goal was to investigate gaze usages
+as a means of interaction, and give recommendations for future development of Air Traffic Control systems.
+
+
+The activity of air traffic control is complex. Operators use many interactions techniques with dedicated IT systems to ensure the traffic flow with respect of security and
+optimization concerns. Air traffic activities is constantly evolving. Air traffic
+controllers, responsible for ensuring the safety and the fluidity of air traffic, have to deal with more and more information that could cause a significant increase in their
+workload. However, whether in control tower, approach or even in En-Route control center, air traffic controllers have many tools in addition to the radar screen. Their
+workspace is thus the scene of an accumulation of interaction devices (mainly mice and touchscreens).
+
+\subsection{ Contextual observations }
+
+In the following, we briefly describe the controller tasks within the three previously defined contexts. The activity of en-route and approach controllers [16] is mainly to maintain a safe distance between aircraft, and to guide them with traffic fluidity concerns. For this, the airspace is divided into sectors, each sector being the responsibility of one controller pair. When a flight goes through an area, controllers guide
+the pilot by giving him or her orders (clearances) for heading, speed or altitude, until the flight reaches an adjacency sector where other controllers will be in charge of
+this aircraft. In a typical environment, two controllers are seated in front of a control position, specially designed to support their job. A traditional position includes a set of
+main subsystems: two radar screens (one for each controller), paper strips shared by both controllers (for systems using the strips) displayed on a horizontal table.
+
+\subsection{ limiting factors }
+
+With current systems, controllers are able to perform many
+different types of interaction. This allows in particular to
+obtain aircraft details, to setup the radar configuration or to
+share information with other controllers. During the
+observation sessions, we extracted some controllers frequent
+interactions with existing systems:
+\begin{itemize}
+\item pan and zoom to set the radar view configuration,
+\item entering a clearance,
+\item distance computation between planes using the alidade,
+\item display of the separation distance between aircraft,
+display of velocity speed vectors (position of the aircraft in
+3, 6, or 9 minutes).
+\end{itemize}
+
+We have identified a number of limiting factors for these
+interactions. Although navigation is available in the radar
+image (pan and zoom), it still does not allow to see the
+calling planes located outside of the displayed area. This
+view configuration is done by clicking on the buttons located
+in a context menu. Other features are accessible via a toolbar
+or a shortcut menu. This is for example the case of the
+alidade (measuring the distance between two aircraft), which
+is performed by selecting it on the tool bar on the left of the
+radar display (Figure 1) and then plotting on the map the line
+representing the distance to assess the distance using a drag
+with the left mouse button.
+In conclusion, many interaction requires the mouse device with
+numerous manipulations (reach the mouse, find the menu
+location, select the appropriated item, perform selections and mouse drags, etc.)
+
+\subsection{Interactions}
+After the brainstorming, we built prototypes (\autoref{e:prototype}) that were
+evaluated during a design walkthrough session with 3
+confirmed air traffic controllers.
+
+ \begin{figure}
+ \centering
+	\includegraphics[width=0.95\textwidth]{Figures/prototype.png}
+	\caption{ The architecture of the prototype}
+	\label{e:prototype}
+\end{figure}
+
+\subsubsection{I1: Selection methods}
+The selection of an aircraft is the first task an air traffic
+controller shall achieve before interacting with it. To do this, different techniques of
+interaction are possible and are shown in the following.
+
+\paragraph{I1-1: The mouse (Existing Technic)}
+
+We kept the functioning of this interaction which is already
+implemented in existing systems, in order to compare the
+eye tracker and the single mouse. (\autoref{e:})
+
+
+\paragraph{I1-2: The Dwell Time}
+The Dwell Time is a technique that allows to change the
+state of a target (aircraft in this case) when looked for a
+certain period (\autoref{e:selectionState}).
+
+\begin{figure}
+ \centering
+	\includegraphics[width=0.95\textwidth]{Figures/selectionState.png}
+	\caption{ The different states of an aircraft}
+	\label{e:selectionState}
+\end{figure}
+
+Our prototype has two buttons, one for the validation and the
+other one to cancel a previous validation. The appearance
+and size of these buttons have been modified following the
+remarks during the design walkthrough sessions. The
+buttons are positioned in areas normally without traffic
+(\autoref{e:selectionDwell}). The user must look at a plane: it will switch to
+blue after a first timer (dwell time, 200ms). Then the user
+simply look at the "validate" button for a certain period to
+select the aircraft (it changes to yellow). To cancel the
+selection of this aircraft, the user must again look at it, then it turns red, and if the user looks at the cancel
+button for a certain period, the airplane is deselected (\autoref{e:selectionDwell}).
+
+\begin{figure}
+ \centering
+	\includegraphics[width=0.90\textwidth]{Figures/selectionDwell.png}
+	\caption{ Selection with dwell time}
+	\label{e:selectionDwell}
+\end{figure}
+
+
+
+\paragraph{I1-3: Buttons}
+During the brainstorming session, it emerged that the best
+option to select an aircraft is to use an external device
+(button, keyboard or pedal, etc.). That is why we decided to
+include this interaction in the final prototype.
+
+\paragraph{I1-4: Pedal}
+This interaction is almost identical to the previous one,
+except that it offers the user a button that plays both the role
+of the "validate" and the "cancel".
+
+\subsubsection{I2: Function Selection}
+The methods of the function selection we implemented,
+respond to the needs to obtain information on a plane, and
+free the hands.
+ 
+\paragraph{I2-1: Pulldown Menu}
+This interaction is similar to the one existing in the current
+systems. With a click on an aircraft, users have access to a
+context menu offering several features. This interaction has
+been developed for the purpose of comparison with the new
+methods of selection that we propose (\autoref{e:selectionFunction}).
+\begin{figure}
+ \centering
+	\includegraphics[width=\textwidth]{Figures/selectionFunction.png}
+	\caption{
+	A pulldown menu and a pie Menu.}
+	\label{e:selectionFunction}
+\end{figure}
+
+\paragraph{I2-2: Pie Menu and Dwell Time}
+The advantage of the pie menu is that it appears at the exact
+location where the user has selected the second aircraft.
+Hence, the user can directly select one of the menu items.
+However, following the remarks of some users, we have
+increased the delay to 500ms before opening the pie menu.
+Moreover, in order to respond to the need to keep all the
+parts of the radar image visible, we opted for transparent
+colors (\autoref{e:selectionFunction}).
+
+\paragraph{I2-3: Pie Menu and Gaze Gestures}
+In this interaction, the user must move his or her gaze from
+one of the menu items to the outside of the pie menu. This
+gaze gesture launches the warning function on the selected
+planes.
+\subsubsection{I3: Zoom Methods}
+These interactions respond to the need to freely navigate
+through the radar image.
+\paragraph{I3-1: Pointer centered Scroll}
+This interaction exists in some ATC interfaces (mainly
+interfaces without strip called "stripless"). The user acts on
+the mouse wheel to zoom in or out. The zoom center is then
+located at the mouse pointer. Also, it will help us to compare
+the effectiveness of our new interactions.
+\paragraph{I3-2: Gaze centered Scroll}
+As before, this zoom technique is based on the mouse, but
+this zoom is not centered on the mouse pointer anymore, but
+rather on the user's gaze location on the screen. In both
+techniques, the zoom returns to its original level by clicking
+with the mouse wheel.
+\paragraph{I3-3: Touchpad}
+With the usual gestures made on a touch pad, the controllers
+can perform forward zooming (Pinch open) and backward
+zooming (Pinch close) centered on his / her gaze.
+\paragraph{I3-4: Leap Motion}
+The Leap Motion is a device that detects the movements and
+aspects of the user's hands. We therefore used it to achieve
+an interaction that is to approach or pull away the palm of
+the hand to zoom in or out. When removing the hand form
+the Leap motion's detection area , the zoom will return to
+its original level.
+
+\subsubsection{I4: Pan Methods}
+Sometimes it is necessary for the controller to observe the
+planes that are not necessarily displayed on the controller
+screen. To do this, the user must perform lateral movements
+(i.e. Pan) of the radar screen. These interactions respond to
+the need to navigate through the radar image.
+\paragraph{I4-1: The Mouse}
+A first technique, which often exists in some air traffic
+control systems, is to make lateral movements with the
+mouse. The user clicks on the map then performs the
+movements of "drag" to move it.
+\paragraph{I4-2: Touchpad}
+This technique does not use the gaze but given the presence
+of the touchpad in the final prototype, we wanted to know if
+the users appreciated the fact to navigate through the map
+with their fingers (as we can do it in Google Map
+Application for Smartphone for example).
+\paragraph{I4-3: SmartPan}
+Our goal was to use the eye tracker to observe directly a
+calling aircraft that would be out of the controller's screen.
+For this, we have designed a system with voice recognition
+to detect the corresponding call sign from calling aircraft. If
+the calling plane is not within the area displayed on the
+screen, the system automatically displays an arrow
+indicating the direction toward this aircraft. The user then
+has to look at the arrow (which gets yellow thanks to the eye
+tracker), and a pan is automatically processed toward the
+calling aircraft. This aircraft will be displayed in a different
+color for easy identification (\autoref{e:smartPan}). Once the information
+is taken by the controller, he or she just need to look in the
+opposite direction of the arrow and the Pan
+returns to its initial value. In user testing, we simulate a
+calling plane with the control software.
+\begin{figure}
+ \centering
+	\includegraphics{Figures/smartPan.png}
+	\caption{
+	SmartPan: the arrow indicates a calling
+aircraft outside the radar image.}
+	\label{e:smartPan}
+\end{figure}
+
+\subsubsection{I5: Heat map}
+The heat map is already widely used in other areas and
+allows ATC to analyze the gaze of a user by recording the
+history of the recorded gaze locations. These locations are
+then transcribed in the form of a color gradient indicating
+regions of interest on which the user focused on. When
+controllers interact with each other to discuss a situation,
+they often have to share information from the radar screen
+and to highlight aircraft to clarify the situation. The idea
+here is to use the heat map as a support to discussions and to
+solve conflicting aircraft situations. When one of the
+two controllers do not immediately identify the area his or
+her colleague is talking about, one can press a button or a
+key to display a heat map tracing the gaze history (about 20
+seconds of past gazes) of the areas observed (\autoref{e:heatmap}). The
+controllers can then have an overview of the specific
+situation and find a solution to address it.
+
+\begin{figure}
+ \centering
+	\includegraphics{Figures/heatmap.png}
+	\caption{
+	Heat map showing the most viewed areas +
+improved magic pointer display the mouse cursor
+inside the most viewed area}
+	\label{e:heatmap}
+\end{figure}
+
+\subsubsection{I6: Improved Magic Pointing}
+This interaction takes is root from the heat map
+computation. Its goal is to display the mouse pointer at a
+suitable location when the controller has to use it and thus
+avoid too long mouse drag to reach the suitable pointing
+target. To do so, just before the controller touch the mouse,
+the algorithm computes the heat map. When the user moves
+the mouse pointer, the system will display the mouse pointer
+location at denser gaze location (\autoref{e:heatmap}).
+
+\subsection{Evaluation of the prototype}
+The first task was to change the state of two aircraft in a
+conflict situation into "Warning". This task involved the use
+of a selection method and the warning function. The second
+task was to give a clearance (change of altitude or speed) to
+an aircraft located in a dense traffic area. This task required
+the use of a zoom technique. The third task was to give a
+clearance to an aircraft located outside the area displayed on
+the screen. We had the opportunity to test a method of pan.
+And finally, the last task was to show the recorded gaze
+location on the screen via a heat map.
+Each of these tasks has been performed with each of the
+proposed interactions including the techniques used in the
+current ATC systems. At the end of each task, the user had
+to give their opinions by filling a questionnaire asking a
+qualitative evaluation of each of the interaction techniques.
+
+The heat map was generally appreciated, especially by the
+instructors. Indeed, they found that it would be very
+interesting during the training courses of controllers in the
+sense that this heat map would help them observe and
+correct the visual path of apprentice. It is also a good help
+for the other controllers who will be able to know if their
+colleague is aware or not of a conflicting situation. The
+zoom centered method on the gaze using the mouse wheel
+was the method that received the most positive comments
+from users.
+Following user tests, many interactions have been improved
+and new ones were created to best meet the needs of air
+traffic controllers. To select an aircraft with only the eyes,
+we designed another solution. When the plane is gazed, two
+small labels appear on its side.
+
+Regarding the selection of functions, the pie menu was not
+easy to master, either with the selection of items via the
+dwell time or worse through gaze gestures. In stressful
+situations, involuntary actions could take place. To address
+this, we proposed a validation of pie menu items via a button
+or keyboard. We also added a visual feedback on the gazed
+item in order to meet user' needs during the first test
+session.
+To compensate the loss of calibrations noticed during the
+tests, we implemented an algorithm called Bubble Cursor  (see
+\cite{Grossman:2005:BCE:1054972.1055012}). This algorithm consisting in computing the nearest
+neighbor of the user gaze location. Thus, even if the eye is
+not perfectly on one of the aircraft in the control area, the
+nearest aircraft is still selected.
 \section{Introduction}
 Volumetric data found in many fields, such as engineering, material sciences, medical imaging, astrophysics. Their exploration is not trivial, and heavily impacted by the users' needs. In most airports, security agents deal with such data exploration during baggage inspections. They use two types of fluoroscopic systems: X-ray and tomography scanning systems. X-ray system provides a flattened 2D baggage scan while tomography scanning system produces transversal scans, also called slices. 
 Thanks to data processing (e.g. \cite{deans2007radon}), they can produce a full 3D scan (set of voxel with their corresponding density).
@@ -131,7 +443,7 @@ The displayed 2D scanned image can suffer from four issues.
 \textbf{Superposition}: A threat (e.g. prohibited object like knife, cutter…) may be sheltered behind dense materials. Sometimes, it is possible to see through these blind shield using some functionalities such as high penetration (enhanced X-ray power) or image processing (contrast improvement),  see  \autoref{f:superposition}. 
 \begin{figure}
 \centering
-	\includegraphics[height=8cm]{Figures/superposition}
+	\includegraphics[width=0.95\textwidth]{Figures/superposition}
 	\caption{Dissimulation by superposition}
 	\label{f:superposition}
 \end{figure}
@@ -139,7 +451,7 @@ The displayed 2D scanned image can suffer from four issues.
 \textbf{Location}: Depending on its location inside the luggage, a threat can be difficult to detect. Objects located in the corners, in the edges or inside the luggage's frame are very difficult to identify,  see  \autoref{f:location}.
 \begin{figure}
 \centering
-	\includegraphics[height=8cm]{Figures/positioning}
+	\includegraphics[width=0.9\textwidth]{Figures/positioning}
 	\caption{Dissimulation by the location}
 	\label{f:location}
 \end{figure}
@@ -147,7 +459,7 @@ The displayed 2D scanned image can suffer from four issues.
 \textbf{Dissociation}: Another way to dissimulate a threat is to separate and to spread parts of it in the luggage (weapon or explosive are composed of many separated items like the trigger, the cannon...). This dissociation can be combined with other dissimulation techniques,  see  \autoref{f:dissociation}.
 \begin{figure}
 \centering
-	\includegraphics[height=8cm]{Figures/Dissociation}
+	\includegraphics[width=0.8\textwidth]{Figures/Dissociation}
 	\caption{Dissimulation by dissociation}
 	\label{f:dissociation}
 \end{figure}
@@ -355,7 +667,45 @@ Tomographs generate files which contain all the densities encountered by the x-r
 
 \subsubsection{Object selection}
 
-Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection need to start (we stop its progression as soon as it hits a visible voxel). Second, we propagate the selection in every directions. For each encountered voxel, we check whether it is visible according to the current transfer function . If the voxel is visible we go on with the selection propagation. We spread within the baggage by launching many threads starting from the location where the first visible voxel has been hit. The number of thread depends on the number of logical processors inside the current hardware. Each thread checks whether its neighbors are visible, and keep spreading towards the visible voxels. This propagation algorithm stops whenever there are not any more visible voxels to spread into.
+Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection need to start (we stop its progression as soon as it hits a visible voxel). Second, we propagate the selection in every directions. For each encountered voxel, we check whether it is visible according to the current transfer function . If the voxel is visible we go on with the selection propagation. We spread within the baggage by launching many threads starting from the location where the first visible voxel has been hit. The number of thread depends on the number of logical processors inside the current hardware. Each thread checks whether its neighbors are visible, and keep spreading towards the visible voxels. This propagation algorithm stops whenever there are not any more visible voxels to spread into ( algorithm \autoref{alg:propagation}).
+
+\begin{algorithm} \caption{Pseudo code for the selection propagation} 
+\label{alg:propagation}
+\begin{algorithmic}[1]
+\Require $V$ the volume
+
+\State Cast a ray toward the volume $V$  
+\State  pt $\leftarrow$ intersection point between the ray and the volume \;
+\State  finished $\leftarrow$ false \;
+ \If{pt exists}
+ 	\State step $\leftarrow$ direction toward the volume \;
+    \While{pt is inside the volume and $!$ finished }
+  	\State color $\leftarrow$ the color at pt \;
+  \If{color.alpha $>$ 0 }
+	\State \emph{// spread into neighbors}
+    
+    \State v $\leftarrow$ current voxel \;
+	\While{ v has neighbors }
+    	\State color $\leftarrow$ voxel's color \;
+        \State grad $\leftarrow$ voxel's gradient\;
+    	 \If{color.alpha $>$ 0 and grad $<=$ threshold }
+         \State 	v.selected $\leftarrow$ true \;
+         \EndIf
+        \State  v $\leftarrow$ next neighbor \;
+    \EndWhile    
+
+    \State finished $\leftarrow$ false;
+    
+  \EndIf
+ \State  pt $\leftarrow$ pt + step \;
+\EndWhile
+ 
+\EndIf
+
+\end{algorithmic}
+\end{algorithm}
+
+
 
 
 \subsubsection{Occlusion minimization}
