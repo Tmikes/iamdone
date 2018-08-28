@@ -127,11 +127,11 @@
 \contentsline {section}{\numberline {5.4} Augmented Reality (AR)}{101}{section.212}
 \contentsline {subsection}{\numberline {5.4.1}Portable devices}{101}{subsection.213}
 \contentsline {subsection}{\numberline {5.4.2}Smart glasses and AR headsets}{101}{subsection.215}
-\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{103}{section.216}
+\contentsline {section}{\numberline {5.5} Mixed Reality (MR)}{102}{section.216}
 \contentsline {subsection}{\numberline {5.5.1}Implementation}{103}{subsection.217}
 \contentsline {subsubsection}{\numberline {5.5.1.1}Computation on the hololens}{104}{subsubsection.218}
-\contentsline {subsubsection}{\numberline {5.5.1.2} Holographic remoting }{106}{subsubsection.221}
-\contentsline {paragraph}{\numberline {5.5.1.2.1}Performance}{106}{paragraph.222}
+\contentsline {subsubsection}{\numberline {5.5.1.2} Holographic remoting }{105}{subsubsection.221}
+\contentsline {paragraph}{\numberline {5.5.1.2.1}Performance}{105}{paragraph.222}
 \contentsline {chapter}{\numberline {6} Conclusion }{107}{chapter.223}
 \contentsline {section}{\numberline {6.1}summary}{108}{section.224}
 \contentsline {subsection}{\numberline {6.1.1} Design Study: Interactive exploration of 3D scanned baggage }{108}{subsection.225}

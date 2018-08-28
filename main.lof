@@ -71,7 +71,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces A lung CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm \relax }}{100}{figure.caption.210}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces A head CT scan rendered without shading on an android smartphone \relax }}{102}{figure.caption.214}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A head CT scan rendered on the hololens using isosurfaces \relax }}{105}{figure.caption.219}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A head CT scan rendered on the hololens using isosurfaces \relax }}{104}{figure.caption.219}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces A head CT scan rendered on the hololens using a raycasting algorithm \relax }}{105}{figure.caption.220}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
