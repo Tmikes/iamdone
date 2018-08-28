@@ -60,6 +60,8 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{siunitx}
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
+
+
 \usepackage{titlesec}
 
 \setcounter{secnumdepth}{5}
@@ -108,7 +110,7 @@ headsepline, % Uncomment to get a line under the header
 \university{\href{https://www.isae-supaero.fr/en/}{Institut supérieur de l'aéronautique et de l'espace (ISAE-SUPAERO)}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 \department{\href{http://www.enac.fr}{\'Ecole Nationale de l'Aviation Civile (ENAC)}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
 \group{\href{http://devi.recherche.enac.fr}{Data Economics and Interactive Visualization (DEVI)}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
-\faculty{\href{http://faculty.university.com}{Faculty Name}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\faculty{\href{https://www.adum.fr/as/ed/page.pl?site=edsys&page=accueil}{\'Ecole Doctorale Syst\`emes (EDSYS)}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -278,8 +280,12 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+Occlusion is an issue in volumetric visualization as it prevents direct visualization of the region of interest.
+While most existing systems use a combination of Direct Volume Rendering (DVR) technique and its corresponding Transfer Function (TF), we considered alternative interaction techniques to explore such datasets. 
 
-abstract here
+First, we proposed a new interactive visualization system for 3D scanned baggage accelerated with GPGPU techniques in accordance with the needs we extracted from the contextual inquiry with the airport security agents. 
+
+Secondly, we proposed a novel technique which combines high-quality DVR with a fast, versatile, and easy to use, lens to support the interactive exploration of occluded data in volumes.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -288,7 +294,7 @@ abstract here
 
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
+Thank you\ldots
 \end{acknowledgements}
 
 %---------------------------------------------------------------------------------------
@@ -300,7 +306,8 @@ Here are listed all of my publications during this thesis: \ldots
 \begin{enumerate}
 
 \item \textbf{ Journal }: Michael Traor\'e and Christophe Hurter, "Interactive Exploration of 3D Scanned Baggage", in IEEE Computer Graphics and Applications, vol. 37, no. 1, pp. 27-33, Jan.-Feb. 2017.
-\item \textbf{ Conference + Journal} : Michael Traor\'e , Christophe Hurter, and Alexandru Telea, "Interactive Obstruction-free Lensing for Volumetric Data Visualization",
+\item \textbf{ Conference + Journal} : Michael Traor\'e , Christophe Hurter, and Alexandru Telea, "Interactive Obstruction-free Lensing for Volumetric Data Visualization", 2018 IEEE Scientific Visualization Conference (SciVis  TVCG SI), Berlin, Germany
+\item  \textbf{ Conference} :  Michael Traor\'e and Christophe Hurter, "Exploratory Study with Eye Tracking Devices to Build Interactive Systems for Air Traffic Controllers", HCI-Aero 2016, International Conference on Human-Computer Interaction in Aerospace , Sep 2016, Paris, France.
 \item \textbf{ Patent } : HURTER, Christophe et SOMPAGNIMDI, Michael TRAORÉ. "Object definition in virtual 3D environment". U.S. Patent Application No 15/466,991, 28 sept. 2017.
 \item \textbf{ Patent } : HURTER, Christophe et SOMPAGNIMDI, Michael TRAORÉ. "Boolean object management in 3D display". U.S. Patent Application No 15/466,497, 28 sept. 2017.
 \item \textbf{ Patent } : HURTER, Christophe et SOMPAGNIMDI, Michael TRAORÉ. "Selective display in a computer generated environment". U.S. Patent Application No 15/485,828, 19 oct. 2017.
@@ -324,15 +331,15 @@ Here are listed all of my publications during this thesis: \ldots
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-\textbf{DVR} & \textbf{D}irect \textbf{V}olume \textbf{R}endering\\
-\textbf{AR} & \textbf{A}ugmented \textbf{R}eality \\
-\textbf{MR} & \textbf{M}ixed \textbf{R}eality \\
-\textbf{VR} & \textbf{V}irtual \textbf{R}eality \\
-\textbf{TF} & \textbf{T}ransfer \textbf{F}unction \\
+%\textbf{DVR} & \textbf{D}irect \textbf{V}olume \textbf{R}endering\\
+%\textbf{AR} & \textbf{A}ugmented \textbf{R}eality \\
+%\textbf{MR} & \textbf{M}ixed \textbf{R}eality \\
+%\textbf{VR} & \textbf{V}irtual \textbf{R}eality \\
+%\textbf{TF} & \textbf{T}ransfer \textbf{F}unction \\
 
-\end{abbreviations}
+%\end{abbreviations}
 
 
 
@@ -371,7 +378,7 @@ Here are listed all of my publications during this thesis: \ldots
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{For/Dedicated to/To my\ldots} 
+\dedicatory{Dedicated to  my family \ldots} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
