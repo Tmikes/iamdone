@@ -2523,6 +2523,64 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{Stegmaier:2005:SFV:2386472.2386498}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SS}{%
+         family={Stegmaier},
+         familyi={S\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strengert},
+         familyi={S\bibinitperiod},
+         given={Magnus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Ertl},
+         familyi={E\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Eurographics Association}%
+    }
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSSMKTET1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the Fourth Eurographics / IEEE VGTC
+  Conference on Volume Graphics}
+    \verb{doi}
+    \verb 10.2312/VG/VG05/187-195
+    \endverb
+    \field{isbn}{3-905673-26-6}
+    \field{pages}{187\bibrangedash 195}
+    \field{series}{VG'05}
+    \field{title}{A Simple and Flexible Volume Rendering Framework for
+  Graphics-hardware-based Raycasting}
+    \verb{url}
+    \verb http://dx.doi.org/10.2312/VG/VG05/187-195
+    \endverb
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2005}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{5743036}{article}{}
     \name{author}{5}{}{%
       {{hash=TWJ}{%

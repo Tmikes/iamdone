@@ -216,6 +216,7 @@
 \NewDocumentCommand{\supervisor}{m}{\newcommand{\supname}{#1}}
 \NewDocumentCommand{\examiner}{m}{\newcommand{\examname}{#1}}
 \NewDocumentCommand{\degree}{m}{\newcommand{\degreename}{#1}}
+\NewDocumentCommand{\diplome}{m}{\newcommand{\diplomename}{#1}}
 \NewDocumentCommand{\addresses}{m}{\newcommand{\addressname}{#1}}
 \NewDocumentCommand{\university}{m}{\newcommand{\univname}{#1}}
 \NewDocumentCommand{\department}{m}{\newcommand{\deptname}{#1}}
@@ -403,6 +404,78 @@ KOMA-script documentation for details.}]{fancyhdr}
 {
 	\vfill\null
 }
+
+%----------------------------------------------------------------------------------------
+%	RESUME PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\DeclareDocumentCommand{\abstractauthorfont}{}{}
+\DeclareDocumentCommand{\abstracttitlefont}{}{}
+\newcommand{\parname}{par}
+\newcommand{\resumename}{R\'esum\'e}
+\providecaptionname{german,ngerman,austrian,naustrian}{\byname}{von}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\parname}{par}
+\ifbool{consistentlayout}{
+	\DeclareDocumentEnvironment{resume}{ O{} }{%
+		\addchap*{\resumename}%
+		{\chapteralign\normalsize\abstractauthorfont \authorname \par}% Author name
+		\vspace{\baselineskip}
+		{\chapteralign\parbox{.7\linewidth}{\chapteralign\normalsize\itshape\abstracttitlefont\@title}\par}% Thesis title
+		\bigskip\noindent\ignorespaces
+	}%
+	{}%end alt-abstract
+}{%
+	\DeclareDocumentEnvironment{resume}{ O{\null\vfill} }{
+		\checktoopen
+		\tttypeout{\resumename}
+		#1%added to be able to have abstract more than one page long
+		\thispagestyle{plain}
+		\begin{center}
+			{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
+			\bigskip
+			{\huge\textit{\resumename} \par}
+			\bigskip
+			{\normalsize \facname \par}% Faculty name
+			{\normalsize \deptname \par}% Department name
+			\bigskip
+			{\normalsize \diplomename\par}% Degree name
+			\bigskip
+			{\normalsize\bfseries \@title \par}% Thesis title
+			\medskip
+			{\normalsize \parname{} \authorname \par}% Author name
+			\bigskip
+		\end{center}
+	}
+	{
+		\vfill\null
+	}
+}
+
+\DeclareDocumentEnvironment{extraResume}{ O{\null\vfill} }{
+	\checktoopen
+	\tttypeout{\resumename}
+	#1%added to be able to have abstract more than one page long
+	\thispagestyle{empty}
+	\begin{center}
+		{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
+		\bigskip
+		{\huge\textit{\resumename} \par}
+		\bigskip
+		{\normalsize \facname \par}% Faculty name
+		{\normalsize \deptname \par}% Department name
+		\bigskip
+		{\normalsize \diplomename\par}% Degree name
+		\bigskip
+		{\normalsize\bfseries \@title \par}% Thesis title
+		\medskip
+		{\normalsize \parname{} \authorname \par}% Author name
+		\bigskip
+	\end{center}
+}
+{
+	\vfill\null
+}
+
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS PAGE DESIGN

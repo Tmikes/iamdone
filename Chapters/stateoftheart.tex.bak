@@ -1,6 +1,22 @@
 \chapter{State of the art} % Main chapter title
 \label{StateOfTheArt}
 
+\section{Synthèse}
+Dans ce chapitre, nous présentons le travail existant dans les algorithmes de rendu de volume, les stratégies de gestion de l'occlusion et le rendu de volume dans les appareils mobiles (réalité mixte, réalité virtuelle et réalité augmentée). Premièrement, nous présentons les algorithmes existants pour rendre des jeux de données volumétriques pouvant être classés en deux types principaux: le rendu de volume direct (DVR) et les algorithmes d'ajustement de surface. Ensuite, nous discutons des stratégies existantes de gestion de l'occlusion. En effet, nous parlons de la fonction de transfert, de la segmentation, des déformations ainsi que des techniques de Focus+Context. Enfin, nous décrivons les travaux précédents sur le rendu de volume dans les appareils mobiles. Plus précisément, nous traitons de la réalité mixte, de la réalité virtuelle et de la réalité augmentée.
+
+\subsection{Algorithmes de rendu de volume}
+Les algorithmes fondamentaux de visualisation de volume décrits
+ci-dessous se divisent en deux catégories principales:
+
+\begin{itemize}
+
+\item Algorithmes de rendu de volume direct (DVR): ils incluent des approches telles que le lancer de rayons, le mappage de texture, le splatting et le rendu du V-buffer. Ces méthodes sont caractérisées par la correspondance des éléments directement dans l'espace écran sans utiliser de primitives géométriques comme représentation intermédiaire (\cite{Stegmaier:2005:SFV:2386472.2386498}).
+
+\item Algorithmes d'ajustement de surface (SF): ils s'appellent aussi isosurfacing ou feature-extraction. Ces algorithmes consistent à adapter des primitives de surface telles que
+Polygones ou patches sur des surfaces de contour à valeur constante dans des jeux de données volumétriques. Les primitives de surface utilisées sont la plupart du temps planes (\cite{Lorensen:1987:MCA}).
+
+\end{itemize}
+
 \section{Introduction}
 
 In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality). First we present the existing algorithms to render volumetric data-sets that can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms. Then we discuss the existing strategies of occlusion management. Actually, we talk about the transfer function, the segmentation, an deformations as well as Focus+context techniques. Finally we  describe the previous work on  volume rendering in mobile devices. More precisely, we deal with Mixed Reality, Virtual Reality, and Augmented Reality.
@@ -147,7 +163,7 @@ To generate oblique slices using 3D texturing, one only has to calculate the ver
 \end{figure}
 
 \subsubsection{Raycasting}
-Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
+Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
 \begin{itemize}
 
 \item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
@@ -259,7 +275,7 @@ or ImageVis3D by {\cite{Fogal2010Tuvok}}, support 1D TF editors.
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=\textwidth]{Figures/2dtf}
+\includegraphics[width=0.7\textwidth]{Figures/2dtf}
 \decoRule
 \caption[2D transfer Function]{ The two-dimensional TF editor widgets allow the user
 to more precisely control the classification power of the 2D TF.
@@ -648,12 +664,71 @@ hues of an object is modulated onto a master transfer function, see \autoref{fig
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Images/unpack.eps}
+\includegraphics[width=0.7\textwidth]{Images/unpack.eps}
 \caption[ unpack]{Virtual unpacking: (a) all objects in packed positions, (b)-(c)images extracted from the animation of unpacking the red doll, which
 first moves towards the camera, then it flies to the top-right corner of the image; and (e) most objects are in unpacked positions}
 \label{fig:unpack}
 \end{figure}
 
+
+
+
+
+Despite all these previous work, efficiently selecting the target and  removing all in-between occluders is still challenging. More specifically, most existing occlusion management techniques do not simultaneously meet all following requirements: Rapidly create an unobstructed view of the target (R1), allow a flexible local exploration of the target zone (R2), keep the context in which the target is visually embedded (R3), and handle datasets where the target and occluders cannot 
+be separated by transfer function manipulations (R4).
+
+\subsubsection{Requirements}
+
+To start with, let us recall requirements R1$,\ldots,$R4.
+\begin{itemize}
+\item{\textbf{R1:}} The technique should rapidly create an unobstructed view of the target, \emph{i.e.}, such a view should be created at interactive frame rates (10 fps or more) with no special pre-processing of the input volume (\emph{e.g.}, segmentation), and with minimal user input (\emph{e.g.}, using simple mouse and/or keyboard-modifier events). All above are needed to ensure that one can freely \emph{explore} the volume by activating the lens anywhere with minimal effort and seeing its effect in real-time.
+
+\item{\textbf{R2:}} Allowing a flexible exploration of the target zone means that one can manipulate the zone in the lens in various ways to see how the target is actually embedded in its surrounding context.
+
+\item{\textbf{R3:}} Keeping the context means that the visualization around the lens does not change significantly from what would be shown there if the lens were not activated. This is needed to maintain the user's mental map before \emph{vs} after activating the lens.
+
+\item{\textbf{R4:}} The lens should enable the exploration of datasets where targets cannot be easily separated (isolated) from their surrounding context simply by manipulating parameters of the transfer functions (TF). One such issue is when targets and surrounding zones have similar densities; in this case, using a single global opacity TF could either render everything opaque (thus, it will be hard to visually isolate the target) or highly transparent (thus, the zone around the target will be transparent but so will be the target too).
+\end{itemize}
+
+
+\subsubsection{ Comparison between the requirements and the previous work }
+
+Many occlusion management approaches have been proposed\,\cite{4483791}. Multiple viewports show the data from different perspectives\,\cite{WangBaldonado:2000:GUM:345513.345271}. This does not help when the target is strongly occluded from \emph{all} possible viewpoints (R4). Virtual X-ray methods make targets visible by turning occluders (half-)transparent\,\cite{Burns:2008:ACC:1457515.1409107}.\cite{4015450} proposed ClearView, which interactively focuses on specific areas in the data while preserving context without visual clutter by modulating transparency. Correa and Ma\,\cite{5416704} proposed visibility-driven transfer functions (TFs) to maximize the visibility of selected data-intervals. Designing good TFs is still challenging (R2) in general: For instance, in baggage inspection, a dissimulation strategy is to hide a threat among same-density objects, so TF editing cannot easily remove occluders but keep the target (R4)\,\cite{7819413}. De-occluding a tumor from surrounding similar-density tissue in medical scans is a similar situation\,\cite{CGF:CGF12927}. 
+Rezk-Salama and Kolb\,\cite{CGF:CGF979} also considered the voxels' occurrence on the cast ray, besides their densities and positions.\cite{6787171} removed occluders in 2D images, volumes, and trail-sets by deforming (pushing them away) in a focus area. Occludes are selected based on data value-ranges, thus we have here the same limitation as ClearView (R4). \cite{Li:2012:LVV:2425296.2425325} proposed luggage virtual unpacking where targets are cleared by interactively moving away occluders. This, however, alters the \emph{context} (relative position, connectivity) where occluders occur (R3). Recently, an interactive volumetric data exploration via direct voxel manipulation was proposed ,\cite{7819413}. Extending such approaches in a DVR setting to more complex deformations or changes of the data-in-focus is computationally challenging (R1).
+
+Lenses for DVR face spatial selection and occlusion challenges. Magic Lens\,\cite{1532818} addresses these by rendering occlusions with lower opacity and magnifying pre-computed features interactively or automatically in a pre-segmented dataset. This, however, does not provide an (interactive) way to deal with similar-density occluders and targets (R4) and does not propose local exploration of the target context (R2). GlyphLens\,\cite{7539643} removes occluding glyphs by pulling them aside through animation. However, this covers only glyph-based and not DVR visualizations. 
+
+Lenses can create discontinuities between their inside and outside areas. Deformations can be a solution to this.
+ \cite{Hsu:2011:RFM:2070781.2024165} create flexible deformations by non-linearly sampled rays to smoothly project objects at multiple levels of detail. However, this is computationally expensive and far from real-time (R1). Exploded views are used to partition a volume into several segments\,\cite{Sonnet:2004:IEA:989863.989871,4015467}. This strongly reduces occlusion but distorts the context (R3) and requires some sort of data pre-segmentation which takes time to compute (R1). \cite{Correa:2007:IDD:1313046.1313163,Correa:2006:FAV:1187627.1187827} allow one to manipulate the geometry of a data object.\cite{1250400} performed deformations using peeling to see hidden parts of the data. Such techniques remove potentially important contextual information surrounding the target, which makes it hard to see how the target is embedded in its context (R2).
+
+Deformations can reveal specific data features by using a precomputed segmentation. \cite{7332955} proposed a deforming lens which moves streamlines to observe the inner part of streamline bundles. Other techniques performed deformations using surgical metaphors, such us \cite{4069230,Correa:2006:FAV:1187627.1187827} to show hidden parts of a volume. Such techniques do not offer tools for local manipulation of the viewpoint that allows seeing a target under multiple perspectives (R2) while keeping the global context. 
+
+Using non-straight-line rays is another way to avoid occluders. \cite{5613463} propose curved (B{\'e}zier) rays to support this.  \cite{7120994} refine this further to create multi-perspective views. These approaches require a quite careful ray-path planning in advance, so they are not directly aimed at a lens effect (R2). Also, the target should be accessible from the viewpoint via a (possibly curved) path (R4). Also, from the presented examples, although two examples of DVR models are given, it seems these techniques mainly address de-occlusion in large 3D polygonal scenes such as terrain and city models.
+
+\autoref{tab:methods} summarizes the main advantages and limitations of a set of volumetric exploration techniques selected from the ones mentioned above which are close to our proposal. As visible, none of the techniques scores high on all requirements. The table also lists the number of different datasets and/or use-cases these techniques were tested on. We will validate our proposal on a similar number of use-cases ( \autoref{sec:scenarios}).
+\begin{table}
+\centering
+\large
+\begin{tabular}{ |c|c|c|c|c|c| }
+\hline
+\textbf{Technique} & \textbf{R1} & \textbf{R2} & \textbf{R3} & \textbf{R4} & \textbf{Use-cases}\\
+\hline
+\hline
+\cite{1250400} & + & -- & + & + & 1\\
+\cite{Sonnet:2004:IEA:989863.989871} & +/- & -- & + & +/- & 5\\
+\cite{1532818} & + & -- & + & +/- & 6\\
+\cite{4015467} & +/- & -- & -- & + & 6\\
+\cite{Correa:2006:FAV:1187627.1187827} & + & -- & + & + & 8\\
+\cite{Correa:2007:IDD:1313046.1313163} & + & -- & + & + & 8\\
+\cite{5613463} & + & -- & + & -- & 5\\
+\cite{Hsu:2011:RFM:2070781.2024165} & -- & +/- & + & + & 4\\
+\cite{6787171} & + & +/- & + & -- & 6\\
+\cite{7120994} & + & -- & + & -- & 5\\
+\hline
+\end{tabular}
+\caption{Related work selection \emph{vs} requirements R1...R4 ('+': good, '+/-': average, '--': limited) and the number of use-cases (datasets) used to demonstrate these methods.}
+\label{tab:methods}
+\end{table}
 
 \subsection{summary}
 In this section, we studied existing occlusion  management strategies in volume rendering. 

@@ -1,6 +1,22 @@
 \chapter{State of the art} % Main chapter title
 \label{StateOfTheArt}
 
+\section{Synthèse}
+Dans ce chapitre, nous présentons le travail existant dans les algorithmes de rendu de volume, les stratégies de gestion de l'occlusion et le rendu de volume dans les appareils mobiles (réalité mixte, réalité virtuelle et réalité augmentée). Premièrement, nous présentons les algorithmes existants pour rendre des jeux de données volumétriques pouvant être classés en deux types principaux: le rendu de volume direct (DVR) et les algorithmes d'ajustement de surface. Ensuite, nous discutons des stratégies existantes de gestion de l'occlusion. En effet, nous parlons de la fonction de transfert, de la segmentation, des déformations ainsi que des techniques de Focus+Context. Enfin, nous décrivons les travaux précédents sur le rendu de volume dans les appareils mobiles. Plus précisément, nous traitons de la réalité mixte, de la réalité virtuelle et de la réalité augmentée.
+
+\subsection{Algorithmes de rendu de volume}
+Les algorithmes fondamentaux de visualisation de volume décrits
+ci-dessous se divisent en deux catégories principales:
+
+\begin{itemize}
+
+\item Algorithmes de rendu de volume direct (DVR): ils incluent des approches telles que le lancer de rayons, le mappage de texture, le splatting et le rendu du V-buffer. Ces méthodes sont caractérisées par la correspondance des éléments directement dans l'espace écran sans utiliser de primitives géométriques comme représentation intermédiaire (\cite{Stegmaier:2005:SFV:2386472.2386498}).
+
+\item Algorithmes d'ajustement de surface (SF): ils s'appellent aussi isosurfacing ou feature-extraction. Ces algorithmes consistent à adapter des primitives de surface telles que
+Polygones ou patches sur des surfaces de contour à valeur constante dans des jeux de données volumétriques. Les primitives de surface utilisées sont la plupart du temps planes (\cite{Lorensen:1987:MCA}).
+
+\end{itemize}
+
 \section{Introduction}
 
 In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality). First we present the existing algorithms to render volumetric data-sets that can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms. Then we discuss the existing strategies of occlusion management. Actually, we talk about the transfer function, the segmentation, an deformations as well as Focus+context techniques. Finally we  describe the previous work on  volume rendering in mobile devices. More precisely, we deal with Mixed Reality, Virtual Reality, and Augmented Reality.
@@ -147,7 +163,7 @@ To generate oblique slices using 3D texturing, one only has to calculate the ver
 \end{figure}
 
 \subsubsection{Raycasting}
-Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
+Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
 \begin{itemize}
 
 \item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.

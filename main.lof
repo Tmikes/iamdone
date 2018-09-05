@@ -3,75 +3,75 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 2D Sclices}}{11}{figure.caption.28}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 2D texture mapping}}{11}{figure.caption.29}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 3D texture mapping}}{13}{figure.caption.32}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 3D Cube slice}}{14}{figure.caption.33}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Volume raycasting}}{14}{figure.caption.35}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Volume raycasting}}{16}{figure.caption.37}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 2D transfer Function}}{18}{figure.caption.41}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Multidimensional transfer Function}}{19}{figure.caption.42}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces multiscale }}{23}{figure.caption.47}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Interactive exploded-view}}{24}{figure.caption.48}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces clearview}}{24}{figure.caption.49}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Feature Aligned Volume Manipulation}}{25}{figure.caption.50}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Feature Aligned Volume Manipulation}}{26}{figure.caption.51}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Color Tunneling}}{29}{figure.caption.52}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces unpack}}{30}{figure.caption.53}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces NIVR}}{35}{figure.caption.59}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 2D Sclices}}{14}{figure.caption.35}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 2D texture mapping}}{14}{figure.caption.36}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 3D texture mapping}}{15}{figure.caption.39}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 3D Cube slice}}{16}{figure.caption.40}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Volume raycasting}}{17}{figure.caption.42}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Volume raycasting}}{18}{figure.caption.44}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 2D transfer Function}}{20}{figure.caption.48}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Multidimensional transfer Function}}{21}{figure.caption.49}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces multiscale }}{25}{figure.caption.54}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Interactive exploded-view}}{26}{figure.caption.55}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces clearview}}{27}{figure.caption.56}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Feature Aligned Volume Manipulation}}{28}{figure.caption.57}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Feature Aligned Volume Manipulation}}{29}{figure.caption.58}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Color Tunneling}}{31}{figure.caption.59}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces unpack}}{33}{figure.caption.60}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces NIVR}}{38}{figure.caption.66}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The architecture of the prototype\relax }}{39}{figure.caption.67}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The different states of an aircraft\relax }}{40}{figure.caption.71}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Selection with dwell time\relax }}{40}{figure.caption.72}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A pulldown menu and a pie Menu.\relax }}{41}{figure.caption.77}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces SmartPan: the arrow indicates a calling aircraft outside the radar image.\relax }}{43}{figure.caption.89}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Heat map showing the most viewed areas + improved magic pointer display the mouse cursor inside the most viewed area\relax }}{44}{figure.caption.91}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces X-ray scan with the 3 standard colors (orange, green, and blue)\relax }}{47}{figure.caption.98}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The operational constraints of the security agents.\relax }}{49}{figure.caption.106}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) \relax }}{50}{figure.caption.109}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{51}{figure.caption.111}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Dissimulation by superposition\relax }}{52}{figure.caption.114}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Dissimulation by the location\relax }}{52}{figure.caption.115}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Dissimulation by dissociation\relax }}{53}{figure.caption.116}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Dissimulation using a bait\relax }}{54}{figure.caption.117}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI\relax }}{55}{figure.caption.121}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets \relax }}{56}{figure.caption.124}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Selection of an umbrella for further inspection.}}{58}{figure.caption.127}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Addressing occlusion issue by removing objects from one view to another one.}}{59}{figure.caption.129}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Brushing a bottle to see its content.}}{60}{figure.caption.131}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Brushing low density materials to see a metallic object hidden inside the baggage.}}{61}{figure.caption.133}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{62}{figure.caption.137}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{63}{figure.caption.139}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces The transfer function presets help the user perceive the different types of material inside the baggage \relax }}{64}{figure.caption.142}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Inspection of an object from different perspectives.}}{65}{figure.caption.143}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces A suspicious object is inspected apart of the rest of the baggage \relax }}{65}{figure.caption.144}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Noise due to the presence of a big metallic object \relax }}{66}{figure.caption.146}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces The baggage actually contains an engine \relax }}{67}{figure.caption.147}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces the user reveals some low density materials inside the engine \relax }}{67}{figure.caption.148}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The architecture of the prototype\relax }}{43}{figure.caption.74}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The different states of an aircraft\relax }}{44}{figure.caption.78}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Selection with dwell time\relax }}{44}{figure.caption.79}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A pulldown menu and a pie Menu.\relax }}{45}{figure.caption.84}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces SmartPan: the arrow indicates a calling aircraft outside the radar image.\relax }}{47}{figure.caption.96}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Heat map showing the most viewed areas + improved magic pointer display the mouse cursor inside the most viewed area\relax }}{48}{figure.caption.98}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces X-ray scan with the 3 standard colors (orange, green, and blue)\relax }}{51}{figure.caption.105}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The operational constraints of the security agents.\relax }}{53}{figure.caption.113}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) \relax }}{54}{figure.caption.116}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Interpretation errors. The security agent notice the menace at the top of the image do not interpret it as a threat (the initiating system of an explosive)\relax }}{55}{figure.caption.118}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Dissimulation by superposition\relax }}{56}{figure.caption.121}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Dissimulation by the location\relax }}{56}{figure.caption.122}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Dissimulation by dissociation\relax }}{57}{figure.caption.123}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Dissimulation using a bait\relax }}{58}{figure.caption.124}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Top level layout and screenshot of our Graphical User Interface. All the features are available through this GUI\relax }}{59}{figure.caption.128}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Transfer function presets and their continuous interaction. The high density materials are revealed by dragging from left to right on the presets \relax }}{60}{figure.caption.131}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Selection of an umbrella for further inspection.}}{62}{figure.caption.134}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Addressing occlusion issue by removing objects from one view to another one.}}{63}{figure.caption.136}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Brushing a bottle to see its content.}}{64}{figure.caption.138}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Brushing low density materials to see a metallic object hidden inside the baggage.}}{65}{figure.caption.140}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{66}{figure.caption.144}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces The labelled snapshots taken by the user representing objects of interest\relax }}{67}{figure.caption.146}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces The transfer function presets help the user perceive the different types of material inside the baggage \relax }}{68}{figure.caption.149}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Inspection of an object from different perspectives.}}{69}{figure.caption.150}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces A suspicious object is inspected apart of the rest of the baggage \relax }}{69}{figure.caption.151}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Noise due to the presence of a big metallic object \relax }}{70}{figure.caption.153}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces The baggage actually contains an engine \relax }}{71}{figure.caption.154}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces the user reveals some low density materials inside the engine \relax }}{71}{figure.caption.155}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Obstruction-free lens working.}}{74}{figure.caption.161}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Changing lighting parameters in the lens.}}{76}{figure.caption.170}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Construction of local transfer function $TF_{o}$. See \autoref {sec:inter_expl}.\relax }}{78}{figure.caption.176}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }}{79}{figure.caption.179}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Using our interactive lens on baggage.}}{81}{figure.caption.183}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Experience years.\relax }}{83}{figure.caption.185}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Familiarity with 3D tools.\relax }}{83}{figure.caption.186}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Ease of untargeted exploration.\relax }}{84}{figure.caption.187}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value for untargeted exploration.\relax }}{84}{figure.caption.188}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value, untargeted exploration, vs other used tools.\relax }}{84}{figure.caption.189}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}) : Scenario 2 - Ease of untargeted exploration.\relax }}{85}{figure.caption.190}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value for untargeted exploration.\relax }}{85}{figure.caption.191}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value, untargeted exploration, vs other used tools.\relax }}{85}{figure.caption.192}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Which functions of this tool bring the most added-value vs tool you already know and have used for the same task (categorical).\relax }}{86}{figure.caption.193}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows).}}{87}{figure.caption.195}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Lung tumor visualization using slices and standard DVR.}}{89}{figure.caption.197}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Visualizing one day of aircraft trajectories over France.}}{90}{figure.caption.198}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail.}}{91}{figure.caption.200}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{93}{figure.caption.202}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Obstruction-free lens working.}}{78}{figure.caption.168}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Changing lighting parameters in the lens.}}{80}{figure.caption.177}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Construction of local transfer function $TF_{o}$. See \autoref {sec:inter_expl}.\relax }}{82}{figure.caption.183}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Performing local rotations in the lens allows better seeing the shape and thickness of the partially occluded target object (ninja star).\relax }}{83}{figure.caption.186}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Using our interactive lens on baggage.}}{85}{figure.caption.190}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Experience years.\relax }}{87}{figure.caption.192}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Familiarity with 3D tools.\relax }}{87}{figure.caption.193}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Ease of untargeted exploration.\relax }}{88}{figure.caption.194}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value for untargeted exploration.\relax }}{88}{figure.caption.195}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 1 - Tool's value, untargeted exploration, vs other used tools.\relax }}{88}{figure.caption.196}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}) : Scenario 2 - Ease of untargeted exploration.\relax }}{89}{figure.caption.197}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value for untargeted exploration.\relax }}{89}{figure.caption.198}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Scenario 2 - Tool's value, untargeted exploration, vs other used tools.\relax }}{89}{figure.caption.199}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Evaluation of lens-based baggage inspection (\autoref {sec:baggage}): Which functions of this tool bring the most added-value vs tool you already know and have used for the same task (categorical).\relax }}{90}{figure.caption.200}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Flow volume exploration with two different opacity transfer functions (top and bottom rows).}}{91}{figure.caption.202}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Lung tumor visualization using slices and standard DVR.}}{93}{figure.caption.204}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Visualizing one day of aircraft trajectories over France.}}{94}{figure.caption.205}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Inspecting an abnormal aircraft trail.}}{95}{figure.caption.207}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Revealing the \emph {corpus callosum} in a DVR of a set of DTI tracts.\relax }}{97}{figure.caption.209}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A lung CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm \relax }}{100}{figure.caption.211}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces A head CT scan rendered without shading on an android smartphone \relax }}{102}{figure.caption.215}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A head CT scan rendered on the hololens using isosurfaces \relax }}{104}{figure.caption.220}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A head CT scan rendered on the hololens using a raycasting algorithm \relax }}{105}{figure.caption.221}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A lung CT scan rendered on the oculus rift using a CUDA accelerated raycasting algorithm \relax }}{104}{figure.caption.218}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A head CT scan rendered without shading on an android smartphone \relax }}{106}{figure.caption.222}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A head CT scan rendered on the hololens using isosurfaces \relax }}{108}{figure.caption.227}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A head CT scan rendered on the hololens using a raycasting algorithm \relax }}{109}{figure.caption.228}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

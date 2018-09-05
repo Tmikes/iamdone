@@ -41,7 +41,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{amsmath}
 \usepackage{algpseudocode}
 \usepackage{algorithm}
-
+\usepackage{pdfpages}
 
 \algnewcommand\algorithmicforeach{\textbf{for each}}
 \algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
@@ -102,6 +102,7 @@ headsepline, % Uncomment to get a line under the header
 \supervisor{Christophe \textsc{Hurter}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\diplome{Doctorat en Informatique}
 \author{Michael \textsc{Traor\'e}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
@@ -189,6 +190,10 @@ headsepline, % Uncomment to get a line under the header
 }
 
 \begin{document}
+
+\includepdfset{pages=-} 
+\includepdf{couverture_these.pdf}
+
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
@@ -288,6 +293,18 @@ First, we proposed a new interactive visualization system for 3D scanned baggage
 
 Secondly, we proposed a novel technique which combines high-quality DVR with a fast, versatile, and easy to use, lens to support the interactive exploration of occluded data in volumes.
 \end{abstract}
+
+
+
+\begin{resume}
+\addchaptertocentry{\resumename} % Add the abstract to the table of contents
+L'occlusion est un problème dans la visualisation volumétrique car elle empêche la visualisation directe d'une région d'intérêt.
+Alors que la plupart des systèmes existants utilisent une combinaison de techniques de rendu en volume direct (DVR) et de leur fonction de transfert (TF) correspondante, nous avons envisagé des techniques d'interaction alternatives pour explorer ces ensembles de données.
+
+Tout d'abord, nous avons proposé un nouveau système de visualisation interactive pour les bagages numérisés en 3D, accéléré par les techniques GPGPU, conformément aux besoins que nous avons extraits de l'enquête contextuelle auprès des agents de sécurité de l'aéroport.
+
+Deuxièmement, nous avons proposé une nouvelle technique qui associe un enregistreur vidéo numérique de haute qualité à un objectif rapide, polyvalent et facile à utiliser pour prendre en charge l'exploration interactive des données occluses dans des volumes.
+\end{resume}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS

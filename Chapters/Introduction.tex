@@ -15,6 +15,49 @@
 
 %----------------------------------------------------------------------------------------
 
+\section{Synthèse}
+
+\subsection{Contexte}
+Les jeux de donnes volumétriques sont présents dans de nombreux domaines tels que l'imagerie médicale, la physique, les sciences naturelles, la sécurité, l'ingénierie, etc... Ils sont composés de voxels qui représentent la forme de ces données. En effet, un volume est une fonction scalaire de trois variables spatiales $ (x, y, z) \in \mathbb{R}^3$. Ces volumes peuvent être produits de trois manières principales. Le premier consiste à acquérir directement du monde réel grâce à des dispositifs spécifiques. À titre d'exemple, les scanners à rayons X permettent de collecter des données sur les bagages dans les aéroports. La seconde méthode consiste à générer les voxels dans un volume en utilisant des modèles mathématiques. Par exemple, un écoulement de fluide dans un bassin peut être représenté dans un volume de voxels grâce au modèle mathématique adéquat. La troisième façon de produire des ensembles de données volumétriques consiste à pixelliser un modèle de données vectorielles en utilisant des algorithmes. Cela peut être réalisé à plusieurs fins, par exemple pour récupérer de nouvelles informations grâce à différentes techniques de visualisation.
+
+
+Les données volumétriques sont très courantes de nos jours. L'importance de ce type de jeu de données augmente rapidement en raison du développement du champ d'acquisition de données 3D et des possibilités d'effectuer une visualisation avancée sur un poste de travail de bureau moderne avec un taux de raffraichissement interactif.
+
+Un jeu de données volumétrique peut être capturé par diverses technologies, par ex. \textbf {IRM (imagerie par résonance magnétique)}, \textbf {tomodensitométrie}, \textbf {TEP (tomographie par émission de positrons)}, \textbf {USCT (Tomographie par ultrason)}, voir \cite{radiology}. Il peut également être produit par des simulations physiques, par exemple, la dynamique des fluides ou des systèmes de particules.
+
+
+Après avoir acquis des données à partir de l'une de ces technologies, le premier défi consiste à résumer les principales caractéristiques du jeu de données. Cette étape initiale est généralement appelée l' \textbf{exploration de données}.
+
+\ textbf {L’exploration de données} est l’étape initiale de l’analyse des données, dans laquelle les utilisateurs explorent un ensemble de données volumétriques de manière non structurée afin de découvrir des modèles, des caractéristiques et des points d’intérêt initiaux. Ce processus n’a pas pour but de révéler chaque information contenue dans un jeu de données, mais plutôt de contribuer à la création d’une vue d’ensemble des tendances importantes et des points importants à étudier plus en détail. L'exploration de données peut utiliser une combinaison de méthodes manuelles et d'outils automatisés tels que les visualisations de données et les graphiques.
+
+
+Ces jeux de données tridimensionnels sont généralement volumineux (c.-à-d. Plus de 512$^{3}$) à mesure que la résolution et la précision du matériel utilisé lors de l'acquisition continuent de s'améliorer. Par conséquent, une carte graphique puissante est nécessaire pour visualiser ces ensembles de données avec une qualité élevée et de l' \ textbf {interactivité}.
+
+Pour résumer, il existe de nombreux défis tout au long du processus d'obtention d'informations, et de récupération d'informations pertinentes à partir des jeux de données tridimensionnels.
+Au cours de cette thèse, nous nous sommes principalement concentrés sur deux thèmes principaux:
+
+\begin{itemize}
+
+\item Une étude utilisateur où nous avons étudié l'activité spécifique de l'inspection des bagages, et proposé un système de visualisation interactif pour prendre en charge l'exploration de données volumétriques en fonction des exigences et des contraintes de ce domaine.
+
+\item Techniques Focus+Context pour la gestion de l'occlusion dans la visualisation de données volumétriques.
+\end{itemize}
+
+\subsection{Problématique}
+L'interaction avec des jeux de données volumétriques n'est pas triviale. En effet, la visualisation des volumes 3D est confrontée à de nombreux défis, tels que la gestion de l'occlusion et le taux de rafraichissement.
+
+
+Plus précisément, la plupart des techniques de gestion des occlusions existantes ne répondent pas simultanément à toutes les exigences suivantes:
+\begin{itemize}
+\item crée rapidement une vue dégagée de la cible (R1),
+\item permet une exploration locale souple de la zone cible (R2),
+\item conserve le contexte dans lequel la cible est visuellement incorporée (R3),
+\item gérer des ensembles de données où la cible et les objets gênants ne peuvent pas être séparé par des manipulations de la fonction de transfert (R4).
+\end{itemize}
+
+\subsection{ Question de recherche }
+
+A partir de ces observations, cette thèse aborde la question de recherche suivante:\textbf{\textit{Pouvons-nous créer des techniques interactives pour explorer des jeux de données volumétriques tout en tenant compte du contexte et en offrant de la souplesse à l'utilisateur? }}
 
 \section{Context}
 
