@@ -1,6 +1,131 @@
 \chapter{Interactive obstruction-free lensing for volumetric data visualization}
 \label{lensing}
 
+\section{Synthèse}
+
+Le rendu direct de volume (DVR) est une technique de visualisation omniprésente pour afficher des champs scalaires 3D avec des applications en ingénierie, en sciences des matériaux et en imagerie médicale. Bien que largement adopté et capable de gérer des ensembles de données volumineux de manière interactive, le DVR souffre intrinsèquement du problème de l' \emph{occlusion}: les structures d’intérêt situées au fond du volume, appelées dans la suite \emph{cibles}, peuvent être difficiles à repérer et/ou explorer.
+
+
+Pour y remédier, diverses techniques ont été conçues, notamment les fonctions de transfert, la segmentation, la sélection et le découpage. Cependant, toutes ces techniques ont des limites. Les mécanismes \emph{Globaux}, comme l'édition des fonctions de transfert, peuvent supprimer les objets gênants et les cibles s'ils ont des densités similaires. Dans certaines applications, des fonctions de transfert soigneusement conçues existent et doivent être utilisées sans modifications (significatives) pour faciliter la compréhension et la formation des utilisateurs \, \cite{4276082}. Les mécanismes \emph{Locaux} tels que la segmentation, la sélection ou le découpage sont plus efficaces pour manipuler les données confinées dans une région spatiale donnée. Cependant, beaucoup de ces mécanismes supposent que l'on peut facilement et précisément sélectionner des cibles pour les supprimer ou les conserver. Cela est difficile à faire lorsque \emph{par exemple} on n’a pas d’accès direct aux cibles, ou quand une interaction 3D importante est nécessaire pour sélectionner un ou des objets gênants.
+
+Une autre façon de gérer l'occlusion consiste à utiliser des \emph{lentilles}. Ce sont des outils légers et flexibles qui permettent aux modifications locales et temporaires de révéler des cibles tout en conservant le contexte de visualisation global, \cite{595268, CGF:CGF12871, 6327262}. Cependant, la sélection efficace de la cible et la suppression de tous les objets gênants intermédiaires constituent toujours un défi. Plus précisément, la plupart des techniques de gestion d'occlusion existantes ne répondent pas simultanément à toutes les exigences suivantes: Créer rapidement une vue non obstruée de la cible (R1), permettre une exploration locale flexible de la zone cible (R2), conserver le contexte dans lequel la cible est visuellement comprise (R3), et gèrer les ensembles de données où la cible et les objets gênants ne peuvent pas être séparés par des manipulations de la fonction de transfert (R4).
+
+\subsection{Contribution}
+Nous proposons une nouvelle technique qui associe un rendu volumique de haute qualité à une lentille rapide, polyvalente et facile à utiliser pour prendre en charge l'exploration interactive des données sujettes à l'occlusion dans les volumes. Dans la classification des déformations de proposée par \cite{595268}, nous utilisons une distorsion radiale non linéaire à travers une lentille interactive pour supprimer les éléments occlusifs et conserver le contexte global tout en grossissant un élément partiellement occulté. En ce qui concerne les techniques de lentilles volumétriques, nous présentons notre contribution comme suit: Nous proposons une lentille de déformation interactive qui grossit et écarte les objets occlusifs situés devant un point focal désigné qui répond aux quatre exigences; la combinaison du changement interactif flexible et en temps réel du point focal, des rayons courbés personnalisés utilisés pour rendu volumique, la déformation de la lentille et de la fonction de transfert dans la zone cible, sans avoir à modifier le point de vue ou à manipuler des paramètres complexes dans plusieurs vues liées.
+
+\subsection{Principe}
+
+Considérons l’algorithme typique de DVR: Étant donné un volume scalaire $V \subset \mathbf{R}^3 \rightarrow \mathbf{R}$, chaque pixel $\mathbf{x} \in I$ dans l’image DVR $ I \subset \mathbf{R}^2$ correspond à la composition des données échantillonnées le long d'un rayon qui traverse $ V $ et se termine à $\mathbf {x}$. En DVR classique (\autoref{f:fisheyefr}-a), ces rayons sont définis par la position de l'oeil $ \mathbf{e}$ et un vecteur unitaire de direction du rayon
+\begin{equation}
+\mathbf{d} = \frac{(\mathbf{x} - \mathbf{e})}{\| \mathbf{x} - \mathbf{e} \|}
+\end{equation}
+. Considérons maintenant un point focal $\mathbf{f} \in I $ (le centre de la lentille) avec un rayon $ R> 0 $. Nous modifions tous les rayons traversant la lentille (focus/0 zone $D = \{\mathbf{x} \in I | \| \mathbf{x} - \mathbf{f} \| \leq R\}$ pour enlever l'occlusion, magnifier et accentuer un objet cible. Notre comportement de rayon est divisé en trois étapes: (1) Fournir une vue claire de la cible en se en rapprochant et en poussant les objets gênants de côté. (2) Définir large un champ de vue (fisheye) pour mieux voir la cible. (3) Modifier les paramètres de la lentille, de l'éclairage et de l'opacité de la TF en temps réel pour mieux explorer la cible.
+
+\begin{figure}
+\centering
+
+\includegraphics [width=\textwidth]{images/principlefr.eps}
+
+\caption[Fonctionnement de la lentille sans occlusion]{Fonctionnement de la lentille sans occlusion. Une cible est (principalement) cachée par des objets gênants devant elle. (a) Le DVR classique affiche une petite partie de la cible. (b) Notre lentille recueille des rayons pour éviter les objets gênants. Une fois près de la cible, les rayons suivent à nouveau leurs trajectoires initiales. Cependant, seule une petite partie de la cible est visible. (c) Les rayons se dispersent et  rendent toute la cible visible. Enfin, nous ajustons les directions de visualisation et d'éclairage locales $\mathbf{a}$, $\mathbf{l}^{lens}$.}
+\label{f:fisheyefr}
+
+\end{figure}
+\section{Principle}
+\label{sec:principle}
+
+
+\subsubsection{Créer une vue dégagée}
+
+Le scénario que nous traitons est le suivant: Avec un volume $ V $, les utilisateurs en produisent un DVR, en utilisant tous les TF appropriés et les autres paramètres applicables. Lors de l'exploration de $V$ à partir de divers points de vue, (au moins) un point de vue $ (\mathbf{e}, \mathbf{d}) $ est trouvé, d'où une structure intrigante est \emph{partiellement} visible dans $ I $. Nous appelons cette structure \emph{cible}. Les utilisateurs veulent ensuite démêler rapidement et facilement la cible. Pour cela, nous procédons comme suit: Nous commençons par \emph{rassembler} tous les rayons traversant les pixels de la lentille (zone d'intérêt $ D $) pour suivre le vecteur de l'axe de la lentille.
+
+\begin{equation}
+ \mathbf{a} = \frac{(\mathbf{f} - \mathbf{e})}{\| \mathbf{f} - \mathbf{e} \| }
+ \end{equation}
+ . Comme expliqué ci-dessus, à l'emplacement $ \mathbf{f} $ du centre de la lentille, nous voyons une cible intéressante partiellement cachée. Par conséquent, par définition, les rayons recueillis passent \emph{à travers} des objets gênants pour atteindre cette cible, sinon nous ne la verrions pas. Nous contrôlons le rassemblement en définissant la direction des rayons passant par $ \mathbf{x} \in D $ à
+%
+\begin{equation}
+\mathbf{r}(\mathbf{x}) = (1- \alpha) \mathbf{a} + \alpha \mathbf{d},
+\label{eqn:collecte}
+\end{equation}
+%
+avec $ \alpha \in [0,1] $. Lorsque $\alpha = 0 $ (valeur par défaut), tous les rayons suivent l'axe de la lentille $ \mathbf{a} $ et peuvent donc mieux traverser les obstacles. Lorsque $ \alpha = 1 $, les rayons suivent une trajectoire droite. Changer $ \alpha $ avec la molette de la souris navigue en douceur entre l'effet de l'objectif, \emph{i.e.} ouvrir un "trou" dans le volume pour voir la cible et le DVR classique.
+
+\subsubsection{Définir un large champ de vision}
+Une fois que les rayons passent des obstacles (\autoref{sec: réunion}), nous voulons les \emph{les disperser} afin de mieux échantillonner la cible. Considérez que cette cible est à une certaine profondeur $ t_{target}> 0 $ dans $ V $. Après que les rayons aient passé les objets gênants, mais avant qu'ils n'atteignent la cible, \emph{ie}, passez au-delà d'une distance $ t_{min} <t_ {cible} $ à $ V $, nous les dévions au mieux échantillonnez la cible. Pour cela, nous définissons la position paramétrique d’un point de rayon sur
+%
+\begin{equation}
+\mathbf{p}(\mathbf{x}, t) = \mathbf{r}(\mathbf{x})t + \beta (\mathbf{x} - \mathbf{f}) (t-t_{min})
+\label{eqn:diffusionfr}
+\end{equation}
+%
+pour tout pixel $ \mathbf{x} \in D $ et tout $ t \geq t_{min} $. Ici, $ \beta \geq 0 $, ajusté via la molette de la souris tout en appuyant sur la touche Shift (\autoref{f:fisheyefr}-c), contrôle la diffusion des rayons: les petites valeurs agrandissent une petite zone de volume proche du rayon $\mathbf{r}(\mathbf{x}) $; des valeurs plus importantes échantillonnent davantage le volume derrière la lentille. Intuitivement, c'est comme si nous avions déplacé une loupe à une profondeur $ t_{min} $ dans $ V $. En résumé, après que l'utilisateur ait trouvé une cible intéressante mais partiellement fermée à l'aide du \emph{standard} DVR, notre lentille serre les rayons pour passer entre les objets gênants et les projette ensuite pour explorer la cible.
+
+\subsubsection{Exploration interactive de la cible}
+\begin{figure}
+\centering
+
+\includegraphics [width=\textwidth]{images/params.eps}
+
+\caption[Modification des paramètres d'éclairage dans la lentille.]{Modification des paramètres d'éclairage dans la lentille. (a) Coefficient spéculaire globlal constant. (b) Coefficient spéculaire élevé dans la lentille et faible en dehors. (c-f) La modification du vecteur lumière à l'intérieur de la lentille  produit l'effet d'une lampe de poche tournant autour de la cible.  Les icônes de la balle illustrent la direction du vecteur de lumière locale.}
+\label{f:paramsfr}
+
+\end{figure}
+
+
+Pour réaliser une exploration plus efficace, nous pouvons modifier de manière interactive plusieurs paramètres du DVR et de la lentille, comme suit.
+
+
+\par \textbf{Rayon de la lentille:} Le rayon $ R $, indiquant la taille du "trou" à ouvrir dans le volume pour voir la cible, est défini via la molette de la souris. Les paramètres $ \alpha $ et $ \beta $ (affectant respectivement la collecte et la diffusion des rayons) sont définis par la molette de la souris et les touches de modification. La valeur $ t_{min} $ (profondeur à partir de laquelle la diffusion commence) est définie à l'aide des touches fléchées.
+
+\par \textbf{Axe de l'objectif:} Les utilisateurs peuvent faire pivoter l'axe de la lentille $ \mathbf{a} $ en utilisant un trackball virtuel activé par le bouton droit de la souris. Changer $ \mathbf{a} $ échantillonne effectivement la cible à partir de nombreux points de vue, permettant à l'utilisateur de regarder autour d'elle pour voir les parties non visibles du point de vue actuel, mais \emph{sans changer} le point de vue. Ceci est une valeur ajoutée élevée, puisque le changement de point de vue peut nous amener à une vue où la cible est totalement invisible, nous ne savons donc pas exactement où activer la lentille. 
+
+\par \textbf{Lighting:} Nous modifions les paramètres d'éclairage volumétrique de Phong pour mieux explorer la cible, comme suit. Soit
+\begin{equation}
+\mathbf{c} = \mathbf{e} + t_{min} \mathbf{a}
+\end{equation}
+ un point en profondeur $t_{min} $ le long de l'axe de lentille, et soit $ B(\mathbf{c}, R) $ une sphère de rayon $ R $ autour de ce point (\autoref{f:fisheyefr}-b ). Nous appelons les voxels dans cette sphère dans le 'focus', et tous les autres voxels dans $ V $ sont "flous". Soit $ \phi $ le coefficient du terme spéculaire, défini sur une valeur élevée (par défaut: un).
+Premièrement, pour tous les voxels $ \mathbf{x} \in B (\mathbf{c}, R) $, nous utilisons un coefficient spéculaire
+\begin{equation}
+\phi(\mathbf{x}) = \phi (1-d)
+\end{equation}
+, où
+\begin{equation}
+ d = \frac{\| \mathbf{x} - \mathbf{c} \|}{R}
+\end{equation}.
+Pour tous les voxels en dehors de $ B (\mathbf {c}, R) $, nous utilisons $ \phi (\mathbf{x}) = 0 $. Par conséquent, les voxels proches du point focal $ \mathbf{c} $ apparaissent hautement spéculaires; plus loin de $ \mathbf{c} $, les voxels deviennent moins spéculaires et les voxels flous sont purement diffus. Deuxièmement, nous permettons à l'utilisateur de faire pivoter localement le vecteur de lumière en utilisant le même mécanisme de boule de commande que pour la rotation de l'axe de la lentille. Soit $ \mathbf{l}^{lens} $ ce vecteur, et soit $ \mathbf{l}^{global} $ le vecteur de lumière global utilisé par le DVR standard. Pour tous les voxels en question, nous utilisons un vecteur lumière
+\begin{equation}
+\mathbf{l}(\mathbf{x}) = (1 - d) \mathbf{l}^{lentille} + d \mathbf{l}^{global}
+\end{equation}.
+ 
+  Lorsque l'utilisateur effectue une rotation de $\mathbf{l}^{lens} $, la direction de la lumière changera visiblement au milieu de l'objectif, restera constante en dehors de celui-ci et se modifiera progressivement.
+
+
+Les deux mécanismes ci-dessus combinés produisent l'effet d'une lampe de poche en mouvement tournant autour d'une cible brillante incorporée dans une scène diffuse constamment éclairée. \autoref{f:paramsfr} montre ces mécanismes pour un ensemble de données de scanner thoracique contenant une tumeur profondément enfouie. Nous voyons comment le fait de tourner la lumière met en évidence des détails à petite échelle sur la surface cible (tumeur) sans changer le point de vue ou la position de la lentille. De plus, la forte spécularité de la lentille attire l’attention de l’utilisateur sur cette zone; L'éclairage diffus à l'extérieur de l'objectif met moins l'accent sur la zone contextuelle.
+
+\par \textbf{Opacité:} Nous modifions l'opacité de la fonction de transfert selon une idée similaire à celle utilisée pour l'éclairage. Soit $ TF_{o}^{global}: \mathbf{R} \rightarrow [0,1] $ la fonction d'opacité choisie par l'utilisateur et utilisée globalement pour le volume. Soit $ \gamma $  une impulsion gaussienne de la hauteur de l'unité centrée à la valeur de densité moyenne $ \bar{\rho} $ à $ B(\mathbf{c}, R) $ et avec un écart type $ \sigma $. Nous estimons $ \bar{\rho} $ et $ \sigma $ en considérant la densité $ \rho $ à 150 points échantillonnés aléatoirement dans $ B(\mathbf{c}, R) $. Des valeurs plus élevées pour le nombre d'échantillons donnent des résultats visuellement très similaires pour nos volumes testés pouvant atteindre 500$^3$ voxels, tout en nécessitant (légèrement) plus de coûts de calcul. Ensuite, pour les voxels dans $ B(\mathbf{c}, R) $, nous utilisons une fonction de transfert d'opacité efficace
+\begin{equation}
+TF_o = TF_{o}^{global} + (1-d) \gamma
+\end{equation}.
+ Pour les voxels en dehors de $ B $, nous utilisons $ TF_{o}^{global} $ (DVR standard).
+Ceci est utile lorsque l'utilisateur définit $ TF_{o}^{global} $ pour rendre la plupart des voxels hors de la lentille relativement transparents. Dans ce cas, $ TF_o $ rendra les voxels opaques dans $ B $, permettant ainsi de mieux voir les structures en focus. \autoref{f:paramsfr} a été généré de cette façon.
+
+\subsubsection{Transitions fluides}
+
+Si nous plions des rayons traversant les pixels de la lentille $ D $ (\autoref{eqn:collecte} et \autoref{eqn:diffusionfr}) et des rayons commençant à des pixels de $ I \setminus D $ comme des droites, des discontinuités apparaissent au bordures d'objectif. Nous résolvons ceci comme suit. Soit $ \mathbf{p}(\mathbf{x}, t) $ les voxels le long d'un rayon de lentille commençant au pixel de l'écran $ \mathbf{x} $, calculé par \autoref{eqn:diffusionfr}. Soit $ \mathbf{p}^{line}(\mathbf{x}, t) $ les voxels le long d'un rayon linéaire commençant à $ \mathbf{x} $, \emph{ie}, calculé en utilisant $ \alpha = 1 $ et $ \beta = 0 $ dans \autoref{eqn:collecte} et \autoref{eqn:diffusionfr} respectivement. Pour chaque valeur $ t $ le long de chaque rayon, on calcule le rayon interpolé
+\begin{equation}
+\bar{\mathbf{p}}(\mathbf{x}, t) = (1-f(d)) \mathbf{p}(\mathbf{x}, t) + f(d) \mathbf{p}^{ligne}(\mathbf{x}, t)
+\end{equation},
+ où $ d $ est la distance de $ \mathbf{x} $ à l'axe de la lentille (normalisée à l'unité en la divisant par $ R $) et $ f: [0,1] \rightarrow [0,1] $ est une fonction d'interpolation. Ensuite, nous utilisons les rayons $ \bar{\mathbf{p}}(\mathbf{x}, t) $ pour calculer le DVR par composition standard. De cette façon, les rayons varient efficacement de leurs versions modifiées (près de l'axe de l'objectif) aux lignes droites (à l'extérieur de l'objectif). Le réglage de $ f(d) = d^2 $ maintient les transitions d'interpolation proches de la bordure de la lentille, de sorte que la majeure partie de la lentille soit dédiée à l'affichage de l'effet fish-eye souhaité.
+
+Séparément, nous utilisons une animation de slow-in/slow-out \, \cite{Dragicevic:2011:TDA:1978942.1979233} pour introduire l'effet de la lentille. En activant la lentille, on fait varier les valeurs par défaut de $ \alpha $ et $ \beta $ ($ \alpha = 1 $, $ \beta = 0 $, \emph{c'est-à-dire}, DVR classique en ligne droite) à leur utilisateur réel. Définir des valeurs, calculer le rendu du volume à la volée et afficher les images résultantes. L'effet ressemble progressivement à l'ouverture d'un trou dans le volume. L'augmentation de la vitesse au début de l'animation permet de voir rapidement ce qui est révélé dans la lentille; la vitesse décroissante à la fin aide à voir où les objets gênants repoussés vont réellement. Cela donne également une certaine sémantique aux formes en mouvement, permettant d'interpréter le mouvement comme un grossissement d'une cible, et de garder le focus sur les entités visuelles pendant cette transition. Lors de la désactivation de la lentille, nous lisons l'animation dans le sens opposé, ce qui suggère de fermer le trou ouvert dans le volume.
+
+\NewPage
+
+
+
+
+
+
 Occlusion is an issue in volumetric visualization as it prevents direct visualization of the region of interest. While many techniques such as transfer functions, volume segmentation or view distortion have been developed to address this, there is still room for improvement to better support the understanding of objects' vicinity. However, most existing Focus+Context fail to solve partial occlusion in datasets where the target and the occluder are very similar density-wise. For these reasons, we investigate a new technique which maintains the general structure of the investigated volumetric dataset while addressing occlusion issues. With our technique, the user interactively defines an area of interest where an occluded region or object is partially visible. Then our lens starts pushing at its border occluding objects, thus revealing hidden volumetric data. Next, the lens is modified with an extended field of view (fish-eye deformation) to better see the vicinity of the selected region. Finally, the user can freely explore the surroundings of the area under investigation within the lens. To provide real-time exploration, we implemented our lens using a GPU accelerated ray-casting framework
 to handle ray deformations, local lighting, and local viewpoint manipulation. We illustrate our technique with five application scenarios in baggage inspection, 3D fluid flow visualization, chest radiology, air traffic planning, and DTI fiber exploration.
 
