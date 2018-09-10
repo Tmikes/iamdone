@@ -3489,5 +3489,58 @@
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
   \endentry
+
+  \entry{Zhai:1999:MGI:302979.303053}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZS}{%
+         family={Zhai},
+         familyi={Z\bibinitperiod},
+         given={Shumin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Morimoto},
+         familyi={M\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ihde},
+         familyi={I\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Fitts'law, computer input, computer vision, eye, eye tracking, gaze,
+  gaze tracking, multi-modal interface, pointing}
+    \strng{namehash}{ZSMCIS1}
+    \strng{fullhash}{ZSMCIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}
+    \verb{doi}
+    \verb 10.1145/302979.303053
+    \endverb
+    \field{isbn}{0-201-48559-1}
+    \field{pages}{246\bibrangedash 253}
+    \field{series}{CHI '99}
+    \field{title}{Manual and Gaze Input Cascaded (MAGIC) Pointing}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/302979.303053
+    \endverb
+    \list{location}{1}{%
+      {Pittsburgh, Pennsylvania, USA}%
+    }
+    \field{year}{1999}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
 \enddatalist
 \endinput

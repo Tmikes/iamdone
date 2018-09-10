@@ -1,8 +1,91 @@
 \chapter{User Study: Interactive exploration of 3D scanned baggage} % Main chapter title
 \label{DesignStudy}
 
+\section{Synthèse}
+Au cours des premiers mois de ma thèse, j'ai réalisé une étude d'utilisateur d'un eye tracker avec des systèmes interactifs pour les contrôleurs de la circulation aérienne. \textbf{Le but de ce travail était assez similaire à celui que je décris dans ce chapitre: \textit{Fournir des interactions fluides et rapides pour faciliter les tâches des utilisateurs.}} Les résultats de ce travail ont été publiés dans les actes de la Conférence HCI-Aero en 2016. Comme pour l'inspection des bagages, les opérateurs doivent faire face à une tâche critique avec une charge de travail cognitive importante. En outre, de nombreuses vies peuvent être affectées par une seule mauvaise décision. Ces raisons ont été les principales motivations pour tenter de simplifier et de moderniser ces systèmes (interface de contrôle du trafic aérien et logiciel de visualisation des bagages).
+
+
+Nous avons présenté une exploration des interactions
+offertes par un eye-tracker dans un contexte de contrôle du trafic aérien
+. Cette étude a été réalisée en étroite collaboration
+implication des contrôleurs aériens pendant toute les phases de conception
+(observation in situ, brainstorming, conception,prototypage, conception de solutions, développement, tests). Nous avons développé de nouvelles techniques d'interaction. La plus appréciée
+des techniques étaient le zoom centré sur le regard, le SmartPan, le
+sélection combinant le regard et un interrupteur, et la carte de chaleur. Les 2 principales recommandations de conception issues de cette étude consiste d'abord à valider les actions par un troisième périphérique
+pour une  tâche critique; et deuxièmement, favoriser les interactions non-pénalisantes
+en cas de mauvaise détection de l'eye tracker. En guise d'exemple, nous pouvons citer le pointage magique (\cite{Zhai:1999:MGI:302979.303053}) qui permet de gagner en vitesse sans perturber la tâche en cours.
+
+En ce qui concerne les perspectives, on peut mentionner les suivantes:
+le calibrage implicite de l'eye-tracker et l'utilisation de l'eye-tracker pour la formation des contrôleurs. Tout d'abord, le calibrage actuel prend du temps; ce serait très intéressant de trouver de
+nouvelles méthodes d'étalonnage plus rapides. Ensuite, plusieurs instructeurs
+contrôleurs ont exprimé leur intérêt pour l' eye-tracker en tant que
+moyens d'analyse des méthodes de travail des apprentis. Cela pourrait en fait faciliter l'enseignement des bonnes méthodes. 
+
+
+Les bagages numérisés en 2D peuvent souffrir principalement quatre stratégies de dissimulation:
+\begin{itemize}
+
+\item \textbf{Superposition}: une menace (par exemple un objet interdit comme un couteau, un cutter…) peut être placée derrière des matériaux denses. Parfois, il est possible de voir à travers ces objets gênats en utilisant certaines fonctionnalités telles que la pénétration élevée (puissance de rayons X améliorée) ou le traitement d'images (amélioration du contraste). 
+
+\item \textbf{Positionnement}: En fonction de son emplacement dans le bagage, une menace peut être difficile à détecter. Les objets situés dans les coins, sur les bords ou à l'intérieur du cadre de la valise sont très difficiles à identifier.
+
+\item \textbf{Dissociation}: Une autre façon de dissimuler une menace est de la séparer et de la répartir dans le bagage (les armes ou les explosifs sont composés de nombreux éléments séparés tels que la gâchette, le canon…). Cette dissociation peut être combinée à d'autres techniques de dissimulation.
+
+\item \textbf{Lure}: Une personne mal intentionnée peut utiliser un leurre pour cacher la menace réelle. Par exemple, une menace mineure comme un petit ciseau peut être clairement visible et attirer l'attention des agents de sécurité alors qu'une menace plus importante reste cachée.
+
+\end{itemize}
+
+L’exploration des bagages en 3D est une solution potentielle de ces limitations, mais au mieux de notre connaissance, peu de systèmes existants ont étudié ce domaine d’activité avec des outils d’exploration volumétrique interactifs (voir \cite{Li:2012:LVV:2425296.2425325}). Même si des travaux approfondis ont été réalisés dans l'exploration et la manipulation de l'analyse 3D médicale, il existe une excellente occasion  d'adapter et de développer de nouvelles techniques d'interaction et de manipulation de données pour prendre en charge l'exploration des bagages en 3D.
+
+Nous avons effectué des observations sur site avec une enquête contextuelle (observation d'un jour dans l'un des principaux aéroports français). Nous avons également organisé un brainstorming avec quatre spécialistes de la sécurité, à partir desquels nous avons défini des cas d'utilisation pertinents. Grâce à ces analyses, nous avons extrait un ensemble de besoins et d'exigences de haut niveau:
+\begin{itemize}
+\item VIS: les utilisateurs doivent visualiser le contenu des bagages.
+\item EXP: les utilisateurs doivent explorer les bagages avec un système de navigation interactif.
+\item  OCL: le système doit fournir des outils pour résoudre les problèmes d’occlusion; la
+la superposition d'éléments à l'intérieur des bagages empêche leur visualisation.  
+\item INT: L'utilisateur doit explorer les bagages avec des interactions simples. Les connaissances des utilisateurs sont assez limitées en ce qui concerne le traitement des données volumétriques pour comprendre les techniques impliquées et leurs paramètres.
+
+\end{itemize}
+
+
+
+Notre logiciel propose des fonctionnalités de sélection interactive et de manipulation de voxel. Pour implémenter ces interactions, nous devions trouver un moyen d'extraire des objets des données volumetriques. Pour ce faire, nous avons exploré de nombreux algorithmes de détection d’objets tels que les arbres de contour (par \cite{carr_computing_2000}) et les arborescences de branches par les algorithmes (\cite{pascucci_multi-resolution_2004}). Mais, selon la littérature et notre expérience, ces algorithmes sont coûteux en calcul et prennent beaucoup de temps, en particulier pendant les étapes de prétraitement. En outre, cet algorithme nécessite de nombreux paramètres et modifications pour traiter la variété des éléments possibles disponibles qui composent un bagage. Pour ces raisons, nous avons développé notre propre algorithme de sélection. Il est basé sur un algorithme de propagation multi-threads en force brute. La première étape consiste à lancer un seul rayon vers les données de volume où la sélection doit commencer.
+
+Considérons l'algorithme typique de l'enregistreur vidéo numérique: compte tenu d'un volume scalaire $V \subset \mathbf{R}^3 \rightarrow \mathbf{R}$, chaque pixel $\mathbf{x} \in I$ dans une image de volume rendering direct (DVR) $I \subset \mathbf{R}^2$ correspond donc à la composition de données échantillonées le long d'un rayon qui passe à travers $V$ et s'arrête à $\mathbf{x}$. De tels rayons peuvent être définis par la position de l'oeil $\mathbf{e}$ et le vecteur unitaire de la direction de du rayon
+\begin{equation}
+\mathbf{d} = \frac{ (\mathbf{x} - \mathbf{e}) }{ \| \mathbf{x} - \mathbf{e} \| }
+\end{equation}
+tels que l'équation d'un rayon qui passe par un pixel est:
+\begin{equation}
+\mathbf{x}(t) =  \mathbf{e} + t\mathbf{d}
+\end{equation}
+où $x$ est l'emplacement de la fenêtre correspondant au pixel.
+  Nous arrêtons sa progression dès qu’il atteint un voxel visible. 
+
+\begin{figure}
+\centering   
+ \includegraphics[width=0.9\textwidth]{Figures/deletionfr.png}
+	\caption[ Résolution du problème d'occlusion en supprimant des objets d'une vue à une autre.]{Résolution du problème d'occlusion en supprimant des objets d'une vue à une autre. 1- L'utilisateur veut retirer les barres du bagage. 2- Après un double clic avec l'outil de suppression, l'objet est supprimé de la vue principale. 3- Après l'activation de la 2ème vue, les objets retirés sont visibles à l'extérieur des bagages.}
+	\label{f:deletionfr}
+\end{figure}
+
+Deuxièmement, nous propageons la sélection dans toutes les directions. Pour chaque voxel rencontré, nous vérifions s'il est visible en fonction de la fonction de transfert en cours. Si le voxel est visible, nous continuons la propagation de la sélection. Nous nous sommes propagés dans les bagages en lançant de nombreux threads à partir de l'endroit où le premier voxel visible a été touché. Le nombre de threads dépend du nombre de processeurs logiques présents dans le matériel actuel. Chaque thread vérifie si ses voisins sont visibles et continue à se propager vers les voxels visibles. Cet algorithme de propagation s'arrête chaque fois qu'il n'y a plus de voxels visibles ou se propager, voir \autoref{f:deletionfr}.
+
+
+
+
+Vu que nous avons développé ce système avec quatre agents de sureté, nous avons pu valider l’utilité de chaque technique développée. Grâce à un processus interactif, les utilisateurs ont donné leurs commentaires tout au long du processus de développement, ce qui a aidé à évaluer et à guider les techniques d'interaction proposées. Le feedback était principalement positif et les utilisateurs n'ont rencontré aucune difficulté particulière avec notre système. Les utilisateurs ont surtout apprécié l'interface simple avec peu de widgets et le nombre réduit d'interactions. Étonnamment, les utilisateurs étaient très intéressés à utiliser la fonction de transfert. L'histogramme et sa fonction de transfert ont également été appréciés même si la technique correspondante n'est pas simple à comprendre. Nous supposons que notre interface motive les utilisateurs à en apprendre davantage sur la technique derrière elle. Les utilisateurs ont également mentionné la nécessité d'afficher la densité réelle (la valeur numérique) de l'objet sélectionné. Ils demandent également à plusieurs reprises si la couleur affichée correspond à celle actuellement utilisée dans les paramètres opérationnels. Cela confirme le fait que les utilisateurs sont disposés à conserver certaines fonctionnalités existantes et préfèrent utiliser un système qu'ils connaissent déjà.
+Les utilisateurs ont également apprécié nos exigences de conception avec des transitions en douceur et des investigations incrémentielles des bagages.
+Toutes ces observations et évaluations qualitatives méritent d'être validées par des évaluations appropriées qui ne relèvent pas de cette étude.
+Notre système est entièrement fonctionnel et interactif pour effectuer des explorations de bagages. De nombreuses améliorations peuvent encore être apportées afin d'améliorer ses utilisations en termes de nouvelles interactions et de réduction du temps d'exploration.
+Techniquement parlant, la sélection du point de vue adéquat peut être améliorée avec plus de 6 faces étudiées. Mais dans la pratique, ce paradigme simple reste approprié. Si le point de vue calculé n'est pas entièrement satisfaisant, on peut faire pivoter manuellement les bagages. Néanmoins, l'algorithme développé ne fournira pas nécessairement la meilleure solution (l'occlusion la plus basse) mais une solution satisfaisante.
+\par Notre objectif était de développer des interactions innovantes pour effectuer l'exploration des bagages mais nous n'avons pas vraiment pris en compte l'optimisation de la durée de l'exploration. La manipulation du volume 3D peut prendre du temps, tout comme nos nouvelles techniques d'interaction. Nous pensons que ces techniques ont un grand potentiel, car elles permettent d’explorer plus en détail un bagage suspect. Les techniques d'investigation existantes (avec l'image 2D aplatie) permettent de détecter rapidement et efficacement des bagages «propres». Nos outils peuvent alors être une bonne solution pour enquêter davantage sur une menace potentielle avec plus de temps disponible.
+
+
+
+
 \section{ Preliminary user study }
-During the first months of my thesis, I carried out a user study of eye tracking devices to build interactive systems for Air Traffic Controllers. \textbf{ The purpose of that was quite similar to the one I describe in this chapter: \textit{Provide fluid and fast interactions to ease the tasks of the users.} }
+During the first months of my thesis, I carried out a user study of eye tracking devices to build interactive systems for Air Traffic Controllers. \textbf{ The purpose of that was quite similar to the one I describe in this chapter: \textit{Provide fluid and fast interactions to ease the tasks of the users.} } The results of this work have been published in the proceedings of the HCI-Aero conference in 2016. As with baggage inspection, the operators deal with a critical task with a lot of cognitive workload. In addition, many lives can be affected by a single bad decision. Theses reasons were the main motivations to try to simplify and modernize these systems (Air traffic control interface and Baggage visualization software). 
 
 
 While the mouse is the main input device for interacting with different screens, many alternatives do exist. In this work, we reported our exploratory study with the usage of
@@ -35,7 +118,7 @@ interactions with existing systems:
 \begin{itemize}
 \item pan and zoom to set the radar view configuration,
 \item entering a clearance,
-\item distance computation between planes using the alidade,
+\item distance computation between planes using the "alidade",
 \item display of the separation distance between aircraft,
 display of velocity speed vectors (position of the aircraft in
 3, 6, or 9 minutes).
@@ -307,7 +390,13 @@ this, we proposed a validation of pie menu items via a button
 or keyboard. We also added a visual feedback on the gazed
 item in order to meet user' needs during the first test
 session.
-To compensate the loss of calibrations noticed during the
+We developed new interaction techniques. The most appreciated
+techniques were the gaze centered scroll, the SmartPan, the
+selection combining the gaze and a switch, and the heat
+map. The 2 main design recommendations emerging from
+this study are, first, to validate the actions by a third device
+for critical task; and second, to favor non penalizing
+interactions in case of poor detection of the eye tracker. To compensate the loss of calibrations noticed during the
 tests, we implemented an algorithm called Bubble Cursor  (see
 \cite{Grossman:2005:BCE:1054972.1055012}). This algorithm consisting in computing the nearest
 neighbor of the user gaze location. Thus, even if the eye is
@@ -480,7 +569,7 @@ The displayed 2D scanned image can suffer from four issues.
 \subsection{ Requirements }
 
 
-3D baggage scan exploration are one potential solution of such limitations, but to the best of our knowledge no previous existing system investigated this activity domain with interactive volumetric exploration tools. Even if extensive works have been done in medical 3D scan exploration and manipulation ~\cite{preim2013visual}, there is a great opportunity to adapt and develop new interaction and data manipulation techniques to support 3D baggage exploration.
+3D baggage scan exploration are one potential solution of such limitations, but to the best of our knowledge fiew previous existing system investigated this activity domain with interactive volumetric exploration tools (\cite{Li:2012:LVV:2425296.2425325}). Even if extensive works have been done in medical 3D scan exploration and manipulation ~\cite{preim2013visual}, there is a great opportunity to adapt and develop new interaction and data manipulation techniques to support 3D baggage exploration.
 
 We performed on site observations with contextual inquiry (one day observation in one of the major French airport). We also conducted one brainstorming with four security practitioners from which we defined relevant use cases. Thanks to these analysis, we extracted a set of top level needs and requirements :
 
@@ -492,6 +581,10 @@ We performed on site observations with contextual inquiry (one day observation i
 superposition of items inside the luggage hinders their visualization.
 
 •	INT: User need to explore luggage with simple interactions. User knowledge is too limited regarding volumetric data processing to understand the involved techniques and their parameters.
+
+
+Les tomographes génèrent des fichiers contenant toutes les densités rencontrées par les rayons X à travers les bagages. Ces fichiers contiennent généralement environ 30 millions de valeurs. Pour charger et afficher un tel ensemble de données dans un système interactif, nous avons utilisé la puissance de calcul parallèle de la carte graphique. Nous avons utilisé un programme écrit en C\# combiné avec la plateforme de calcul parallèle CUDA et un ensemble de techniques GPGPU. Pour afficher le jeu de données, nous avons utilisé un algorithme standard de diffusion de rayons. Les contributions de votre travail reposent sur de nouvelles interactions et leurs algorithmes associés.
+
 
 \section{ Interactive exploration of 3D scanned baggage }
 
