@@ -30,8 +30,7 @@ Considérons l’algorithme typique de DVR: Étant donné un volume scalaire $V 
 \label{f:fisheyefr}
 
 \end{figure}
-\section{Principle}
-\label{sec:principle}
+
 
 
 \subsubsection{Créer une vue dégagée}
@@ -118,6 +117,11 @@ Si nous plions des rayons traversant les pixels de la lentille $ D $ (\autoref{e
  où $ d $ est la distance de $ \mathbf{x} $ à l'axe de la lentille (normalisée à l'unité en la divisant par $ R $) et $ f: [0,1] \rightarrow [0,1] $ est une fonction d'interpolation. Ensuite, nous utilisons les rayons $ \bar{\mathbf{p}}(\mathbf{x}, t) $ pour calculer le DVR par composition standard. De cette façon, les rayons varient efficacement de leurs versions modifiées (près de l'axe de l'objectif) aux lignes droites (à l'extérieur de l'objectif). Le réglage de $ f(d) = d^2 $ maintient les transitions d'interpolation proches de la bordure de la lentille, de sorte que la majeure partie de la lentille soit dédiée à l'affichage de l'effet fish-eye souhaité.
 
 Séparément, nous utilisons une animation de slow-in/slow-out \, \cite{Dragicevic:2011:TDA:1978942.1979233} pour introduire l'effet de la lentille. En activant la lentille, on fait varier les valeurs par défaut de $ \alpha $ et $ \beta $ ($ \alpha = 1 $, $ \beta = 0 $, \emph{c'est-à-dire}, DVR classique en ligne droite) à leur utilisateur réel. Définir des valeurs, calculer le rendu du volume à la volée et afficher les images résultantes. L'effet ressemble progressivement à l'ouverture d'un trou dans le volume. L'augmentation de la vitesse au début de l'animation permet de voir rapidement ce qui est révélé dans la lentille; la vitesse décroissante à la fin aide à voir où les objets gênants repoussés vont réellement. Cela donne également une certaine sémantique aux formes en mouvement, permettant d'interpréter le mouvement comme un grossissement d'une cible, et de garder le focus sur les entités visuelles pendant cette transition. Lors de la désactivation de la lentille, nous lisons l'animation dans le sens opposé, ce qui suggère de fermer le trou ouvert dans le volume.
+
+
+Nous avons évaluer notre lentille avec des utilisateurs sur un scénario d'inspection de baggages. Selon les sujets, notre outil peut leur fournir une meilleure perception des articles à l’intérieur du bagage par rapport aux appareils à rayons X classiques à un seul point de vue qu’ils utilisent couramment. Cependant, notre outil ne doit pas être utilisé pour l'inspection typique des bagages à main, dont le temps d'inspection autorisé est très faible (15 à 20 secondes). Notre outil est beaucoup plus intéressant pour inspecter les bagages enregistrés, où les fenêtres d’inspection vont jusqu’à 3 minutes. La valeur ajoutée perçue pour ce cas d'utilisation est également plus élevée: l'ouverture des bagages enregistrés pour une inspection manuelle est beaucoup plus compliquée et longue que pour les bagages de cabine. De plus, le seul système d’inspection des bagages enregistrés que les sujets connaissaient est un scanner qui vise à \emph{détecter} automatiquement les menaces via des images radiographiques; ce système souffre de faux positifs, de sorte qu'un outil d'examen manuel comme le nôtre pourrait rapidement éliminer ces faux positifs, et donc les délais d'ouverture des bagages enregistrés. Enfin, plusieurs sujets ont suggéré qu’ajouter une fonction pour afficher une vue de coupe 2D classique (activée par une pression sur une touche et alignée avec le point focal) serait utile car cela donnerait des détails supplémentaires.
+
+
 
 \NewPage
 

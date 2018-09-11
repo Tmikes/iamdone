@@ -1,6 +1,59 @@
 \chapter{Volume rendering on mobile devices (Virtual Reality, Augmented Reality, Mixed Reality) }
 \label{mixedReality}
 
+
+\section{Synthèse}
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{images/vrraycasting}
+\caption{Un scan pulmonaire rendu dans l'Oculus Rift en utilisant un algorithme de lancer de rayon accéléré par CUDA}
+\label{fig:vrfr}
+\end{figure}
+Ce chapitre présente les recherches que j'ai commencées à la fin de cette thèse.
+Nous abordons les défis du rendu de volume sur les appareils mobiles (réalité virtuelle, réalité augmentée et réalité mixte). Les appareils mobiles sont de plus en plus populaires. Bien que leurs spécifications techniques puissent être totalement différentes d’un appareil à l’autre, ils deviennent toutes plus puissants en termes de mémoire, de processeur, de processeur graphique, et de fonctionnalités.
+
+Au cours de cette étude, nous avons implémenté un moteur de rendu de volume basé sur un algorithme de lancer de rayon accéléré par CUDA sur un casque de réalité virtuelle. Le dispositif que nous avons utilisé était l' Oculus Rift \cite{oculus}. Les performances sur  l'occulus rift étaient à moitié inférieures à celles d'un PC. Cela est dû au fait que tous les calculs sont effectués par le CPU et le GPU du PC auquel le casque est connecté. Cependant, il est possible d’augmenter la cadence simplement en réduisant la résolution ou la qualité des images rendues. \autoref{fig:vrfr} montre un scan pulmonaire rendu dans l' oculus rift en utilisant un algorithme de lancer de rayon accéléré par CUDA. Jusqu'à présent, nous n'avons pas développé les interactions pour manipuler et modifier le volume à l'intérieur du dispositif monté sur la tête. Nous utilisons toujours la souris même s'il n'est pas simple d'utiliser des périphériques externes lorsque vous portez un casque.
+
+
+
+\begin{figure}
+\centering
+\includegraphics [width=0.45\textwidth] {images/arnoshading}
+\caption{Un scan de tête réalisé sans shading sur un smartphone Android }
+\label{fig:arnoshadingfr}
+\end{figure}
+
+Les smartphones étant extrêmement accessibles, la réalité augmentée pourrait apporter davantage d'expérience dans la visualisation de jeux de données volumétriques. Bien que le temps de calcul du DVR est plus cher que celui des données de polygone, il y a
+toujours besoin de mettre en œuvre du DVR sur les derniers appareils mobiles avec leurs
+nouvelles technologies graphiques. Avant de développer une application de réalité augmentée sur un smartphone, la première étape consiste à rendre le volume. Dans cette première étape de notre étude, nous venons de réaliser un prototype grâce à la plate-forme Unity pour afficher un volume 3D. Ce prototype de rendu uniquement permet des interactions de rotation et de zoom. L'algorithme de raycasting a été implémenté en utilisant le langage de shader Cg/HLSL. Notre prototype n'effectue aucun ombrage/shading dans le processus de rendu, voir \autoref{fig:arnoshadingfr}.
+
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{Figures/mixediso}
+\caption{Un scan de tête rendu dans l'hololens en utilisant des isosurfaces }
+\label{fig:mixedisofr}
+\end{figure}
+
+Le GPU des Hololens n'est pas vraiment puissant et possède une faible capacité de mémoire (environ 600 Mo). Sachant que la résolution par défaut et maximale prise en charge est de 720p (1268x720) pour chaque œil, il est necessaire de calculer deux images avec une résolution inférieure à cette valeur maximale. Pour développer une application holographique, on peut soit utiliser le framework Unity, soit développer directement une application holographique universelle en utilisant Visual Studio et directX. L'utilisation du framework Unity pour développer une application holographique est assez simple. Nous testons différents types d’algorithmes de rendu de volume: rayasting, textures 3D et isosurfaces.
+Nous avons utilisé Cg/HLSL dans Unity pour accélérer le processus de rendu. Bien que le résultat final fût beau, le prototype n'était pas interactif en raison des faibles fréquences d'images (entre 1 et 5) en fonction de l'algorithme utilisé et des différents paramètres tels que le nombre d'isosurfaces, le pas de raycasting ou le nombre de tranches calculées lors de l'utilisation de textures 3D.
+
+
+La seconde solution consistait à développer directement une application holographique universelle en utilisant Visual Studio et DirectX. Cela nous aide à gagner plus de vitesse et de cadence comparativement à chacun de ces algorithmes (voir \autoref{fig:mixedisofr} et \autoref{fig:mixedrayfr}).
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics [width=\textwidth]{Figures/mixedray}
+\caption{Un scan de tête rendu dans l'hololens en utilisant un algorithme de lancer de rayon }
+\label{fig:mixedrayfr}
+\end{figure}
+
+\NewPage
+
 This chapter presents the research I have started at the end of this thesis. 
 We address the volume rendering challenges on mobile devices (Virtual reality, augmented reality, and mixed reality). Mobile devices are getting more and more popular across the population. Although their technical specifications can be totally different from one device to another, they are all becoming more powerful int terms of memory, CPU, GPU, and features.
 
