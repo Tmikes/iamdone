@@ -2394,6 +2394,49 @@
     \field{year}{2006}
   \endentry
 
+  \entry{storytelling}{book}{}
+    \name{author}{4}{}{%
+      {{hash=RNH}{%
+         family={Riche},
+         familyi={R\bibinitperiod},
+         given={N.\bibnamedelima Henry},
+         giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Diakopoulos},
+         familyi={D\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Carpendale},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {A K Peters/CRC Press}%
+    }
+    \strng{namehash}{RNH+1}
+    \strng{fullhash}{RNHHCDNCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{isbn}{9781138197107}
+    \field{title}{Data-Driven Storytelling}
+    \field{year}{2018}
+  \endentry
+
   \entry{oculus}{misc}{}
     \name{author}{1}{}{%
       {{hash=RO}{%
