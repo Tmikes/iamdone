@@ -3,6 +3,36 @@
 
 \section{Synthèse}
 
+Dans le chapitre \ref{DesignStudy}, nous avons étudié l'activité des agents de sécurité des  aéroports afin de fournir un outil d'exploration 3D pertinent. Grâce aux entretiens contextuels, nous avons extrait la nécessité pour le nouveau système 3D de remplacer efficacement l'ancien système bidimensionnel. Les systèmes 2D existants peuvent souffrir de 4 stratégies de dissimulation principales. Le premier est la \textbf{superposition} où une menace peut être mise à l'abri parmi les matériaux denses. Bien qu'il soit possible de voir à travers un tel «bouclier» en utilisant une pénétration élevée (puissance de rayons X améliorée) ou un traitement d'image (amélioration du contraste), ces techniques ne sont pas universellement disponibles et nécessitent également un réglage précis de nombreux paramètres, ce qui ralentit l'inspection. Deuxièmement, le \textbf{positionnement} peut être utilisé car les objets situés dans les coins, les bords ou dans le cadre du bagage sont très difficiles à repérer. Troisièmement, la \textbf{dissociation} permet de dissimuler une menace en répartissant ses parties dans le bagage, \emph{par example}, en démontant une arme et en dispersant ses parties. Enfin, un \textbf{leurre} peut être utilisé. En fait, une menace mineure (leurre) comme des petits ciseaux est clairement visible et attire l’attention de l’agent de sécurité qui peut manquer la menace réelle. Dans cet chapitre \ref{DesignStudy}, nous avons proposé un outil de visualisation interactif pour l’inspection en 3D des bagages. Ce framework offre différents types d'interaction pour effectuer une inspection virtuelle des bagages tout en traitant les problèmes d'occlusion.
+
+Dans le chapitre \ref{lensing}, nous nous sommes concentrés sur les stratégies de gestion de l'occlusion. En effet, l'occlusion est un problème dans la visualisation volumétrique car elle empêche la visualisation directe de la région d'intérêt. Bien que de nombreuses techniques, telles que les fonctions de transfert, la segmentation de volume ou la distorsion de vue, aient été développées pour résoudre ce problème, des améliorations sont encore possibles pour mieux comprendre le voisinage des objets. Cependant, la plupart des techniques Focus+contexte existantes ne parviennent pas à résoudre une occlusion partielle dans des ensembles de données où la cible et le bloqueur sont très proches du point de vue de la densité. Pour ces raisons, nous avons proposé une nouvelle lentille focus + contextuelle répondant simultanément aux quatre exigences suivantes: Créer rapidement une vue non obstruée de la cible (R1), permettre une exploration locale flexible de la zone cible (R2), garder le contexte dans lequel la cible est incorporée visuellement (R3) et gèrer les ensembles de données où la cible et les objets gênant ne peuvent pas être séparés par des manipulations de la fonction de transfert (R4).
+
+
+
+Dans le chapitre \ref{mixedReality}, nous abordons les problèmes de rendu de volume sur les appareils mobiles (réalité virtuelle, réalité augmentée et réalité mixte). Les appareils mobiles sont de plus en plus populaires dans la société. Bien que leurs spécifications techniques puissent être totalement différentes d’un appareil à l’autre, ils deviennent tous plus puissants en termes de mémoire, de processeur, de processeur graphique et de fonctionnalités. Alors que \textbf{réalité virtuelle (VR)} immerge les utilisateurs dans un environnement numérique entièrement artificiel avec des appareils tels que HTC vive, \textbf{réalité augmentée (AR)} recouvre des objets virtuels dans un environnement réel grâce à des appareils tels que les smartphones. De plus, \textbf {réalité mixte (MR)} ne se limite pas aux superpositions, mais ancre les objets virtuels dans le monde réel afin que l'utilisateur puisse interagir avec le monde réel et l'environnement virtuel. Nous avons étudié comment fournir des outils de rendu de volume interactifs sur chacun des types de ces périphériques.
+
+
+Dans cette thèse, nous présentons deux contributions principales.
+
+\begin{itemize}
+
+\item Tout d'abord, nous avons proposé un nouveau système de visualisation interactive pour les bagages numérisés en 3D, accéléré avec les techniques GPGPU, en fonction des besoins que nous avons extraits de l'enquête contextuelle auprès des agents de sécurité de l'aéroport.
+
+\item Deuxièmement, nous avons proposé une nouvelle technique qui associe un rendu volumétrique basé sur du lancer de rayon à une lentille rapide, polyvalente et facile à utiliser pour prendre en charge l'exploration interactive des données occluses dans un  volume.
+
+\end{itemize}
+
+
+Nous travaillons actuellement sur un framework de rendu de volume pour des environnements de réalité mixte. En effet, nous essayons de contourner les limites de calcul grâce à des stratégies telles que le calcul à distance holographique afin de fournir de nouvelles interactions rapides.
+
+De plus, nous prévoyons d’adapter notre framework pour visualiser des scans animés. Visualiser le même jeu de données à des états différents dans le temps peut offrir de nombreux avantages pour faciliter l'exploration des données. Les potentiels pour une telle visualisation peuvent être les suivants. Tout d’abord, sachant que le mouvement transmet des informations, l’animation 3D a une qualité supérieure. L'utilisation de cette technique pour visualiser les fluides peut être très utile. Aussi, pour un visuel
+ attrayant, l'animation 3D est beaucoup plus réaliste. En effet, un fluide en mouvement ou un cœur battant est plus réaliste et
+ attrayant qu'un scan statique. Cependant, avec une telle visualisation, de nombreux algorithmes d’optimisation doivent être utilisés pour
+     permettre l'interactivité avec différents états des mêmes jeux de données en même temps.
+
+\NewPage
+
+
 As seen in the previous chapters, the visualizations of volumetric datasets are not so trivial. These visualizations are used in various type of field such us medicine, physics, biology, archaeology, etc. These visualizations face different types of difficulties and challenges according to the application domain. For instance in art, the most important challenge is the beauty of the generated image while in most other application domains, the frame rate is also important.
 
  
@@ -27,6 +57,7 @@ In this thesis we present two main contributions.
 \item Secondly, we proposed a novel technique which combines high-quality DVR with a fast, versatile, and easy to use, lens to support the interactive exploration of occluded data in volumes.
 
 \end{itemize}
+
 
 
 \section{summary} 
@@ -55,7 +86,7 @@ Several improvements to our proposal are possible, as follows. First and foremos
 
 \section{Perspective and future work}
 
-Further evaluation should be carried out to strengthen our contributions during this thesis. It can also help top identify more weaknesses of our propositions in order to correct them. 
+Further evaluation should be carried out to strengthen our contributions during this thesis. In fact, we can elaborate different evaluation protocols to assess our hypothesis and first observation about our 3D visualization framework. It can also help top identify more weaknesses of our propositions in order to correct them. 
 
 We are currently working on a  volume rendering framework on mixed reality environments.  In fact we are trying to bypass the the computational limitations thanks to strategies like holographic remoting in order to provide fast novel interactions. 
 
@@ -66,4 +97,6 @@ Furthermore, we plan to adapt our framework to visualize animated CT scans. Disp
  appeal, 3D animation is much more realistic. In fact, a moving fluid or a beating heart is more realistic and
  appealing than a static CT scan. However with such visualization, many optimization algorithms must be used to
      allow the interactivity with different states of the same data-sets at the same time.
+     
+
      
