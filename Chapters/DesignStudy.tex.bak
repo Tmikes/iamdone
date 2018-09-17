@@ -157,18 +157,13 @@ The selection of an aircraft is the first task an air traffic
 controller shall achieve before interacting with it. To do this, different techniques of
 interaction are possible and are shown in the following.
 
-\paragraph{I1-1: The mouse (Existing Technic)}
+\begin{itemize}
 
-We kept the functioning of this interaction which is already
+\item \textbf{I1-1: The mouse (Existing Technic)}: We kept the functioning of this interaction which is already
 implemented in existing systems, in order to compare the
 eye tracker and the single mouse. (\autoref{e:})
 
-
-\paragraph{I1-2: The Dwell Time}
-The Dwell Time is a technique that allows to change the
-state of a target (aircraft in this case) when looked for a
-certain period (\autoref{e:selectionState}).
-
+\item \textbf{I1-2: The Dwell Time}: The Dwell Time is a technique that allows to change the state of a target (aircraft in this case) when looked for a certain period (\autoref{e:selectionState}).
 \begin{figure}
  \centering
 	\includegraphics[width=0.95\textwidth]{Figures/selectionState.png}
@@ -195,26 +190,24 @@ button for a certain period, the airplane is deselected (\autoref{e:selectionDwe
 	\label{e:selectionDwell}
 \end{figure}
 
-
-
-\paragraph{I1-3: Buttons}
-During the brainstorming session, it emerged that the best
+\item \textbf{I1-3: Buttons}: During the brainstorming session, it emerged that the best
 option to select an aircraft is to use an external device
 (button, keyboard or pedal, etc.). That is why we decided to
 include this interaction in the final prototype.
 
-\paragraph{I1-4: Pedal}
-This interaction is almost identical to the previous one,
-except that it offers the user a button that plays both the role
-of the "validate" and the "cancel".
+\item \textbf{I1-4: Pedal}: This interaction is almost identical to the previous one, except that it offers the user a button that plays both the role of the "validate" and the "cancel".
+
+\end{itemize}
+
 
 \subsubsection{I2: Function Selection}
 The methods of the function selection we implemented,
 respond to the needs to obtain information on a plane, and
 free the hands.
  
-\paragraph{I2-1: Pulldown Menu}
-This interaction is similar to the one existing in the current
+\begin{itemize}
+
+\item \textbf{I2-1: Pulldown Menu}: This interaction is similar to the one existing in the current
 systems. With a click on an aircraft, users have access to a
 context menu offering several features. This interaction has
 been developed for the purpose of comparison with the new
@@ -227,8 +220,7 @@ methods of selection that we propose (\autoref{e:selectionFunction}).
 	\label{e:selectionFunction}
 \end{figure}
 
-\paragraph{I2-2: Pie Menu and Dwell Time}
-The advantage of the pie menu is that it appears at the exact
+\item \textbf{I2-2: Pie Menu and Dwell Time}: The advantage of the pie menu is that it appears at the exact
 location where the user has selected the second aircraft.
 Hence, the user can directly select one of the menu items.
 However, following the remarks of some users, we have
@@ -237,37 +229,42 @@ Moreover, in order to respond to the need to keep all the
 parts of the radar image visible, we opted for transparent
 colors (\autoref{e:selectionFunction}).
 
-\paragraph{I2-3: Pie Menu and Gaze Gestures}
-In this interaction, the user must move his or her gaze from
-one of the menu items to the outside of the pie menu. This
-gaze gesture launches the warning function on the selected
-planes.
+\item  \textbf{I2-3: Pie Menu and Gaze Gestures}:In this interaction, the user must move his or her gaze from one of the menu items to the outside of the pie menu. This gaze gesture launches the warning function on the selected planes.
+
+\end{itemize}
+ 
 \subsubsection{I3: Zoom Methods}
 These interactions respond to the need to freely navigate
 through the radar image.
-\paragraph{I3-1: Pointer centered Scroll}
-This interaction exists in some ATC interfaces (mainly
-interfaces without strip called "stripless"). The user acts on
+
+\begin{itemize}
+
+\item  \textbf{I3-1: Pointer centered Scroll}: This interaction exists in some ATC interfaces (mainly interfaces without strip called "stripless"). The user acts on
 the mouse wheel to zoom in or out. The zoom center is then
 located at the mouse pointer. Also, it will help us to compare
 the effectiveness of our new interactions.
-\paragraph{I3-2: Gaze centered Scroll}
-As before, this zoom technique is based on the mouse, but
+
+\item \textbf{I3-2: Gaze centered Scroll}: As before, this zoom technique is based on the mouse, but
 this zoom is not centered on the mouse pointer anymore, but
 rather on the user's gaze location on the screen. In both
 techniques, the zoom returns to its original level by clicking
 with the mouse wheel.
-\paragraph{I3-3: Touchpad}
-With the usual gestures made on a touch pad, the controllers
-can perform forward zooming (Pinch open) and backward
+
+\item \textbf{I3-3: Touchpad}: With the usual gestures made on a touch pad, the controllers can perform forward zooming (Pinch open) and backward
 zooming (Pinch close) centered on his / her gaze.
-\paragraph{I3-4: Leap Motion}
-The Leap Motion is a device that detects the movements and
+
+\item \textbf{I3-4: Leap Motion}: The Leap Motion is a device that detects the movements and
 aspects of the user's hands. We therefore used it to achieve
 an interaction that is to approach or pull away the palm of
 the hand to zoom in or out. When removing the hand form
 the Leap motion's detection area , the zoom will return to
 its original level.
+
+
+\end{itemize}
+
+
+
 
 \subsubsection{I4: Pan Methods}
 Sometimes it is necessary for the controller to observe the
@@ -275,20 +272,17 @@ planes that are not necessarily displayed on the controller
 screen. To do this, the user must perform lateral movements
 (i.e. Pan) of the radar screen. These interactions respond to
 the need to navigate through the radar image.
-\paragraph{I4-1: The Mouse}
-A first technique, which often exists in some air traffic
-control systems, is to make lateral movements with the
-mouse. The user clicks on the map then performs the
+
+\begin{itemize}
+
+\item \textbf{I4-1: The Mouse}: A first technique, which often exists in some air traffic control systems, is to make lateral movements with the mouse. The user clicks on the map then performs the
 movements of "drag" to move it.
-\paragraph{I4-2: Touchpad}
-This technique does not use the gaze but given the presence
-of the touchpad in the final prototype, we wanted to know if
-the users appreciated the fact to navigate through the map
+
+\item \textbf{I4-2: Touchpad}: This technique does not use the gaze but given the presence of the touchpad in the final prototype, we wanted to know if the users appreciated the fact to navigate through the map
 with their fingers (as we can do it in Google Map
 Application for Smartphone for example).
-\paragraph{I4-3: SmartPan}
-Our goal was to use the eye tracker to observe directly a
-calling aircraft that would be out of the controller's screen.
+
+\item \textbf{I4-3: SmartPan}: Our goal was to use the eye tracker to observe directly a calling aircraft that would be out of the controller's screen.
 For this, we have designed a system with voice recognition
 to detect the corresponding call sign from calling aircraft. If
 the calling plane is not within the area displayed on the
@@ -310,6 +304,12 @@ calling plane with the control software.
 aircraft outside the radar image.}
 	\label{e:smartPan}
 \end{figure}
+
+
+\end{itemize}
+
+
+
 
 \subsubsection{I5: Heat map}
 The heat map is already widely used in other areas and
@@ -407,7 +407,7 @@ nearest aircraft is still selected.
 
 With almost the same motivations of providing fluidity and continuity between the interactions, we proposed a framework to support the interactive visualization of baggage.
 
-\section{Introduction}
+\section{Introduction: Interactive exploration of 3D scanned baggage}
 Volumetric data found in many fields, such as engineering, material sciences, medical imaging, astrophysics. Their exploration is not trivial, and heavily impacted by the users' needs. In most airports, security agents deal with such data exploration during baggage inspections. They use two types of fluoroscopic systems: X-ray and tomography scanning systems. X-ray system provides a flattened 2D baggage scan while tomography scanning system produces transversal scans, also called slices. 
 Thanks to data processing (e.g. \cite{deans2007radon}), they can produce a full 3D scan (set of voxel with their corresponding density).
 Our input data is a uniformly sampled multivariate field F : D $\longrightarrow$ V, D $\subset \mathbb{R}^{n}$ 
@@ -645,7 +645,7 @@ If the user has activated the 2 views Volume Visualization (Button 2 views in th
 
 \paragraph{Occlusion management}
 
-In order to address occlusion issues, the eraser tool can interactively remove selected objects from one view to the other one. This interaction is similar to the selection interaction with all the modalities (mouse, hand, and pen). When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. The user can also double click on the target with the mouse pointer. To restore a deleted object from one view, the user has to erase it from the other view. This simple principle guarantees that every item of the baggage is always visible while addressing occlusion issues (\autoref{f:deletion}).
+In order to address occlusion issues, the eraser tool can interactively remove selected objects from one view to the other one. This interaction is similar to the selection interaction with all the modalities (mouse, hand, and pen). When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. The user can also double click on the target with the mouse pointer. To restore a deleted object from one view, the user has to erase it from the other view, see \cite{hurter2017boolean}. This simple principle guarantees that every item of the baggage is always visible while addressing occlusion issues (\autoref{f:deletion}).
 
 \begin{figure}
 \centering   	\includegraphics[width=9cm]{Figures/deletion.png}
@@ -765,7 +765,7 @@ Tomographs generate files which contain all the densities encountered by the x-r
 
 \subsubsection{Object selection}
 
-Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection need to start.
+Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm, see \cite{hurter2017object}. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection need to start.
 Consider the typical DVR algorithm: Given a scalar volume $V \subset \mathbf{R}^3 \rightarrow \mathbf{R}$, each pixel $\mathbf{x} \in I$ in the DVR image $I \subset \mathbf{R}^2$ thereof corresponds to the compositing of sampled data along a ray that passes through $V$ and ends at $\mathbf{x}$. Such rays are defined by the eye position $\mathbf{e}$ and a ray direction unit vector
 \begin{equation}
 \mathbf{d} = \frac{ (\mathbf{x} - \mathbf{e}) }{ \| \mathbf{x} - \mathbf{e} \| }
@@ -822,7 +822,7 @@ Second, we propagate the selection in every directions. For each encountered vox
 
 \subsubsection{Occlusion minimization}
 
-Once the item of interest is selected, our system animates the visual configuration to display a new point of view of the selection which minimizes object occlusions. To do so, the system first computes the selection bounding box composed of six faces. Then, the system computes the six possible point of views. For each of them, the system counts the number of visible pixels which display the selected object. This is done thanks to the ray casting algorithm which propagates though the data cube and thus can test if the ray hits the selected items without any occlusion. Finally, the system defines the appropriate point of view as the bounding box face with the highest number of visible pixels of the selected item.
+Once the item of interest is selected, our system animates the visual configuration to display a new point of view of the selection which minimizes object occlusions. To do so, the system first computes the selection bounding box composed of six faces. Then, the system computes the six possible point of views. For each of them, the system counts the number of visible pixels which display the selected object. This is done thanks to the ray casting algorithm which propagates though the data cube and thus can test if the ray hits the selected items without any occlusion. Finally, the system defines the appropriate point of view as the bounding box face with the highest number of visible pixels of the selected item, see \cite{hurter2017selective}.
 The system can then animate the volume visualization toward this new visual configuration and update the two temporal instances (before and after the pan, zoom and rotation modifications).
 
 \subsubsection{Extended brushing technique}
@@ -835,7 +835,7 @@ The cancellation of the brushing is quite similar to the previous algorithm. The
 
 Since we developed this system with four baggage security practitioners, we had the opportunity to validate the usefulness of each developed technique. Through an interactive process, the users gave their feedbacks all along the development process which helped to assess and to guide the proposed interaction techniques. Feedback was mainly positive and the user did not face any specific difficulty to use our system. Users mainly appreciated the simple interface with few widgets and the reduced set of interactions. Surprisingly, users were very interested to use the transfer function. The histogram and its transfer function were also appreciated even if the corresponding technique is not simple to understand. We suppose that our interface motivates users to learn more regarding the technique behind it. Users also mentioned the need to display the actual density (the numerical value) of selected object. They also ask many times if the displayed color corresponds to the one currently in use in operational settings. This confirms the fact that users are willing to keep some existing features and prefer to use a system they are already familiar with.
 The users also appreciated our design requirements with smooth transitions and incremental investigations of baggage.
-\par All of these observations and qualitative evaluations deserve to be validated through proper evaluations which are out of the scope of this user study paper.
+\par All of these observations and qualitative evaluations deserve to be validated through proper evaluations which are out of the scope of this user study.
 Our system is fully functional and interactive enough to perform baggage explorations. Many improvements can still be done in order to improve its usages in terms of new interactions and exploration time reductions.
 Technically speaking, the selection of the adequate point of view can be improved with more than 6 investigated faces. But in practice, this simple paradigm remains suitable. If the computed point of view is not fully satisfactory, one can manual rotate the baggage. Nevertheless, the developed algorithm will not necessary provide the best solution (the lowest occlusion) but a satisfactory one.
 \par Our goal was to develop

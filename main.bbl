@@ -1525,6 +1525,105 @@
     \field{year}{2012}
   \endentry
 
+  \entry{hurter2017boolean}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={Christophe},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SMT}{%
+         family={SOMPAGNIMDI},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima TRAOR{\'E}},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{HCSMT1}
+    \strng{fullhash}{HCSMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{note}{US Patent App. 15/466,497}
+    \field{title}{Boolean object management in 3d display}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hurter2017object}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={Christophe},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SMT}{%
+         family={SOMPAGNIMDI},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima TRAOR{\'E}},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{HCSMT1}
+    \strng{fullhash}{HCSMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{note}{US Patent App. 15/466,991}
+    \field{title}{Object definition in virtual 3d environment}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hurter2017selective}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Hurter},
+         familyi={H\bibinitperiod},
+         given={Christophe},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SMT}{%
+         family={SOMPAGNIMDI},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima TRAOR{\'E}},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{HCSMT1}
+    \strng{fullhash}{HCSMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{3}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{note}{US Patent App. 15/485,828}
+    \field{title}{Selective display in a computer generated environment}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{hurter2014interactive}{article}{}
     \name{author}{4}{}{%
       {{hash=HC}{%
