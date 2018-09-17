@@ -63,7 +63,7 @@ L'utilisation de rayons non linéaires est un autre moyen d'éviter les objets g
 
 \section{Introduction}
 
-In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality). First we present the existing algorithms to render volumetric data-sets that can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms. Then we discuss the existing strategies of occlusion management. Actually, we talk about the transfer function, the segmentation, an deformations as well as Focus+context techniques. Finally we  describe the previous work on  volume rendering in mobile devices. More precisely, we deal with Mixed Reality, Virtual Reality, and Augmented Reality.
+In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality). First, we present the existing algorithms to render volumetric data-sets that can be categorized into two major types: Direct Volume Rendering (DVR), and Surface-fitting algorithms. Then we discuss the existing strategies of occlusion management. Actually, we talk about the transfer function, the segmentation, deformations as well as Focus+context techniques. Finally, we describe the previous work on volume rendering in mobile devices. More precisely, we deal with Mixed Reality, Virtual Reality, and Augmented Reality.
 
 
 
@@ -74,16 +74,16 @@ below fall into two main categories:
 
 \begin{itemize}
 
-\item Direct volume rendering (DVR) algorithms: they include approaches such as ray-casting, texture mapping, splatting, and V-buffer rendering. Splatting and V-buffer are also called projection methods. These these methods are characterized by mapping elements directly into screen space without using geometric primitives as an intermediate representation.
+\item Direct volume rendering (DVR) algorithms: they include approaches such as ray-casting, texture mapping, splatting, and V-buffer rendering. Splatting and V-buffer are also called projection methods. These methods are characterized by mapping elements directly into screen space without using geometric primitives as an intermediate representation.
 
-\item Surface-fitting (SF) algorithms : they are also called isosurfacing or feature-extraction. These algorithms consist in fitting surface primitives such as
+\item Surface-fitting (SF) algorithms: they are also called isosurfacing or feature-extraction. These algorithms consist in fitting surface primitives such as
 polygons or patches to constant-value contour surfaces in volumetric datasets. The surface primitives used are most of the time planar.
 
 \end{itemize}
 
 DVR methods are especially appropriate for creating images from datasets containing amorphous features like clouds, fluids, and gases. One disadvantage of using DVR methods
 is that the entire dataset must be traversed each time an image is
-rendered. A low resolution pass or random sampling of the data is
+rendered. A low-resolution pass or random sampling of the data is
 sometimes used to create low-quality images quickly for parameter
 checking. The process of successively increasing the resolution
 and quality of a DVR image over time is called progressive
@@ -104,10 +104,7 @@ Many steps in the volume visualization process are common to
 volume visualization algorithms.  Most of the fundamental volume
 visualization algorithms include only a subset of the steps listed
 here.
-The initial step in every procedure is data acquisition. The next
-common step is to pat the data slices into a form that can be worked
-with and then to process each slice so that it covers a good
-distribution of values, is high in contrast, and is free of noise and
+The initial step in every procedure is data acquisition. The next common step is to pat the data slices into a form that can be worked with and then to process each slice so that it covers a good distribution of values, is high in contrast, and is free of noise and
 out-of-range values. Of course, the same set of processes must be
 applied to every slice.
 Next, the dataset is reconstructed so that the ratio of the
@@ -116,15 +113,14 @@ measured substance or substance being simulated. This may
 involve interpolating between values in adjacent slices to construct
 new slices, replicating existing slices, interpolating to estimate
 missing values, or scan-converting an irregular grid or non-orthogonal
-grid onto a Cartesian grid by interpolation. At this point
-three-dimensional enhancement may be applied, such as a slight
+grid onto a Cartesian grid by interpolation. At this point, a three-dimensional enhancement may be applied, such as a slight
 blurring of the data values. Next, a data-classification or
 thresholding is performed. This step will be discussed in detail in
 the section on data classification.
 After data-classification, a mapping operation is applied to map
 the elements into geometric or display primitives. This is the stage
 that varies the most between algorithms, as will be shown in the
-section on volume visualization algorithms. At this point the
+section on volume visualization algorithms. At this point, the
 primitives can be stored, manipulated, intermixed with externally
 defined primitives, shaded, transformed to screen space, and
 displayed. The shading and transformation steps can be reordered
@@ -136,7 +132,7 @@ and shading can be done in one of eleven ways as explained in
 \subsubsection{Texture mapping}
 
 \paragraph{2D Texture mapping}
-2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. To create images of the slices, one can use the standard texture mapping capabilities provided by graphics libraries like OpenGL. \ref{fig:2dslices} shows how pixel colors and opacities are calculated when rendering a texture-mapped polygon. In texture mapping, texture coordinates (s, t) are stored along with each vertex. These coordinates are interpolated across the polygon during scan conversion, and are used as coordinates for color look-up inside a texture image \ref{fig:2dtexture}. Color and opacity values from the texture image are reconstructed using bi-linear interpolation.
+2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. To create images of the slices, one can use the standard texture mapping capabilities provided by graphics libraries like OpenGL. \ref{fig:2dslices} shows how pixel colors and opacities are calculated when rendering a texture-mapped polygon. In texture mapping, texture coordinates (s, t) are stored along with each vertex. These coordinates are interpolated across the polygon during scan conversion and are used as coordinates for color look-up inside a texture image \ref{fig:2dtexture}. Color and opacity values from the texture image are reconstructed using bi-linear interpolation.
 
 
 \begin{figure}[th]
@@ -147,7 +143,7 @@ and shading can be done in one of eleven ways as explained in
 \label{fig:2dslices}
 \end{figure}
 On modern graphics workstations, the complete process of interpolating texture coordinates and reconstructing texture values is incorporated into the scan-conversion process and done completely in hardware. Because texture mapping is such a common application, these routines are well-optimized and highly efficient.
-To simulate ray casting using texture mapping, we have to slice the volumetric data set into parallel slices, and the use these slices as texture images to texture-map the projections of the sliced onto the image plane. To composite the slices, we can use the blending operations provided by the OpenGL graphics library. As it happens, one of the standard operators provided is exactly the compositing operator used in ray casting. Since compositing is also fully hardware-assisted, it is also very fast.
+To simulate ray casting using texture mapping, we have to slice the volumetric dataset into parallel slices, use these slices as texture images to texture-map the projections of the sliced onto the image plane. To composite the slices, we can use the blending operations provided by the OpenGL graphics library. As it happens, one of the standard operators provided is exactly the compositing operator used in ray casting. Since compositing is also fully hardware-assisted, it is also very fast.
 \begin{figure}[th]
 \centering
 \includegraphics{Figures/2dtexmapping}
@@ -158,9 +154,9 @@ To simulate ray casting using texture mapping, we have to slice the volumetric d
 
 There are two ways to deal with varying viewpoints.
 
-The first one is to create slice images for the given data set in a pre-processing step and uses different projection matrices to create arbitrary-viewpoint images of these slices. This is fast, since the (expensive) step of slice creation has to be done only once. On the other hand, image quality suffers because the views of all slices will be distorted due to the projection onto the image plane. In the extreme case of the view direction being parallel to the slices, there will be no image at all.
+The first one is to create slice images for the given data set in a pre-processing step and uses different projection matrices to create arbitrary-viewpoint images of these slices. This is fast since the (expensive) step of slice creation has to be done only once. On the other hand, image quality suffers because the views of all slices will be distorted due to the projection onto the image plane. In the extreme case of the view direction being parallel to the slices, there will be no image at all.
 
-The second way is to create slices which are always orthogonal to the viewing direction. This results in optimal image quality, but it means that the slice stack has to be re-generated for each new image. Furthermore, arbitrary ("oblique") slices through a cuboid are generally not square or rectangular, and can be anything from triangles to hexagons.
+The second way is to create slices which are always orthogonal to the viewing direction. This results in optimal image quality, but it means that the slice stack has to be re-generated for each new image. Furthermore, arbitrary ("oblique") slices through a cuboid are generally not square or rectangular and can be anything from triangles to hexagons.
 
 \begin{algorithm} \caption{Volume Rendering using 2D Texture Mapping Algorithm} 
 \label{alg:tex2dmapping}
@@ -185,7 +181,7 @@ The second way is to create slices which are always orthogonal to the viewing di
 To allow interactive generation of view-orthogonal slices, a special hardware technique has been developed. This is a generalization of texture-mapping to three-dimensional textures, appropriately called "3D texturing."
 As seen in Figure \ref{fig:2dtexture}, 2D texture-mapping interpolates two additional coordinates (s, t) across a polygon's interior. In 3D texture-mapping, three additional coordinates (s, t, r) are interpolated. To determine a pixel's color and opacity, these three coordinates are used as indices into a three-dimensional image, the 3D texture, see Figure \ref{fig:3dtexture}. To reconstruct texture values, tri-linear interpolation is used.
 
-3D textures allow direct treatment of volumetric data. Instead of generating a set of two-dimensional slices in a pre-processing step, the volumetric data is directly downloaded into the graphics hardware, and is directly used to calculate color and opacity values for each pixel covered by a rendered primitive.
+3D textures allow direct treatment of volumetric data. Instead of generating a set of two-dimensional slices in a pre-processing step, the volumetric data is directly downloaded into the graphics hardware and is directly used to calculate color and opacity values for each pixel covered by a rendered primitive.
 
 \begin{figure}[th]
 \centering
@@ -196,7 +192,7 @@ As seen in Figure \ref{fig:2dtexture}, 2D texture-mapping interpolates two addit
 \end{figure}
 
 
-To generate oblique slices using 3D texturing, one only has to calculate the vertices of the slice, and then to generate the correct 3D texture coordinates for those vertices, see Figure \ref{fig:cubeSlice}. Then these coordinates are passed to the graphics library, and the graphics library will render the projection of the slice onto the image plane, using tri-linear interpolation to reconstruct each pixel's color and opacity values.
+To generate oblique slices using 3D texturing, one only has to calculate the vertices of the slice and then to generate the correct 3D texture coordinates for those vertices, see Figure \ref{fig:cubeSlice}. Then these coordinates are passed to the graphics library, and the graphics library will render the projection of the slice onto the image plane, using tri-linear interpolation to reconstruct each pixel's color and opacity values.
 
 \begin{figure}[th]
 \centering
@@ -207,16 +203,16 @@ To generate oblique slices using 3D texturing, one only has to calculate the ver
 \end{figure}
 
 \subsubsection{Raycasting}
-Volume raycasting computes a 2D image from the 3D volumetric data set.The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
+Volume raycasting computes a 2D image from the 3D volumetric data set. The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
 \begin{itemize}
 
-\item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
+\item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage, it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
 
 \item \textbf{Sampling}. Along the part of the ray of sight that lies within the volume, equidistant sampling points or samples are selected. In general, the volume is not aligned with the ray of sight, and sampling points will usually be located in between voxels. Because of that, it is necessary to interpolate the values of the samples from its surrounding voxels (commonly using trilinear interpolation).
 
-\item \textbf{Shading}. For each sampling point, a transfer function retrieves an RGBA material colour and a gradient of illumination values is computed. The gradient represents the orientation of local surfaces within the volume. The samples are then shaded (i.e. coloured and lit) according to their surface orientation and the location of the light source in the scene.
+\item \textbf{Shading}. For each sampling point, a transfer function retrieves an RGBA material color and a gradient of illumination values is computed. The gradient represents the orientation of local surfaces within the volume. The samples are then shaded (i.e. colored and lit) according to their surface orientation and the location of the light source in the scene.
 
-\item \textbf{Compositing}. After all sampling points have been shaded, they are composited along the ray of sight, resulting in the final colour value for the pixel that is currently being processed. The composition is derived directly from the rendering equation and is similar to blending acetate sheets on an overhead projector. It may work back-to-front, i.e. computation starts with the sample farthest from the viewer and ends with the one nearest to the viewer. This work flow direction ensures that masked parts of the volume do not affect the resulting pixel. The front-to-back order could be more computationally efficient since, the residual ray energy is getting down while ray travels away from camera; so, the contribution to the rendering integral is diminishing therefore more aggressive speed/quality compromise may be applied (increasing of distances between samples along ray is one of such speed/quality trade-offs).
+\item \textbf{Compositing}. After all sampling points have been shaded, they are composited along the ray of sight, resulting in the final color value for the pixel that is currently being processed. The composition is derived directly from the rendering equation and is similar to blending acetate sheets on an overhead projector. It may work back-to-front, i.e. computation starts with the sample farthest from the viewer and ends with the one nearest to the viewer. This workflow direction ensures that masked parts of the volume do not affect the resulting pixel. The front-to-back order could be more computationally efficient since, the residual ray energy is getting down while ray travels away from camera; so, the contribution to the rendering integral is diminishing, therefore, more aggressive speed/quality compromise may be applied (increasing of distances between samples along ray is one of such speed/quality trade-offs).
 
 \end{itemize}
 
@@ -230,15 +226,15 @@ Volume raycasting computes a 2D image from the 3D volumetric data set.The basic 
 
 \subsection{Surface-fitting}
 
-This subsection describes an algorithm for creating a polygonal surface representation of an isosurface of a 3D scalar field. A common name for this type of problem is the so called \textbf{ "marching cubes" } algorithm. It combines simplicity with high speed since it works almost entirely on lookup tables.
+This subsection describes an algorithm for creating a polygonal surface representation of an isosurface of a 3D scalar field. A common name for this type of problem is the so-called \textbf{ "marching cubes" } algorithm. It combines simplicity with high speed since it works almost entirely on lookup tables.
 
-The fundamental problem is to form a facet approximation to an isosurface through a scalar field sampled on a rectangular 3D grid. Given one grid cell defined by its vertices and scalar values at each vertex, it is necessary to create planar facets that best represent the isosurface through that grid cell. The isosurface may not be pass through the grid cell, it may cut off any one of the vertices, or it may pass through in any one of a number of more complicated ways. Each possibility will be characterised by the number of vertices that have values above or below the isosurface. If one vertex is above the isosurface say and an adjacent vertex is below the isosurface then we know the isosurface cuts the edge between these two vertices. The position that it cuts the edge will be linearly interpolated, the ratio of the length between the two vertices will be the same as the ratio of the isosurface value to the values at the vertices of the grid cell.
-
-
-There are two major components of the Marching cubes algorithm proposed by \cite{Lorensen:1987:MCA}. The first is deciding how to define the section or sections of surface which chop up an individual cube. If we classify each corner as either being below or above the isovalue, there are 256 possible configurations of corner classifications. Two of these are trivial; where all points are inside or outside the cube does not contribute to the isosurface. For all other configurations we need to determine where, along each cube edge, the isosurface crosses, and use these edge intersection points to create one or more triangular patches for the isosurface.
+The fundamental problem is to form a facet approximation to an isosurface through a scalar field sampled on a rectangular 3D grid. Given one grid cell defined by its vertices and scalar values at each vertex, it is necessary to create planar facets that best represent the isosurface through that grid cell. The isosurface may not be pass through the grid cell, it may cut off any one of the vertices, or it may pass through in any one of a number of more complicated ways. Each possibility will be characterized by the number of vertices that have values above or below the isosurface. If one vertex is above the isosurface say and an adjacent vertex is below the isosurface then we know the isosurface cuts the edge between these two vertices. The position that it cuts the edge will be linearly interpolated, the ratio of the length between the two vertices will be the same as the ratio of the isosurface value to the values at the vertices of the grid cell.
 
 
-If you account for symmetries, there are actually only 14 unique configurations in the remaining 254 possibilities. When there is only one corner less than the isovalue, this forms a single triangle which intersects the edges which meet at this corner, with the patch normal facing away from the corner. Obviously there are 8 related configurations of this sort . By reversing the normal we get 8 configurations which have 7 corners less than the isovalue. We don't consider these really unique, however. For configurations with 2 corners less than the isovalue, there are 3 unique configurations, depending on whether the corners belong to the same edge, belong the same face of the cube, or are diagonally positioned relative to each other. For configurations with 3 corners less than the isovalue there are again 3 unique configurations (e.g. for configuration 14), depending on whether there are 0, 1, or 2 shared edges (2 shared edges gives you an 'L' shape). There are 7 unique configurations when you have 4 corners less than the isovalue, depending on whether there are 0, 2, 3 (3 variants on this one), or 4 shared edges (e.g. for configuration 30 - again you may need to tweak the colours to see the triangle for the isolated (far) inside sphere/pixel).
+There are two major components of the Marching cubes algorithm proposed by \cite{Lorensen:1987:MCA}. The first is deciding how to define the section or sections of the surface which chop up an individual cube. If we classify each corner as either being below or above the isovalue, there are 256 possible configurations of corner classifications. Two of these are trivial; where all points are inside or outside the cube does not contribute to the isosurface. For all other configurations we need to determine where, along with each cube edge, the isosurface crosses, and use these edge intersection points to create one or more triangular patches for the isosurface.
+
+
+If you account for symmetries, there are actually only 14 unique configurations in the remaining 254 possibilities. When there is only one corner less than the isovalue, this forms a single triangle which intersects the edges which meet at this corner, with the patch normal facing away from the corner. Obviously, there are 8 related configurations of this sort. By reversing the normal we get 8 configurations which have 7 corners less than the isovalue. We don't consider these really unique, however. For configurations with 2 corners less than the isovalue, there are 3 unique configurations, depending on whether the corners belong to the same edge, belong the same face of the cube, or are diagonally positioned relative to each other. For configurations with 3 corners less than the isovalue there are again 3 unique configurations (e.g. for configuration 14), depending on whether there are 0, 1, or 2 shared edges (2 shared edges gives you an 'L' shape). There are 7 unique configurations when you have 4 corners less than the isovalue, depending on whether there are 0, 2, 3 (3 variants on this one), or 4 shared edges (e.g. for configuration 30 - again you may need to tweak the colors to see the triangle for the isolated (far) inside sphere/pixel).
 
 Each of the non-trivial configurations results in between 1 and 4 triangles being added to the isosurface. The actual vertices themselves can be computed by interpolation along edges, or, default their location to the middle of the edge. The interpolated locations will obviously give you better shading calculations and smoother surfaces.
 
@@ -256,10 +252,10 @@ Using isosurfaces allow to be faster than direct volume rendering. However, we l
 \end{figure}
 
 \subsection{summary}
-The existing algorithms to render volumetric data-sets  can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms.
+The existing algorithms to render volumetric data-sets can be categorized into two major types: Direct Volume Rendering (DVR), and Surface-fitting algorithms.
 
 
-Rendering a volume directly with DVR methods is usually better for visualising softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
+Rendering a volume directly with DVR methods is usually better for visualizing softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
 
 
 Isosurfaces from surface-fitting methods tend to be a popular form of visualization for volume datasets since they can be rendered by a simple polygonal model, which can be drawn on the screen very quickly. They are very useful when we want to examine structures and boundaries in volume data, such as bone shape or distinct parts of the brain. It is then better to extract a triangle or tetrahedral mesh from the voxel data or implicit field. These meshes can be studied for their topology and curvature, and rendered as solid looking objects.
@@ -281,12 +277,10 @@ etc.). Image generation involves mapping data samples through the
 TF, where they are given optical properties such as color and opacity,
 and compositing them into the image.
 A TF simultaneously defines which parts of the data are essential
-to depict and  how to depict these, often small, portions
+to depict and how to depict these, often small, portions
 of the volumetric data. Considering the first step, a TF is a special,
-but important, case of a segmentation or classification. With classifi-
-cation, certain regions in a three-dimensional domain are identified
-to belong to the same material, such as bone, vessel, or soft tissue,
-in medical imaging. A plethora of classification and segmentation
+but important, case of a segmentation or classification. With classification, certain regions in a three-dimensional domain are identified
+to belong to the same material, such as bone, vessel, or soft tissue, in medical imaging. A plethora of classification and segmentation
 algorithms have been developed over the last decades, with semiautomatic
 approaches often tailored to specific application scenarios.
 Segmentation algorithms can be quite intricate since information
@@ -331,7 +325,7 @@ classification domain (\cite{1021579}) }
 Multidimensional TFs are used for Multidimensional data. If the user has to manipulate the TF definition directly, moving beyond
 2D TFs immediately poses significant challenges in terms of
 user interfaces and cognitive comprehension (\cite{1021579}). Much research and
-work on Multidimensional TFs is, therefore, related to various forms of automation
+work on Multidimensional TFs are, therefore, related to various forms of automation
 and advanced user interfaces. Typical approaches include dimensional reduction, clustering
 and grouping, machine learning, and various user interface
 approaches such as parallel coordinates by \cite{5742368} or direct slice or volume
@@ -351,7 +345,7 @@ a powerful visualization tool in many domains, but the necessary
 design of TFs is a time consuming and tedious task. Consequently,
 a significant amount of work is dedicated to the automatic and semiautomatic generation of TFs. 
 
-\item \textbf{The aggregated attributes} : Conceptually, the introduction of additional quantities in the TF definition makes it possible to discriminate more parts in a dataset. Histogram clustering helps to reduce the degrees of freedom in designing a TF. As an illustration, \cite{5887324} propose modeling the
+\item \textbf{The aggregated attributes}: Conceptually, the introduction of additional quantities in the TF definition makes it possible to discriminate more parts in a dataset. Histogram clustering helps to reduce the degrees of freedom in designing a TF. As an illustration, \cite{5887324} propose modeling the
 histogram space using a Gaussian mixture model. An elliptical TF
 is assigned to each Gaussian, and the user interaction is simplified in order to edit the parameters of these ellipsoids.  
 
@@ -359,18 +353,17 @@ is assigned to each Gaussian, and the user interaction is simplified in order to
 
 \subsection{Segmentation}
 
-Many segmentation algorithms allows to extract features form images (2D) and 3D volumes. In this subsection, we present two common algorithms: \textbf{Thresholding}, and \textbf{Clustering}
+Many segmentation algorithms allow extracting features from images (2D) and 3D volumes. In this subsection, we present two common algorithms: \textbf{Thresholding}, and \textbf{Clustering}
 
 \subsubsection{ Thresholding }
-Scalar images can be segmented using thresholding approaches by partitioning the volume intensities. This methodology attempts to determine an intensity value that can separate the signal into a desired number of classes. Segmented volumes can be achieved by clustering all pixels with intensities larger than the threshold value into one class, and all others into another. In many applications, the threshold values selection can be done depending on the basis of histogram. Multithresholding occurs when more than one threshold value is determined (see \cite{Sahoo:1988:STT:46072.46079}).
-The voxels of a certain object are not necessarily connected after thresholding because this technique does not consider the spatial characteristics of an image, thus causing it to be sensitive to noise and intensity fluctuations. For this reason it cannot be easily applied to many medical imaging modalities. These drawbacks essentially corrupt the histogram of the image-making partitioning via the selection of more problematic appropriate thresholds.
+Scalar images can be segmented using thresholding approaches by partitioning the volume intensities. This methodology attempts to determine an intensity value that can separate the signal into a desired number of classes. Segmented volumes can be achieved by clustering all pixels with intensities larger than the threshold value into one class, and all others into another. In many applications, the threshold values selection can be done depending on the basis of a histogram. Multithresholding occurs when more than one threshold value is determined (see \cite{Sahoo:1988:STT:46072.46079}).
+The voxels of a certain object are not necessarily connected after thresholding because this technique does not consider the spatial characteristics of an image, thus causing it to be sensitive to noise and intensity fluctuations. For this reason, it cannot be easily applied to many medical imaging modalities. These drawbacks essentially corrupt the histogram of the image-making partitioning via the selection of more problematic appropriate thresholds.
 
 3D thresholding method is similar to the 2D approaches where thresholding process is applied on all pixels in the volume instead of that in the plane.
 
 
 \subsubsection{ Clustering }
-Clustering technique is the process of classifying each group of pixels in an image into one class, each class has the same or similar properties which evaluate a specific part of an image or a volume. Each class is highlighted in the segmented volume to illustrate the volume as a number of separated regions, and the region of interest may be one of those regions. Clustering technique is based on multithreshold values which can be set depending on the image histogram. \cite{AMIRA20081954} propose a method for segmenting medical volumes; it is the most commonly used clustering technique. -means will be used in the fourth section of this research paper as a previously available work to validate the proposed techniques in the comparison tables.
-
+Clustering technique is the process of classifying each group of pixels in an image into one class, each class has the same or similar properties which evaluate a specific part of an image or a volume. Each class is highlighted in the segmented volume to illustrate the volume as a number of separated regions, and the region of interest may be one of those regions. Clustering technique is based on multi-threshold values which can be set depending on the image histogram. \cite{AMIRA20081954} propose a method for segmenting medical volumes; it is the most commonly used clustering technique.
 K-means clustering classifies n voxels into K clusters or classes ( K less than n ). This algorithm chooses the number of clusters (K) then randomly generates K clusters and determine the cluster centers. The next step is assigning each point in the volume to the nearest cluster center and finally recompute the new cluster centers. The two previous steps are repeated until the minimum variance criterion is achieved. This approach is similar to the expectation-maximization algorithm for Gaussian mixture in which they both attempt to find the centers of clusters in the volume.
 
 \cite{Li:2012:LVV:2425296.2425325} present a system for luggage visualization where any object is
@@ -385,7 +378,7 @@ several dozens of objects. To efficiently handle a scene mixed
 with a volume of packed objects, unpacked objects, and the animation
 of objects being unpacked or restored, they have designed a layered
 approach. Each layer is responsible for rendering objects in a
-particular state as well as caches and displays the previous rendered
+particular state as well as caches and displays the previously rendered
 images to avoid unnecessary rendering. The layer of unpacked objects
 is further decomposed into a set of 3D sprites to minimize
 memory usage.
@@ -428,7 +421,7 @@ camera model design space. Whereas for the PPC model the only
 intrinsic parameter of significant relevance in shaping the
 visualization is the focal length, optimizing multiperspective
 visualization requires tuning a large number of parameters.
-Consequently a third challenge is to specify the camera model that
+Consequently, a third challenge is to specify the camera model that
 best visualizes a given dataset from a given location. \newline
 \cite{5613463} proposed a multiperspective visualization technique
 based on the curved ray camera (CRC). The CRC is designed to
@@ -449,18 +442,18 @@ rendering. \newline
 by changing the viewpoint for individual focus regions
 in an image, by connecting input images with continuous
 context, and by alleviating occlusions to moving targets
-without distorting or displacing the target subimages.
+without distorting or displacing the target sub-images.
 
-An interactive lens is a lightweight tool to solve a localized visualization problems by temporarily altering a selected part of the visual representation of the data~\cite{CGF:CGF12871}. Using this lens approach, we propose an interactive volume deformation based on GPU accelerated ray-casting to free a designated target from local occlusion while keeping the global context.
+An interactive lens is a lightweight tool to solve localized visualization problems by temporarily altering a selected part of the visual representation of the data~\cite{CGF:CGF12871}. Using this lens approach, we propose an interactive volume deformation based on GPU accelerated ray-casting to free a designated target from local occlusion while keeping the global context.
 
 A lens is a parameterizable selection according to which a base visualization is altered. Typically, a lens is added to a visualization to interactively solve a specific localized problem. This property is very interesting with the aim of providing a focus+context solution to occlusion in volume rendering. Lenses can have different geometric properties not only defining their appearance, but also determining the selection, which is the subset of the data where these lenses take effect. The major geometric properties of a lens are shape, position, and size as well as the orientation.
 The shape of a lens is usually chosen to fulfill the requirements of the application and is strongly linked to the lens function. Most virtual lenses are circular~\cite{1648236} or are rectangular~\cite{Kincaid:2010:SFA:1907651.1907963} as the real-world ones (magnifying glass, windows). Our lens has also a circular shape in order to remind its magnifying property. Some lenses, such as the  JellyLens~\cite{Pindat:2012:JCA:2380116.2380150} and the smart lenses~\cite{Thiede2008} can adapt their shape automatically according to the data. 
 The position and the size parametrization can increase the flexibility of an interactive lens.
-Modifying this position or size will set its focus on a different part of the data according to the user's interest. It is possible to update automatically these parameters in order to guide the user toward interesting events in the data~\cite{Tominski:2011:ECU:2336207.2336211}, or adjust the lens position according to predefined paths as the Routelens~\cite{Alvina:2014:RER:2598153.2598200} does. With this mind, our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest. 
+Modifying this position or size will set its focus on a different part of the data according to the user's interest. It is possible to update automatically these parameters in order to guide the user toward interesting events in the data~\cite{Tominski:2011:ECU:2336207.2336211}, or adjust the lens position according to predefined paths as the Routelens~\cite{Alvina:2014:RER:2598153.2598200} does. With this in mind, our lens updates automatically its properties once a target has been selected. This allows a smooth transition towards an unobstructed and magnified area of interest. 
 
-Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. \cite{1532818} addressed these issues by proposing the Magic Lens . This framework propose FOUR different types of lenses allowing a free-form volumetric lens function that
+Lenses for volume visualization face challenges mainly related to spatial selection and occlusion. \cite{1532818} addressed these issues by proposing the Magic Lens. This framework proposes FOUR different types of lenses allowing a free-form volumetric lens function that
 can be feature-adaptive or user-configurable for a high-quality
-aliased, and interactive display with smooth transitions from highto
+aliased, and interactive display with smooth transitions from high to
 low-resolution areas.
 
 
@@ -469,10 +462,10 @@ In addition to interactively magnifying areas and objects of interest, our lens 
 
 
 
- \cite{Hsu:2011:RFM:2070781.2024165} developed a framework that can generate non-linear sampling rays that smoothly project objects in a scene at multiple levels of detail onto a single image. Such a technique requires a lot of computational time to render a single image from features of interest at different scales, see figure \ref{fig:multiscale}.This  multiscale rendering framework consists of a sequence of pinhole cameras, each of which captures a view of interest at a particular scale. The camera rays for each pixel in the final projected image are generated based on a user-defined image mask which specifies the interesting regions in each view.  The camera rays non-linearly cast through all scales of interest. Since the camera rays in the model are bent coherently and march consistently, the objects projected on the image are continuous in both image-space and object-space. 
+ \cite{Hsu:2011:RFM:2070781.2024165} developed a framework that can generate non-linear sampling rays that smoothly project objects in a scene at multiple levels of detail onto a single image. Such a technique requires a lot of computational time to render a single image from features of interest at different scales, see figure \ref{fig:multiscale}. This multiscale rendering framework consists of a sequence of pinhole cameras, each of which captures a view of interest at a particular scale. The camera rays for each pixel in the final projected image are generated based on a user-defined image mask which specifies the interesting regions in each view.  The camera rays non-linearly cast through all scales of interest. Since the camera rays in the model are bent coherently and march consistently, the objects projected on the image are continuous in both image-space and object-space. 
  Their method starts by setting up several pinhole cameras for viewing different scales of interest, utilizing most users’ ease and familiarity with manipulating ordinary pinhole cameras. Each camera produces an image of its view. In order to combine all such views to form a single multiscale image, a user-specified image mask is used to indicate regions of each view that the user would like to show in the final image. In other words, every camera projects only part of its view onto the final image space, based on a corresponding image mask. In order to ensure consistency while projecting different camera
 viewpoints onto different parts of the image, we force all camera rays to originate from the first camera, which is the one that has the largest scale of view. The rest of the cameras define intermediate
-points that camera rays must pass through in order, from the largest to smallest scales. They use B\'ezier curves to connect the nearclipping planes of two successive cameras.
+points that camera rays must pass through in order, from the largest to smallest scales. They use B\'ezier curves to connect the near-clipping planes of two successive cameras.
 
   The rays are bent gradually from one scale to another to maintain object-space continuity as well as image-space smoothness. The multiscale camera can also achieve a focus+context effect, a technique frequently used in many visualization applications. Finally, we show that it can potentially create pictures that mimic artistic or impossible views of objects or scenes like the kind made by the artist M. C. Escher. 
  
@@ -514,7 +507,7 @@ movement}
   
 \cite{4015450} proposed ClearView, an interactive and intuitive volume
 visualization tool that provides the user with a simple exploration
-metaphor, see figure \ref{fig:clearview} . Following traditional technical illustrations, several 3D
+metaphor, see figure \ref{fig:clearview}. Following traditional technical illustrations, several 3D
 layers of volumetric data sets are extracted using texture-based raycasting.
 They are composed to produce high-quality images at high
 frame rates. The user guides the exploration process by moving the
@@ -535,7 +528,7 @@ to continuously blend between focus and context information.
 \includegraphics[width=\textwidth]{Figures/clearview}
 \decoRule
 \caption[ clearview]{ The ClearView system can be used to visually explore complex data sets at interactive frame rates by using a focus+context metaphor. Even the leftmost image
-of the 5123 visible human data set with multiple iso-surfaces was generated at about 15 fps on a 800x600 viewport.}
+of the 5123 visible human datasets with multiple iso-surfaces was generated at about 15 fps on an 800x600 viewport.}
 \label{fig:clearview}
 \end{figure}
 
@@ -544,13 +537,12 @@ of the 5123 visible human data set with multiple iso-surfaces was generated at a
 the inner portions of the volume, without completely removing the
 surrounding data that normally occludes the inside. This is akin to
 focus+context schemes that allow a user to zoom-in on data of
-interest, while using remaining screen space to show the surrounding
+interest while using remaining screen space to show the surrounding
 context. Appropriately chosen deformations could, for example,
 split open a volume, showing displaced structures side-by-side,
-making it easy for the user to see how they connect, and allowing
+making it easy for the user to see how they connect and allowing
 the user to mentally stitch them together into a whole. Deformations
-with familiar real-world analogues (e.g. cutting and peeling
-the skin off a fruit, or the layers off an onion) are also likely to be
+with familiar real-world analogs (e.g. cutting and peeling the skin off a fruit, or the layers of an onion) are also likely to be
 readily understood by users.
 Therefore in their work, they describe a prototype system that implements
 different metaphors for deformation-based browsing of volumetric
@@ -589,7 +581,7 @@ through a collection of procedurally-defined manipulation operators.
 \centering
 \includegraphics[width=\textwidth]{Figures/peel.pdf}
 \decoRule
-\caption[ Feature Aligned Volume Manipulation]{ An example of different types of alignment. (a) Axis aligned peel. Note how the peeled layer is thick and flat, since it is aligned with
+\caption[ Feature Aligned Volume Manipulation]{ An example of different types of alignment. (a) Axis-aligned peel. Note how the peeled layer is thick and flat since it is aligned with
 an orthogonal axis. (b) Surface aligned peel, aligned with a computed
 distance field. Notice how it approximates a surface. (c) Segment
 aligned peel, based on segmentation, which is more accurate. Note
@@ -605,13 +597,13 @@ or translucent. The four operators proposed in this framework are the following:
 \begin{itemize}
 \item Peeler: The peeler simulates peeling or cutting of the outer layers
 of a volumetric model. Different parameters
-of the peeler, such as thickness of the cut and the angle of bending of
+of the peeler, such as the thickness of the cut and the angle of bending of
 the peeled layer, can be manipulated interactively to obtain different
 illustrative effects.
 \item Retractors: In the context of surgical illustration, retractors are tools used to spread organs or bones, or to hold back soft tissues such as
 skin. In the context of illustration, they are useful for illustrating the
 access to the internal organs.
-\item Pliers: Pliers are tools used to grasp tissue and pull it or poke it into the volumetric object. The operator parameters include the shape of
+\item Pliers: Pliers are tools used to grasp tissue and pull it or poke it into the volumetric object. The operating parameters include the shape of
 the displacement and the radius of influence which specifies how the
 displacement propagates through the volume.
 \item Dilator: Dilators are used to gain access into narrow regions, cuts
@@ -620,7 +612,7 @@ by blowing air, to increase the visibility or accessibility of the region.
 When applied to volumetric manipulation, dilators have a similar effect
 to that of volumetric magic lenses (\cite{1532818}).
 \end{itemize} 
-However this framework do not offer tools for local manipulation and exploration inside the cut, which allows perceiving a target under a different perspective while keeping the global context. 
+However, this framework does not offer tools for local manipulation and exploration inside the cut, which allows perceiving a target from a different perspective while keeping the global context. 
 
 
 \cite{6787171} propose a set of linked views that display
@@ -631,7 +623,7 @@ of interest, e.g. spatially compact zones in DVR renderings or peaks in histogra
 at once. They enhance classical histogram views with shading, sorting,
 and depth, to allow spotting complex patterns with greater ease. In addition, they
 propose a smooth animation between multiple views, to locate (and select)
-data patterns which are hard to isolate in static plots. This framework integrate
+data patterns which are hard to isolate in static plots. This framework integrates
 a Focus+Context deformation that adds the ability to uncover locally occluded
 spatial patterns in different views. The GPU implementation of their
 techniques, which they call color tunneling, creates real-time interactive,
@@ -641,10 +633,9 @@ overlap between groups of voxels or pixels, tools to
 interactively unveil the occluded structures of interest are needed.
 Five interactive techniques have been proposed as follows (see figure \ref{fig:colortunneling}):
 \begin{itemize}
-\item View linking: Three configurable views (2 exploration views and
-one lock view) for data exploration,
+\item View linking: Three configurable views (2 exploration views and one lock view) for data exploration,
 \item Warp: Animates a view between two configurations,
-\item Lock: Locks items not to be affected by brush or dig ,
+\item Lock: Locks items not to be affected by brush or dig,
 \item Brush: With the lock view, brushing allows adding or removing
 data in a view,
 \item Dig: With the lock view, digging pushes data points away from
@@ -669,18 +660,18 @@ large amount of uninteresting noise (yellow).}
 clearly distinguishable from its neighbors. It supports virtual unpacking
 by visually moving any object away from its original pose. To achieve these, we first apply a volume segmentation guided by
 a confidence measure that recursively splits connected regions until
-semantically meaningful objects are obtained, and a label volume
-whose voxels specifying the object IDs is generated. 
+semantically meaningful objects are obtained, and a labeled volume
+whose voxels specifying the object IDs are generated. 
 
 First, a volumetric representation of a luggage is
 segmented into meaningful real-world objects. Then the segmented
 objects are assigned distinguishable colors depending on the viewing
 parameters. The original luggage volume, the segmentation
 results, and the automatically assigned colors are fed into a volume
-rendering system. For any user defined unpacking direction,
+rendering system. For any user-defined unpacking direction,
 unpackable objects are determined and unpacking is visualized by
 showing that the transition of the objects flying from its original
-position to a unpacking destination. Unpacked objects can be manipulated
+position to an unpacking destination. Unpacked objects can be manipulated
 individually, such as rotating, changing transfer function,
 etc, for inspection. The system keeps packed luggage, already unpacked
 objects, and the objects in transition in the same scene and
@@ -689,21 +680,19 @@ allows repacking.
 For the luggage segmentation strategy, this system utilizes a the
 graph partitioning approach by \cite{1580491} enhanced
 by a confidence measure of the quality of a segmentation. The
-confidence measure gives high scores to semantic meaningful realworld
+confidence measure gives high scores to semantic meaningful real-world
 objects that are homogeneous and have well-defined boundaries
-against the surrounding segments, and it guides the segmentation
-algorithm to recursively split connected objects in an input
+against the surrounding segments, and it guides the segmentation algorithm to recursively split connected objects in an input
 volume until the segmentation quality cannot be improved any more.
 
 In order to assign distinct colors to objects close to each other in
 an image, their system first generates a layered image of object IDs,
-from which whether any pair of objects are interfering each other
+from which whether any pair of objects is interfering with each other
 is determined. A modified graph coloring algorithm is then computed
 to ensure any interfering pair are assigned distinguishable
-hues while the hue space is fully exploited. In order to reduce volume
-rendering cost as well as to keep smooth transitions across
+hues while the hue space is fully exploited. In order to reduce volume rendering cost as well as to keep smooth transitions across
 touching objects, this system adopts a tinting approach, in which the assigned
-hues of an object is modulated onto a master transfer function, see \autoref{fig:unpack} .
+hues of an object is modulated onto a master transfer function, see \autoref{fig:unpack}.
 
 
 \begin{figure}
@@ -718,7 +707,7 @@ first moves towards the camera, then it flies to the top-right corner of the ima
 
 
 
-Despite all these previous work, efficiently selecting the target and  removing all in-between occluders is still challenging. More specifically, most existing occlusion management techniques do not simultaneously meet all following requirements: Rapidly create an unobstructed view of the target (R1), allow a flexible local exploration of the target zone (R2), keep the context in which the target is visually embedded (R3), and handle datasets where the target and occluders cannot 
+Despite all these previous work, efficiently selecting the target and removing all in-between occluders is still challenging. More specifically, most existing occlusion management techniques do not simultaneously meet all following requirements: Rapidly create an unobstructed view of the target (R1), allow a flexible local exploration of the target zone (R2), keep the context in which the target is visually embedded (R3), and handle datasets where the target and occluders cannot 
 be separated by transfer function manipulations (R4).
 
 \subsubsection{Requirements}
@@ -738,9 +727,9 @@ To start with, let us recall requirements R1$,\ldots,$R4.
 \subsubsection{ Comparison between the requirements and the previous work }
 
 Many occlusion management approaches have been proposed\,\cite{4483791}. Multiple viewports show the data from different perspectives\,\cite{WangBaldonado:2000:GUM:345513.345271}. This does not help when the target is strongly occluded from \emph{all} possible viewpoints (R4). Virtual X-ray methods make targets visible by turning occluders (half-)transparent\,\cite{Burns:2008:ACC:1457515.1409107}.\cite{4015450}, which interactively focuses on specific areas in the data while preserving context without visual clutter by modulating transparency. Correa and Ma\,\cite{5416704} proposed visibility-driven transfer functions (TFs) to maximize the visibility of selected data-intervals. Designing good TFs is still challenging (R2) in general: For instance, in baggage inspection, a dissimulation strategy is to hide a threat among same-density objects, so TF editing cannot easily remove occluders but keep the target (R4)\,\cite{7819413}. De-occluding a tumor from surrounding similar-density tissue in medical scans is a similar situation\,\cite{CGF:CGF12927}. 
-\cite{CGF:CGF979} also considered the voxels' occurrence on the cast ray, besides their densities and positions.\cite{6787171} removed occluders in 2D images, volumes, and trail-sets by deforming (pushing them away) in a focus area. Occludes are selected based on data value-ranges, thus we have here the same limitation as ClearView (R4). \cite{Li:2012:LVV:2425296.2425325} proposed luggage virtual unpacking where targets are cleared by interactively moving away occluders. This, however, alters the \emph{context} (relative position, connectivity) where occluders occur (R3). Recently, an interactive volumetric data exploration via direct voxel manipulation was proposed ,\cite{7819413}. Extending such approaches in a DVR setting to more complex deformations or changes of the data-in-focus is computationally challenging (R1).
+\cite{CGF:CGF979} also considered the voxels' occurrence on the cast ray, besides their densities and positions.\cite{6787171} removed occluders in 2D images, volumes, and trail-sets by deforming (pushing them away) in a focus area. Occludes are selected based on data value-ranges, thus we have here the same limitation as ClearView (R4). \cite{Li:2012:LVV:2425296.2425325} proposed luggage virtual unpacking where targets are cleared by interactively moving away occluders. This, however, alters the \emph{context} (relative position, connectivity) where occluders occur (R3). Recently, an interactive volumetric data exploration via direct voxel manipulation was proposed, \cite{7819413}. Extending such approaches in a DVR environment to more complex deformations or changes of the data-in-focus is computationally challenging (R1).
 
-Lenses for DVR face spatial selection and occlusion challenges. \cite{1532818} addresses these by rendering occlusions with lower opacity and magnifying pre-computed features interactively or automatically in a pre-segmented dataset. This, however, does not provide an (interactive) way to deal with similar-density occluders and targets (R4) and does not propose local exploration of the target context (R2). GlyphLens\,\cite{7539643} removes occluding glyphs by pulling them aside through animation. However, this covers only glyph-based and not DVR visualizations. 
+Lenses for DVR face spatial selection and occlusion challenges. \cite{1532818} addresses these by rendering occlusions with lower opacity and magnifying pre-computed features interactively or automatically in a pre-segmented dataset. This, however, does not provide an (interactive) way to deal with similar-density occluders and targets (R4) and does not propose a local exploration of the target context (R2). GlyphLens\,\cite{7539643} removes occluding glyphs by pulling them aside through animation. However, this covers only glyph-based and not DVR visualizations. 
 
 Lenses can create discontinuities between their inside and outside areas. Deformations can be a solution to this.
  \cite{Hsu:2011:RFM:2070781.2024165} create flexible deformations by non-linearly sampled rays to smoothly project objects at multiple levels of detail. However, this is computationally expensive and far from real-time (R1). Exploded views are used to partition a volume into several segments\, \cite{Sonnet:2004:IEA:989863.989871},\cite{4015467}. This strongly reduces occlusion but distorts the context (R3) and requires some sort of data pre-segmentation which takes time to compute (R1). \cite{Correa:2007:IDD:1313046.1313163,Correa:2006:FAV:1187627.1187827} allow one to manipulate the geometry of a data object.\cite{1250400} performed deformations using peeling to see hidden parts of the data. Such techniques remove potentially important contextual information surrounding the target, which makes it hard to see how the target is embedded in its context (R2).
@@ -775,54 +764,50 @@ Using non-straight-line rays is another way to avoid occluders. \cite{5613463} p
 \end{table}
 
 \subsection{summary}
-In this section, we studied existing occlusion  management strategies in volume rendering. 
-the transfer function, the segmentation, an deformations as well as Focus+context techniques. 
-The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge on the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example.
+In this section, we studied existing occlusion management strategies in volume rendering: the transfer function, the segmentation, deformations as well as Focus+context techniques. 
+The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge of the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example.
 
 
-Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depends of the type of the data-sets (medical, industrial).  
+Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depend on the type of the data-sets (medical, industrial).  
 
 
-Focus + Context methods as well as deformations modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allow to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed.
+Focus + Context methods, as well as deformations, modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allows to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed. However, most existing occlusion management techniques do not simultaneously meet all following requirements: Rapidly create an unobstructed view of the target (R1), allow a flexible local exploration of the target zone (R2), keep the context in which the target is visually embedded (R3), and handle datasets where the target and occluders cannot 
+be separated by transfer function manipulations (R4).
 
 \section{Volume rendering on mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality) }
 
-The computational power of mobile devices is much 
-stronger, and some traditional tasks on computer can be
+The computational power of mobile devices is much stronger, and some traditional tasks on a computer can be
 handled by mobile devices. One of the most obvious areas is
-graphics on mobile devices. Usually people use vertex data to
+graphics on mobile devices. Usually, people use vertex data to
 represent polygons and combine multiple polygons to describe
 the surface of an object. The surface of an object can be
-reconstructed easily with polygons, but the inner structures
-of the object is invisible. Most of the time, such as in
+reconstructed easily with polygons, but the inner structures of the object are invisible. Most of the time, such as in
 3D computer games, people do not concern the structures
 inside the object. However, some fields including science,
-engineering, and medicine, visualizing inner structures of a
-volume data is important. Therefore, direct volume rendering
+engineering, and medicine, visualizing inner structures of a volume of data is important. Therefore, direct volume rendering
 (DVR) was developed to visualize volume data. As
 mobile devices are getting ubiquitous, people need portable
 equipment solutions for DVR. Although the computation time
 of DVR is more expensive than that of polygon data, there is
-still a need to implement DVR on latest mobile devices with
+still a need to implement DVR on the latest mobile devices with
 new graphics technologies.
 
 \cite{7852799} proposed a framework based on OpenGL ES and GLSL shaders. This
 mobile framework has three components, namely, rendering,
 histogram mapping, and transfer function design. They
-implemented a one-pass shader in order to allow the system
-work in real-time. High dimension transfer functions can
+implemented a one-pass shader in order to allow the system to work in real-time. High dimension transfer functions can
 be easily used in our framework without losing the user
 interaction intuition. The user interface and transfer function
-design steps are user friendly to the non-professional user. They proposed different interactions such as:
+design steps are user-friendly to the non-professional user. They proposed different interactions such as:
 \begin{itemize}
-\item \textbf{Draw touch mode check box}: he default drag action
+\item \textbf{Draw touch mode check box}: the default drag action
 on screen is to rotate the volume object. When this
 check box is checked, the system will switch to draw
-mode. The touch or drag action will apply color onto the
+mode. The touch or drag action will apply color to the
 corresponding position on the transfer function texture.
 \item \textbf{2D transfer function check box}: If this check box is
 checked, the system will enable 2D transfer functions.
-\item \textbf{Compositing mode radio group}: : There are four
+\item \textbf{Compositing mode radio group}: There are four
 compositing modes: X-ray, MIP, iso-surface, and full
 rendering.
 \item \textbf{Showing texture radio group}: There are four textures
@@ -836,7 +821,7 @@ implemented in this control panel. For example, the ray
 casting steps can be controlled, more steps bring higher
 render quality, fewer steps bring better performance. The
 pen size and sharp can also be controlled, even the 2D
-transfer function image can be paint directly. Due to the
+transfer function image can be painted directly. Due to the
 complex of the system, we have not yet implemented all
 the controls.
 \end{itemize}
@@ -844,13 +829,12 @@ The rendering performance of this framework in the Xray,
 MIP, and iso-surface modes are around 11 FPS, almost
 the same. For the full rendering mode, due to its heavy
 computation, the rendering performance is much slower as 2
-FPS. Basically we can achieve real-time DVR on this mobile
+FPS. Basically, we can achieve real-time DVR on this mobile
 device by reducing unnecessary frames.
 
 
 
-\cite{7892381} proposed Neuro Imaging in Virtual Reality (NIVR), which is a visualization
-suite that employs various immersive visualizations to represent
+\cite{7892381} proposed Neuro Imaging in Virtual Reality (NIVR), which is a visualization suite that employs various immersive visualizations to represent
 neuroimaging information in VR. Some established techniques,
 such as raymarching volume visualization, are paired with newer
 techniques, such as near-field rendering, to provide a broad basis
@@ -891,11 +875,12 @@ In this section, we studied the previous volume rendering works on mobile device
 \section{Conlusion}
 In this Chapter, we carry out a presentation of existing work in volume rendering algorithms, occlusion management strategies, and volume rendering in mobile devices( Mixed Reality, Virtual Reality, and Augmented Reality).
 
- The existing algorithms to render volumetric data-sets  can be categorized into two major types: Direct Volume rendering (DVR), and Surface-fitting algorithms.Rendering a volume directly with DVR methods is usually better for visualising softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
+ The existing algorithms to render volumetric data-sets can be categorized into two major types: Direct Volume Rendering (DVR), and Surface-fitting algorithms. Rendering a volume directly with DVR methods is usually better for visualizing softer things like flows fields and density variations, or to take advantage of the transparency. Algorithms like raycasting allow to provide results of very high quality, usually considered to provide the best image quality. 
 Isosurfaces from surface-fitting methods tend to be a popular form of visualization for volume datasets since they can be rendered by a simple polygonal model, which can be drawn on the screen very quickly. They are very useful when we want to examine structures and boundaries in volume data, such as bone shape or distinct parts of the brain. It is then better to extract a triangle or tetrahedral mesh from the voxel data or implicit field. These meshes can be studied for their topology and curvature, and rendered as solid looking objects.
 
 
-Many strategies can help to deal with occlusion in volumetric data-sets. The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge on the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example.Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depends of the type of the data-sets (medical, industrial).  Focus + Context methods as well as deformations modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allow to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed.
+Many strategies can help to deal with occlusion in volumetric data-sets. The transfer function (TF) maps volumetric data to optical properties. It is used to "view" a certain part of the volume. They are relatively easy to manipulate. However, it usually requires a good knowledge of the data set to design a good transfer function even if this can be automated through segmentation or machine learning for example. Volume segmentation also has significant performance benefits for other ray tracing algorithms. Volume segmentation can subsequently be used to highlight structures of interest. However, it is really sensitive to the type domain of application. In fact, the parameters of the segmentation depend on the type of the data-sets (medical, industrial).  Focus + Context methods, as well as deformations, modify the volumetric data-sets in order to reduce occlusion in different parts of the data-sets. Focus+Context (F+C) allows to manage occlusion locally (usually in a scope of a lens or a tool) while the other parts of the dataset remain unchanged. These techniques are useful when a global understanding of the volume is needed. However, most existing occlusion management techniques do not simultaneously meet all following requirements: Rapidly create an unobstructed view of the target (R1), allow a flexible local exploration of the target zone (R2), keep the context in which the target is visually embedded (R3), and handle datasets where the target and occluders cannot 
+be separated by transfer function manipulations (R4).
 
 
  The potential of AR, VR, and MR technologies is really interesting even though these mobile devices usually suffer from relatively low computational power.   
