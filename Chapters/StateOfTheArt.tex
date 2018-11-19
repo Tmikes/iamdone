@@ -132,7 +132,7 @@ and shading can be done in one of eleven ways as explained in
 \subsubsection{Texture mapping}
 
 \paragraph{2D Texture mapping}
-2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. To create images of the slices, one can use the standard texture mapping capabilities provided by graphics libraries like OpenGL. \ref{fig:2dslices} shows how pixel colors and opacities are calculated when rendering a texture-mapped polygon. In texture mapping, texture coordinates (s, t) are stored along with each vertex. These coordinates are interpolated across the polygon during scan conversion and are used as coordinates for color look-up inside a texture image \ref{fig:2dtexture}. Color and opacity values from the texture image are reconstructed using bi-linear interpolation.
+2D Texture mapping consists in representing the whole volume as a set of slices parallel to coordinate planes. To create images of the slices, one can use the standard texture mapping capabilities provided by graphics libraries like OpenGL. \ref{fig:2dslices} shows how pixel colors and opacities are calculated when rendering a texture-mapped polygon. In texture mapping, the texture coordinates (s, t) are stored along with each vertex. These coordinates are interpolated across the polygon during scan conversion and are used as coordinates for color look-up inside a texture image \ref{fig:2dtexture}. Color and opacity values from the texture image are reconstructed using bi-linear interpolation.
 
 
 \begin{figure}[th]
@@ -178,7 +178,7 @@ The second way is to create slices which are always orthogonal to the viewing di
 \end{algorithm}
 
 \paragraph{3D Texture mapping}
-To allow interactive generation of view-orthogonal slices, a special hardware technique has been developed. This is a generalization of texture-mapping to three-dimensional textures, appropriately called "3D texturing."
+To allow the interactive generation of view-orthogonal slices, a special hardware technique has been developed. This is a generalization of texture-mapping to three-dimensional textures, appropriately called "3D texturing."
 As seen in Figure \ref{fig:2dtexture}, 2D texture-mapping interpolates two additional coordinates (s, t) across a polygon's interior. In 3D texture-mapping, three additional coordinates (s, t, r) are interpolated. To determine a pixel's color and opacity, these three coordinates are used as indices into a three-dimensional image, the 3D texture, see Figure \ref{fig:3dtexture}. To reconstruct texture values, tri-linear interpolation is used.
 
 3D textures allow direct treatment of volumetric data. Instead of generating a set of two-dimensional slices in a pre-processing step, the volumetric data is directly downloaded into the graphics hardware and is directly used to calculate color and opacity values for each pixel covered by a rendered primitive.
@@ -203,7 +203,7 @@ To generate oblique slices using 3D texturing, one only has to calculate the ver
 \end{figure}
 
 \subsubsection{Raycasting}
-Volume raycasting computes a 2D image from the 3D volumetric data set. The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split in four main steps (see Figure \ref{fig:rayasting}) :
+Volume raycasting computes a 2D image from the 3D volumetric data set. The basic goal of ray casting is to allow the best use of the three-dimensional data and not attempt to impose any geometric structure on it. It solves one of the most important limitations of surface extraction techniques, namely the way in which they display a projection of a thin shell in the acquisition space, see \cite{Stegmaier:2005:SFV:2386472.2386498}. Surface extraction techniques fail to take into account that, particularly in medical imaging, data may originate from fluid and other materials which may be partially transparent and should be modeled as such. Ray casting doesn't suffer from this limitation. This algorithm can be split into four main steps (see Figure \ref{fig:rayasting}) :
 \begin{itemize}
 
 \item \textbf{Ray casting}. For each pixel of the final image, a ray of sight is shot ("cast") through the volume. At this stage, it is useful to consider the volume being touched and enclosed within a bounding primitive, a simple geometric object (usually a cuboid) that is used to intersect the ray of sight and the volume.
@@ -359,7 +359,7 @@ Many segmentation algorithms allow extracting features from images (2D) and 3D v
 Scalar images can be segmented using thresholding approaches by partitioning the volume intensities. This methodology attempts to determine an intensity value that can separate the signal into a desired number of classes. Segmented volumes can be achieved by clustering all pixels with intensities larger than the threshold value into one class, and all others into another. In many applications, the threshold values selection can be done depending on the basis of a histogram. Multithresholding occurs when more than one threshold value is determined (see \cite{Sahoo:1988:STT:46072.46079}).
 The voxels of a certain object are not necessarily connected after thresholding because this technique does not consider the spatial characteristics of an image, thus causing it to be sensitive to noise and intensity fluctuations. For this reason, it cannot be easily applied to many medical imaging modalities. These drawbacks essentially corrupt the histogram of the image-making partitioning via the selection of more problematic appropriate thresholds.
 
-3D thresholding method is similar to the 2D approaches where thresholding process is applied on all pixels in the volume instead of that in the plane.
+3D thresholding method is similar to the 2D approaches where thresholding process is applied to all pixels in the volume instead of that in the plane.
 
 
 \subsubsection{ Clustering }
@@ -519,7 +519,7 @@ deferred shading to maximize performance. ClearView does not require
 any additional feature volumes, making the method suitable for
 the interactive rendering of high-resolution data sets on recent GPUs.
 Several shaders to intuitively convey material and shape properties are
-integrated into the system. To keep the user interface slim, only few
+integrated into the system. To keep the user interface slim, only a few
 parameters abstract from the technical realization. The user simply
 positions the hotspot on the data set and selects an amount of transparency
 to continuously blend between focus and context information.
@@ -536,7 +536,7 @@ of the 5123 visible human datasets with multiple iso-surfaces was generated at a
   \cite{1250400} performed deformations using peeling to see hidden parts of the data. Their goal in using deformations is to increase the visibility of
 the inner portions of the volume, without completely removing the
 surrounding data that normally occludes the inside. This is akin to
-focus+context schemes that allow a user to zoom-in on data of
+focus+context schemes that allow a user to zoom in on data of
 interest while using remaining screen space to show the surrounding
 context. Appropriately chosen deformations could, for example,
 split open a volume, showing displaced structures side-by-side,
@@ -726,7 +726,7 @@ To start with, let us recall requirements R1$,\ldots,$R4.
 
 \subsubsection{ Comparison between the requirements and the previous work }
 
-Many occlusion management approaches have been proposed\,\cite{4483791}. Multiple viewports show the data from different perspectives\,\cite{WangBaldonado:2000:GUM:345513.345271}. This does not help when the target is strongly occluded from \emph{all} possible viewpoints (R4). Virtual X-ray methods make targets visible by turning occluders (half-)transparent\,\cite{Burns:2008:ACC:1457515.1409107}.\cite{4015450}, which interactively focuses on specific areas in the data while preserving context without visual clutter by modulating transparency. Correa and Ma\,\cite{5416704} proposed visibility-driven transfer functions (TFs) to maximize the visibility of selected data-intervals. Designing good TFs is still challenging (R2) in general: For instance, in baggage inspection, a dissimulation strategy is to hide a threat among same-density objects, so TF editing cannot easily remove occluders but keep the target (R4)\,\cite{7819413}. De-occluding a tumor from surrounding similar-density tissue in medical scans is a similar situation\,\cite{CGF:CGF12927}. 
+Many occlusion management approaches have been proposed\,\cite{4483791}. Multiple viewports show the data from different perspectives\,\cite{WangBaldonado:2000:GUM:345513.345271}. This does not help when the target is strongly occluded from \emph{all} possible viewpoints (R4). Virtual X-ray methods make targets visible by turning occluders (half-)transparent\,\cite{Burns:2008:ACC:1457515.1409107}.\cite{4015450}, which interactively focuses on specific areas in the data while preserving context without visual clutter by modulating transparency. Correa and Ma\,\cite{5416704} proposed visibility-driven transfer functions (TFs) to maximize the visibility of selected data-intervals. Designing good TFs is still challenging (R2) in general: For instance, in baggage inspection, a dissimulation strategy is to hide a threat among same-density objects, so TF editing cannot easily remove occluders but keep the target (R4)\,\cite{7819413}. De-occluding a tumor from surrounding similar-density tissue in medical scans is a similar situation\, \cite{CGF:CGF12927}. 
 \cite{CGF:CGF979} also considered the voxels' occurrence on the cast ray, besides their densities and positions.\cite{6787171} removed occluders in 2D images, volumes, and trail-sets by deforming (pushing them away) in a focus area. Occludes are selected based on data value-ranges, thus we have here the same limitation as ClearView (R4). \cite{Li:2012:LVV:2425296.2425325} proposed luggage virtual unpacking where targets are cleared by interactively moving away occluders. This, however, alters the \emph{context} (relative position, connectivity) where occluders occur (R3). Recently, an interactive volumetric data exploration via direct voxel manipulation was proposed, \cite{7819413}. Extending such approaches in a DVR environment to more complex deformations or changes of the data-in-focus is computationally challenging (R1).
 
 Lenses for DVR face spatial selection and occlusion challenges. \cite{1532818} addresses these by rendering occlusions with lower opacity and magnifying pre-computed features interactively or automatically in a pre-segmented dataset. This, however, does not provide an (interactive) way to deal with similar-density occluders and targets (R4) and does not propose a local exploration of the target context (R2). GlyphLens\,\cite{7539643} removes occluding glyphs by pulling them aside through animation. However, this covers only glyph-based and not DVR visualizations. 
@@ -826,7 +826,7 @@ complex of the system, we have not yet implemented all
 the controls.
 \end{itemize}
 The rendering performance of this framework in the Xray,
-MIP, and iso-surface modes are around 11 FPS, almost
+MIP and iso-surface modes are around 11 FPS, almost
 the same. For the full rendering mode, due to its heavy
 computation, the rendering performance is much slower as 2
 FPS. Basically, we can achieve real-time DVR on this mobile

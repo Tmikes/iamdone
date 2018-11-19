@@ -2,13 +2,147 @@
 \label{DesignStudy}
 
 \section{Synthèse}
+
+\subsection{Etude d'un oculomètre (eye-tracker) pour instrumenter le contrôle du trafic aérien}
 Au cours des premiers mois de ma thèse, j'ai réalisé une étude d'utilisateur d'un eye tracker avec des systèmes interactifs pour les contrôleurs de la circulation aérienne. \textbf{Le but de ce travail était assez similaire à celui que je décris dans ce chapitre: \textit{Fournir des interactions fluides et rapides pour faciliter les tâches des utilisateurs.}} Les résultats de ce travail ont été publiés dans les actes de la Conférence HCI-Aero en 2016. Comme pour l'inspection des bagages, les opérateurs doivent faire face à une tâche critique avec une charge de travail cognitive importante. En outre, de nombreuses vies peuvent être affectées par une seule mauvaise décision. Ces raisons ont été les principales motivations pour tenter de simplifier et de moderniser ces systèmes (interface de contrôle du trafic aérien et logiciel de visualisation des bagages).
 
+Bien que la souris soit le périphérique d’entrée principal permettant d’interagir avec différents écrans, de nombreuses alternatives existent. Dans ce travail, nous avons présenté notre étude exploratoire avec l’oculomètre comme un nouveau périphérique d’entrée pour les systèmes de contrôle de la circulation aérienne. Nos investigations, basées sur une conception centrée sur l'utilisateur, comprenaient une étude de l'activité, une classification des interactions basées sur des systèmes d'oculométrie, et enfin un prototype fonctionnel avec les évaluations des techniques d'interaction développées. Notre objectif était d'étudier les utilisations du regard en tant que moyen d'interaction et de formuler des recommandations pour le développement futur des systèmes de contrôle de la circulation aérienne.
 
+L’activité des contrôleurs en route et d’approche consiste principalement à maintenir une distance de sécurité entre les aéronefs et à les guider en cas de problèmes de fluidité du trafic. Pour cela, l’espace aérien est divisé en secteurs, chaque secteur étant sous la responsabilité d’une paire de contrôleurs. Lorsqu'un vol traverse une zone, les contrôleurs guident
+le pilote en lui donnant des ordres (autorisations) de cap, de vitesse ou d’altitude, jusqu’à ce que le vol atteigne un secteur adjacent où d’autres contrôleurs seront chargés de cet avion. Dans un environnement typique, deux contrôleurs sont assis devant une position de contrôle spécialement conçue pour leur travail. Une position traditionnelle comprend un ensemble de sous-systèmes : deux écrans radar (un pour chaque contrôleur), des stripes de papier partagés par les deux contrôleurs (pour les systèmes utilisant les stripes) affichées sur un tableau horizontal.
+
+\subsubsection{Limitations des systèmes existants}
+Bien que la navigation soit disponible dans l'
+image radar (panoramique et zoom), il ne permet toujours pas de voir les avions appelants situés en dehors de la zone affichée. Cette
+configuration se fait en cliquant sur les boutons situés
+dans un menu contextuel. Les autres fonctionnalités sont accessibles via une barre d'outils
+ou un menu contextuel. C’est par exemple le cas de l'
+Alidade (mesure de la distance entre deux aéronefs), qui
+est effectué en le sélectionnant dans la barre d’outils à gauche de l'affichage radar puis tracer sur la carte la ligne
+représentant la distance pour l'évaluer  à l'aide d'une traînée
+avec le bouton gauche de la souris.
+En conclusion, plusieurs interactions requièrent de nombreuses manipulations avec la souris (atteindre la souris, trouver le menu
+l'emplacement, sélectionner l'élément approprié, effectuer les sélections et faire glisser la souris, etc.)
+
+\subsubsection{Interactions}
+\paragraph{Les méthodes de sélection}
+La sélection d'un avion est la première tâche qu'un contrôleur doit réaliser avant d'interagir avec elle. Pour ce faire, différentes techniques d'interactions sont possibles et sont illustrées ci-dessous.
+
+\begin{itemize}
+
+\item \textbf{La souris (technique existante)}: Nous avons conservé le fonctionnement de cette interaction qui est déjà mise en œuvre dans les systèmes existants, afin de comparer l'eye tracker et la souris.
+
+\item \textbf{Le temps de fixation}: Le temps de fixation est une technique qui permet de changer l’état d’une cible (un avion dans ce cas) lorsqu’il est fixé pendant une certaine période) .
+
+
+Notre prototype a deux boutons, l'un pour la validation et le
+autre pour annuler une validation précédente. L'apparence
+et la taille de ces boutons ont été modifiés à la suite de remarques au cours de la procédure de conception participative. Les boutons sont placés dans des zones normalement sans circulation. L'utilisateur doit regarder un avion: il passera au bleu après 200 ms. Puis il suffit de regarder le bouton "Valider" pendant le même lapse de temps pour sélectionner l'avion (il devient jaune). Pour annuler la sélection de cet avion, l’utilisateur doit à nouveau le fixer, puis il passe au rouge, et si l’utilisateur regarde l’annulation pendant une certaine période, l’avion est désélectionné.
+
+\item \textbf{Les Boutons}: Au cours de la session de brainstorming, il est apparu que la meilleur
+option pour sélectionner un avion est d'utiliser un périphérique externe
+(bouton, clavier ou pédale, etc.). C’est pourquoi nous avons décidé d'inclure cette interaction dans le prototype final.
+
+\item \textbf{Une Pédale}: Cette interaction est presque identique à la précédente, à la différence près qu’elle offre à l’utilisateur un bouton jouant à la fois le rôle de validation et d'annulation.
+
+\end{itemize}
+
+
+\paragraph{Sélection de fonction}
+Les méthodes de sélection de fonction que nous avons implémentées,
+répondent aux besoins d'obtenir des informations sur un avion, tout en libérant les mains.
+ 
+\begin{itemize}
+
+\item \textbf{ Menu déroulant}: cette interaction est similaire à celle existant dans le système courant. Avec un clic sur un avion, les utilisateurs ont accès à un menu contextuel offrant plusieurs fonctionnalités. Cette interaction a été mise au point à des fins de comparaison avec les nouvelles
+méthodes de sélection que nous proposons.
+
+\item \textbf{Menu circulaire et durée de fixation}: L’avantage du menu circulaire est qu’il apparaît exactement à l'emplacement où l'utilisateur a sélectionné le deuxième avion.
+Par conséquent, l'utilisateur peut sélectionner directement l'un des éléments du menu.
+Cependant, à la suite des remarques de certains utilisateurs, nous avons
+augmenté le délai à 500 ms avant d'ouvrir le menu circulaire.
+De plus, afin de répondre à la nécessité de garder toutes les parties de l’image radar visibles, nous avons opté pour la transparence.
+
+\item \textbf {Menu circulaire et geste du regard}: dans cette interaction, l’utilisateur doit déplacer son regard de l’un des éléments du menu vers l’extérieur du menu à secteurs. Ce geste du regard lance la fonction de "Warning" sur les avions sélectionnés.
+
+\end{itemize}
+ 
+\paragraph{Méthodes de zoom}
+Ces interactions répondent à la nécessité de naviguer librement à travers l'image radar.
+
+\begin{itemize}
+
+\item \textbf{Zoom centré sur le pointeur}: cette interaction existe dans certaines interfaces d'ATC (principalement des interfaces sans stripes appelées "stripless"). L'utilisateur agit sur
+la molette de la souris pour zoomer ou dézoomer. Le centre du zoom est alors
+situé au niveau du pointeur de la souris. En outre, cela nous aide à comparer
+l'efficacité de nos nouvelles interactions.
+
+\item \textbf{Molette centrée sur le regard}: Comme auparavant, cette technique de zoom est basée sur la souris, mais
+ce zoom n'est plus centré sur le pointeur de la souris, mais
+plutôt sur l'emplacement du regard de l'utilisateur sur l'écran. Avec les deux techniques, le zoom revient à son niveau initial en cliquant sur
+avec la molette de la souris.
+
+\item \textbf{Écran tactile}: Avec les gestes habituels sur un pavé tactile, les contrôleurs peuvent effectuer un zoom avant (pincement ouvert) et un retour arrière.
+zoomer (pincement resséré) centré sur son regard.
+
+\item \textbf{Leap Motion}: Le Leap Motion est un appareil qui détecte les mouvements et
+les gestes de la main de l'utilisateur. Nous l'avons donc utilisé pour réaliser
+une interaction qui consiste à approcher ou à retirer la paume de
+la main pour zoomer ou dézoomer. Lors du retrait de la main
+de la zone de détection , le zoom revient à
+son niveau d'origine.
+
+\end{itemize}
+
+
+\paragraph{Les méthodes de pan}
+Il est parfois nécessaire que le contrôleur observe les avions qui ne sont pas nécessairement affichés sur l'écran. Pour ce faire, l'utilisateur doit effectuer des mouvements latéraux
+(c.-à-d. Pan) de l'écran radar. Ces interactions répondent à
+la nécessité de naviguer dans l'image radar.
+
+\begin{itemize}
+
+\item \textbf{ La souris}: Une première technique, qui existe souvent dans certains systèmes de contrôle du trafic aérien, consiste à effectuer des mouvements latéraux avec la souris. L'utilisateur clique sur la carte puis effectue le mouvements de "drag" pour le déplacer.
+
+\item \textbf{Écran tactile}: Cette technique n’utilise pas le regard mais étant donné la présence du pavé tactile dans le prototype final, nous voulions savoir si les utilisateurs appréciraient le fait de naviguer sur la carte avec leurs doigts (comme nous pouvons le faire dans Google Maps sur smartphone par exemple).
+
+\item \textbf{Le SmartPan}: Notre objectif était d'utiliser l'eye-tracker pour observer directement un avion appelant qui serait en dehors de l'écran du contrôleur.
+Pour cela, nous avons conçu un système avec reconnaissance vocale
+pour détecter l'indicatif correspondant de l'avion appelant. Si l'avion appelant n'est pas dans la zone affichée sur le
+écran, le système affiche automatiquement une flèche indiquant la direction vers cet avion. L'utilisateur alors doit regarder la flèche (qui devient jaune), et un pan est automatiquement effectué vers l'avion appelant. Cet avion sera affiché dans une autre couleur pour une identification plus facile. Une fois que l'information est prise par le contrôleur, il ou elle a juste besoin de regarder dans le sens opposé de la flèche et de l'image radar retourne à sa valeur initiale. Lors des tests utilisateur, nous simulons un avion appelant avec le logiciel de contrôle (\autoref{e:smartPanfr}).
+
+\end{itemize}
+\begin{figure}
+ \centering
+	\includegraphics{Figures/smartPan.png}
+	\caption{SmartPan: la flèche indique un appel d'aéronef en dehors de l'image radar.}
+	\label{e:smartPanfr}
+\end{figure}
+
+
+
+\paragraph{Carte de chaleur}
+La carte de chaleur est déjà largement utilisée dans d’autres domaines et
+permet à l’ATC d’analyser le regard d’un utilisateur en enregistrant les
+historiques des zones ayant attiré son attention. Ces endroits sont
+par la suite transcrit sous la forme d'un dégradé de couleur indiquant les
+régions d'intérêt sur lesquelles l'utilisateur s'est concentré. Lorsque les contrôleurs interagissent les uns avec les autres pour discuter d'une situation,
+ils doivent souvent partager des informations à partir de l'écran radar
+et mettre en évidence les avions pour clarifier la situation. 
+Il s’agit d’utiliser la carte thermique comme support aux discussions et à la résolution des conflits d’aéronefs. Quand l'un des
+deux contrôleurs n'identifie pas immédiatement la zone dont sonn collègue parle, il suffit d'appuyer sur un bouton ou une touche pour afficher une carte thermique retraçant l'historique du regard (environ 20 secondes) des zones observées.
+Les contrôleurs peuvent alors avoir un aperçu de la situation et trouver une solution pour y remédier.
+
+\paragraph{Pointage magique amélioré}
+Cette interaction s'inspire de la carte de chaleur. Son but est d’afficher le pointeur de la souris sur à un emplacement approprié lorsque le contrôleur doit l'utiliser et donc
+évitez de faire glisser la souris trop longtemps pour atteindre le pointage approprié
+cible. Pour ce faire, juste avant que le contrôleur ne touche la souris, l'algorithme calcule la carte thermique. Lorsque l'utilisateur déplace le pointeur de la souris, le système affiche l'emplacement du pointeur de la souris à l'emplacement du regard plus dense.
+
+\subsubsection{Discussion et conclusion}
 Nous avons présenté une exploration des interactions
 offertes par un eye-tracker dans un contexte de contrôle du trafic aérien
 . Cette étude a été réalisée en étroite collaboration
-implication des contrôleurs aériens pendant toute les phases de conception
+implication des contrôleurs aériens pendant toutes les phases de conception
 (observation in situ, brainstorming, conception,prototypage, conception de solutions, développement, tests). Nous avons développé de nouvelles techniques d'interaction. La plus appréciée
 des techniques étaient le zoom centré sur le regard, le SmartPan, le
 sélection combinant le regard et un interrupteur, et la carte de chaleur. Les 2 principales recommandations de conception issues de cette étude consiste d'abord à valider les actions par un troisième périphérique
@@ -19,9 +153,9 @@ En ce qui concerne les perspectives, on peut mentionner les suivantes:
 le calibrage implicite de l'eye-tracker et l'utilisation de l'eye-tracker pour la formation des contrôleurs. Tout d'abord, le calibrage actuel prend du temps; ce serait très intéressant de trouver de
 nouvelles méthodes d'étalonnage plus rapides. Ensuite, plusieurs instructeurs
 contrôleurs ont exprimé leur intérêt pour l' eye-tracker en tant que
-moyens d'analyse des méthodes de travail des apprentis. Cela pourrait en fait faciliter l'enseignement des bonnes méthodes. 
+moyen d'analyse des méthodes de travail des apprentis. Cela pourrait en fait faciliter l'enseignement des bonnes méthodes. 
 
-
+\subsection{Visualisation interactive de bagages scannés en 3D}
 Les bagages numérisés en 2D peuvent souffrir principalement quatre stratégies de dissimulation:
 \begin{itemize}
 
@@ -35,7 +169,14 @@ Les bagages numérisés en 2D peuvent souffrir principalement quatre stratégies
 
 \end{itemize}
 
-L’exploration des bagages en 3D est une solution potentielle de ces limitations, mais au mieux de notre connaissance, peu de systèmes existants ont étudié ce domaine d’activité avec des outils d’exploration volumétrique interactifs (voir \cite{Li:2012:LVV:2425296.2425325}). Même si des travaux approfondis ont été réalisés dans l'exploration et la manipulation de l'analyse 3D médicale, il existe une excellente occasion  d'adapter et de développer de nouvelles techniques d'interaction et de manipulation de données pour prendre en charge l'exploration des bagages en 3D.
+\begin{figure}
+\centering
+	\includegraphics[height=8cm]{Figures/perceptionError}
+	\caption{Erreur de perception. L'agent de sécurité ne remarque pas la menace au sommet de l'image (le système de déclenchement d'un explosif) }
+	\label{f:perceptionfr}
+\end{figure}
+
+L’exploration des bagages en 3D est une solution potentielle de ces limitations(\autoref{f:perceptionfr}), mais au mieux de notre connaissance, peu de systèmes existants ont étudié ce domaine d’activité avec des outils d’exploration volumétrique interactifs (voir \cite{Li:2012:LVV:2425296.2425325}). Même si des travaux approfondis ont été réalisés dans l'exploration et la manipulation de l'analyse 3D médicale, il existe une excellente occasion  d'adapter et de développer de nouvelles techniques d'interaction et de manipulation de données pour prendre en charge l'exploration des bagages en 3D.
 
 Nous avons effectué des observations sur site avec une enquête contextuelle (observation d'un jour dans l'un des principaux aéroports français). Nous avons également organisé un brainstorming avec quatre spécialistes de la sécurité, à partir desquels nous avons défini des cas d'utilisation pertinents. Grâce à ces analyses, nous avons extrait un ensemble de besoins et d'exigences de haut niveau:
 \begin{itemize}
@@ -74,8 +215,16 @@ Deuxièmement, nous propageons la sélection dans toutes les directions. Pour ch
 
 
 
-Vu que nous avons développé ce système avec quatre agents de sureté, nous avons pu valider l’utilité de chaque technique développée. Grâce à un processus interactif, les utilisateurs ont donné leurs commentaires tout au long du processus de développement, ce qui a aidé à évaluer et à guider les techniques d'interaction proposées. Le feedback était principalement positif et les utilisateurs n'ont rencontré aucune difficulté particulière avec notre système. Les utilisateurs ont surtout apprécié l'interface simple avec peu de widgets et le nombre réduit d'interactions. Étonnamment, les utilisateurs étaient très intéressés à utiliser la fonction de transfert. L'histogramme et sa fonction de transfert ont également été appréciés même si la technique correspondante n'est pas simple à comprendre. Nous supposons que notre interface motive les utilisateurs à en apprendre davantage sur la technique derrière elle. Les utilisateurs ont également mentionné la nécessité d'afficher la densité réelle (la valeur numérique) de l'objet sélectionné. Ils demandent également à plusieurs reprises si la couleur affichée correspond à celle actuellement utilisée dans les paramètres opérationnels. Cela confirme le fait que les utilisateurs sont disposés à conserver certaines fonctionnalités existantes et préfèrent utiliser un système qu'ils connaissent déjà.
+Vu que nous avons développé ce système avec quatre agents de sureté, nous avons pu valider l’utilité de chaque technique développée. Grâce à un processus interactif, les utilisateurs ont donné leurs commentaires tout au long du processus de développement, ce qui a aidé à évaluer et à guider les techniques d'interaction proposées. Le feedback était principalement positif et les utilisateurs n'ont rencontré aucune difficulté particulière avec notre système. Les utilisateurs ont surtout apprécié l'interface simple avec peu de widgets et le nombre réduit d'interactions. Étonnamment, les utilisateurs étaient très intéressés à utiliser la fonction de transfert (\autoref{f:presetfr}). L'histogramme et sa fonction de transfert ont également été appréciés même si la technique correspondante n'est pas simple à comprendre. Nous supposons que notre interface motive les utilisateurs à en apprendre davantage sur la technique derrière elle. Les utilisateurs ont également mentionné la nécessité d'afficher la densité réelle (la valeur numérique) de l'objet sélectionné. Ils demandent également à plusieurs reprises si la couleur affichée correspond à celle actuellement utilisée dans les paramètres opérationnels. Cela confirme le fait que les utilisateurs sont disposés à conserver certaines fonctionnalités existantes et préfèrent utiliser un système qu'ils connaissent déjà.
 Les utilisateurs ont également apprécié nos exigences de conception avec des transitions en douceur et des investigations incrémentielles des bagages.
+
+\begin{figure}
+   \centering   
+	\includegraphics[width=15cm]{Figures/preset.png}
+	\caption{ Les fonctions de transfert préréglées et leur interaction continue. Les matériaux à haute densité sont révélés en glissant de gauche à droite sur les préréglages. }
+	\label{f:presetfr}
+\end{figure}
+
 Toutes ces observations et évaluations qualitatives méritent d'être validées par des évaluations appropriées qui ne relèvent pas de cette étude.
 Notre système est entièrement fonctionnel et interactif pour effectuer des explorations de bagages. De nombreuses améliorations peuvent encore être apportées afin d'améliorer ses utilisations en termes de nouvelles interactions et de réduction du temps d'exploration.
 Techniquement parlant, la sélection du point de vue adéquat peut être améliorée avec plus de 6 faces étudiées. Mais dans la pratique, ce paradigme simple reste approprié. Si le point de vue calculé n'est pas entièrement satisfaisant, on peut faire pivoter manuellement les bagages. Néanmoins, l'algorithme développé ne fournira pas nécessairement la meilleure solution (l'occlusion la plus basse) mais une solution satisfaisante.
@@ -85,24 +234,23 @@ Techniquement parlant, la sélection du point de vue adéquat peut être amélio
 \NewPage
 
 \section{ Preliminary user study }
-During the first months of my thesis, I carried out a user study of eye tracking devices to build interactive systems for Air Traffic Controllers. \textbf{ The purpose of that was quite similar to the one I describe in this chapter: \textit{Provide fluid and fast interactions to ease the tasks of the users.} } The results of this work have been published in the proceedings of the HCI-Aero conference in 2016. As with baggage inspection, the operators deal with a critical task with a lot of cognitive workload. In addition, many lives can be affected by a single bad decision. Theses reasons were the main motivations to try to simplify and modernize these systems (Air traffic control interface and Baggage visualization software). 
+During the first months of my thesis, I carried out a user study of eye tracking devices to build interactive systems for Air Traffic Controllers. \textbf{ The purpose of that was quite similar to the one I describe in this chapter: \textit{Provide fluid and fast interactions to ease the tasks of the users.} } The results of this work have been published in the proceedings of the HCI-Aero conference in 2016. As with baggage inspection, the operators deal with a critical task with a lot of cognitive workloads. In addition, many lives can be affected by a single bad decision. These reasons were the main motivations to try to simplify and modernize these systems (Air traffic control interface and Baggage visualization software). 
 
 
 While the mouse is the main input device for interacting with different screens, many alternatives do exist. In this work, we reported our exploratory study with the usage of
 eyes as a new input device for Air Traffic Control systems. Our investigations, based on a user-centered design, included a study of the activity, a classification of interaction
-techniques based on eye tracking systems, and finally a working prototype with the evaluations of the developed interaction techniques. Our goal was to investigate gaze usages
-as a means of interaction, and give recommendations for future development of Air Traffic Control systems.
+techniques based on eye tracking systems, and finally a working prototype with the evaluations of the developed interaction techniques. Our goal was to investigate gaze usages as a means of interaction and give recommendations for future development of Air Traffic Control systems.
 
 
-The activity of air traffic control is complex. Operators use many interactions techniques with dedicated IT systems to ensure the traffic flow with respect of security and
-optimization concerns. Air traffic activities is constantly evolving. Air traffic
+The activity of air traffic control is complex. Operators use many interactions techniques with dedicated IT systems to ensure the traffic flow with respect to security and
+optimization concerns. Air traffic activities are constantly evolving. Air traffic
 controllers, responsible for ensuring the safety and the fluidity of air traffic, have to deal with more and more information that could cause a significant increase in their
-workload. However, whether in control tower, approach or even in En-Route control center, air traffic controllers have many tools in addition to the radar screen. Their
-workspace is thus the scene of an accumulation of interaction devices (mainly mice and touchscreens).
+workload. However, whether in control tower, approach or even in an En-Route control center, air traffic controllers have many tools in addition to the radar screen. Their
+work-space is thus the scene of an accumulation of interaction devices (mainly mice and touchscreens).
 
 \subsection{ Contextual observations }
 
-In the following, we briefly describe the controller tasks within the three previously defined contexts. The activity of en-route and approach controllers [16] is mainly to maintain a safe distance between aircraft, and to guide them with traffic fluidity concerns. For this, the airspace is divided into sectors, each sector being the responsibility of one controller pair. When a flight goes through an area, controllers guide
+In the following, we briefly describe the controller tasks within the three previously defined contexts. The activity of en-route and approach controllers is mainly to maintain a safe distance between aircraft and to guide them with traffic fluidity concerns. For this, the airspace is divided into sectors, each sector is the responsibility of one controller pair. When a flight goes through an area, controllers guide
 the pilot by giving him or her orders (clearances) for heading, speed or altitude, until the flight reaches an adjacency sector where other controllers will be in charge of
 this aircraft. In a typical environment, two controllers are seated in front of a control position, specially designed to support their job. A traditional position includes a set of
 main subsystems: two radar screens (one for each controller), paper strips shared by both controllers (for systems using the strips) displayed on a horizontal table.
@@ -111,7 +259,7 @@ main subsystems: two radar screens (one for each controller), paper strips share
 
 With current systems, controllers are able to perform many
 different types of interaction. This allows in particular to
-obtain aircraft details, to setup the radar configuration or to
+obtain aircraft details, to set up the radar configuration or to
 share information with other controllers. During the
 observation sessions, we extracted some controllers frequent
 interactions with existing systems:
@@ -130,19 +278,19 @@ image (pan and zoom), it still does not allow to see the
 calling planes located outside of the displayed area. This
 view configuration is done by clicking on the buttons located
 in a context menu. Other features are accessible via a toolbar
-or a shortcut menu. This is for example the case of the
-alidade (measuring the distance between two aircraft), which
-is performed by selecting it on the tool bar on the left of the
-radar display (Figure 1) and then plotting on the map the line
+or a shortcut menu. This is, for example, the case of the
+Alidade (measuring the distance between two aircraft), which
+is performed by selecting it on the toolbar on the left of the
+radar display) and then plotting on the map the line
 representing the distance to assess the distance using a drag
 with the left mouse button.
-In conclusion, many interaction requires the mouse device with
+In conclusion, many interactions require the mouse device with
 numerous manipulations (reach the mouse, find the menu
 location, select the appropriated item, perform selections and mouse drags, etc.)
 
 \subsection{Interactions}
 After the brainstorming, we built prototypes (\autoref{e:prototype}) that were
-evaluated during a design walkthrough session with 3
+evaluated during a design walk-through session with 3
 confirmed air traffic controllers.
 
  \begin{figure}
@@ -159,9 +307,8 @@ interaction are possible and are shown in the following.
 
 \begin{itemize}
 
-\item \textbf{I1-1: The mouse (Existing Technic)}: We kept the functioning of this interaction which is already
-implemented in existing systems, in order to compare the
-eye tracker and the single mouse. (\autoref{e:})
+\item \textbf{I1-1: The mouse (Existing Technique)}: We kept the functioning of this interaction which is already
+implemented in existing systems, in order to compare the eye tracker and the single mouse. 
 
 \item \textbf{I1-2: The Dwell Time}: The Dwell Time is a technique that allows to change the state of a target (aircraft in this case) when looked for a certain period (\autoref{e:selectionState}).
 \begin{figure}
@@ -178,7 +325,7 @@ remarks during the design walkthrough sessions. The
 buttons are positioned in areas normally without traffic
 (\autoref{e:selectionDwell}). The user must look at a plane: it will switch to
 blue after a first timer (dwell time, 200ms). Then the user
-simply look at the "validate" button for a certain period to
+simply looks at the "validate" button for a certain period to
 select the aircraft (it changes to yellow). To cancel the
 selection of this aircraft, the user must again look at it, then it turns red, and if the user looks at the cancel
 button for a certain period, the airplane is deselected (\autoref{e:selectionDwell}).
@@ -229,7 +376,7 @@ Moreover, in order to respond to the need to keep all the
 parts of the radar image visible, we opted for transparent
 colors (\autoref{e:selectionFunction}).
 
-\item  \textbf{I2-3: Pie Menu and Gaze Gestures}:In this interaction, the user must move his or her gaze from one of the menu items to the outside of the pie menu. This gaze gesture launches the warning function on the selected planes.
+\item  \textbf{I2-3: Pie Menu and Gaze Gestures}: In this interaction, the user must move his or her gaze from one of the menu items to the outside of the pie menu. This gaze gesture launches the warning function on the selected planes.
 
 \end{itemize}
  
@@ -244,7 +391,7 @@ the mouse wheel to zoom in or out. The zoom center is then
 located at the mouse pointer. Also, it will help us to compare
 the effectiveness of our new interactions.
 
-\item \textbf{I3-2: Gaze centered Scroll}: As before, this zoom technique is based on the mouse, but
+\item \textbf{I3-2: Gaze centered Scroll}: As before, this zooming technique is based on the mouse, but
 this zoom is not centered on the mouse pointer anymore, but
 rather on the user's gaze location on the screen. In both
 techniques, the zoom returns to its original level by clicking
@@ -254,10 +401,10 @@ with the mouse wheel.
 zooming (Pinch close) centered on his / her gaze.
 
 \item \textbf{I3-4: Leap Motion}: The Leap Motion is a device that detects the movements and
-aspects of the user's hands. We therefore used it to achieve
+aspects of the user's hands. We, therefore, used it to achieve
 an interaction that is to approach or pull away the palm of
 the hand to zoom in or out. When removing the hand form
-the Leap motion's detection area , the zoom will return to
+the Leap motion's detection area, the zoom will return to
 its original level.
 
 
@@ -292,16 +439,15 @@ has to look at the arrow (which gets yellow thanks to the eye
 tracker), and a pan is automatically processed toward the
 calling aircraft. This aircraft will be displayed in a different
 color for easy identification (\autoref{e:smartPan}). Once the information
-is taken by the controller, he or she just need to look in the
+is taken by the controller, he or she just needs to look in the
 opposite direction of the arrow and the Pan
-returns to its initial value. In user testing, we simulate a
-calling plane with the control software.
+returns to its initial value. In user testing, we simulate a calling plane with the control software.
 \begin{figure}
  \centering
 	\includegraphics{Figures/smartPan.png}
 	\caption{
 	SmartPan: the arrow indicates a calling
-aircraft outside the radar image.}
+aircraft outside of the radar image.}
 	\label{e:smartPan}
 \end{figure}
 
@@ -340,11 +486,11 @@ inside the most viewed area}
 \end{figure}
 
 \subsubsection{I6: Improved Magic Pointing}
-This interaction takes is root from the heat map
+This interaction takes is the root of the heat map
 computation. Its goal is to display the mouse pointer at a
 suitable location when the controller has to use it and thus
 avoid too long mouse drag to reach the suitable pointing
-target. To do so, just before the controller touch the mouse,
+target. To do so, just before the controller touches the mouse,
 the algorithm computes the heat map. When the user moves
 the mouse pointer, the system will display the mouse pointer
 location at denser gaze location (\autoref{e:heatmap}).
@@ -357,7 +503,7 @@ task was to give a clearance (change of altitude or speed) to
 an aircraft located in a dense traffic area. This task required
 the use of a zoom technique. The third task was to give a
 clearance to an aircraft located outside the area displayed on
-the screen. We had the opportunity to test a method of pan.
+the screen. We had the opportunity to test a method of a pan.
 And finally, the last task was to show the recorded gaze
 location on the screen via a heat map.
 Each of these tasks has been performed with each of the
@@ -370,7 +516,7 @@ The heat map was generally appreciated, especially by the
 instructors. Indeed, they found that it would be very
 interesting during the training courses of controllers in the
 sense that this heat map would help them observe and
-correct the visual path of apprentice. It is also a good help
+correct the visual path of an apprentice. It is also a good help
 for the other controllers who will be able to know if their
 colleague is aware or not of a conflicting situation. The
 zoom centered method on the gaze using the mouse wheel
@@ -379,7 +525,7 @@ from users.
 Following user tests, many interactions have been improved
 and new ones were created to best meet the needs of air
 traffic controllers. To select an aircraft with only the eyes,
-we designed another solution. When the plane is gazed, two
+we designed another solution. When the plane is gazed upon, two
 small labels appear on its side.
 
 Regarding the selection of functions, the pie menu was not
@@ -394,9 +540,8 @@ We developed new interaction techniques. The most appreciated
 techniques were the gaze centered scroll, the SmartPan, the
 selection combining the gaze and a switch, and the heat
 map. The 2 main design recommendations emerging from
-this study are, first, to validate the actions by a third device
-for critical task; and second, to favor non penalizing
-interactions in case of poor detection of the eye tracker. To compensate the loss of calibrations noticed during the
+this study are, first, to validate the actions by a third device for critical tasks; and second, to favor non penalizing
+interactions in case of poor detection of the eye tracker. To compensate for the loss of calibrations noticed during the
 tests, we implemented an algorithm called Bubble Cursor  (see
 \cite{Grossman:2005:BCE:1054972.1055012}). This algorithm consisting in computing the nearest
 neighbor of the user gaze location. Thus, even if the eye is
@@ -409,7 +554,7 @@ With almost the same motivations of providing fluidity and continuity between th
 
 \section{Introduction: Interactive exploration of 3D scanned baggage}
 Volumetric data found in many fields, such as engineering, material sciences, medical imaging, astrophysics. Their exploration is not trivial, and heavily impacted by the users' needs. In most airports, security agents deal with such data exploration during baggage inspections. They use two types of fluoroscopic systems: X-ray and tomography scanning systems. X-ray system provides a flattened 2D baggage scan while tomography scanning system produces transversal scans, also called slices. 
-Thanks to data processing (e.g. \cite{deans2007radon}), they can produce a full 3D scan (set of voxel with their corresponding density).
+Thanks to data processing (e.g. \cite{deans2007radon}), they can produce a full 3D scan (set of voxels with their corresponding density).
 Our input data is a uniformly sampled multivariate field F : D $\longrightarrow$ V, D $\subset \mathbb{R}^{n}$ 
 ,V $\subset \mathbb{R}^{m}$ with n = 3 (volume) and m=1 (scalar field).
 
@@ -417,7 +562,7 @@ Our input data is a uniformly sampled multivariate field F : D $\longrightarrow$
 
 \section{Activity analysis}
 
-During this thesis, I had the opportunity to intend to training courses for security agents' instructors, and to visit an airport (Toulouse-Blagnac Airport). These helped me to study the activity of security agents and get the users' needs. The training courses lasted 3 weeks. In fact, I studied weapons and Explosives, scan analysis methods, dissimulation techniques, and fluoroscopic systems functionalities. In addition, I spent 3 days among the security agents of Brink's at Toulouse-Blagnac Airport. In this section, first I describe the security agents' task by describing their equipment, the prohibited articles, and the protocol to analyze a scan. Next, I highlight their activity issues by showing the different error types, and the dissimulation techniques.
+During this thesis, I had the opportunity to intend to training courses for security agents' instructors, and to visit an airport (Toulouse-Blagnac Airport). These helped me to study the activity of security agents and get the users' needs. The training courses lasted 3 weeks. In fact, I studied weapons and Explosives, scan analysis methods, dissimulation techniques, and fluoroscopic systems functionalities. In addition, I spent 3 days among the security agents of Brinks at Toulouse-Blagnac Airport. In this section, first I describe the security agents' task by describing their equipment, the prohibited articles, and the protocol to analyze a scan. Next, I highlight their activity issues by showing the different error types, and dissimulation techniques.
 
 \subsection{Task description}
 
@@ -428,7 +573,7 @@ The airport security agents have many roles depending on their work position. Th
 \item pat-down search,
 \item baggage inspection.
 \end{itemize}
-In this study, we focus on the threat detection through X-rays.
+In this study, we focus on threat detection through X-rays.
 
 \subsubsection{The Equipment}
 
@@ -439,8 +584,8 @@ In most French airport, the security agents two types of fluoroscopic system: th
 \item the central unit,
 \item and input/output devices (keyboard, screens).
 \end{itemize}
-When a luggage get in the frame, the x-rays are sent from the generator to the L-shaped detector through the luggage's components. The x-rays are attenuated depending on the molecular density of the encountered objects, which allows to receive different x-ray intensities on the L-shaped detector. Then, the different received intensities are processed to get the final 2D scan.
-The final image does not keep the original colors, instead they use 3 colors (orange, green, and blue) to show the density of each encountered object. The orange color is used for low density matters which are mainly organic. In opposition, the blue color is used for high density matters which are mainly inorganic. The green color expresses the superposition of different kinds of materials or average density materials, see \autoref{f:image2d}.
+When a luggage gets in the frame, the x-rays are sent from the generator to the L-shaped detector through the luggage's components. The x-rays are attenuated depending on the molecular density of the encountered objects, which allows receiving different x-ray intensities on the L-shaped detector. Then, the different received intensities are processed to get the final 2D scan.
+The final image does not keep the original colors, instead, they use 3 colors (orange, green, and blue) to show the density of each encountered object. The orange color is used for low-density matters which are mainly organic. In opposition, the blue color is used for high-density matters which are mainly inorganic. The green color expresses the superposition of different kinds of materials or average density materials, see \autoref{f:image2d}.
 
 \begin{figure}
 \centering
@@ -467,19 +612,19 @@ Whatever fluoroscopic system is used, the security agents try to follow an analy
 \paragraph{Global picture analysis}
 
 
-First, the security agent check whether the luggage is well placed. Indeed, the luggage should appear on the screen with \ang{45} of rotation. If it is not the case, a re-positioning is required. To avoid this issue, another agent must check the luggage positioning.
-Next, the agent try to find out whether the luggage is complex or not. A luggage is complex when there is a superposition of usual objects and metallic materials. A complex luggage can hide threat and make them invisible. If possible, the complex luggage is opened and all troublesome objects are removed.
+First, the security agent checks whether the luggage is well placed. Indeed, the luggage should appear on the screen with \ang{45} of rotation. If it is not the case, a re-positioning is required. To avoid this issue, another agent must check the luggage positioning.
+Next, the agent tries to find out whether the luggage is complex or not. A luggage is complex when there is a superposition of usual objects and metallic materials. A complex luggage can hide threat and make them invisible. If possible, the complex luggage is opened and all troublesome objects are removed.
 
 \paragraph{The in-depth analysis}
 
 
-First, the security agent divides the luggage's component in groups. The aim is to reduce the risk of error. Indeed, smaller prohibited articles may be easily unseen. Then, the dark areas must be lightened up. To do it, the security agent can use functionalities such as high penetration or contour enhancement. If the area is still dark, the luggage must be opened to remove the serious doubts.
-Next, the agent focus on the problematical shapes. A non-recognizable shape may be caused by a bad positioning. Any unrecognized object must be inspected by the agent. If any prohibited article is detected, the agent follows the procedure related to the threat. In addition, an organic matter superposed to an electronic device is considered as a sufficient reason to open the luggage. Liquids, gels, and aerosols should be less than 100ml otherwise they will be removed from the luggage. These liquids should be placed into a plastic bag.
+First, the security agent divides the luggage's component into groups. The aim is to reduce the risk of error. Indeed, smaller prohibited articles may be easily unseen. Then, the dark areas must be lightened up. To do it, the security agent can use functionalities such as high penetration or contour enhancement. If the area is still dark, the luggage must be opened to remove the serious doubts.
+Next, the agent focus on the problematical shapes. A non-recognizable shape may be caused by a bad positioning. Any unrecognized object must be inspected by the agent. If any prohibited article is detected, the agent follows the procedure related to the threat. In addition, an organic matter superposed to an electronic device is considered as a sufficient reason to open the luggage. Liquids, gels, and aerosols should be less than 100ml otherwise they will be removed from the luggage. These liquids should be placed in a plastic bag.
 
 \paragraph{The structure analysis}
 
 
-During this step, the security agent compare each element of the luggage which must be symmetrical because of its industrial conception such us suitcase's wheels. If the symmetry is not respected, it is might be a clue to the deliberate luggage modification for dissimulating prohibited objects.
+During this step, the security agent compares each element of the luggage which must be symmetrical because of its industrial conception such us suitcase's wheels. If the symmetry is not respected, it is might be a clue to the deliberate luggage modification for dissimulating prohibited objects.
 
 \paragraph{The context}
 
@@ -489,9 +634,9 @@ On an explosive detection system, the threats are already highlighted. The agent
 In our study, we focus on a conventional system to provide new interaction techniques for analyzing 3D luggage scans.
 
 \subsection{The activity issues}
-There is many level of security in luggage inspection depending on the airport (between 1 and 6). Humans and machines work together to detect any potential threat inside the luggage. At the lowest levels of security, the security agents are in contact with the passengers, and therefore face 4 main operational constraints for safety and economical reasons: Facilitation, security, speed, and self-protection. 
+There are many levels of security in luggage inspection depending on the airport (between 1 and 6). Humans and machines work together to detect any potential threat inside the luggage. At the lowest levels of security, the security agents are in contact with the passengers, and therefore face 4 main operational constraints for safety and economic reasons: Facilitation, security, speed, and self-protection. 
 
-First of all, The facilitation constraint implies that the security agent has to ensure a good user experience to the customers (the passengers). Second, they must prevent any potential threat to pass their inspection. In addition, they have to protect themselves from different kind of threats (ill-intentioned persons, parcel bomb). And finally, economical reasons oblige them to be fast enough in order to ensure a good flow. Therefore, the security agent face a trade-off between these four constraints, see  \autoref{f:constraints} .
+First of all, The facilitation constraint implies that the security agent has to ensure a good user experience to the customers (the passengers). Second, they must prevent any potential threat to pass their inspection. In addition, they have to protect themselves from different kind of threats (ill-intentioned persons, parcel bomb). And finally, economical reasons oblige them to be fast enough in order to ensure a good flow. Therefore, the security agent faces a trade-off between these four constraints, see  \autoref{f:constraints} .
 \begin{figure}
 \centering
 	\includegraphics[height=5.2cm]{Figures/constraints}
@@ -508,16 +653,17 @@ The security agents can usually do 3 types of error during the baggage inspectio
 
 \paragraph{Perception errors}
 
-The security agent does not detect the right area to analyze. He is not focus on the troublesome area, see  \autoref{f:perception}.
+The security agent does not detect the right area to analyze. He is not focused on the troublesome area, see  \autoref{f:perception}.
 \begin{figure}
 \centering
 	\includegraphics[height=8cm]{Figures/perceptionError}
 	\caption{Perception error. The security agent do not notice the menace at the top of the image (the initiating system of an explosive) }
 	\label{f:perception}
 \end{figure}
+
 \paragraph{Interpretation errors}
 
-The security agent detects the right troublesome area but does not judge it as a potential threat. In other words, he is focused on the right area but cannot see the menace. The agents used to combine what they find out with their knowledge on real world objects stored in their memories. They have their own model of the situation, see  \autoref{f:interpretation}.
+The security agent detects the right troublesome area but does not judge it as a potential threat. In other words, he is focused on the right area but cannot see the menace. The agents used to combine what they find out with their knowledge of real-world objects stored in their memories. They have their own model of the situation, see  \autoref{f:interpretation}.
 \begin{figure}
 \centering
 	\includegraphics[height=8cm]{Figures/interpretationError}
@@ -525,16 +671,16 @@ The security agent detects the right troublesome area but does not judge it as a
 	\label{f:interpretation}
 \end{figure}
 
-\paragraph{Decision making errors}
+\paragraph{ Decision-making errors}
 In this case, the security agent detects the right troublesome area with a good interpretation, but make a bad decision. It might be related to the context or the procedure knowledge.
 In addition to these errors related to the agent, four hiding techniques can be used to bypass the security mechanisms. Those techniques are superposition, positioning, dissociation, and bait.
 
 \subsubsection{ Dissimulation techniques }
-Since the resulting X-ray scanned image only contains densities, it cannot display the material original colors. The standard color visual mapping uses 3 different colors (orange, green, and blue) to display the data density. Orange color corresponds to low density (mainly organic items). In opposition, blue color is used for high density items (e.g. metal). In the case of X-ray systems, green color corresponds to the superposition of different kinds of materials or average density materials (\autoref{f:image2d}). 
+Since the resulting X-ray scanned image only contains densities, it cannot display the material original colors. The standard color visual mapping uses 3 different colors (orange, green, and blue) to display the data density. Orange color corresponds to low density (mainly organic items). In opposition, the blue color is used for high-density items (e.g. metal). In the case of X-ray systems, green color corresponds to the superposition of different kinds of materials or average density materials (\autoref{f:image2d}). 
 
 The displayed 2D scanned image can suffer from four issues.
 
-\textbf{Superposition}: A threat (e.g. prohibited object like knife, cutter…) may be sheltered behind dense materials. Sometimes, it is possible to see through these blind shield using some functionalities such as high penetration (enhanced X-ray power) or image processing (contrast improvement),  see  \autoref{f:superposition}. 
+\textbf{Superposition}: A threat (e.g. prohibited object like a knife, cutter…) may be sheltered behind dense materials. Sometimes, it is possible to see through these blind shield using some functionalities such as high penetration (enhanced X-ray power) or image processing (contrast improvement),  see  \autoref{f:superposition}. 
 \begin{figure}
 \centering
 	\includegraphics[width=0.95\textwidth]{Figures/superposition}
@@ -558,24 +704,24 @@ The displayed 2D scanned image can suffer from four issues.
 	\label{f:dissociation}
 \end{figure}
 
-\textbf{Lure}: An ill-intentioned individual may use a lure to hide the real threat. For instance, a minor threat like a small scissors may be clearly visible and catch security agent's attention while a more important threat remains hidden, see  \autoref{f:bait}.
+\textbf{Lure}: An ill-intentioned individual may use a lure to hide the real threat. For instance, a minor threat like small scissors may be clearly visible and catch security agent's attention while a more important threat remains hidden, see  \autoref{f:bait}.
 \begin{figure}
 \centering
 	\includegraphics[height=8cm]{Figures/bait}
-	\caption{Dissimulation using a bait}
+	\caption[Dissimulation using a bait.]{The real threat is the revolver on the left of the luggage}
 	\label{f:bait}
 \end{figure}
 
 \subsection{ Requirements }
 
 
-3D baggage scan exploration are one potential solution of such limitations, but to the best of our knowledge fiew previous existing system investigated this activity domain with interactive volumetric exploration tools (\cite{Li:2012:LVV:2425296.2425325}). Even if extensive works have been done in medical 3D scan exploration and manipulation ~\cite{preim2013visual}, there is a great opportunity to adapt and develop new interaction and data manipulation techniques to support 3D baggage exploration.
+3D baggage scan exploration is one potential solution of such limitations, but to the best of our knowledge, few previous existing systems investigated this activity domain with interactive volumetric exploration tools (\cite{Li:2012:LVV:2425296.2425325}). Even if extensive works have been done in medical 3D scan exploration and manipulation ~\cite{preim2013visual}, there is a great opportunity to adapt and develop new interaction and data manipulation techniques to support 3D baggage exploration.
 
-We performed on site observations with contextual inquiry (one day observation in one of the major French airport). We also conducted one brainstorming with four security practitioners from which we defined relevant use cases. Thanks to these analysis, we extracted a set of top level needs and requirements :
+We performed on-site observations with contextual inquiry (one-day observation in one of the major French airport). We also conducted one brainstorming with four security practitioners from which we defined relevant use cases. Thanks to these analyses, we extracted a set of top-level needs and requirements :
 
 •	VIS: users need to visualize the content of the luggage.
 
-•	EXP: users have to explore the baggage with interactive navigation system.
+•	EXP: users have to explore the baggage with an interactive navigation system.
 
 •	OCL: the system must provide tools to address occlusion issues; the
 superposition of items inside the luggage hinders their visualization.
@@ -583,7 +729,7 @@ superposition of items inside the luggage hinders their visualization.
 •	INT: User need to explore luggage with simple interactions. User knowledge is too limited regarding volumetric data processing to understand the involved techniques and their parameters.
 
 
-Les tomographes génèrent des fichiers contenant toutes les densités rencontrées par les rayons X à travers les bagages. Ces fichiers contiennent généralement environ 30 millions de valeurs. Pour charger et afficher un tel ensemble de données dans un système interactif, nous avons utilisé la puissance de calcul parallèle de la carte graphique. Nous avons utilisé un programme écrit en C\# combiné avec la plateforme de calcul parallèle CUDA et un ensemble de techniques GPGPU. Pour afficher le jeu de données, nous avons utilisé un algorithme standard de diffusion de rayons. Les contributions de votre travail reposent sur de nouvelles interactions et leurs algorithmes associés.
+Tomographs generate files containing all the densities X-rays encounter through luggage. These files typically contain about 30 million values. To load and display such a set of data in an interactive system, we used the parallel computing power of the graphics card. We used a program written in C\# combined with the CUDA parallel computing platform and a set of GPGPU techniques. To display the dataset, we used a standard raycasting algorithm. The contributions of your work are based on new interactions and their associated algorithms.
 
 
 \section{ Interactive exploration of 3D scanned baggage }
@@ -602,18 +748,18 @@ A smaller view called Overview shows the location of the investigated area. The 
 
 Temporal Instances window, located in the top right of the interface, shows the current and the previous settings of the Volume Visualization. The current setting is modified when the user changes the transfer function or manipulates an object.
 The Snapshot shows saved instances with their setting (pan, zoom, rotation, transfer function, selection, brushing).
-The Toolbox contains every interactive tools to explore the baggage (brushing, selection, eraser, density picker, navigation tools).
-Transfer Function presets contains six predefined settings ordered by their filtering power. Low level shows every density, high level only show high density values. 
+The Toolbox contains every interactive tool to explore the baggage (brushing, selection, eraser, density picker, navigation tools).
+Transfer Function presets contains six predefined settings ordered by their filtering power. The lowest level show every density, the highest level only show high-density values. 
 
-This global layout can be customized thanks to View Options. One can display one or two views of the Volume Visualization, the Temporal Instances, the Snapshot and the Overview.
+This global layout can be customized thanks to View Options. One can display one or two views of the Volume Visualization, the Temporal Instances, the Snapshot, and the Overview.
 
 \subsection{Interaction techniques}
 
-We used a multi touchscreen Wacom 24HD equipped with a stylus. Most of the developed interactions can be performed with every available modality: mouse, hand or pen.
+We used a multi-touchscreen Wacom 24HD equipped with a stylus. Most of the developed interactions can be performed with every available modality: mouse, hand or pen.
 \subsubsection{ Transfer function edition}	
-Datasets such as two dimensional raster images or three dimensional voxel based representations are often processed for representation using a transfer function (TF) defined by a curve. 
+Datasets such as two-dimensional raster images or three-dimensional voxel-based representations are often processed for representation using a transfer function (TF) defined by a curve. 
 
-Since airport security agents have a reduced time frame and limited knowledge of technical constraints, we defined six TF presets (\autoref{f:preset}). These presets only modify the TF transparency curve while keeping the same color mapping. These presets are ordered by their density filtering power: the first preset displays every density and the last one only highest density of the volume (i.e. metal). 
+Since airport security agents have a reduced time frame and limited knowledge of technical constraints, we defined six TF presets (\autoref{f:preset}). These preset only modify the TF transparency curve while keeping the same color mapping. These presets are ordered by their density filtering power: the first preset displays every density and the last one only highest density of the volume (i.e. metal). 
 
 \begin{figure}
    \centering   
@@ -625,7 +771,7 @@ When clicking on a preset, the TF changes with a short transition (1 second) tow
 Finally, the user can select a transfer function located between two presets. To do so, the user drags from any location within the TF presets area until the volume visualization shows interesting features 
 
 \subsubsection{ Objects selection and investigation}
-In order to investigate in detail a specific object, one can isolate it, remove surrounding items to address occlusion issues, or find a suitable point of view (\autoref{f:menace}). This section details these interaction techniques which encompass the selection of  many objects.
+In order to investigate in detail a specific object, one can isolate it, remove surrounding items to address occlusion issues, or find a suitable point of view (\autoref{f:menace}). This section details these interaction techniques which encompass the selection of many objects.
 
 
 \paragraph{	Selection of an object}
@@ -641,15 +787,15 @@ We developed three different ways to select objects with the three different mod
 
 
 
-If the user has activated the 2 views Volume Visualization (Button 2 views in the View Option panel), the selected object is isolated in the second view (on the right side of the main view \autoref{f:selection} ). The selection is incremental and many object can be selected one after another. To undo the selection, the user has to select the desired object in the second view.
+If the user has activated the 2 views Volume Visualization (Button 2 views in the View Options panel), the selected object is isolated in the second view (on the right side of the main view \autoref{f:selection} ). The selection is incremental and many objects can be selected one after another. To undo the selection, the user has to select the desired object in the second view.
 
 \paragraph{Occlusion management}
 
-In order to address occlusion issues, the eraser tool can interactively remove selected objects from one view to the other one. This interaction is similar to the selection interaction with all the modalities (mouse, hand, and pen). When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. The user can also double click on the target with the mouse pointer. To restore a deleted object from one view, the user has to erase it from the other view, see \cite{hurter2017boolean}. This simple principle guarantees that every item of the baggage is always visible while addressing occlusion issues (\autoref{f:deletion}).
+In order to address occlusion issues, the eraser tool can interactively remove selected objects from one view to the other one. This interaction is similar to the selection interaction with all the modalities (mouse, hand, and pen). When using his or her hand, the user has to double tap the desired object with his or her finger. When using the pen, the user must press the biggest button on the stylus while pointing at the target. The user can also double-click on the target with the mouse pointer. To restore a deleted object from one view, the user has to erase it from the other view, see \cite{hurter2017boolean}. This simple principle guarantees that every item of the baggage is always visible while addressing occlusion issues (\autoref{f:deletion}).
 
 \begin{figure}
 \centering   	\includegraphics[width=9cm]{Figures/deletion.png}
-	\caption[ Addressing occlusion issue by removing objects from one view to another one.]{ Addressing occlusion issue by removing objects from one view to another one. 1- The user wants to remove the bars of the baggage. 2- After a double click with the deletion tool, the object is removed from the main view. 3- After the activation of the 2nd view, the removed objects are visible outside the baggage.}
+	\caption[ Addressing occlusion issue by removing objects from one view to another one.]{ Addressing the occlusion issue by removing objects from one view to another one. 1- The user wants to remove the bars of the baggage. 2- After a double click with the deletion tool, the object is removed from the main view. 3- After the activation of the 2nd view, the removed objects are visible outside the baggage.}
 	\label{f:deletion}
 \end{figure}
 
@@ -661,32 +807,32 @@ In order to address occlusion issues, the eraser tool can interactively remove s
 	\label{f:brushing_new}
 \end{figure}
 
-Baggage is composed of low density items (e.g. fabrics, clothes, papers, organic objects…) and high density ones (e.g. metal, electronic components…). Low density items are more numerous and surround high density ones. In order to perceive a metallic object, one needs to remove or hide its surrounding low density items thanks to an adequate TF. Since TF is applicable to the whole volume visualization, the visualization of a metallic bottle will prevent to visualize its content (i.e. organic density). One cannot find out whether the metallic bottle is empty or not (\autoref{f:brushing_new}). To solve this problem, we developed two brushing techniques to explore the baggage by the mean of local removal of specific densities without modifying the TF.
+Baggage is composed of low-density items (e.g. fabrics, clothes, papers, organic objects…) and high-density ones (e.g. metal, electronic components…). Low-density items are more numerous and surround high-density ones. In order to perceive a metallic object, one needs to remove or hide its surrounding low-density items thanks to an adequate TF. Since TF is applicable to the whole volume visualization, the visualization of a metallic bottle will prevent to visualize its content (i.e. organic density). One cannot find out whether the metallic bottle is empty or not (\autoref{f:brushing_new}). To solve this problem, we developed two brushing techniques to explore the baggage by the mean of local removal of specific densities without modifying the TF.
 
 \paragraph{Range Based brushing technique}
 
-This interaction removes all voxels which are bounded in a user defined range. A range-slider is available on top of the transfer function (\autoref{f:brushing_range}). The user enables the brush tool in the toolbox by clicking on it and then the right button of the mouse removes the voxels beneath the mouse pointer.
-Original brushing technique removes every voxel which is bounded in a density range and which is beneath the mouse pointer. In case of the exploration of a metallic bottle full of liquid, original brushing technique will remove the surrounding of the bottle as well as its content. To address this issue we developed a new brushing technique as if one digs into a baggage. This digging process will stop when a dense layer is encountered. This dense layer (e.g. the outer layer of a metallic bottle) will act as a shield to protect voxels located behind it (\autoref{f:brushing_new}).
+This interaction removes all voxels which are bounded in a user-defined range. A range-slider is available on top of the transfer function (\autoref{f:brushing_range}). The user enables the brush tool in the toolbox by clicking on it and then the right button of the mouse removes the voxels beneath the mouse pointer.
+Original brushing technique removes every voxel which is bounded in a density range and which is beneath the mouse pointer. In the case of the exploration of a metallic bottle full of liquid, original brushing technique will remove the surrounding of the bottle as well as its content. To address this issue we developed a new brushing technique as if one digs into a baggage. This digging process will stop when a dense layer is encountered. This dense layer (e.g. the outer layer of a metallic bottle) will act as a shield to protect voxels located behind it (\autoref{f:brushing_new}).
 
  \begin{figure}
 \centering	\includegraphics[width=9cm]{Figures/brushing-range.png}
-	\caption[Brushing low density materials to see a metallic object hidden inside the baggage.]{ Brushing low density materials to see a metallic object hidden inside the baggage. 1- The baggage before brushing. 2- After a density range is defined, the users brushes a part of the baggage. This interaction reveals a metallic bottle.   }
+	\caption[Brushing low-density materials to see a metallic object hidden inside the baggage.]{ Brushing low-density materials to see a metallic object hidden inside the baggage. 1- The baggage before brushing. 2- After a density range is defined, the users brush a part of the baggage. This interaction reveals a metallic bottle.   }
 	\label{f:brushing_range}
 \end{figure}
 
 \paragraph{Magic brushing technique}
-This brushing technique has almost the same behavior as the range based brushing one. The main difference consist in the automatic range definition. This magic brushing removes all voxels with a lower density than the first one encountered at the beginning of the brushing process. This technique helps the user to directly define the densities he or she wants to brush. This technique avoid multiple interactions with the histogram and its range slider to define the range of brushable densities.
+This brushing technique has almost the same behavior as the range based brushing one. The main difference consists in the automatic range definition. This magic brushing removes all voxels with a lower density than the first one encountered at the beginning of the brushing process. This technique helps the user to directly define the densities he or she wants to brush. This technique avoids multiple interactions with the histogram and its range slider to define the range of brushable densities.
 
 \paragraph{The cancellation of the brushing}
-Our system offers the possibility to restore previously brushed areas. To do so, the user must select the brushing tool in the toolbox and hold the shift key while brushing over a given area. The restored densities are those defined by the histogram range slider. This restoring processing does not act as the range brushing technique and the sheltering effect (dense layer provides to brush behind it). Every voxels within the range are restored in order not to confuse the user.
+Our system offers the possibility to restore previously brushed areas. To do so, the user must select the brushing tool in the toolbox and hold the shift key while brushing over a given area. The restored densities are those defined by the histogram range slider. This restoring processing does not act as the range brushing technique and the sheltering effect (dense layer provides to brush behind it). Every voxel within the range is restored in order not to confuse the user.
 
 \subsubsection{Snapshots}
-Our system can store visual configurations thanks to snapshots. These snapshots are displayed on the right of the main view and record the current rotation, the zoom, the pan and the current transfer function.
-To take a snapshot, the user must press the space bar. A name can be given to any snapshot using the keyboard. This name is displayed on the top left of its thumbnail. The user can restore a saved object by clicking on its snapshot. When a snapshot is selected, the system animates the view from its current state to the selected snapshot (pan, zoom and transfer function linear interpolation). A snapshot can be deleted by clicking on the close icon located on its top right (\autoref{f:snapshots}).
+Our system can store visual configurations thanks to snapshots. These snapshots are displayed on the right of the main view and record the current rotation, the zoom, the pan, and the current transfer function.
+To take a snapshot, the user must press the spacebar. A name can be given to any snapshot using the keyboard. This name is displayed on the top left of its thumbnail. The user can restore a saved object by clicking on its snapshot. When a snapshot is selected, the system animates the view from its current state to the selected snapshot (pan, zoom and transfer function linear interpolation). A snapshot can be deleted by clicking on the close icon located on its top right (\autoref{f:snapshots}).
  \begin{figure}
  \centering
 	\includegraphics[width=9cm]{Figures/snapshots.png}
-	\caption{ The labelled snapshots taken by the user representing objects of interest}
+	\caption{ The labeled snapshots taken by the user representing objects of interest}
 	\label{f:snapshots}
 \end{figure}
 
@@ -696,16 +842,16 @@ Our system provides many animated transitions when the user explores the baggage
  \begin{figure}
  \centering
 	\includegraphics[width=9cm]{Figures/temporal.png}
-	\caption{ The labelled snapshots taken by the user representing objects of interest}
+	\caption{ The labeled snapshots taken by the user representing objects of interest}
 	\label{f:temporal}
 \end{figure}
 
 \subsection{Possible Use Cases}
 
-This section presents two scenarios that underline our system assets. The first scenario illustrates how users can explore a suspicious baggage and address occlusion to inspect items inside. The second scenario shows how to visualize the content of a closed metallic container. Currently, most airport don't use 3d systems, so we propose possible scenarios to highlight  how the usefulness of our interaction techniques.
+This section presents two scenarios that underline our system assets. The first scenario illustrates how users can explore a suspicious baggage and address occlusion to inspect items inside. The second scenario shows how to visualize the content of a closed metallic container. Currently, most airports don't use 3d systems, so we propose possible scenarios to highlight how the usefulness of our interaction techniques.
 
 \subsubsection{	Inspection of a suspicious baggage }
-When a baggage arrives, the user sees it in its initial appearance which mainly shows the global structure . In order to better perceive its content, the user explores  the different transfer function presets. He or She clicks on the first level, then drags the cursors toward the others. This manipulation aims to reveal high density items hidden by those with low density 
+When a baggage arrives, the user sees it in its initial appearance which mainly shows the global structure. In order to better perceive its content, the user explores the different transfer function presets. He or She clicks on the first level, then drags the cursors toward the others. This manipulation aims to reveal high-density items hidden by those with low density 
 
 (\autoref{f:scenario1_1}).
 \begin{figure}
@@ -714,7 +860,7 @@ When a baggage arrives, the user sees it in its initial appearance which mainly 
 \caption{ The transfer function presets help the user perceive the different types of material inside the baggage }
 \label{f:scenario1_1}
 \end{figure}    
-Once the user has a global understanding of the baggage, it seems to be a parcel bomb. So he or she decides to further inspect some specific areas. For instance, the user focuses an object which looks like an explosive material. To estimate the potential damages that could be caused by this potential threat, the security agent lock the camera on it. This object is now the main object of interest, and all  manipulations (e.g. translation, rotation) are now done around this object. This object of interest stays visible even if other items are in front of it (\autoref{f:menace}). 
+Once the user has a global understanding of the baggage, it seems to be a parcel bomb. So he or she decides to further inspect some specific areas. For instance, the user focuses an object which looks like an explosive material. To estimate the potential damages that could be caused by this potential threat, the security agent locks the camera on it. This object is now the main object of interest, and all manipulations (e.g. translation, rotation) are now done around this object. This object of interest stays visible even if other items are in front of it (\autoref{f:menace}). 
 
 \begin{figure}
 \centering   
@@ -734,7 +880,7 @@ After the user finished this contextual inspection, he or she decides to inspect
 
 \subsubsection{Inspection of a big metallic object}
 
-In this scenario, the user inspects a baggage featuring many visual artifacts which could be considered as noise (\autoref{f:scenario2_1b}). These spikes are created by the reflection of the x-rays on the heavy materials. Therefore, these visual artefacts are a hint indicating the presence of large metallic object. The user navigates through the different transfer function presets (\autoref{f:scenario2_2}) .
+In this scenario, the user inspects a baggage featuring many visual artifacts which could be considered as noise (\autoref{f:scenario2_1b}). These spikes are created by the reflection of the x-rays on the heavy materials. Therefore, these visual artifacts are a hint indicating the presence of a large metallic object. The user navigates through the different transfer function presets (\autoref{f:scenario2_2}).
  
 \begin{figure}
 \centering
@@ -750,22 +896,22 @@ After the selection of the adequate transfer function setting, he or she decides
 \label{f:scenario2_2}
 \end{figure}
 
-In order to find out whether this engine is empty or not, the user decides to brush its half and to see its content. The user activates the brush tool, and while holding down the right button of the mouse, he or she brushes to remove the undesired section. After the brushing is carried out, the user modify the transfer function to show the lowest densities(\autoref{f:scenario2_1}).
+In order to find out whether this engine is empty or not, the user decides to brush its half and to see its content. The user activates the brush tool, and while holding down the right button of the mouse, he or she brushes to remove the undesired section. After the brushing is carried out, the user modifies the transfer function to show the lowest densities(\autoref{f:scenario2_1}).
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/scenario2_3.png}
-\caption{ the user reveals some low density materials inside the engine }
+\caption{ the user reveals some low-density materials inside the engine }
 \label{f:scenario2_1}
 \end{figure}
 
 
 \subsection{Technical Constraints and Implementation}
 
-Tomographs generate files which contain all the densities encountered by the x-rays through the baggage. These files usually contains around 30 million values. To load and to display such dataset in an interactive system, we used the parallel computation power of the graphic card. We used a program written in C\# combined with the CUDA parallel computing platform and a set of GPGPU techniques. To display the dataset, we used a standard ray casting algorithm. The contributions of you work rely on new interactions and their associated algorithms. This section will detail their implementations.
+Tomographs generate files which contain all the densities encountered by the x-rays through the baggage. These files usually contain around 30 million values. To load and to display such dataset in an interactive system, we used the parallel computation power of the graphics card. We used a program written in C\# combined with the CUDA parallel computing platform and a set of GPGPU techniques. To display the dataset, we used a standard ray casting algorithm. The contributions of our work rely on new interactions and their associated algorithms. This section will detail their implementations.
 
 \subsubsection{Object selection}
 
-Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm, see \cite{hurter2017object}. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection need to start.
+Our software features interactive selection and voxel manipulation functionalities. To implement these interactions, we had to find a way to extract objects from the volume data. To do so, we explored many object detection algorithms such as contour trees by \cite{carr_computing_2000} and branch trees by \cite{pascucci_multi-resolution_2004} algorithms. But, according to the literature and our experience, these algorithms are computationally expensive and time-consuming, especially during the preprocessing steps. In addition, this algorithm needs many settings and modifications to process the variety of available possible items which compose a baggage. For these reasons, we developed our own selection algorithm, see \cite{hurter2017object}. It is based on a simple brute force multi-threads propagation algorithm. The first step consists in casting a single ray toward the volume data where the selection needs to start.
 Consider the typical DVR algorithm: Given a scalar volume $V \subset \mathbf{R}^3 \rightarrow \mathbf{R}$, each pixel $\mathbf{x} \in I$ in the DVR image $I \subset \mathbf{R}^2$ thereof corresponds to the compositing of sampled data along a ray that passes through $V$ and ends at $\mathbf{x}$. Such rays are defined by the eye position $\mathbf{e}$ and a ray direction unit vector
 \begin{equation}
 \mathbf{d} = \frac{ (\mathbf{x} - \mathbf{e}) }{ \| \mathbf{x} - \mathbf{e} \| }
@@ -779,7 +925,7 @@ where $x$ is the float-point location of the window corresponding to the pixel.
 
 
 
-Second, we propagate the selection in every directions. For each encountered voxel, we check whether it is visible according to the current transfer function . If the voxel is visible we go on with the selection propagation. We spread within the baggage by launching many threads starting from the location where the first visible voxel has been hit. The number of thread depends on the number of logical processors inside the current hardware. Each thread checks whether its neighbors are visible, and keep spreading towards the visible voxels. This propagation algorithm stops whenever there are not any more visible voxels to spread into ( algorithm \autoref{alg:propagation}).
+Second, we propagate the selection in every direction. For each encountered voxel, we check whether it is visible according to the current transfer function. If the voxel is visible we go on with the selection propagation. We spread within the baggage by launching many threads starting from the location where the first visible voxel has been hit. The number of thread depends on the number of logical processors inside the current hardware. Each thread checks whether its neighbors are visible, and keep spreading towards the visible voxels. This propagation algorithm stops whenever there are not anymore visible voxels to spread into ( algorithm \autoref{alg:propagation}).
 
 \begin{algorithm} \caption{Pseudo code for the selection propagation} 
 \label{alg:propagation}
@@ -822,7 +968,7 @@ Second, we propagate the selection in every directions. For each encountered vox
 
 \subsubsection{Occlusion minimization}
 
-Once the item of interest is selected, our system animates the visual configuration to display a new point of view of the selection which minimizes object occlusions. To do so, the system first computes the selection bounding box composed of six faces. Then, the system computes the six possible point of views. For each of them, the system counts the number of visible pixels which display the selected object. This is done thanks to the ray casting algorithm which propagates though the data cube and thus can test if the ray hits the selected items without any occlusion. Finally, the system defines the appropriate point of view as the bounding box face with the highest number of visible pixels of the selected item, see \cite{hurter2017selective}.
+Once the item of interest is selected, our system animates the visual configuration to display a new point of view of the selection which minimizes object occlusions. To do so, the system first computes the selection bounding box composed of six faces. Then, the system computes the six possible point of views. For each of them, the system counts the number of visible pixels which display the selected object. This is done thanks to the ray casting algorithm which propagates through the data cube and thus can test if the ray hits the selected items without any occlusion. Finally, the system defines the appropriate point of view as the bounding box face with the highest number of visible pixels of the selected item, see \cite{hurter2017selective}.
 The system can then animate the volume visualization toward this new visual configuration and update the two temporal instances (before and after the pan, zoom and rotation modifications).
 
 \subsubsection{Extended brushing technique}
@@ -833,10 +979,10 @@ The cancellation of the brushing is quite similar to the previous algorithm. The
 
 \subsection{Discussion and conclusion}
 
-Since we developed this system with four baggage security practitioners, we had the opportunity to validate the usefulness of each developed technique. Through an interactive process, the users gave their feedbacks all along the development process which helped to assess and to guide the proposed interaction techniques. Feedback was mainly positive and the user did not face any specific difficulty to use our system. Users mainly appreciated the simple interface with few widgets and the reduced set of interactions. Surprisingly, users were very interested to use the transfer function. The histogram and its transfer function were also appreciated even if the corresponding technique is not simple to understand. We suppose that our interface motivates users to learn more regarding the technique behind it. Users also mentioned the need to display the actual density (the numerical value) of selected object. They also ask many times if the displayed color corresponds to the one currently in use in operational settings. This confirms the fact that users are willing to keep some existing features and prefer to use a system they are already familiar with.
+Since we developed this system with four baggage security practitioners, we had the opportunity to validate the usefulness of each developed technique. Through an interactive process, the users gave their feedbacks all along the development process which helped to assess and to guide the proposed interaction techniques. Feedback was mainly positive and the user did not face any specific difficulty to use our system. Users mainly appreciated the simple interface with few widgets and the reduced set of interactions. Surprisingly, users were very interested to use the transfer function. The histogram and its transfer function were also appreciated even if the corresponding technique is not simple to understand. We suppose that our interface motivates users to learn more regarding the technique behind it. Users also mentioned the need to display the actual density (the numerical value) of the selected object. They also ask many times if the displayed color corresponds to the one currently in use in operational settings. This confirms the fact that users are willing to keep some existing features and prefer to use a system they are already familiar with.
 The users also appreciated our design requirements with smooth transitions and incremental investigations of baggage.
 \par All of these observations and qualitative evaluations deserve to be validated through proper evaluations which are out of the scope of this user study.
 Our system is fully functional and interactive enough to perform baggage explorations. Many improvements can still be done in order to improve its usages in terms of new interactions and exploration time reductions.
-Technically speaking, the selection of the adequate point of view can be improved with more than 6 investigated faces. But in practice, this simple paradigm remains suitable. If the computed point of view is not fully satisfactory, one can manual rotate the baggage. Nevertheless, the developed algorithm will not necessary provide the best solution (the lowest occlusion) but a satisfactory one.
+Technically speaking, the selection of an adequate point of view can be improved with more than 6 investigated faces. But in practice, this simple paradigm remains suitable. If the computed point of view is not fully satisfactory, one can manually rotate the baggage. Nevertheless, the developed algorithm will not necessarily provide the best solution (the lowest occlusion) but a satisfactory one.
 \par Our goal was to develop
-innovative interactions to support baggage exploration but we did not really took into account the optimization of the exploration duration time. Manipulating the 3D volume may take time as well as our new interaction techniques. We think that these techniques have a great potential but they are suitable to explore in more details a suspicious baggage. Existing investigation techniques (with the 2D flattened image) are suitable to quickly and efficiently detect ''clean'' baggage. Then our tools can be a good solution to further investigate a potential threat with more available time.
+innovative interactions to support baggage exploration but we did not really take into account the optimization of the exploration duration time. Manipulating the 3D volume may take time as well as our new interaction techniques. We think that these techniques have a great potential but they are suitable to explore in more details a suspicious baggage. Existing investigation techniques (with the 2D flattened image) are suitable to quickly and efficiently detect ''clean'' baggage. Then our tools can be a good solution to further investigate a potential threat with more available time.
