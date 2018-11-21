@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  19 NOV 2018 08:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.3.11)  19 NOV 2018 22:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -2352,48 +2352,48 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 <couverture_these.pdf, id=535, pagebox=cropbox, 597.23125pt x 845.1575pt>
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf>
-Package pdftex.def Info: couverture_these.pdf  used on input line 197. on input
- line 197.
+Package pdftex.def Info: couverture_these.pdf  used on input line 199. on input
+ line 199.
 Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 197.
+e 199.
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf>
-Package pdftex.def Info: couverture_these.pdf  used on input line 197. on input
- line 197.
+Package pdftex.def Info: couverture_these.pdf  used on input line 199. on input
+ line 199.
 Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 197.
+e 199.
 <couverture_these.pdf, id=538, page=1, pagebox=cropbox, 597.23125pt x 845.1575p
 t>
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf, page 1>
-Package pdftex.def Info: couverture_these.pdf , page1 used on input line 197. o
-n input line 197.
+Package pdftex.def Info: couverture_these.pdf , page1 used on input line 199. o
+n input line 199.
 Package pdftex.def Info: Requested size: 597.22978pt x 845.15544pt on input lin
-e 197.
+e 199.
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf, page 1>
-Package pdftex.def Info: couverture_these.pdf , page1 used on input line 197. o
-n input line 197.
+Package pdftex.def Info: couverture_these.pdf , page1 used on input line 199. o
+n input line 199.
 Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 197.
+e 199.
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf, page 1>
-Package pdftex.def Info: couverture_these.pdf , page1 used on input line 197. o
-n input line 197.
+Package pdftex.def Info: couverture_these.pdf , page1 used on input line 199. o
+n input line 199.
 Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 197.
+e 199.
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf, page 1>
-Package pdftex.def Info: couverture_these.pdf , page1 used on input line 197. o
-n input line 197.
+Package pdftex.def Info: couverture_these.pdf , page1 used on input line 199. o
+n input line 199.
 Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 197.
+e 199.
 File: couverture_these.pdf Graphic file (type pdf)
 <use couverture_these.pdf, page 1>
-Package pdftex.def Info: couverture_these.pdf , page1 used on input line 197. o
-n input line 197.
+Package pdftex.def Info: couverture_these.pdf , page1 used on input line 199. o
+n input line 199.
 Package pdftex.def Info: Requested size: 597.25711pt x 845.19412pt on input lin
-e 197.
+e 199.
  [1
 
  <./couverture_these.pdf>] [2
@@ -2401,7 +2401,7 @@ e 197.
 ]
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 216.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 218.
 [1
 
 {C:/Users/yecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
@@ -2409,7 +2409,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 290.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 292.
 1: section
 [3
 
@@ -2433,18 +2433,12 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 --------------------
  Publications
 --------------------
-
-Overfull \hbox (5.15787pt too wide) in paragraph at lines 331--332
-[] \T1/ppl/b/n/10.95 Patent  \T1/ppl/m/n/10.95 : HURTER, Christophe et SOM-PAG-
-N-IMDI, Michael TRAORÉ. "Boolean
- []
-
 1: section
 [9] [10
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 345.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 347.
  (main.toc
 1: section
 [11] [12] [13] [14] [15] [16])
@@ -2506,49 +2500,8 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 60.
-
-Overfull \hbox (28.93849pt too wide) in paragraph at lines 60--61
-\T1/ppl/m/n/10.95 A par-tir de ces ob-ser-va-tions, cette thèse aborde la ques-
-tion de recherche suiv-ante:\T1/ppl/b/it/10.95 Pouvons-
- []
-
-
-Overfull \hbox (7.5648pt too wide) in paragraph at lines 60--61
-\T1/ppl/b/it/10.95 nous créer des tech-niques in-ter-ac-tives pour ex-plorer de
-s jeux de don-nées volumétriques
- []
-
-[2] [3] [4] [5]
-Overfull \hbox (4.86688pt too wide) in paragraph at lines 86--87
-[] \T1/ppl/b/n/10.95 USCT (Ul-tra-sound com-puter to-mog-ra-phy ) echolo-ca-tio
-n  \T1/ppl/m/n/10.95 uses ul-tra-sound waves
- []
-
-[6]
-Overfull \hbox (1.10452pt too wide) in paragraph at lines 91--92
-\T1/ppl/m/n/10.95 data set in an un-struc-tured way to un-cover ini-tial pat-te
-rns, char-ac-ter-is-tics, and points
- []
-
-
-Overfull \hbox (8.03114pt too wide) in paragraph at lines 93--94
-[]\T1/ppl/m/n/10.95 This pro-cess makes deeper anal-y-sis eas-ier be-cause it c
-an help tar-get fu-ture searches
- []
-
-
-Overfull \hbox (3.16919pt too wide) in paragraph at lines 95--96
-[]\T1/ppl/m/n/10.95 Many times, data ex-plo-ration uses vi-su-al-iza-tion be-ca
-use it cre-ates a more straight-
- []
-
-
-Overfull \hbox (0.60063pt too wide) in paragraph at lines 103--104
-\T1/ppl/m/n/10.95 such as an-i-ma-tion (for en-ter-tain-ment and ed-u-ca-tion),
- 3D print-ing, ar-chi-tec-ture, game
- []
-
-[7] [8] [9] [10] [11]) [12]
+ [2] [3] [4]
+[5] [6] [7] [8] [9] [10] [11]) [12]
 \openout2 = `Chapters/StateOfTheArt.aux'.
 
  (Chapters/StateOfTheArt.tex
@@ -2658,13 +2611,7 @@ Package pdftex.def Info: Figures/raycasting.png  used on input line 221. on inp
 ut line 221.
 Package pdftex.def Info: Requested size: 404.02908pt x 125.86333pt on input lin
 e 221.
-
-Overfull \hbox (9.62984pt too wide) in paragraph at lines 231--232
-[]\T1/ppl/m/n/10.95 The fun-da-men-tal prob-lem is to form a facet ap-prox-i-ma
--tion to an iso-sur-face through
- []
-
-[23 <./Figures/raycasting.png>]
+ [23 <./Figures/raycasting.png>]
 <Figures/isosurface.png, id=1301, 904.1278pt x 272.51813pt>
 File: Figures/isosurface.png Graphic file (type png)
 <use Figures/isosurface.png>
@@ -2689,11 +2636,6 @@ e 336.
 Package pdftex.def Info: Requested size: 404.02908pt x 94.41565pt on input line
  336.
  [27 <./Figures/mdtf.png>] [28] [29] [30]
-Overfull \hbox (6.26242pt too wide) in paragraph at lines 470--471
-\T1/ppl/m/n/10.95 con-ti-nu-ity as well as image-space smooth-ness. The mul-ti-
-scale cam-era can also achieve
- []
-
 <Figures/multiscale3d.png, id=1377, 2054.42531pt x 883.04906pt>
 File: Figures/multiscale3d.png Graphic file (type png)
 <use Figures/multiscale3d.png>
@@ -2701,7 +2643,7 @@ Package pdftex.def Info: Figures/multiscale3d.png  used on input line 474. on i
 nput line 474.
 Package pdftex.def Info: Requested size: 404.02908pt x 173.65582pt on input lin
 e 474.
-[31 <./Figures/multiscale3d.png>]
+ [31 <./Figures/multiscale3d.png>]
 <Figures/explodedview.png, id=1386, 1961.82938pt x 526.21594pt>
 File: Figures/explodedview.png Graphic file (type png)
 <use Figures/explodedview.png>
@@ -2740,8 +2682,7 @@ Package pdftex.def Info: Figures/colortunneling.png  used on input line 648. on
  input line 648.
 Package pdftex.def Info: Requested size: 404.02908pt x 498.49135pt on input lin
 e 648.
- [36]
-[37 <./Figures/colortunneling.png>]
+ [36] [37 <./Figures/colortunneling.png>]
 Package epstopdf Info: Source file: <Images/unpack.eps>
 (epstopdf)                    date: 2018-07-20 07:40:06
 (epstopdf)                    size: 9959234 bytes
@@ -2760,13 +2701,7 @@ Package pdftex.def Info: Images/unpack-eps-converted-to.pdf  used on input line
  700. on input line 700.
 Package pdftex.def Info: Requested size: 282.81912pt x 261.48021pt on input lin
 e 700.
- [38]
-Overfull \hbox (0.21715pt too wide) in paragraph at lines 729--731
-\T1/ppl/m/n/10.95 the data while pre-serv-ing con-text with-out vi-sual clut-te
-r by mod-u-lat-ing trans-parency.
- []
-
-[39 <./Images/unpack-eps-converted-to.pdf>] [40]
+ [38] [39 <./Images/unpack-eps-converted-to.pdf>] [40]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 745.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2784,24 +2719,7 @@ Overfull \hbox (17.67622pt too wide) in paragraph at lines 745--762
  [][] 
  []
 
-
-Overfull \hbox (7.94835pt too wide) in paragraph at lines 767--769
-\T1/ppl/m/n/10.95 der-ing: the trans-fer func-tion, the seg-men-ta-tion, de-for
--ma-tions as well as Fo-cus+context
- []
-
-[41]
-Overfull \hbox (1.37904pt too wide) in paragraph at lines 795--802
-\T1/ppl/m/n/10.95 togram map-ping, and trans-fer func-tion de-sign. They im-ple
--mented a one-pass shader
- []
-
-[42]
-Overfull \hbox (3.19632pt too wide) in paragraph at lines 828--834
-\T1/ppl/m/n/10.95 The ren-der-ing per-for-mance of this frame-work in the Xray,
- MIP and iso-surface modes
- []
-
+[41] [42]
 <Figures/NIVR.png, id=1620, 1394.96156pt x 667.74469pt>
 File: Figures/NIVR.png Graphic file (type png)
 <use Figures/NIVR.png>
@@ -2809,6 +2727,7 @@ Package pdftex.def Info: Figures/NIVR.png  used on input line 853. on input lin
 e 853.
 Package pdftex.def Info: Requested size: 404.02908pt x 193.39645pt on input lin
 e 853.
+
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -2833,31 +2752,8 @@ Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 
 ]
 Chapter 3.
-
-Overfull \hbox (33.69115pt too wide) in paragraph at lines 9--10
-\T1/ppl/m/n/10.95 étude de l'activité, une clas-si-fi-ca-tion des in-ter-ac-tio
-ns basées sur des sys-tèmes d'oculométrie,
- []
-
 1: section
-[47] [48]
-Overfull \hbox (13.2374pt too wide) in paragraph at lines 42--45
-\T1/ppl/m/n/10.95 terne (bou-ton, clavier ou pé-dale, etc.). C'est pourquoi nou
-s avons dé-cidé d'inclure
- []
-
-
-Overfull \hbox (22.22606pt too wide) in paragraph at lines 75--79
-\T1/ppl/m/n/10.95 d'ATC (prin-ci-pale-ment des in-ter-faces sans stripes ap-pel
-ées "strip-less"). L'utilisateur
- []
-
-[49]
-Overfull \hbox (8.35408pt too wide) in paragraph at lines 107--108
-[]\T1/ppl/b/n/10.95 Écran tac-tile\T1/ppl/m/n/10.95 : Cette tech-nique n'utilis
-e pas le re-gard mais étant donné la présence
- []
-
+[47] [48] [49]
 <Figures/smartPan.png, id=1659, 287.57437pt x 214.55156pt>
 File: Figures/smartPan.png Graphic file (type png)
 <use Figures/smartPan.png>
@@ -2865,7 +2761,7 @@ Package pdftex.def Info: Figures/smartPan.png  used on input line 117. on input
  line 117.
 Package pdftex.def Info: Requested size: 287.57367pt x 214.55103pt on input lin
 e 117.
-[50] [51 <./Figures/smartPan.png>]
+ [50] [51 <./Figures/smartPan.png>]
 <Figures/perceptionError.png, id=1672, 445.665pt x 273.02pt>
 File: Figures/perceptionError.png Graphic file (type png)
 <use Figures/perceptionError.png>
@@ -2873,16 +2769,10 @@ Package pdftex.def Info: Figures/perceptionError.png  used on input line 174. o
 n input line 174.
 Package pdftex.def Info: Requested size: 371.56113pt x 227.62204pt on input lin
 e 174.
-
-Overfull \hbox (39.94872pt too wide) in paragraph at lines 179--180
-[]\T1/ppl/m/n/10.95 L'exploration des bagages en 3D est une so-lu-tion po-ten-t
-ielle de ces lim-i-ta-tions([][]Figure 3.2[][][]),
- []
-
-[52]
-Overfull \hbox (5.4633pt too wide) in paragraph at lines 185--187
+ [52]
+Underfull \hbox (badness 2521) in paragraph at lines 185--187
 []\T1/ppl/m/n/10.95 OCL: le sys-tème doit fournir des out-ils pour ré-soudre le
-s prob-lèmes d'occlusion;
+s prob-lèmes
  []
 
 [53 <./Figures/perceptionError.png (PNG copy)>]
@@ -2907,9 +2797,9 @@ Overfull \hbox (22.76225pt too wide) in paragraph at lines 223--224
  []
 
 
-Overfull \hbox (15.53647pt too wide) in paragraph at lines 231--232
+Underfull \hbox (badness 2426) in paragraph at lines 231--232
 \T1/ppl/m/n/10.95 l'exploration des bagages mais nous n'avons pas vrai-ment pri
-s en compte l'optimisation
+s en compte
  []
 
 [56 <./Figures/preset.png (PNG copy)>] [57] [58]
@@ -3168,11 +3058,6 @@ Package pdftex.def Info: images/principlefr-eps-converted-to.pdf  used on input
 Package pdftex.def Info: Requested size: 404.02908pt x 318.03255pt on input lin
 e 27.
  [92] [93 <./images/principlefr-eps-converted-to.pdf>]
-Overfull \hbox (2.71407pt too wide) in paragraph at lines 42--45
-\T1/ppl/m/n/10.95 une cible in-téres-sante par-tielle-ment cachée. Par con-séqu
-ent, par déf-i-ni-tion, les rayons
- []
-
 Package epstopdf Info: Source file: <images/params.eps>
 (epstopdf)                    date: 2018-06-08 10:38:40
 (epstopdf)                    size: 101594449 bytes
@@ -3191,22 +3076,10 @@ Package pdftex.def Info: images/params-eps-converted-to.pdf  used on input line
  66. on input line 66.
 Package pdftex.def Info: Requested size: 404.02908pt x 137.93059pt on input lin
 e 66.
-[94] [95 <./images/params-eps-converted-to.pdf>]
-Overfull \hbox (3.43558pt too wide) in paragraph at lines 99--100
-[]\T1/ppl/m/n/10.95 Lorsque l'utilisateur ef-fectue une ro-ta-tion de $\OT1/zpl
-m/b/n/10.95 l[]$\T1/ppl/m/n/10.95 , la di-rec-tion de la lu-mière chang-
- []
-
-
-Overfull \hbox (3.19136pt too wide) in paragraph at lines 102--103
-[]\T1/ppl/m/n/10.95 Les deux mé-can-ismes ci-dessus com-binés pro-duisent l'eff
-et d'une lampe de poche
- []
-
-[96]
-Overfull \hbox (6.51927pt too wide) in paragraph at lines 122--123
+ [94] [95 <./images/params-eps-converted-to.pdf>] [96]
+Underfull \hbox (badness 2608) in paragraph at lines 122--123
 []\T1/ppl/m/n/10.95 Nous avons éval-uer notre lentille avec des util-isa-teurs 
-sur un scé-nario d'inspection
+sur un scé-nario
  []
 
 [97] [98] [99] [100]
@@ -3474,32 +3347,13 @@ Package pdftex.def Info: images/graph9-eps-converted-to.pdf  used on input line
  433. on input line 433.
 Package pdftex.def Info: Requested size: 404.02908pt x 226.66013pt on input lin
 e 433.
-
-Overfull \hbox (6.02048pt too wide) in paragraph at lines 439--440
-\T1/ppl/m/n/10.95 pared to the clas-si-cal 2D single-viewpoint X-ray ma-chin-er
-y they rou-tinely use. Quotes
- []
-
-[110 <./images/graph1-eps-converted-to.pdf> <./images/graph2-eps-converted-to.p
-df>] [111 <./images/graph3-eps-converted-to.pdf> <./images/graph4-eps-converted
--to.pdf> <./images/graph5-eps-converted-to.pdf>] [112 <./images/graph6-eps-conv
-erted-to.pdf> <./images/graph7-eps-converted-to.pdf> <./images/graph8-eps-conve
-rted-to.pdf>]
+ [110 <./images/graph1-eps-converted-to.pdf> <./images/graph2-eps-converted-to.
+pdf>] [111 <./images/graph3-eps-converted-to.pdf> <./images/graph4-eps-converte
+d-to.pdf> <./images/graph5-eps-converted-to.pdf>] [112 <./images/graph6-eps-con
+verted-to.pdf> <./images/graph7-eps-converted-to.pdf> <./images/graph8-eps-conv
+erted-to.pdf>]
 
 LaTeX Warning: Citation 'cubu' on page 113 undefined on input line 446.
-
-
-Overfull \hbox (14.69077pt too wide) in paragraph at lines 446--447
-\T1/ppl/m/n/10.95 Flow vi-su-al-iza-tion us-ing stream-lines has a long his-tor
-y []Brambilla et al., [][]2012[][] []Merzkirch,
- []
-
-
-Overfull \hbox (9.42123pt too wide) in paragraph at lines 448--451
-[]\T1/ppl/m/n/10.95 We first ex-plore the den-sity vol-ume ($\OT1/ppl/m/n/10.95
- 500[]$ \T1/ppl/m/n/10.95 vox-els) us-ing stan-dard DVR ([][]Fig-ure 4.17[][][]
-).
- []
 
 [113 <./images/graph9-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/stream_lens.eps>
@@ -3512,7 +3366,7 @@ Package epstopdf Info: Source file: <images/stream_lens.eps>
 erted-to.pdf images/stream_lens.eps>
 (epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
-<images/stream_lens-eps-converted-to.pdf, id=2517, pagebox=cropbox, 401.5pt x 1
+<images/stream_lens-eps-converted-to.pdf, id=2518, pagebox=cropbox, 401.5pt x 1
 81.67876pt>
 File: images/stream_lens-eps-converted-to.pdf Graphic file (type pdf)
 <use images/stream_lens-eps-converted-to.pdf>
@@ -3538,7 +3392,7 @@ Package epstopdf Info: Source file: <images/slicer.eps>
 -to.pdf images/slicer.eps>
 (epstopdf)             \includegraphics on input line 472.
 Package epstopdf Info: Output file is already uptodate.
-<images/slicer-eps-converted-to.pdf, id=2570, pagebox=cropbox, 1120.185pt x 136
+<images/slicer-eps-converted-to.pdf, id=2571, pagebox=cropbox, 1120.185pt x 136
 3.0925pt>
 File: images/slicer-eps-converted-to.pdf Graphic file (type pdf)
 <use images/slicer-eps-converted-to.pdf>
@@ -3553,7 +3407,7 @@ LaTeX Warning: Citation 'slicer' on page 115 undefined on input line 473.
 
 LaTeX Warning: Citation 'slicer' on page 115 undefined on input line 473.
 
-<images/aircraft.pdf, id=2576, pagebox=cropbox, 396.98312pt x 234.62656pt>
+<images/aircraft.pdf, id=2577, pagebox=cropbox, 396.98312pt x 234.62656pt>
 File: images/aircraft.pdf Graphic file (type pdf)
 <use images/aircraft.pdf>
 Package pdftex.def Info: images/aircraft.pdf  used on input line 484. on input 
@@ -3568,7 +3422,7 @@ craft tra-jec-to-ries over
 
 [115] [116 <./images/slicer-eps-converted-to.pdf>] [117 <./images/aircraft.pdf>
 ]
-<images/aircraft_lens.pdf, id=2693, pagebox=cropbox, 755.82375pt x 177.66376pt>
+<images/aircraft_lens.pdf, id=2694, pagebox=cropbox, 755.82375pt x 177.66376pt>
 
 File: images/aircraft_lens.pdf Graphic file (type pdf)
 <use images/aircraft_lens.pdf>
@@ -3591,7 +3445,7 @@ Package epstopdf Info: Source file: <images/dti.eps>
 .pdf images/dti.eps>
 (epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
-<images/dti-eps-converted-to.pdf, id=3039, pagebox=cropbox, 503.8825pt x 586.19
+<images/dti-eps-converted-to.pdf, id=3040, pagebox=cropbox, 503.8825pt x 586.19
 pt>
 File: images/dti-eps-converted-to.pdf Graphic file (type pdf)
 <use images/dti-eps-converted-to.pdf>
@@ -3618,7 +3472,7 @@ Package epstopdf Info: Source file: <images/vrraycasting.eps>
 verted-to.pdf images/vrraycasting.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
-<images/vrraycasting-eps-converted-to.pdf, id=3087, pagebox=cropbox, 1455.4375p
+<images/vrraycasting-eps-converted-to.pdf, id=3088, pagebox=cropbox, 1455.4375p
 t x 806.01125pt>
 File: images/vrraycasting-eps-converted-to.pdf Graphic file (type pdf)
 <use images/vrraycasting-eps-converted-to.pdf>
@@ -3636,7 +3490,7 @@ Package epstopdf Info: Source file: <images/arnoshading.eps>
 erted-to.pdf images/arnoshading.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<images/arnoshading-eps-converted-to.pdf, id=3090, pagebox=cropbox, 831.105pt x
+<images/arnoshading-eps-converted-to.pdf, id=3091, pagebox=cropbox, 831.105pt x
  1357.07pt>
 File: images/arnoshading-eps-converted-to.pdf Graphic file (type pdf)
 <use images/arnoshading-eps-converted-to.pdf>
@@ -3644,12 +3498,6 @@ Package pdftex.def Info: images/arnoshading-eps-converted-to.pdf  used on input
  line 22. on input line 22.
 Package pdftex.def Info: Requested size: 181.81184pt x 296.85834pt on input lin
 e 22.
-
-Overfull \hbox (22.44601pt too wide) in paragraph at lines 27--30
-\T1/ppl/m/n/10.95 ap-porter da-van-tage d'expérience dans la vi-su-al-i-sa-tion
- de jeux de don-nées volumétriques.
- []
-
 1: section
 [123
 
@@ -3657,27 +3505,21 @@ Overfull \hbox (22.44601pt too wide) in paragraph at lines 27--30
 
 ] [124 <./images/vrraycasting-eps-converted-to.pdf> <./images/arnoshading-eps-c
 onverted-to.pdf>]
-<Figures/mixediso.png, id=3119, 1926.44719pt x 988.44281pt>
+<Figures/mixediso.png, id=3120, 1926.44719pt x 988.44281pt>
 File: Figures/mixediso.png Graphic file (type png)
 <use Figures/mixediso.png>
 Package pdftex.def Info: Figures/mixediso.png  used on input line 34. on input 
 line 34.
 Package pdftex.def Info: Requested size: 404.02908pt x 207.29254pt on input lin
 e 34.
-
-Overfull \hbox (14.354pt too wide) in paragraph at lines 39--41
-\T1/ppl/m/n/10.95 de rendu de vol-ume: rayast-ing, tex-tures 3D et iso-sur-face
-s. Nous avons util-isé Cg/HLSL
- []
-
-<Figures/mixedray.png, id=3122, 1885.0425pt x 976.39781pt>
+<Figures/mixedray.png, id=3123, 1885.0425pt x 976.39781pt>
 File: Figures/mixedray.png Graphic file (type png)
 <use Figures/mixedray.png>
 Package pdftex.def Info: Figures/mixedray.png  used on input line 50. on input 
 line 50.
 Package pdftex.def Info: Requested size: 404.02908pt x 209.2659pt on input line
  50.
-[125 <./Figures/mixediso.png>] [126 <./Figures/mixedray.png>] [127] [128]
+ [125 <./Figures/mixediso.png>] [126 <./Figures/mixedray.png>] [127] [128]
 Package epstopdf Info: Source file: <images/vrraycasting.eps>
 (epstopdf)                    date: 2018-07-20 08:41:21
 (epstopdf)                    size: 18189890 bytes
@@ -3694,8 +3536,7 @@ Package pdftex.def Info: images/vrraycasting-eps-converted-to.pdf  used on inpu
 t line 114. on input line 114.
 Package pdftex.def Info: Requested size: 404.02908pt x 223.7507pt on input line
  114.
-
-[129] [130]
+ [129] [130]
 Package epstopdf Info: Source file: <images/arnoshading.eps>
 (epstopdf)                    date: 2018-07-20 21:33:20
 (epstopdf)                    size: 4763486 bytes
@@ -3728,26 +3569,15 @@ Package pdftex.def Info: Requested size: 404.02908pt x 209.2659pt on input line
  [134]) [135]
 \openout2 = `Chapters/conclusion.aux'.
 
- (Chapters/conclusion.tex [136
+
+(Chapters/conclusion.tex [136
 
 
 
 ]
 Chapter 6.
 1: section
-[137]
-Overfull \hbox (4.5759pt too wide) in paragraph at lines 19--20
-\T1/ppl/m/n/10.95 en fonc-tion des be-soins que nous avons ex-traits de l'enquê
-te con-textuelle auprès
- []
-
-
-Overfull \hbox (14.93398pt too wide) in paragraph at lines 28--32
-\T1/ppl/m/n/10.95 tique. Cepen-dant, avec une telle vi-su-al-i-sa-tion, de nom-
-breux al-go-rithmes d'optimisation
- []
-
-[138] [139] [140] [141] [142] [143]) [144]
+[137] [138] [139] [140] [141] [142] [143]) [144]
 \openout2 = `Appendices/questionnaire.aux'.
 
  (Appendices/questionnaire.tex
@@ -3793,7 +3623,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 43--438
+Underfull \hbox (badness 10000) in paragraph at lines 43--440
 
  []
 
@@ -3801,83 +3631,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--438
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 446.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 448.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (13.62624pt too wide) in paragraph at lines 446--446
-\T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / ww
-w . sciencedirect . com / science / article / pii / S0925231208001306$[][]\T1/p
-pl/m/n/10.95 . 
- []
-
-
-Overfull \hbox (0.24628pt too wide) in paragraph at lines 446--446
-[][]\T1/ppl/m/n/10.95 Correa, C. D. and K. L. Ma (2011).   Vis-i-bil-ity His-t
-ograms and Visibility-Driven Trans-
- []
-
 1: section
-[149]
-Overfull \hbox (18.82759pt too wide) in paragraph at lines 446--446
-\T1/ppl/m/n/10.95 Line Data. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-tions on Vi-
-su-al-iza-tion and Com-puter Graph-ics \T1/ppl/m/n/10.95 15.6, pp. 1299
- []
-
-[150]
-Overfull \hbox (2.58153pt too wide) in paragraph at lines 446--446
-[][]\T1/ppl/m/n/10.95 Hurter, Christophe (2015).   Image-Based Vi-su-al-iza-ti
-on: In-ter-ac-tive Mul-ti-di-men-sional
- []
-
-
-Overfull \hbox (25.54073pt too wide) in paragraph at lines 446--446
-[][][]\T1/ppl/m/n/10.95 (2017c). \T1/ppl/m/it/10.95 Se-lec-tive dis-play in a c
-om-puter gen-er-ated en-vi-ron-ment\T1/ppl/m/n/10.95 . US Patent App. 15/485,82
-8. 
- []
-
-
-Overfull \hbox (17.29872pt too wide) in paragraph at lines 446--446
-[][]\T1/ppl/m/n/10.95 Pascucci, Va-le-rio, Kree Cole-McLaughlin, and Gior-gio S
-corzelli (2004).   Multi-resolution
- []
-
-[151] [152]
-Overfull \hbox (3.5228pt too wide) in paragraph at lines 446--446
+[149] [150] [151] [152]
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 [][]\T1/ppl/m/n/10.95 Tominski, C. et al. (2012).   Stacking-Based Vi-su-al-iz
-a-tion of Tra-jec-tory At-tribute Data.
+a-tion of Tra-jec-
  []
 
 
-Overfull \hbox (25.93848pt too wide) in paragraph at lines 446--446
-\T1/ppl/m/sc/10.95 issn\T1/ppl/m/n/10.95 : 1077-2626. \T1/ppl/m/sc/10.95 doi\T1
-/ppl/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1109 / TransactionsonVisualizatio
-nandComputerGraphics .
+Underfull \hbox (badness 7851) in paragraph at lines 448--448
+\T1/ppl/m/n/10.95 tory At-tribute Data. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-t
+ions on Vi-su-al-iza-tion and Com-
  []
 
 
-Overfull \hbox (9.1917pt too wide) in paragraph at lines 446--446
-\T1/ppl/m/n/10.95 Model. In: \T1/ppl/m/it/10.95 IEEE Trans-ac-tions on Vi-su-a
-l-iza-tion and Com-puter Graph-ics \T1/ppl/m/n/10.95 17.11, pp. 1560
- []
-
-
-Overfull \hbox (8.5728pt too wide) in paragraph at lines 446--446
-[][]\T1/ppl/m/n/10.95 Wang Bal-don-ado, Michelle Q., Al-li-son Woodruff, and Al
--lan Kuchin-sky (2000).   Guide-
+Underfull \hbox (badness 4341) in paragraph at lines 448--448
+\T1/ppl/m/it/10.95 puter Graph-ics \T1/ppl/m/n/10.95 18.12, pp. 25652574. \T1/
+ppl/m/sc/10.95 issn\T1/ppl/m/n/10.95 : 1077-2626. \T1/ppl/m/sc/10.95 doi\T1/ppl
+/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 10 . 1109 /
  []
 
 [153]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
  [154]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
  (main.aux (Chapters/Introduction.aux) (Chapters/StateOfTheArt.aux)
 (Chapters/DesignStudy.aux) (Chapters/lens.aux) (Chapters/mixedReality.aux)
 (Chapters/conclusion.aux) (Appendices/questionnaire.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5FD8901B7F4A46F3DBAE9E3EE28EAD33;24448.
 
@@ -3896,11 +3683,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  39304 strings out of 493312
  788668 string characters out of 3138899
- 1074900 words of memory out of 3000000
+ 1076109 words of memory out of 3000000
  41752 multiletter control sequences out of 15000+200000
  612995 words of font info for 187 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,82p,2362b,2969s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,21n,82p,2362b,2957s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\yecou\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
@@ -3914,9 +3701,9 @@ onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/upl
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (184 pages, 91518231 bytes).
+Output written on main.pdf (184 pages, 91519071 bytes).
 PDF statistics:
- 3613 PDF objects out of 4296 (max. 8388607)
+ 3615 PDF objects out of 4296 (max. 8388607)
  536 named destinations out of 1000 (max. 500000)
  1430 words of extra memory for PDF output out of 10000 (max. 10000000)
 
